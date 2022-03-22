@@ -1,0 +1,14 @@
+# Ts
+wwwroot/*.js
+node_modules
+typings
+dist
+
+# IntelliJ
+.idea/*
+
+# macOS
+.DS_Store
+
+# VisualStudioCode
+.vscode/* 
