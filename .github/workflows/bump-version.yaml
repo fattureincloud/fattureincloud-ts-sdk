@@ -43,5 +43,5 @@ jobs:
         with:
           token: ${{ secrets.FATTUREINCLOUD_BOT_TOKEN }}
           repository: ${{ env.GIT_OPENAPI_REPO_PATH }}
-          event-type: generate-TypeScript
+          event-type: generate-typescript-axios
           client-payload: '{"version": "${{ env.openapi_version }}", "from-openapi": false}'
