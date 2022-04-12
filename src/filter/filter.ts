@@ -1,7 +1,7 @@
-import Condition from "./Condition"
-import Conjunction from "./Conjunction"
-import Disjunction from "./Disjunction"
-import Expression from "./Expression"
+import Condition from "./condition"
+import Conjunction from "./conjunction"
+import Disjunction from "./disjunction"
+import Expression from "./expression"
 import { Operator } from "./operator"
 
 

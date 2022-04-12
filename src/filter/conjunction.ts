@@ -1,4 +1,4 @@
-import Expression from "./Expression";
+import Expression from "./expression";
 /**
  * The Conjunction filter module.
  * @module Conjunction

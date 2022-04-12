@@ -1,4 +1,4 @@
-import Expression from "./Expression";
+import Expression from "./expression";
 import {Operator} from "./operator";
 /**
  * The Condition filter module.
