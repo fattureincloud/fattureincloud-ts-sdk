@@ -1,7 +1,6 @@
 import { expect } from 'chai'
 import Condition from '../../src/filter/condition'
 import Conjunction from '../../src/filter/conjunction'
-import Expression from '../../src/filter/Expression'
 import { Operator } from '../../src/filter/operator'
 
 var left: Condition
