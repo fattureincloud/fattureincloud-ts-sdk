@@ -16,3 +16,4 @@
 export * from "./api";
 export * from "./configuration";
 export * from "./src/models";
+export * from "./src/filter";
