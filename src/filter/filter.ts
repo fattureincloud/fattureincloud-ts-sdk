@@ -1,7 +1,7 @@
-import Condition from "./condition"
-import Conjunction from "./conjunction"
-import Disjunction from "./disjunction"
-import Expression from "./expression"
+import { Condition } from "./condition"
+import { Conjunction } from "./conjunction"
+import { Disjunction } from "./disjunction"
+import { Expression } from "./expression"
 import { Operator } from "./operator"
 
 
@@ -9,7 +9,7 @@ import { Operator } from "./operator"
  * The Filter filter module.
  * @module Filter
  */
-export default class Filter {
+export class Filter {
     /**
      * The expression.
      * @member {Expression} expression

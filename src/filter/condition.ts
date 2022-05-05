@@ -1,10 +1,10 @@
-import Expression from "./expression";
-import {Operator} from "./operator";
+import { Expression } from "./expression";
+import { Operator } from "./operator";
 /**
  * The Condition filter module.
  * @module Condition
  */
-export default class Condition implements Expression {
+export class Condition implements Expression {
     /**
      * The field to compare.
      * @member {String} field
