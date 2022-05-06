@@ -1,9 +1,9 @@
-import Expression from "./expression";
+import { Expression } from "./expression";
 /**
  * The Conjunction filter module.
  * @module Conjunction
  */
-export default class Conjunction implements Expression {
+export class Conjunction implements Expression {
     /**
      * The left expression.
      * @member {Expression} left
