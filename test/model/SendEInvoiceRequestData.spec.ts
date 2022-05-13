@@ -10,30 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { SendEInvoiceRequestData } from '../../src/models';
+import { expect } from 'chai'
+import { SendEInvoiceRequestData } from '../../src/models'
 
-  var instance: SendEInvoiceRequestData = {
-    cassa_type: "tp",
-    withholding_tax_causal: "causale"
-  };
+const instance: SendEInvoiceRequestData = {
+  cassa_type: 'tp',
+  withholding_tax_causal: 'causale'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('SendEInvoiceRequestData', function () {
+  it('should create an instance of SendEInvoiceRequestData', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('SendEInvoiceRequestData', function() {
-    it('should create an instance of SendEInvoiceRequestData', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property cassaType (base name: "cassa_type")', function () {
+    expect(instance.cassa_type).to.be.a('string')
+  })
 
-    it('should have the property cassaType (base name: "cassa_type")', function() {
-      expect(instance.cassa_type).to.be.a('string');
-    });
-
-    it('should have the property withholdingTaxCausal (base name: "withholding_tax_causal")', function() {
-      expect(instance.withholding_tax_causal).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property withholdingTaxCausal (base name: "withholding_tax_causal")', function () {
+    expect(instance.withholding_tax_causal).to.be.a('string')
+  })
+})

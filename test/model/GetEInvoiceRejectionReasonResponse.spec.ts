@@ -10,27 +10,24 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetEInvoiceRejectionReasonResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetEInvoiceRejectionReasonResponse } from '../../src/models'
 
-  var instance: GetEInvoiceRejectionReasonResponse = {
-    data:{
-      reason: "invalid date"
-    }
+const instance: GetEInvoiceRejectionReasonResponse = {
+  data: {
+    reason: 'invalid date'
   }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetEInvoiceRejectionReasonResponse', function () {
+  it('should create an instance of GetEInvoiceRejectionReasonResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetEInvoiceRejectionReasonResponse', function() {
-    it('should create an instance of GetEInvoiceRejectionReasonResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

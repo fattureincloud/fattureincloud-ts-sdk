@@ -10,32 +10,29 @@
  *
  */
 
-import { expect } from 'chai';
-import { VerifyEInvoiceXmlErrorResponseError } from '../../src/models';
+import { expect } from 'chai'
+import { VerifyEInvoiceXmlErrorResponseError } from '../../src/models'
 
-  var instance: VerifyEInvoiceXmlErrorResponseError = {
-    message: "something went wrong",
-    validation_result: {
-      prop: true
-    }
-  };
+const instance: VerifyEInvoiceXmlErrorResponseError = {
+  message: 'something went wrong',
+  validation_result: {
+    prop: true
+  }
+}
 
-  beforeEach(function() { 
-  });
+// beforeEach(function () {
+// })
 
+describe('VerifyEInvoiceXmlErrorResponseError', function () {
+  it('should create an instance of VerifyEInvoiceXmlErrorResponseError', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('VerifyEInvoiceXmlErrorResponseError', function() {
-    it('should create an instance of VerifyEInvoiceXmlErrorResponseError', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property message (base name: "message")', function () {
+    expect(instance.message).to.be.a('string')
+  })
 
-    it('should have the property message (base name: "message")', function() {
-      expect(instance.message).to.be.a('string');
-    });
-
-    it('should have the property validationResult (base name: "validation_result")', function() {
-      expect(instance.validation_result).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property validationResult (base name: "validation_result")', function () {
+    expect(instance.validation_result).to.be.a('object')
+  })
+})

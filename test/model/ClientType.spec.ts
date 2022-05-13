@@ -10,21 +10,18 @@
  *
  */
 
-import { expect } from 'chai';
-import { Client } from '../../src/models';
+import { expect } from 'chai'
+import { Client } from '../../src/models'
 
-  var instance: Client = {
-    type: "company"
-  };
+const instance: Client = {
+  type: 'company'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('ClientType', function() {
-    it('should create an instance of ClientType', function() {
-      expect(instance.type).to.be.a('string');
-    });
-
-  });
-
+describe('ClientType', function () {
+  it('should create an instance of ClientType', function () {
+    expect(instance.type).to.be.a('string')
+  })
+})

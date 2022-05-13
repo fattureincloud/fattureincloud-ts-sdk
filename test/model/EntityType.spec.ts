@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { EntityType } from '../../src/models';
+import { expect } from 'chai'
+import { EntityType } from '../../src/models'
 
-  var instance: EntityType = "person";
+const instance: EntityType = 'person'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('EntityType', function() {
-    it('should create an instance of EntityType', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('EntityType', function () {
+  it('should create an instance of EntityType', function () {
+    expect(instance).to.be.a('string')
+  })
+})

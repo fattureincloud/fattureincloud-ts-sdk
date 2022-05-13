@@ -10,55 +10,52 @@
  *
  */
 
-import { expect } from 'chai';
-import { PaymentAccount } from '../../src/models';
+import { expect } from 'chai'
+import { PaymentAccount } from '../../src/models'
 
-  var instance: PaymentAccount = {
-    id: 21,
-    name: "Indesa - Carta conto",
-    type: "standard",
-    iban: "ITP09029019203192301920AES32",
-    sia: "sai",
-    cuc: "cuc",
-    virtual: false
-  };
+const instance: PaymentAccount = {
+  id: 21,
+  name: 'Indesa - Carta conto',
+  type: 'standard',
+  iban: 'ITP09029019203192301920AES32',
+  sia: 'sai',
+  cuc: 'cuc',
+  virtual: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('PaymentAccount', function () {
+  it('should create an instance of PaymentAccount', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('PaymentAccount', function() {
-    it('should create an instance of PaymentAccount', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
 
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
+  it('should have the property iban (base name: "iban")', function () {
+    expect(instance.iban).to.be.a('string')
+  })
 
-    it('should have the property iban (base name: "iban")', function() {
-      expect(instance.iban).to.be.a('string');
-    });
+  it('should have the property sia (base name: "sia")', function () {
+    expect(instance.sia).to.be.a('string')
+  })
 
-    it('should have the property sia (base name: "sia")', function() {
-      expect(instance.sia).to.be.a('string');
-    });
+  it('should have the property cuc (base name: "cuc")', function () {
+    expect(instance.cuc).to.be.a('string')
+  })
 
-    it('should have the property cuc (base name: "cuc")', function() {
-      expect(instance.cuc).to.be.a('string');
-    });
-
-    it('should have the property virtual (base name: "virtual")', function() {
-      expect(instance.virtual).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property virtual (base name: "virtual")', function () {
+    expect(instance.virtual).to.be.a('boolean')
+  })
+})

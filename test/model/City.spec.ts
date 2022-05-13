@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { City } from '../../src/models';
+import { expect } from 'chai'
+import { City } from '../../src/models'
 
-  var instance: City = {
-    postal_code: "89867",
-    city: "Zungri",
-    province: "VV"
-  };
+const instance: City = {
+  postal_code: '89867',
+  city: 'Zungri',
+  province: 'VV'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('City', function () {
+  it('should create an instance of City', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('City', function() {
-    it('should create an instance of City', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property postalCode (base name: "postal_code")', function () {
+    expect(instance.postal_code).to.be.a('string')
+  })
 
-    it('should have the property postalCode (base name: "postal_code")', function() {
-      expect(instance.postal_code).to.be.a('string');
-    });
+  it('should have the property city (base name: "city")', function () {
+    expect(instance.city).to.be.a('string')
+  })
 
-    it('should have the property city (base name: "city")', function() {
-      expect(instance.city).to.be.a('string');
-    });
-
-    it('should have the property province (base name: "province")', function() {
-      expect(instance.province).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property province (base name: "province")', function () {
+    expect(instance.province).to.be.a('string')
+  })
+})

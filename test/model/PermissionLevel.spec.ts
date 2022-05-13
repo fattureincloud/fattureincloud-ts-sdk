@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { PermissionLevel } from '../../src/models';
+import { expect } from 'chai'
+import { PermissionLevel } from '../../src/models'
 
-  var instance: PermissionLevel = "detailed";
+const instance: PermissionLevel = 'detailed'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('PermissionLevel', function() {
-    it('should create an instance of PermissionLevel', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('PermissionLevel', function () {
+  it('should create an instance of PermissionLevel', function () {
+    expect(instance).to.be.a('string')
+  })
+})

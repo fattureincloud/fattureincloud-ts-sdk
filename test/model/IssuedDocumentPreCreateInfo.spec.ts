@@ -10,250 +10,247 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentPreCreateInfo } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentPreCreateInfo } from '../../src/models'
 
-  var instance: IssuedDocumentPreCreateInfo = {
-    numerations: {
-      2018 : {
-        AB123 : 2
-      },
-      2019 : {
-        123 : 3
-      }
+const instance: IssuedDocumentPreCreateInfo = {
+  numerations: {
+    2018: {
+      AB123: 2
     },
-    dn_numerations: {
-      2017 : {
-        "" : 1000
-      },
-      2018 : {
-        "" : 112
-      }
+    2019: {
+      123: 3
+    }
+  },
+  dn_numerations: {
+    2017: {
+      '': 1000
     },
-    default_values: {
-      default_template : {
-        id : 111,
-        type : "standard",
-        name : "Light Smoke"
-      },
-      dn_template : {
-        id : 222,
-        type : "delivery_note",
-        name : "DDT 1"
-      },
-      ai_template : {
-        id : 333,
-        type : "accompanying_invoice",
-        name : "FT Accompagnatoria 1"
-      },
-      notes : "",
-      rivalsa : 0,
-      cassa : 0,
-      withholding_tax : 0,
-      withholding_tax_taxable : 100,
-      other_withholding_tax : 0,
-      use_gross_prices : false,
-      payment_method : {
-        id : 123321,
-        name : "Bonifico bancario",
-        is_default : true,
-        details : [
-          {
-            title : "Banca",
-            description : "Indesa"
-          },
-          {
-            title : "IBAN",
-            description : "IT17QA12345600000003498936"
-          },
-          {
-            title : "Intestatario",
-            description : "Mario Rossi"
-          }
-        ],
-        bank_iban : "IT17QA12345600000003498936",
-        bank_name : "Indesa",
-        bank_beneficiary : "Mario Rossi",
-        ei_payment_method : "MP05"
-      }
+    2018: {
+      '': 112
+    }
+  },
+  default_values: {
+    default_template: {
+      id: 111,
+      type: 'standard',
+      name: 'Light Smoke'
     },
-    extra_data_default_values: {
-      ts_communication : false,
-      ts_tipo_spesa : "SR",
-      ts_flag_tipo_spesa : 0,
-      ts_pagamento_tracciato : false
+    dn_template: {
+      id: 222,
+      type: 'delivery_note',
+      name: 'DDT 1'
     },
-    items_default_values: {
-      vat : {
-        id : 0,
-        value : 22,
-        description : "",
-        notes : "",
-        e_invoice : true,
-        ei_type : "0",
-        ei_description : "",
-        is_disabled : false,
-        editable : false
-      }
+    ai_template: {
+      id: 333,
+      type: 'accompanying_invoice',
+      name: 'FT Accompagnatoria 1'
     },
-    countries_list: [
-      "Italia",
-      "Afghanistan",
-      "Albania"
-    ],
-    currencies_list: [
-      {
-        id : "AED",
-        symbol : "AED",
-        html_symbol : "AED",
-        exchange_rate : "4.09500"
-      },
-      {
-        id : "ALL",
-        symbol : "ALL",
-        html_symbol : "ALL",
-        exchange_rate : "121.50000"
-      }
-    ],
-    templates_list: [
-      {
-        id : 10,
-        name : "New Standard S1"
-      },
-      {
-        id : 11,
-        name : "New Standard S2"
-      }
-    ],
-    dn_templates_list: [
-      {
-        id : 660,
-        name : "DDT 1"
-      },
-      {
-        id : 680,
-        name : "DDT Prova"
-      }
-    ],
-    ai_templates_list: [
-      {
-        id : 663,
-        name : "FT Accompagnatoria 1"
-      }
-    ],
-    payment_methods_list: [
-      {
-        id : 123321,
-        name : "Bonifico bancario",
-        is_default : true,
-        details : [
-          {
-            title : "Banca",
-            description : "Indesa"
-          },
-          {
-            title : "IBAN",
-            description : "IT17QA12345600000003498936"
-          },
-          {
-            title : "Intestatario",
-            description : "Mario Rossi"
-          }
-        ],
-        bank_iban : "IT17QA12345600000003498936",
-        bank_name : "Indesa",
-        bank_beneficiary : "Mario Rossi",
-        ei_payment_method : "MP05"
-      }
-    ],
-    payment_accounts_list: [
-      {
-        id : 21,
-        name : "Indesa - Carta conto"
-      },
-      {
-        id : 287,
-        name : "Bonifico_Bancario"
-      }
-    ],
-    vat_types_list: [
-      {
-        id : 1409,
-        value : 15,
-        description : "ALIQUOTA #1234#",
-        ei_type : "0",
-        is_disabled : false
-      },
-      {
-        id : 1332,
-        value : 0,
-        description : "Non imp. art. 17 c. 6 lett. A TER DPR 633/72",
-        ei_type : "0",
-        is_disabled : false
-      }
-    ]
-  };
+    notes: '',
+    rivalsa: 0,
+    cassa: 0,
+    withholding_tax: 0,
+    withholding_tax_taxable: 100,
+    other_withholding_tax: 0,
+    use_gross_prices: false,
+    payment_method: {
+      id: 123321,
+      name: 'Bonifico bancario',
+      is_default: true,
+      details: [
+        {
+          title: 'Banca',
+          description: 'Indesa'
+        },
+        {
+          title: 'IBAN',
+          description: 'IT17QA12345600000003498936'
+        },
+        {
+          title: 'Intestatario',
+          description: 'Mario Rossi'
+        }
+      ],
+      bank_iban: 'IT17QA12345600000003498936',
+      bank_name: 'Indesa',
+      bank_beneficiary: 'Mario Rossi',
+      ei_payment_method: 'MP05'
+    }
+  },
+  extra_data_default_values: {
+    ts_communication: false,
+    ts_tipo_spesa: 'SR',
+    ts_flag_tipo_spesa: 0,
+    ts_pagamento_tracciato: false
+  },
+  items_default_values: {
+    vat: {
+      id: 0,
+      value: 22,
+      description: '',
+      notes: '',
+      e_invoice: true,
+      ei_type: '0',
+      ei_description: '',
+      is_disabled: false,
+      editable: false
+    }
+  },
+  countries_list: [
+    'Italia',
+    'Afghanistan',
+    'Albania'
+  ],
+  currencies_list: [
+    {
+      id: 'AED',
+      symbol: 'AED',
+      html_symbol: 'AED',
+      exchange_rate: '4.09500'
+    },
+    {
+      id: 'ALL',
+      symbol: 'ALL',
+      html_symbol: 'ALL',
+      exchange_rate: '121.50000'
+    }
+  ],
+  templates_list: [
+    {
+      id: 10,
+      name: 'New Standard S1'
+    },
+    {
+      id: 11,
+      name: 'New Standard S2'
+    }
+  ],
+  dn_templates_list: [
+    {
+      id: 660,
+      name: 'DDT 1'
+    },
+    {
+      id: 680,
+      name: 'DDT Prova'
+    }
+  ],
+  ai_templates_list: [
+    {
+      id: 663,
+      name: 'FT Accompagnatoria 1'
+    }
+  ],
+  payment_methods_list: [
+    {
+      id: 123321,
+      name: 'Bonifico bancario',
+      is_default: true,
+      details: [
+        {
+          title: 'Banca',
+          description: 'Indesa'
+        },
+        {
+          title: 'IBAN',
+          description: 'IT17QA12345600000003498936'
+        },
+        {
+          title: 'Intestatario',
+          description: 'Mario Rossi'
+        }
+      ],
+      bank_iban: 'IT17QA12345600000003498936',
+      bank_name: 'Indesa',
+      bank_beneficiary: 'Mario Rossi',
+      ei_payment_method: 'MP05'
+    }
+  ],
+  payment_accounts_list: [
+    {
+      id: 21,
+      name: 'Indesa - Carta conto'
+    },
+    {
+      id: 287,
+      name: 'Bonifico_Bancario'
+    }
+  ],
+  vat_types_list: [
+    {
+      id: 1409,
+      value: 15,
+      description: 'ALIQUOTA #1234#',
+      ei_type: '0',
+      is_disabled: false
+    },
+    {
+      id: 1332,
+      value: 0,
+      description: 'Non imp. art. 17 c. 6 lett. A TER DPR 633/72',
+      ei_type: '0',
+      is_disabled: false
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentPreCreateInfo', function () {
+  it('should create an instance of IssuedDocumentPreCreateInfo', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentPreCreateInfo', function() {
-    it('should create an instance of IssuedDocumentPreCreateInfo', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property numerations (base name: "numerations")', function () {
+    expect(instance.numerations).to.be.a('object')
+  })
 
-    it('should have the property numerations (base name: "numerations")', function() {
-      expect(instance.numerations).to.be.a('object');
-    });
+  it('should have the property dnNumerations (base name: "dn_numerations")', function () {
+    expect(instance.dn_numerations).to.be.a('object')
+  })
 
-    it('should have the property dnNumerations (base name: "dn_numerations")', function() {
-      expect(instance.dn_numerations).to.be.a('object');
-    });
+  it('should have the property defaultValues (base name: "default_values")', function () {
+    expect(instance.default_values).to.be.a('object')
+  })
 
-    it('should have the property defaultValues (base name: "default_values")', function() {
-      expect(instance.default_values).to.be.a('object');
-    });
+  it('should have the property extraDataDefaultValues (base name: "extra_data_default_values")', function () {
+    expect(instance.extra_data_default_values).to.be.a('object')
+  })
 
-    it('should have the property extraDataDefaultValues (base name: "extra_data_default_values")', function() {
-      expect(instance.extra_data_default_values).to.be.a('object');
-    });
+  it('should have the property itemsDefaultValues (base name: "items_default_values")', function () {
+    expect(instance.items_default_values).to.be.a('object')
+  })
 
-    it('should have the property itemsDefaultValues (base name: "items_default_values")', function() {
-      expect(instance.items_default_values).to.be.a('object');
-    });
+  it('should have the property countriesList (base name: "countries_list")', function () {
+    expect(instance.countries_list).to.be.a('array')
+  })
 
-    it('should have the property countriesList (base name: "countries_list")', function() {
-      expect(instance.countries_list).to.be.a('array');
-    });
+  it('should have the property currenciesList (base name: "currencies_list")', function () {
+    expect(instance.currencies_list).to.be.a('array')
+  })
 
-    it('should have the property currenciesList (base name: "currencies_list")', function() {
-      expect(instance.currencies_list).to.be.a('array');
-    });
+  it('should have the property templatesList (base name: "templates_list")', function () {
+    expect(instance.templates_list).to.be.a('array')
+  })
 
-    it('should have the property templatesList (base name: "templates_list")', function() {
-      expect(instance.templates_list).to.be.a('array');
-    });
+  it('should have the property dnTemplatesList (base name: "dn_templates_list")', function () {
+    expect(instance.dn_templates_list).to.be.a('array')
+  })
 
-    it('should have the property dnTemplatesList (base name: "dn_templates_list")', function() {
-      expect(instance.dn_templates_list).to.be.a('array');
-    });
+  it('should have the property aiTemplatesList (base name: "ai_templates_list")', function () {
+    expect(instance.ai_templates_list).to.be.a('array')
+  })
 
-    it('should have the property aiTemplatesList (base name: "ai_templates_list")', function() {
-      expect(instance.ai_templates_list).to.be.a('array');
-    });
+  it('should have the property paymentMethodsList (base name: "payment_methods_list")', function () {
+    expect(instance.payment_methods_list).to.be.a('array')
+  })
 
-    it('should have the property paymentMethodsList (base name: "payment_methods_list")', function() {
-      expect(instance.payment_methods_list).to.be.a('array');
-    });
+  it('should have the property paymentAccountsList (base name: "payment_accounts_list")', function () {
+    expect(instance.payment_accounts_list).to.be.a('array')
+  })
 
-    it('should have the property paymentAccountsList (base name: "payment_accounts_list")', function() {
-      expect(instance.payment_accounts_list).to.be.a('array');
-    });
-
-    it('should have the property vatTypesList (base name: "vat_types_list")', function() {
-      expect(instance.payment_accounts_list).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property vatTypesList (base name: "vat_types_list")', function () {
+    expect(instance.payment_accounts_list).to.be.a('array')
+  })
+})

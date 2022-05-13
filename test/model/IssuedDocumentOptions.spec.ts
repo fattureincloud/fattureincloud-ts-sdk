@@ -1,4 +1,4 @@
-import { IssuedDocumentOptions } from "../../src/models";
+import { IssuedDocumentOptions } from '../../src/models'
 
 /**
  * Fatture in Cloud API v2 - API Reference
@@ -12,22 +12,21 @@ import { IssuedDocumentOptions } from "../../src/models";
  * Do not edit the class manually.
  *
  */
- import { expect } from 'chai';
+import { expect } from 'chai'
 
-  var instance: IssuedDocumentOptions = {
-    fix_payments: true
-  };
+const instance: IssuedDocumentOptions = {
+  fix_payments: true
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-  describe('IssuedDocumentOptions', function() {
-    it('should create an instance of IssuedDocumentOptions', function() {
-      expect(instance).to.be.a('object');
-    });
+describe('IssuedDocumentOptions', function () {
+  it('should create an instance of IssuedDocumentOptions', function () {
+    expect(instance).to.be.a('object')
+  })
 
-    it('should have the property fixPayments (base name: "fix_payments")', function() {
-      expect(instance.fix_payments).to.be.a('boolean');
-    });
-
-  });
+  it('should have the property fixPayments (base name: "fix_payments")', function () {
+    expect(instance.fix_payments).to.be.a('boolean')
+  })
+})

@@ -10,61 +10,58 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetReceivedDocumentPreCreateInfoResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetReceivedDocumentPreCreateInfoResponse } from '../../src/models'
 
-  var instance: GetReceivedDocumentPreCreateInfoResponse = {
-    data: {
-      default_values : {
-        detailed : false
+const instance: GetReceivedDocumentPreCreateInfoResponse = {
+  data: {
+    default_values: {
+      detailed: false
+    },
+    items_default_values: {
+      vat: null
+    },
+    countries_list: [
+      'Italia',
+      'Afghanistan',
+      'Albania'
+    ],
+    currencies_list: [
+      {
+        id: 'AED',
+        symbol: 'AED',
+        html_symbol: 'AED',
+        exchange_rate: '4.09500'
       },
-      items_default_values : {
-          vat : null
-      },
-      countries_list : [
-          "Italia",
-          "Afghanistan",
-          "Albania"
-      ],
-      currencies_list : [
-          {
-            id : "AED",
-            symbol : "AED",
-            html_symbol : "AED",
-            exchange_rate : "4.09500"
-          },
-          {
-            id : "ALL",
-            symbol : "ALL",
-            html_symbol : "ALL",
-            exchange_rate : "121.50000"
-          }
-      ],
-      categories_list : [
-          "Auto",
-          "Telefono e internet"
-      ],
-      payment_accounts_list : [
-        {
-          id : 111,
-          name : "Indesa - carta conto"
-        }
-      ]
-    }
-  };
+      {
+        id: 'ALL',
+        symbol: 'ALL',
+        html_symbol: 'ALL',
+        exchange_rate: '121.50000'
+      }
+    ],
+    categories_list: [
+      'Auto',
+      'Telefono e internet'
+    ],
+    payment_accounts_list: [
+      {
+        id: 111,
+        name: 'Indesa - carta conto'
+      }
+    ]
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetReceivedDocumentPreCreateInfoResponse', function () {
+  it('should create an instance of GetReceivedDocumentPreCreateInfoResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetReceivedDocumentPreCreateInfoResponse', function() {
-    it('should create an instance of GetReceivedDocumentPreCreateInfoResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

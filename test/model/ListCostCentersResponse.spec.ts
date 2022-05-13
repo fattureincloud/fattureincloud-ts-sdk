@@ -10,28 +10,25 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListCostCentersResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListCostCentersResponse } from '../../src/models'
 
-  var instance: ListCostCentersResponse = {
-    data: [
-      "Negozio Bergamo",
-      "Negozio Milano"
-    ]
-  };
+const instance: ListCostCentersResponse = {
+  data: [
+    'Negozio Bergamo',
+    'Negozio Milano'
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListCostCentersResponse', function () {
+  it('should create an instance of ListCostCentersResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListCostCentersResponse', function() {
-    it('should create an instance of ListCostCentersResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

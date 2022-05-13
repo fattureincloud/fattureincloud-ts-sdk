@@ -10,30 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { VatItem } from '../../src/models';
+import { expect } from 'chai'
+import { VatItem } from '../../src/models'
 
-  var instance: VatItem = {
-    amount_net: 10,
-    amount_vat: 2.2
-  };
+const instance: VatItem = {
+  amount_net: 10,
+  amount_vat: 2.2
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('VatItem', function () {
+  it('should create an instance of VatItem', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('VatItem', function() {
-    it('should create an instance of VatItem', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property amountNet (base name: "amount_net")', function () {
+    expect(instance.amount_net).to.be.a('number')
+  })
 
-    it('should have the property amountNet (base name: "amount_net")', function() {
-      expect(instance.amount_net).to.be.a('number');
-    });
-
-    it('should have the property amountVat (base name: "amount_vat")', function() {
-      expect(instance.amount_vat).to.be.a('number');
-    });
-
-  });
-
+  it('should have the property amountVat (base name: "amount_vat")', function () {
+    expect(instance.amount_vat).to.be.a('number')
+  })
+})

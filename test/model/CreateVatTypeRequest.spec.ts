@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateVatTypeRequest } from '../../src/models';
+import { expect } from 'chai'
+import { CreateVatTypeRequest } from '../../src/models'
 
-  var instance: CreateVatTypeRequest = {
-    data: {
-      id: 0,
-      value: 22,
-      description: "Non imponibile art. 123",
-      notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
-      e_invoice: true,
-      ei_type: "2",
-      ei_description: "string",
-      editable: true,
-      is_disabled: true
-    }
-  };
+const instance: CreateVatTypeRequest = {
+  data: {
+    id: 0,
+    value: 22,
+    description: 'Non imponibile art. 123',
+    notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+    e_invoice: true,
+    ei_type: '2',
+    ei_description: 'string',
+    editable: true,
+    is_disabled: true
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateVatTypeRequest', function () {
+  it('should create an instance of CreateVatTypeRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateVatTypeRequest', function() {
-    it('should create an instance of CreateVatTypeRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

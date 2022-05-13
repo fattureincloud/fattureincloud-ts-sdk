@@ -10,38 +10,35 @@
  *
  */
 
-import { expect } from 'chai';
-import { ScheduleEmailRequest } from '../../src/models';
+import { expect } from 'chai'
+import { ScheduleEmailRequest } from '../../src/models'
 
-  var instance: ScheduleEmailRequest = {
-    data: {
-      sender_email : "mariorossi@fattureincloud.it",
-      recipient_email : "mary.red@example.com",
-      subject : "Nostra pro forma nr. 1",
-      body : "Gentile Mario Rossi,<br>per vedere la nostra pro forma di  o per scaricarne una copia in versione PDF prema sul bottone sottostante.<br><br>{{allegati}}<br><br>Cordiali saluti,<br><b>Mario Rossi</b>",
-      include : {
-        document : false,
-        delivery_note : false,
-        attachment : false,
-        accompanying_invoice : false
-      },
-      attach_pdf : true,
-      send_copy : false
-    }
-  };
+const instance: ScheduleEmailRequest = {
+  data: {
+    sender_email: 'mariorossi@fattureincloud.it',
+    recipient_email: 'mary.red@example.com',
+    subject: 'Nostra pro forma nr. 1',
+    body: 'Gentile Mario Rossi,<br>per vedere la nostra pro forma di  o per scaricarne una copia in versione PDF prema sul bottone sottostante.<br><br>{{allegati}}<br><br>Cordiali saluti,<br><b>Mario Rossi</b>',
+    include: {
+      document: false,
+      delivery_note: false,
+      attachment: false,
+      accompanying_invoice: false
+    },
+    attach_pdf: true,
+    send_copy: false
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ScheduleEmailRequest', function () {
+  it('should create an instance of ScheduleEmailRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ScheduleEmailRequest', function() {
-    it('should create an instance of ScheduleEmailRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

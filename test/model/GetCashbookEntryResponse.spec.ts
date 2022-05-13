@@ -10,28 +10,25 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetCashbookEntryResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetCashbookEntryResponse } from '../../src/models'
 
-  var instance: GetCashbookEntryResponse = {
-    data: {
-      date : "2021-08-29",
-      description : "Fattura n. 202/2021"
-    }
-  };
+const instance: GetCashbookEntryResponse = {
+  data: {
+    date: '2021-08-29',
+    description: 'Fattura n. 202/2021'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetCashbookEntryResponse', function () {
+  it('should create an instance of GetCashbookEntryResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetCashbookEntryResponse', function() {
-    it('should create an instance of GetCashbookEntryResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

@@ -10,25 +10,22 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetUserInfoResponseEmailConfirmationState } from '../../src/models';
+import { expect } from 'chai'
+import { GetUserInfoResponseEmailConfirmationState } from '../../src/models'
 
-  var instance: GetUserInfoResponseEmailConfirmationState = {
-    need_confirmation: false
-  };
+const instance: GetUserInfoResponseEmailConfirmationState = {
+  need_confirmation: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetUserInfoResponseEmailConfirmationState', function () {
+  it('should create an instance of GetUserInfoResponseEmailConfirmationState', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetUserInfoResponseEmailConfirmationState', function() {
-    it('should create an instance of GetUserInfoResponseEmailConfirmationState', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property needConfirmation (base name: "need_confirmation")', function() {
-      expect(instance.need_confirmation).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property needConfirmation (base name: "need_confirmation")', function () {
+    expect(instance.need_confirmation).to.be.a('boolean')
+  })
+})

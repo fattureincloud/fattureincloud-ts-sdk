@@ -10,30 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { SenderEmail } from '../../src/models';
+import { expect } from 'chai'
+import { SenderEmail } from '../../src/models'
 
-  var instance: SenderEmail = {
-    id: 0,
-    email: "no-reply@fattureincloud.it"
-  };
+const instance: SenderEmail = {
+  id: 0,
+  email: 'no-reply@fattureincloud.it'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('EmailDataSenderEmailsList', function () {
+  it('should create an instance of SenderEmail', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('EmailDataSenderEmailsList', function() {
-    it('should create an instance of SenderEmail', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
-
-    it('should have the property email (base name: "email")', function() {
-      expect(instance.email).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property email (base name: "email")', function () {
+    expect(instance.email).to.be.a('string')
+  })
+})

@@ -10,42 +10,39 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListPaymentAccountsResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListPaymentAccountsResponse } from '../../src/models'
 
-  var instance: ListPaymentAccountsResponse = {
-    data: [
-      {
-        id : 21,
-        name : "Indesa - Carta conto",
-        type : "standard",
-        iban : null,
-        sia : null,
-        virtual : false
-      },
-      {
-        id : 109,
-        name : "Indesa",
-        type : "bank",
-        iban : "IT17A1234563200000003498936",
-        sia : "IN234",
-        virtual : false
-      }
-    ]
-  };
+const instance: ListPaymentAccountsResponse = {
+  data: [
+    {
+      id: 21,
+      name: 'Indesa - Carta conto',
+      type: 'standard',
+      iban: null,
+      sia: null,
+      virtual: false
+    },
+    {
+      id: 109,
+      name: 'Indesa',
+      type: 'bank',
+      iban: 'IT17A1234563200000003498936',
+      sia: 'IN234',
+      virtual: false
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListPaymentAccountsResponse', function () {
+  it('should create an instance of ListPaymentAccountsResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListPaymentAccountsResponse', function() {
-    it('should create an instance of ListPaymentAccountsResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

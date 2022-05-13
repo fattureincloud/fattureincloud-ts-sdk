@@ -10,33 +10,30 @@
  *
  */
 
-import { expect } from 'chai';
-import { ModifyF24Request } from '../../src/models';
+import { expect } from 'chai'
+import { ModifyF24Request } from '../../src/models'
 
-  var instance: ModifyF24Request = {
-    data: {
-      amount : 840.36,
-      description : "PAGAMENTO IVA 2021",
-      due_date : "2021-12-31",
-      status : "paid",
-      payment_account : {
-        id : 111
-      }
+const instance: ModifyF24Request = {
+  data: {
+    amount: 840.36,
+    description: 'PAGAMENTO IVA 2021',
+    due_date: '2021-12-31',
+    status: 'paid',
+    payment_account: {
+      id: 111
     }
-  };
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ModifyF24Request', function () {
+  it('should create an instance of ModifyF24Request', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ModifyF24Request', function() {
-    it('should create an instance of ModifyF24Request', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

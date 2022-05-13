@@ -10,45 +10,42 @@
  *
  */
 
-import { expect } from 'chai';
-import { EInvoiceRejectionReason } from '../../src/models';
+import { expect } from 'chai'
+import { EInvoiceRejectionReason } from '../../src/models'
 
-  var instance: EInvoiceRejectionReason = {
-    reason: "invalid date",
-    ei_status: "rejected",
-    solution: "set a valid date",
-    code: "c01",
-    date: "2021-10-10"
-  };
+const instance: EInvoiceRejectionReason = {
+  reason: 'invalid date',
+  ei_status: 'rejected',
+  solution: 'set a valid date',
+  code: 'c01',
+  date: '2021-10-10'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('EInvoiceRejectionReason', function () {
+  it('should create an instance of EInvoiceRejectionReason', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('EInvoiceRejectionReason', function() {
-    it('should create an instance of EInvoiceRejectionReason', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property reason (base name: "reason")', function () {
+    expect(instance.reason).to.be.a('string')
+  })
 
-    it('should have the property reason (base name: "reason")', function() {
-      expect(instance.reason).to.be.a('string');
-    });
+  it('should have the property eiStatus (base name: "ei_status")', function () {
+    expect(instance.ei_status).to.be.a('string')
+  })
 
-    it('should have the property eiStatus (base name: "ei_status")', function() {
-      expect(instance.ei_status).to.be.a('string');
-    });
+  it('should have the property solution (base name: "solution")', function () {
+    expect(instance.solution).to.be.a('string')
+  })
 
-    it('should have the property solution (base name: "solution")', function() {
-      expect(instance.solution).to.be.a('string');
-    });
+  it('should have the property code (base name: "code")', function () {
+    expect(instance.code).to.be.a('string')
+  })
 
-    it('should have the property code (base name: "code")', function() {
-      expect(instance.code).to.be.a('string');
-    });
-
-    it('should have the property date (base name: "date")', function() {
-      expect(instance.date).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property date (base name: "date")', function () {
+    expect(instance.date).to.be.a('string')
+  })
+})

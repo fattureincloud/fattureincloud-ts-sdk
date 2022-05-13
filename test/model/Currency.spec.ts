@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { Currency } from '../../src/models';
+import { expect } from 'chai'
+import { Currency } from '../../src/models'
 
-  var instance: Currency = {
-    id: "EUR",
-    symbol: "€",
-    html_symbol: "&euro;",
-    exchange_rate: "1.00000"
-  };
+const instance: Currency = {
+  id: 'EUR',
+  symbol: '€',
+  html_symbol: '&euro;',
+  exchange_rate: '1.00000'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('Currency', function () {
+  it('should create an instance of Currency', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('Currency', function() {
-    it('should create an instance of Currency', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('string')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('string');
-    });
+  it('should have the property symbol (base name: "symbol")', function () {
+    expect(instance.symbol).to.be.a('string')
+  })
 
-    it('should have the property symbol (base name: "symbol")', function() {
-      expect(instance.symbol).to.be.a('string');
-    });
+  it('should have the property exchangeRate (base name: "exchange_rate")', function () {
+    expect(instance.exchange_rate).to.be.a('string')
+  })
 
-    it('should have the property exchangeRate (base name: "exchange_rate")', function() {
-      expect(instance.exchange_rate).to.be.a('string');
-    });
-
-    it('should have the property htmlSymbol (base name: "html_symbol")', function() {
-      expect(instance.html_symbol).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property htmlSymbol (base name: "html_symbol")', function () {
+    expect(instance.html_symbol).to.be.a('string')
+  })
+})

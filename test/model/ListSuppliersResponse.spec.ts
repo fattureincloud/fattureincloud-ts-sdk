@@ -10,129 +10,126 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListSuppliersResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListSuppliersResponse } from '../../src/models'
 
-  var instance: ListSuppliersResponse = {
-    current_page: 2,
-    first_page_url: "page=1",
-    from: 1,
-    last_page: 3,
-    last_page_url: "page=3",
-    next_page_url: "page=3",
-    path: "/archive",
-    per_page: 50,
-    prev_page_url: "page=1",
-    to: 3,
-    total: 155,
-    data: [
-      {
-        id : 12345,
-        code : "AE86",
-        name : "Mario Rossi S.R.L.",
-        type : "company",
-        first_name : "Mario",
-        last_name : "Rossi",
-        contact_person : "",
-        vat_number : "111222333",
-        tax_code : "111122233",
-        address_street : "Corso Magellano, 46",
-        address_postal_code : "20146",
-        address_city : "Milano",
-        address_province : "MI",
-        address_extra : "",
-        country : "Italia",
-        email : "mario.rossi@example.com",
-        certified_email : "mario.rossi@pec.example.com",
-        phone : "1234567890",
-        fax : "123456789",
-        notes : "",
-        created_at : "2021-15-08",
-        updated_at : "2021-15-08"
-      },
-      {
-        id : 12346,
-        code : "GT86",
-        name : "Maria Grossi S.R.L.",
-        type : "company",
-        first_name : "",
-        last_name : "",
-        contact_person : "",
-        vat_number : "200020102020",
-        tax_code : "200020102020",
-        address_street : "Vicolo stretto, 32",
-        address_postal_code : "20146",
-        address_city : "Milano",
-        address_province : "MI",
-        address_extra : "",
-        country : "Italia",
-        email : "maria.grossi@example.com",
-        certified_email : "maria.grossi@pec.example.com",
-        phone : "0987654321",
-        fax : "098765432",
-        notes : "",
-        created_at : "2021-15-09",
-        updated_at : "2021-15-09"
-      }
-    ]
-  };
+const instance: ListSuppliersResponse = {
+  current_page: 2,
+  first_page_url: 'page=1',
+  from: 1,
+  last_page: 3,
+  last_page_url: 'page=3',
+  next_page_url: 'page=3',
+  path: '/archive',
+  per_page: 50,
+  prev_page_url: 'page=1',
+  to: 3,
+  total: 155,
+  data: [
+    {
+      id: 12345,
+      code: 'AE86',
+      name: 'Mario Rossi S.R.L.',
+      type: 'company',
+      first_name: 'Mario',
+      last_name: 'Rossi',
+      contact_person: '',
+      vat_number: '111222333',
+      tax_code: '111122233',
+      address_street: 'Corso Magellano, 46',
+      address_postal_code: '20146',
+      address_city: 'Milano',
+      address_province: 'MI',
+      address_extra: '',
+      country: 'Italia',
+      email: 'mario.rossi@example.com',
+      certified_email: 'mario.rossi@pec.example.com',
+      phone: '1234567890',
+      fax: '123456789',
+      notes: '',
+      created_at: '2021-15-08',
+      updated_at: '2021-15-08'
+    },
+    {
+      id: 12346,
+      code: 'GT86',
+      name: 'Maria Grossi S.R.L.',
+      type: 'company',
+      first_name: '',
+      last_name: '',
+      contact_person: '',
+      vat_number: '200020102020',
+      tax_code: '200020102020',
+      address_street: 'Vicolo stretto, 32',
+      address_postal_code: '20146',
+      address_city: 'Milano',
+      address_province: 'MI',
+      address_extra: '',
+      country: 'Italia',
+      email: 'maria.grossi@example.com',
+      certified_email: 'maria.grossi@pec.example.com',
+      phone: '0987654321',
+      fax: '098765432',
+      notes: '',
+      created_at: '2021-15-09',
+      updated_at: '2021-15-09'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListSuppliersResponse', function () {
+  it('should create an instance of ListSuppliersResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListSuppliersResponse', function() {
-    it('should create an instance of ListSuppliersResponse', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property currentPage (base name: "current_page")', function () {
+    expect(instance.current_page).to.be.a('number')
+  })
 
-    it('should have the property currentPage (base name: "current_page")', function() {
-      expect(instance.current_page).to.be.a('number');
-    });
+  it('should have the property firstPageUrl (base name: "first_page_url")', function () {
+    expect(instance.first_page_url).to.be.a('string')
+  })
 
-    it('should have the property firstPageUrl (base name: "first_page_url")', function() {
-      expect(instance.first_page_url).to.be.a('string');
-    });
+  it('should have the property from (base name: "from")', function () {
+    expect(instance.from).to.be.a('number')
+  })
 
-    it('should have the property from (base name: "from")', function() {
-      expect(instance.from).to.be.a('number');
-    });
+  it('should have the property lastPage (base name: "last_page")', function () {
+    expect(instance.last_page).to.be.a('number')
+  })
 
-    it('should have the property lastPage (base name: "last_page")', function() {
-      expect(instance.last_page).to.be.a('number');
-    });
+  it('should have the property lastPageUrl (base name: "last_page_url")', function () {
+    expect(instance.last_page_url).to.be.a('string')
+  })
 
-    it('should have the property lastPageUrl (base name: "last_page_url")', function() {
-      expect(instance.last_page_url).to.be.a('string');
-    });
+  it('should have the property nextPageUrl (base name: "next_page_url")', function () {
+    expect(instance.next_page_url).to.be.a('string')
+  })
 
-    it('should have the property nextPageUrl (base name: "next_page_url")', function() {
-      expect(instance.next_page_url).to.be.a('string');
-    });
+  it('should have the property path (base name: "path")', function () {
+    expect(instance.path).to.be.a('string')
+  })
 
-    it('should have the property path (base name: "path")', function() {
-      expect(instance.path).to.be.a('string');
-    });
+  it('should have the property perPage (base name: "per_page")', function () {
+    expect(instance.per_page).to.be.a('number')
+  })
 
-    it('should have the property perPage (base name: "per_page")', function() {
-      expect(instance.per_page).to.be.a('number');
-    });
+  it('should have the property prevPageUrl (base name: "prev_page_url")', function () {
+    expect(instance.prev_page_url).to.be.a('string')
+  })
 
-    it('should have the property prevPageUrl (base name: "prev_page_url")', function() {
-      expect(instance.prev_page_url).to.be.a('string');
-    });
+  it('should have the property to (base name: "to")', function () {
+    expect(instance.to).to.be.a('number')
+  })
 
-    it('should have the property to (base name: "to")', function() {
-      expect(instance.to).to.be.a('number');
-    });
+  it('should have the property total (base name: "total")', function () {
+    expect(instance.total).to.be.a('number')
+  })
 
-    it('should have the property total (base name: "total")', function() {
-      expect(instance.total).to.be.a('number');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

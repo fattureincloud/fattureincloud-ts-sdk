@@ -10,110 +10,107 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentTotals } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentTotals } from '../../src/models'
 
-  var instance: IssuedDocumentTotals = {
-    amount_net: 68.18,
-    taxable_amount: 68.18,
-    amount_vat: 6.82,
-    amount_gross: 75,
-    amount_due: 75,
-    payments_sum: 75,
-    amount_rivalsa: 10,
-    amount_net_with_rivalsa: 10,
-    amount_cassa: 10,
-    not_taxable_amount: 10,
-    taxable_amount_withholding_tax: 10,
-    amount_withholding_tax: 10,
-    taxable_amount_other_withholding_tax: 10,
-    amount_other_withholding_tax: 10,
-    stamp_duty: 10,
-    is_enasarco_maximal_exceeded: false,
-    vat_list: {
-      vat_item : {
-        amount_net : 68.18,
-        amount_vat : 6.82
-      }
-    }  
-  };
+const instance: IssuedDocumentTotals = {
+  amount_net: 68.18,
+  taxable_amount: 68.18,
+  amount_vat: 6.82,
+  amount_gross: 75,
+  amount_due: 75,
+  payments_sum: 75,
+  amount_rivalsa: 10,
+  amount_net_with_rivalsa: 10,
+  amount_cassa: 10,
+  not_taxable_amount: 10,
+  taxable_amount_withholding_tax: 10,
+  amount_withholding_tax: 10,
+  taxable_amount_other_withholding_tax: 10,
+  amount_other_withholding_tax: 10,
+  stamp_duty: 10,
+  is_enasarco_maximal_exceeded: false,
+  vat_list: {
+    vat_item: {
+      amount_net: 68.18,
+      amount_vat: 6.82
+    }
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentTotals', function () {
+  it('should create an instance of IssuedDocumentTotals', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentTotals', function() {
-    it('should create an instance of IssuedDocumentTotals', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property amountNet (base name: "amount_net")', function () {
+    expect(instance.amount_net).to.be.a('number')
+  })
 
-    it('should have the property amountNet (base name: "amount_net")', function() {
-      expect(instance.amount_net).to.be.a('number');
-    });
+  it('should have the property amountRivalsa (base name: "amount_rivalsa")', function () {
+    expect(instance.amount_rivalsa).to.be.a('number')
+  })
 
-    it('should have the property amountRivalsa (base name: "amount_rivalsa")', function() {
-      expect(instance.amount_rivalsa).to.be.a('number');
-    });
+  it('should have the property amountNetWithRivalsa (base name: "amount_net_with_rivalsa")', function () {
+    expect(instance.amount_net_with_rivalsa).to.be.a('number')
+  })
 
-    it('should have the property amountNetWithRivalsa (base name: "amount_net_with_rivalsa")', function() {
-      expect(instance.amount_net_with_rivalsa).to.be.a('number');
-    });
+  it('should have the property amountCassa (base name: "amount_cassa")', function () {
+    expect(instance.amount_cassa).to.be.a('number')
+  })
 
-    it('should have the property amountCassa (base name: "amount_cassa")', function() {
-      expect(instance.amount_cassa).to.be.a('number');
-    });
+  it('should have the property taxableAmount (base name: "taxable_amount")', function () {
+    expect(instance.taxable_amount).to.be.a('number')
+  })
 
-    it('should have the property taxableAmount (base name: "taxable_amount")', function() {
-      expect(instance.taxable_amount).to.be.a('number');
-    });
+  it('should have the property notTaxableAmount (base name: "not_taxable_amount")', function () {
+    expect(instance.not_taxable_amount).to.be.a('number')
+  })
 
-    it('should have the property notTaxableAmount (base name: "not_taxable_amount")', function() {
-      expect(instance.not_taxable_amount).to.be.a('number');
-    });
+  it('should have the property amountVat (base name: "amount_vat")', function () {
+    expect(instance.amount_vat).to.be.a('number')
+  })
 
-    it('should have the property amountVat (base name: "amount_vat")', function() {
-      expect(instance.amount_vat).to.be.a('number');
-    });
+  it('should have the property amountGross (base name: "amount_gross")', function () {
+    expect(instance.amount_gross).to.be.a('number')
+  })
 
-    it('should have the property amountGross (base name: "amount_gross")', function() {
-      expect(instance.amount_gross).to.be.a('number');
-    });
+  it('should have the property taxableAmountWithholdingTax (base name: "taxable_amount_withholding_tax")', function () {
+    expect(instance.taxable_amount_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property taxableAmountWithholdingTax (base name: "taxable_amount_withholding_tax")', function() {
-      expect(instance.taxable_amount_withholding_tax).to.be.a('number');
-    });
+  it('should have the property amountWithholdingTax (base name: "amount_withholding_tax")', function () {
+    expect(instance.amount_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property amountWithholdingTax (base name: "amount_withholding_tax")', function() {
-      expect(instance.amount_withholding_tax).to.be.a('number');
-    });
+  it('should have the property taxableAmountOtherWithholdingTax (base name: "taxable_amount_other_withholding_tax")', function () {
+    expect(instance.taxable_amount_other_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property taxableAmountOtherWithholdingTax (base name: "taxable_amount_other_withholding_tax")', function() {
-      expect(instance.taxable_amount_other_withholding_tax).to.be.a('number');
-    });
+  it('should have the property amountOtherWithholdingTax (base name: "amount_other_withholding_tax")', function () {
+    expect(instance.amount_other_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property amountOtherWithholdingTax (base name: "amount_other_withholding_tax")', function() {
-      expect(instance.amount_other_withholding_tax).to.be.a('number');
-    });
+  it('should have the property stampDuty (base name: "stamp_duty")', function () {
+    expect(instance.stamp_duty).to.be.a('number')
+  })
 
-    it('should have the property stampDuty (base name: "stamp_duty")', function() {
-      expect(instance.stamp_duty).to.be.a('number');
-    });
+  it('should have the property amountDue (base name: "amount_due")', function () {
+    expect(instance.amount_due).to.be.a('number')
+  })
 
-    it('should have the property amountDue (base name: "amount_due")', function() {
-      expect(instance.amount_due).to.be.a('number');
-    });
+  it('should have the property isEnasarcoMaximalExceeded (base name: "is_enasarco_maximal_exceeded")', function () {
+    expect(instance.is_enasarco_maximal_exceeded).to.be.a('boolean')
+  })
 
-    it('should have the property isEnasarcoMaximalExceeded (base name: "is_enasarco_maximal_exceeded")', function() {
-      expect(instance.is_enasarco_maximal_exceeded).to.be.a('boolean');
-    });
+  it('should have the property paymentsSum (base name: "payments_sum")', function () {
+    expect(instance.payments_sum).to.be.a('number')
+  })
 
-    it('should have the property paymentsSum (base name: "payments_sum")', function() {
-      expect(instance.payments_sum).to.be.a('number');
-    });
-
-    it('should have the property vatList (base name: "vat_list")', function() {
-      expect(instance.vat_list).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property vatList (base name: "vat_list")', function () {
+    expect(instance.vat_list).to.be.a('object')
+  })
+})

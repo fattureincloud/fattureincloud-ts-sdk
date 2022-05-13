@@ -10,25 +10,22 @@
  *
  */
 
-import { expect } from 'chai';
-import { VerifyEInvoiceXmlResponseData } from '../../src/models';
+import { expect } from 'chai'
+import { VerifyEInvoiceXmlResponseData } from '../../src/models'
 
-  var instance: VerifyEInvoiceXmlResponseData = {
-    success: true
-  };
+const instance: VerifyEInvoiceXmlResponseData = {
+  success: true
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('VerifyEInvoiceXmlResponseData', function () {
+  it('should create an instance of VerifyEInvoiceXmlResponseData', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('VerifyEInvoiceXmlResponseData', function() {
-    it('should create an instance of VerifyEInvoiceXmlResponseData', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property success (base name: "success")', function() {
-      expect(instance.success).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property success (base name: "success")', function () {
+    expect(instance.success).to.be.a('boolean')
+  })
+})

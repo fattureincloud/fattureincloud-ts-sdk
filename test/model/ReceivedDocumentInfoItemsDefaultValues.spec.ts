@@ -10,25 +10,22 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceivedDocumentInfoItemsDefaultValues } from '../../src/models';
+import { expect } from 'chai'
+import { ReceivedDocumentInfoItemsDefaultValues } from '../../src/models'
 
-  var instance: ReceivedDocumentInfoItemsDefaultValues = {
-    vat: 21
-  };
+const instance: ReceivedDocumentInfoItemsDefaultValues = {
+  vat: 21
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ReceivedDocumentInfoItemsDefaultValues', function () {
+  it('should create an instance of ReceivedDocumentInfoItemsDefaultValues', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ReceivedDocumentInfoItemsDefaultValues', function() {
-    it('should create an instance of ReceivedDocumentInfoItemsDefaultValues', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property vat (base name: "vat")', function() {
-      expect(instance.vat).to.be.a('number');
-    });
-
-  });
-
+  it('should have the property vat (base name: "vat")', function () {
+    expect(instance.vat).to.be.a('number')
+  })
+})

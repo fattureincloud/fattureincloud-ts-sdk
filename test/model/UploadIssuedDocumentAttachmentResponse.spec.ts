@@ -10,27 +10,24 @@
  *
  */
 
-import { expect } from 'chai';
-import { UploadIssuedDocumentAttachmentResponse } from '../../src/models';
+import { expect } from 'chai'
+import { UploadIssuedDocumentAttachmentResponse } from '../../src/models'
 
-  var instance: UploadIssuedDocumentAttachmentResponse = {
-    data: {
-      attachment_token: "bfg3847389fhUIYDihpdewbcuguygqiyrgu72"
-    }
-  };
+const instance: UploadIssuedDocumentAttachmentResponse = {
+  data: {
+    attachment_token: 'bfg3847389fhUIYDihpdewbcuguygqiyrgu72'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('UploadIssuedDocumentAttachmentResponse', function () {
+  it('should create an instance of UploadIssuedDocumentAttachmentResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('UploadIssuedDocumentAttachmentResponse', function() {
-    it('should create an instance of UploadIssuedDocumentAttachmentResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

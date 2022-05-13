@@ -10,41 +10,38 @@
  *
  */
 
-import { expect } from 'chai';
-import { CompanyInfoAccessInfo } from '../../src/models';
+import { expect } from 'chai'
+import { CompanyInfoAccessInfo } from '../../src/models'
 
-  var instance: CompanyInfoAccessInfo = {
-    role: "master",
-    through_accountant: false,
-    permissions: {
-      fic_situation : "read",
-      fic_clients : "write",
-      fic_suppliers : "write",
-      fic_products : "write",
-      fic_issued_documents : "detailed"
-    }    
-  };
+const instance: CompanyInfoAccessInfo = {
+  role: 'master',
+  through_accountant: false,
+  permissions: {
+    fic_situation: 'read',
+    fic_clients: 'write',
+    fic_suppliers: 'write',
+    fic_products: 'write',
+    fic_issued_documents: 'detailed'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CompanyInfoAccessInfo', function () {
+  it('should create an instance of CompanyInfoAccessInfo', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CompanyInfoAccessInfo', function() {
-    it('should create an instance of CompanyInfoAccessInfo', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property role (base name: "role")', function () {
+    expect(instance.role).to.be.a('string')
+  })
 
-    it('should have the property role (base name: "role")', function() {
-      expect(instance.role).to.be.a('string');
-    });
+  it('should have the property permissions (base name: "permissions")', function () {
+    expect(instance.permissions).to.be.a('object')
+  })
 
-    it('should have the property permissions (base name: "permissions")', function() {
-      expect(instance.permissions).to.be.a('object');
-    });
-
-    it('should have the property throughAccountant (base name: "through_accountant")', function() {
-      expect(instance.through_accountant).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property throughAccountant (base name: "through_accountant")', function () {
+    expect(instance.through_accountant).to.be.a('boolean')
+  })
+})

@@ -10,46 +10,43 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateSupplierRequest } from '../../src/models';
+import { expect } from 'chai'
+import { CreateSupplierRequest } from '../../src/models'
 
-  var instance: CreateSupplierRequest = {
-    data: {
-      id : 12345,
-      code : "AE86",
-      name : "Mario Rossi S.R.L.",
-      type : "company",
-      first_name : "Mario",
-      last_name : "Rossi",
-      contact_person : "",
-      vat_number : "111222333",
-      tax_code : "111122233",
-      address_street : "Corso Magellano, 46",
-      address_postal_code : "20146",
-      address_city : "Milano",
-      address_province : "MI",
-      address_extra : "",
-      country : "Italia",
-      email : "mario.rossi@example.com",
-      certified_email : "mario.rossi@pec.example.com",
-      phone : "1234567890",
-      fax : "123456789",
-      notes : ""
-    }
-  };
+const instance: CreateSupplierRequest = {
+  data: {
+    id: 12345,
+    code: 'AE86',
+    name: 'Mario Rossi S.R.L.',
+    type: 'company',
+    first_name: 'Mario',
+    last_name: 'Rossi',
+    contact_person: '',
+    vat_number: '111222333',
+    tax_code: '111122233',
+    address_street: 'Corso Magellano, 46',
+    address_postal_code: '20146',
+    address_city: 'Milano',
+    address_province: 'MI',
+    address_extra: '',
+    country: 'Italia',
+    email: 'mario.rossi@example.com',
+    certified_email: 'mario.rossi@pec.example.com',
+    phone: '1234567890',
+    fax: '123456789',
+    notes: ''
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateSupplierRequest', function () {
+  it('should create an instance of CreateSupplierRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateSupplierRequest', function() {
-    it('should create an instance of CreateSupplierRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

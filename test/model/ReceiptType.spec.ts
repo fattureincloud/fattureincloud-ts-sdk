@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceiptType } from '../../src/models';
+import { expect } from 'chai'
+import { ReceiptType } from '../../src/models'
 
-  var instance: ReceiptType = "sales_receipt";
+const instance: ReceiptType = 'sales_receipt'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('ReceiptType', function() {
-    it('should create an instance of ReceiptType', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('ReceiptType', function () {
+  it('should create an instance of ReceiptType', function () {
+    expect(instance).to.be.a('string')
+  })
+})

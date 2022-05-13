@@ -10,37 +10,34 @@
  *
  */
 
-import { expect } from 'chai';
-import { EmailScheduleInclude } from '../../src/models';
+import { expect } from 'chai'
+import { EmailScheduleInclude } from '../../src/models'
 
-  var instance: EmailScheduleInclude = {
-    document: false,
-    delivery_note: false,
-    attachment: false,
-    accompanying_invoice: false
-  };
+const instance: EmailScheduleInclude = {
+  document: false,
+  delivery_note: false,
+  attachment: false,
+  accompanying_invoice: false
+}
 
+describe('EmailScheduleInclude', function () {
+  it('should create an instance of EmailScheduleInclude', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('EmailScheduleInclude', function() {
-    it('should create an instance of EmailScheduleInclude', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property document (base name: "document")', function () {
+    expect(instance.document).to.be.a('boolean')
+  })
 
-    it('should have the property document (base name: "document")', function() {
-      expect(instance.document).to.be.a('boolean');
-    });
+  it('should have the property deliveryNote (base name: "delivery_note")', function () {
+    expect(instance.delivery_note).to.be.a('boolean')
+  })
 
-    it('should have the property deliveryNote (base name: "delivery_note")', function() {
-      expect(instance.delivery_note).to.be.a('boolean');
-    });
+  it('should have the property attachment (base name: "attachment")', function () {
+    expect(instance.attachment).to.be.a('boolean')
+  })
 
-    it('should have the property attachment (base name: "attachment")', function() {
-      expect(instance.attachment).to.be.a('boolean');
-    });
-
-    it('should have the property accompanyingInvoice (base name: "accompanying_invoice")', function() {
-      expect(instance.accompanying_invoice).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property accompanyingInvoice (base name: "accompanying_invoice")', function () {
+    expect(instance.accompanying_invoice).to.be.a('boolean')
+  })
+})

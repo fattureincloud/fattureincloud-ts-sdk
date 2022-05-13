@@ -10,65 +10,62 @@
  *
  */
 
-import { expect } from 'chai';
-import { EmailSchedule } from '../../src/models';
+import { expect } from 'chai'
+import { EmailSchedule } from '../../src/models'
 
-  var instance: EmailSchedule = {
-    sender_email: "mariorossi@fattureincloud.it",
-    sender_id: 5,
-    recipient_email: "mary.red@example.com",
-    subject: "Nostra pro forma nr. 1",
-    body: "Gentile Mario Rossi<br>per vedere la nostra pro forma di  o per scaricarne una copia in versione PDF prema sul bottone sottostante.<br><br>{{allegati}}<br><br>Cordiali saluti<br><b>Mario Rossi</b>",
-    attach_pdf: true,
-    include: {
-        document : false,
-        delivery_note : false,
-        attachment : false,
-        accompanying_invoice : false
-    },
-    send_copy: false,
-  };
+const instance: EmailSchedule = {
+  sender_email: 'mariorossi@fattureincloud.it',
+  sender_id: 5,
+  recipient_email: 'mary.red@example.com',
+  subject: 'Nostra pro forma nr. 1',
+  body: 'Gentile Mario Rossi<br>per vedere la nostra pro forma di  o per scaricarne una copia in versione PDF prema sul bottone sottostante.<br><br>{{allegati}}<br><br>Cordiali saluti<br><b>Mario Rossi</b>',
+  attach_pdf: true,
+  include: {
+    document: false,
+    delivery_note: false,
+    attachment: false,
+    accompanying_invoice: false
+  },
+  send_copy: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('EmailSchedule', function () {
+  it('should create an instance of EmailSchedule', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('EmailSchedule', function() {
-    it('should create an instance of EmailSchedule', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property senderId (base name: "sender_id")', function () {
+    expect(instance.sender_id).to.be.a('number')
+  })
 
-    it('should have the property senderId (base name: "sender_id")', function() {
-      expect(instance.sender_id).to.be.a('number');
-    });
+  it('should have the property senderEmail (base name: "sender_email")', function () {
+    expect(instance.sender_email).to.be.a('string')
+  })
 
-    it('should have the property senderEmail (base name: "sender_email")', function() {
-      expect(instance.sender_email).to.be.a('string');
-    });
+  it('should have the property recipientEmail (base name: "recipient_email")', function () {
+    expect(instance.recipient_email).to.be.a('string')
+  })
 
-    it('should have the property recipientEmail (base name: "recipient_email")', function() {
-      expect(instance.recipient_email).to.be.a('string');
-    });
+  it('should have the property subject (base name: "subject")', function () {
+    expect(instance.subject).to.be.a('string')
+  })
 
-    it('should have the property subject (base name: "subject")', function() {
-      expect(instance.subject).to.be.a('string');
-    });
+  it('should have the property body (base name: "body")', function () {
+    expect(instance.body).to.be.a('string')
+  })
 
-    it('should have the property body (base name: "body")', function() {
-      expect(instance.body).to.be.a('string');
-    });
+  it('should have the property include (base name: "include")', function () {
+    expect(instance.include).to.be.a('object')
+  })
 
-    it('should have the property include (base name: "include")', function() {
-      expect(instance.include).to.be.a('object');
-    });
+  it('should have the property attachPdf (base name: "attach_pdf")', function () {
+    expect(instance.attach_pdf).to.be.a('boolean')
+  })
 
-    it('should have the property attachPdf (base name: "attach_pdf")', function() {
-      expect(instance.attach_pdf).to.be.a('boolean');
-    });
-
-    it('should have the property sendCopy (base name: "send_copy")', function() {
-      expect(instance.send_copy).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property sendCopy (base name: "send_copy")', function () {
+    expect(instance.send_copy).to.be.a('boolean')
+  })
+})

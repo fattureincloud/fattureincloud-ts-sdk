@@ -10,25 +10,22 @@
  *
  */
 
-import { expect } from 'chai';
-import { FunctionStatus } from '../../src/models';
+import { expect } from 'chai'
+import { FunctionStatus } from '../../src/models'
 
-  var instance: FunctionStatus = {
-    active: true
-  };
+const instance: FunctionStatus = {
+  active: true
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('FunctionStatus', function () {
+  it('should create an instance of FunctionStatus', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('FunctionStatus', function() {
-    it('should create an instance of FunctionStatus', function() {
-      expect(instance).to.be.a("object");
-    });
-
-    it('should have the property active (base name: "active")', function() {
-      expect(instance.active).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property active (base name: "active")', function () {
+    expect(instance.active).to.be.a('boolean')
+  })
+})

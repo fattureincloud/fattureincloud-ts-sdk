@@ -10,85 +10,82 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentExtraData } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentExtraData } from '../../src/models'
 
-  var instance: IssuedDocumentExtraData = {
-    show_sofort_button: true,
-    multifatture_sent: 3,
-    ts_communication: true,
-    ts_flag_tipo_spesa: 1,
-    ts_pagamento_tracciato: true,
-    ts_tipo_spesa: "TK",
-    ts_opposizione: true,
-    ts_status: 1,
-    ts_file_id: "file.png",
-    ts_sent_date: "2020-10-10",
-    ts_full_amount: true,
-    imported_by: "jss",
-    ts_single_sending: false,    
-  };
+const instance: IssuedDocumentExtraData = {
+  show_sofort_button: true,
+  multifatture_sent: 3,
+  ts_communication: true,
+  ts_flag_tipo_spesa: 1,
+  ts_pagamento_tracciato: true,
+  ts_tipo_spesa: 'TK',
+  ts_opposizione: true,
+  ts_status: 1,
+  ts_file_id: 'file.png',
+  ts_sent_date: '2020-10-10',
+  ts_full_amount: true,
+  imported_by: 'jss',
+  ts_single_sending: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentExtraData', function () {
+  it('should create an instance of IssuedDocumentExtraData', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentExtraData', function() {
-    it('should create an instance of IssuedDocumentExtraData', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property showSofortButton (base name: "show_sofort_button")', function () {
+    expect(instance.show_sofort_button).to.be.a('boolean')
+  })
 
-    it('should have the property showSofortButton (base name: "show_sofort_button")', function() {
-      expect(instance.show_sofort_button).to.be.a('boolean');
-    });
+  it('should have the property multifattureSent (base name: "multifatture_sent")', function () {
+    expect(instance.multifatture_sent).to.be.a('number')
+  })
 
-    it('should have the property multifattureSent (base name: "multifatture_sent")', function() {
-      expect(instance.multifatture_sent).to.be.a('number');
-    });
+  it('should have the property tsCommunication (base name: "ts_communication")', function () {
+    expect(instance.ts_communication).to.be.a('boolean')
+  })
 
-    it('should have the property tsCommunication (base name: "ts_communication")', function() {
-      expect(instance.ts_communication).to.be.a('boolean');
-    });
+  it('should have the property tsFlagTipoSpesa (base name: "ts_flag_tipo_spesa")', function () {
+    expect(instance.ts_flag_tipo_spesa).to.be.a('number')
+  })
 
-    it('should have the property tsFlagTipoSpesa (base name: "ts_flag_tipo_spesa")', function() {
-      expect(instance.ts_flag_tipo_spesa).to.be.a('number');
-    });
+  it('should have the property tsPagamentoTracciato (base name: "ts_pagamento_tracciato")', function () {
+    expect(instance.ts_pagamento_tracciato).to.be.a('boolean')
+  })
 
-    it('should have the property tsPagamentoTracciato (base name: "ts_pagamento_tracciato")', function() {
-      expect(instance.ts_pagamento_tracciato).to.be.a('boolean');
-    });
+  it('should have the property tsTipoSpesa (base name: "ts_tipo_spesa")', function () {
+    expect(instance.ts_tipo_spesa).to.be.a('string')
+  })
 
-    it('should have the property tsTipoSpesa (base name: "ts_tipo_spesa")', function() {
-      expect(instance.ts_tipo_spesa).to.be.a('string');
-    });
+  it('should have the property tsOpposizione (base name: "ts_opposizione")', function () {
+    expect(instance.ts_opposizione).to.be.a('boolean')
+  })
 
-    it('should have the property tsOpposizione (base name: "ts_opposizione")', function() {
-      expect(instance.ts_opposizione).to.be.a('boolean');
-    });
+  it('should have the property tsStatus (base name: "ts_status")', function () {
+    expect(instance.ts_status).to.be.a('number')
+  })
 
-    it('should have the property tsStatus (base name: "ts_status")', function() {
-      expect(instance.ts_status).to.be.a('number');
-    });
+  it('should have the property tsFileId (base name: "ts_file_id")', function () {
+    expect(instance.ts_file_id).to.be.a('string')
+  })
 
-    it('should have the property tsFileId (base name: "ts_file_id")', function() {
-      expect(instance.ts_file_id).to.be.a('string');
-    });
+  it('should have the property tsSentDate (base name: "ts_sent_date")', function () {
+    expect(instance.ts_sent_date).to.be.a('string')
+  })
 
-    it('should have the property tsSentDate (base name: "ts_sent_date")', function() {
-      expect(instance.ts_sent_date).to.be.a('string');
-    });
+  it('should have the property tsFullAmount (base name: "ts_full_amount")', function () {
+    expect(instance.ts_full_amount).to.be.a('boolean')
+  })
 
-    it('should have the property tsFullAmount (base name: "ts_full_amount")', function() {
-      expect(instance.ts_full_amount).to.be.a('boolean');
-    });
+  it('should have the property importedBy (base name: "imported_by")', function () {
+    expect(instance.imported_by).to.be.a('string')
+  })
 
-    it('should have the property importedBy (base name: "imported_by")', function() {
-      expect(instance.imported_by).to.be.a('string');
-    });
-
-    it('should have the property tsSingleSending (base name: "ts_single_sending")', function() {
-      expect(instance.ts_single_sending).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property tsSingleSending (base name: "ts_single_sending")', function () {
+    expect(instance.ts_single_sending).to.be.a('boolean')
+  })
+})

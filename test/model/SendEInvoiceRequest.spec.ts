@@ -10,27 +10,24 @@
  *
  */
 
-import { expect } from 'chai';
-import { SendEInvoiceRequest } from '../../src/models';
+import { expect } from 'chai'
+import { SendEInvoiceRequest } from '../../src/models'
 
-  var instance: SendEInvoiceRequest = {
-    data: {
-      withholding_tax_causal: "causale"
-    }
-  };
+const instance: SendEInvoiceRequest = {
+  data: {
+    withholding_tax_causal: 'causale'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('SendEInvoiceRequest', function () {
+  it('should create an instance of SendEInvoiceRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('SendEInvoiceRequest', function() {
-    it('should create an instance of SendEInvoiceRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

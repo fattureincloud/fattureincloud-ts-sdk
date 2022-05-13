@@ -10,21 +10,18 @@
  *
  */
 
-import { expect } from 'chai';
-import { CashbookEntry } from '../../src/models';
+import { expect } from 'chai'
+import { CashbookEntry } from '../../src/models'
 
-  var instance: CashbookEntry = {
-    type: "in"
-  };
+const instance: CashbookEntry = {
+  type: 'in'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('CashbookEntryType', function() {
-    it('should create an instance of CashbookEntryType', function() {
-      expect(instance.type).to.be.a('string');
-    });
-
-  });
-
+describe('CashbookEntryType', function () {
+  it('should create an instance of CashbookEntryType', function () {
+    expect(instance.type).to.be.a('string')
+  })
+})

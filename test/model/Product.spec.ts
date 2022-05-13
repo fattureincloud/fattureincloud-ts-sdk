@@ -10,121 +10,118 @@
  *
  */
 
-import { expect } from 'chai';
-import { Product } from '../../src/models';
+import { expect } from 'chai'
+import { Product } from '../../src/models'
 
-  var instance: Product = {
-    id: 12345,
-    name: "Tavolo di marmo",
-    code: "TAVOLO003",
-    net_price: 240,
-    gross_price: 280,
-    use_gross_price: false,
-    net_cost: 0,
-    measure: "",
-    description: "Tavolo in marmo pregiato",
-    category: "arredamento",
-    in_stock: true,
-    notes: "",
-    stock_initial: 99,
-    stock_current: 98,
-    average_cost: 200,
-    average_price: 300,
-    created_at: "2021-10-10",
-    updated_at: "",
-    default_vat: {
-      id : 3,
-      value : 22,
-      description : "Non imponibile art. 123",
-      notes : "IVA non imponibile ai sensi dell\'articolo 123, comma 2",
-      is_disabled : false
-    }   
-  };
+const instance: Product = {
+  id: 12345,
+  name: 'Tavolo di marmo',
+  code: 'TAVOLO003',
+  net_price: 240,
+  gross_price: 280,
+  use_gross_price: false,
+  net_cost: 0,
+  measure: '',
+  description: 'Tavolo in marmo pregiato',
+  category: 'arredamento',
+  in_stock: true,
+  notes: '',
+  stock_initial: 99,
+  stock_current: 98,
+  average_cost: 200,
+  average_price: 300,
+  created_at: '2021-10-10',
+  updated_at: '',
+  default_vat: {
+    id: 3,
+    value: 22,
+    description: 'Non imponibile art. 123',
+    notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+    is_disabled: false
+  }
+}
 
-  beforeEach(function() { 
-  });
+// beforeEach(function () {
+// })
 
+describe('Product', function () {
+  it('should create an instance of Product', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('Product', function() {
-    it('should create an instance of Product', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property code (base name: "code")', function () {
+    expect(instance.code).to.be.a('string')
+  })
 
-    it('should have the property code (base name: "code")', function() {
-      expect(instance.code).to.be.a('string');
-    });
+  it('should have the property netPrice (base name: "net_price")', function () {
+    expect(instance.net_price).to.be.a('number')
+  })
 
-    it('should have the property netPrice (base name: "net_price")', function() {
-      expect(instance.net_price).to.be.a('number');
-    });
+  it('should have the property grossPrice (base name: "gross_price")', function () {
+    expect(instance.gross_price).to.be.a('number')
+  })
 
-    it('should have the property grossPrice (base name: "gross_price")', function() {
-      expect(instance.gross_price).to.be.a('number');
-    });
+  it('should have the property useGrossPrice (base name: "use_gross_price")', function () {
+    expect(instance.use_gross_price).to.be.a('boolean')
+  })
 
-    it('should have the property useGrossPrice (base name: "use_gross_price")', function() {
-      expect(instance.use_gross_price).to.be.a('boolean');
-    });
+  it('should have the property defaultVat (base name: "default_vat")', function () {
+    expect(instance.default_vat).to.be.a('object')
+  })
 
-    it('should have the property defaultVat (base name: "default_vat")', function() {
-      expect(instance.default_vat).to.be.a('object');
-    });
+  it('should have the property netCost (base name: "net_cost")', function () {
+    expect(instance.net_cost).to.be.a('number')
+  })
 
-    it('should have the property netCost (base name: "net_cost")', function() {
-      expect(instance.net_cost).to.be.a('number');
-    });
+  it('should have the property measure (base name: "measure")', function () {
+    expect(instance.measure).to.be.a('string')
+  })
 
-    it('should have the property measure (base name: "measure")', function() {
-      expect(instance.measure).to.be.a('string');
-    });
+  it('should have the property description (base name: "description")', function () {
+    expect(instance.description).to.be.a('string')
+  })
 
-    it('should have the property description (base name: "description")', function() {
-      expect(instance.description).to.be.a('string');
-    });
+  it('should have the property category (base name: "category")', function () {
+    expect(instance.category).to.be.a('string')
+  })
 
-    it('should have the property category (base name: "category")', function() {
-      expect(instance.category).to.be.a('string');
-    });
+  it('should have the property notes (base name: "notes")', function () {
+    expect(instance.notes).to.be.a('string')
+  })
 
-    it('should have the property notes (base name: "notes")', function() {
-      expect(instance.notes).to.be.a('string');
-    });
+  it('should have the property inStock (base name: "in_stock")', function () {
+    expect(instance.in_stock).to.be.a('boolean')
+  })
 
-    it('should have the property inStock (base name: "in_stock")', function() {
-      expect(instance.in_stock).to.be.a('boolean');
-    });
+  it('should have the property stockInitial (base name: "stock_initial")', function () {
+    expect(instance.stock_initial).to.be.a('number')
+  })
 
-    it('should have the property stockInitial (base name: "stock_initial")', function() {
-      expect(instance.stock_initial).to.be.a('number');
-    });
+  it('should have the property stockCurrent (base name: "stock_current")', function () {
+    expect(instance.stock_current).to.be.a('number')
+  })
 
-    it('should have the property stockCurrent (base name: "stock_current")', function() {
-      expect(instance.stock_current).to.be.a('number');
-    });
+  it('should have the property averageCost (base name: "average_cost")', function () {
+    expect(instance.average_cost).to.be.a('number')
+  })
 
-    it('should have the property averageCost (base name: "average_cost")', function() {
-      expect(instance.average_cost).to.be.a('number');
-    });
+  it('should have the property averagePrice (base name: "average_price")', function () {
+    expect(instance.average_price).to.be.a('number')
+  })
 
-    it('should have the property averagePrice (base name: "average_price")', function() {
-      expect(instance.average_price).to.be.a('number');
-    });
+  it('should have the property createdAt (base name: "created_at")', function () {
+    expect(instance.created_at).to.be.a('string')
+  })
 
-    it('should have the property createdAt (base name: "created_at")', function() {
-      expect(instance.created_at).to.be.a('string');
-    });
-
-    it('should have the property updatedAt (base name: "updated_at")', function() {
-      expect(instance.updated_at).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property updatedAt (base name: "updated_at")', function () {
+    expect(instance.updated_at).to.be.a('string')
+  })
+})

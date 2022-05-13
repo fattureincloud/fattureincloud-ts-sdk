@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { ShowTotalsMode } from '../../src/models';
+import { expect } from 'chai'
+import { ShowTotalsMode } from '../../src/models'
 
-  var instance: ShowTotalsMode = "all";
+const instance: ShowTotalsMode = 'all'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('ShowTotalsMode', function() {
-    it('should create an instance of ShowTotalsMode', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('ShowTotalsMode', function () {
+  it('should create an instance of ShowTotalsMode', function () {
+    expect(instance).to.be.a('string')
+  })
+})

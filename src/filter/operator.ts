@@ -4,77 +4,77 @@
  * @enum {string}
  */
 export const Operator = {
-    /**
+  /**
      * Equal operator.
      * @member {String} EQ
      */
-    EQ: '=',
+  EQ: '=',
 
-    /**
+  /**
      * Greater Than operator.
      * @member {String} GT
      */
-    GT: '>',
+  GT: '>',
 
-    /**
+  /**
      * Greater Than or Equal operator.
      * @member {String} GTE
      */
-    GTE: '>=',
+  GTE: '>=',
 
-    /**
+  /**
      * Less Than operator.
      * @member {String} LT
      */
-    LT: '<',
+  LT: '<',
 
-    /**
+  /**
      * Less Than or Equal operator.
      * @member {String} LTE
      */
-    LTE: '<=',
+  LTE: '<=',
 
-    /**
+  /**
      * Not Equal operator.
      * @member {String} NEQ
      */
-    NEQ: '<>',
+  NEQ: '<>',
 
-    /**
+  /**
      * Is operator.
      * @member {String} IS
      */
-    IS: 'is',
+  IS: 'is',
 
-    /**
+  /**
      * Is Not operator.
      * @member {String} IS_NOT
      */
-    IS_NOT: 'is not',
+  IS_NOT: 'is not',
 
-    /**
+  /**
      * Like operator.
      * @member {String} GTE
      */
-    LIKE: 'like',
+  LIKE: 'like',
 
-    /**
+  /**
      * Contains operator.
      * @member {String} CONTAINS
      */
-    CONTAINS: 'contains',
+  CONTAINS: 'contains',
 
-    /**
+  /**
      * Starts With operator.
      * @member {String} STARTS_WITH
      */
-    STARTS_WITH: 'starts with',
+  STARTS_WITH: 'starts with',
 
-    /**
+  /**
      * Ends With operator.
      * @member {String} ENDS_WITH
      */
-    ENDS_WITH: 'ends with'
+  ENDS_WITH: 'ends with'
 
 } as const
 

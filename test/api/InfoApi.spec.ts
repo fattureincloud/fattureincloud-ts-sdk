@@ -10,210 +10,209 @@
  *
  */
 
-import { expect } from 'chai';
-import { InfoApi } from '../../src/api/info-api';
-import { ListArchiveCategoriesResponse, ListCitiesResponse, ListCostCentersResponse, ListCountriesResponse, ListCurrenciesResponse, ListDeliveryNotesDefaultCausalsResponse, ListDetailedCountriesResponse, ListLanguagesResponse, ListPaymentAccountsResponse, ListPaymentMethodsResponse, ListProductCategoriesResponse, ListReceivedDocumentCategoriesResponse, ListRevenueCentersResponse, ListTemplatesResponse, ListUnitsOfMeasureResponse, ListVatTypesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { InfoApi } from '../../src/api/info-api'
+import { ListArchiveCategoriesResponse, ListCitiesResponse, ListCostCentersResponse, ListCountriesResponse, ListCurrenciesResponse, ListDeliveryNotesDefaultCausalsResponse, ListDetailedCountriesResponse, ListLanguagesResponse, ListPaymentAccountsResponse, ListPaymentMethodsResponse, ListProductCategoriesResponse, ListReceivedDocumentCategoriesResponse, ListRevenueCentersResponse, ListTemplatesResponse, ListUnitsOfMeasureResponse, ListVatTypesResponse } from '../../src/models'
 
-var sandbox = require("sinon").createSandbox();
+const sandbox = require('sinon').createSandbox()
 
-var instance = new InfoApi();
+const instance = new InfoApi()
 
-var listArchiveCategoriesresponse: ListArchiveCategoriesResponse = {"data":["Altri documenti","Conferme d\'ordine","Contratti","Dichiarazioni dei redditi","Documenti per detrazioni","Estratti conto bancari","Estratti conto carte di credito"]};
-sandbox.stub(instance, "listArchiveCategories").returns(listArchiveCategoriesresponse);
+const listArchiveCategoriesresponse: ListArchiveCategoriesResponse = { data: ['Altri documenti', "Conferme d'ordine", 'Contratti', 'Dichiarazioni dei redditi', 'Documenti per detrazioni', 'Estratti conto bancari', 'Estratti conto carte di credito'] }
+sandbox.stub(instance, 'listArchiveCategories').returns(listArchiveCategoriesresponse)
 
-var listCitiesresponse: ListCitiesResponse = {"data":[{"postal_code":"89867","city":"Zungri","province":"VV"},{"postal_code":"83020","city":"Aiello del Sabato","province":"AV"},{"postal_code":"83011","city":"Altavilla Irpina","province":"AV"}]};
-sandbox.stub(instance, "listCities").returns(listCitiesresponse);
+const listCitiesresponse: ListCitiesResponse = { data: [{ postal_code: '89867', city: 'Zungri', province: 'VV' }, { postal_code: '83020', city: 'Aiello del Sabato', province: 'AV' }, { postal_code: '83011', city: 'Altavilla Irpina', province: 'AV' }] }
+sandbox.stub(instance, 'listCities').returns(listCitiesresponse)
 
-var listCostCentersresponse: ListCostCentersResponse = {"data":["Negozio Bergamo","Negozio Milano"]};
-sandbox.stub(instance, "listCostCenters").returns(listCostCentersresponse);
+const listCostCentersresponse: ListCostCentersResponse = { data: ['Negozio Bergamo', 'Negozio Milano'] }
+sandbox.stub(instance, 'listCostCenters').returns(listCostCentersresponse)
 
-var listCountriesresponse: ListCountriesResponse = {"data":["Italia","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","..."]};
-sandbox.stub(instance, "listCountries").returns(listCountriesresponse);
+const listCountriesresponse: ListCountriesResponse = { data: ['Italia', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Anguilla', '...'] }
+sandbox.stub(instance, 'listCountries').returns(listCountriesresponse)
 
-var listDetailedCountriesresponse: ListDetailedCountriesResponse = {"data": [{"name": "Italia", "settings_name": "Italia", "iso": "IT", "fiscal_iso": "IT", "uic": "086"}, {"name": "Albania", "settings_name": "Albania", "iso": "AL", "fiscal_iso": "AL", "uic": "087"}]}
-sandbox.stub(instance, "listDetailedCountries").returns(listDetailedCountriesresponse);
+const listDetailedCountriesresponse: ListDetailedCountriesResponse = { data: [{ name: 'Italia', settings_name: 'Italia', iso: 'IT', fiscal_iso: 'IT', uic: '086' }, { name: 'Albania', settings_name: 'Albania', iso: 'AL', fiscal_iso: 'AL', uic: '087' }] }
+sandbox.stub(instance, 'listDetailedCountries').returns(listDetailedCountriesresponse)
 
-var listCurrenciesresponse: ListCurrenciesResponse = {"data":[{"id":"AED","symbol":"AED","html_symbol":"AED","exchange_rate":"4.09500"},{"id":"EUR","symbol":"\u20ac","html_symbol":"€","exchange_rate":"1.00000"}]};
-sandbox.stub(instance, "listCurrencies").returns(listCurrenciesresponse);
+const listCurrenciesresponse: ListCurrenciesResponse = { data: [{ id: 'AED', symbol: 'AED', html_symbol: 'AED', exchange_rate: '4.09500' }, { id: 'EUR', symbol: '\u20ac', html_symbol: '€', exchange_rate: '1.00000' }] }
+sandbox.stub(instance, 'listCurrencies').returns(listCurrenciesresponse)
 
-var listDeliveryNotesDefaultCausalsresponse: ListDeliveryNotesDefaultCausalsResponse = {"data":["Vendita","Conto visione","Conto deposito","Conto vendita","Tentata vendita","Prestito d\'uso","Conto lavorazione","Omaggio","Riparazione","Reso per accredito","Reso per sostituzione"]};
-sandbox.stub(instance, "listDeliveryNotesDefaultCausals").returns(listDeliveryNotesDefaultCausalsresponse);
+const listDeliveryNotesDefaultCausalsresponse: ListDeliveryNotesDefaultCausalsResponse = { data: ['Vendita', 'Conto visione', 'Conto deposito', 'Conto vendita', 'Tentata vendita', "Prestito d'uso", 'Conto lavorazione', 'Omaggio', 'Riparazione', 'Reso per accredito', 'Reso per sostituzione'] }
+sandbox.stub(instance, 'listDeliveryNotesDefaultCausals').returns(listDeliveryNotesDefaultCausalsresponse)
 
-var listLanguagesresponse: ListLanguagesResponse = {"data":[{"code":"it","name":"Italiano"},{"code":"en","name":"Inglese"}]};
-sandbox.stub(instance, "listLanguages").returns(listLanguagesresponse);
+const listLanguagesresponse: ListLanguagesResponse = { data: [{ code: 'it', name: 'Italiano' }, { code: 'en', name: 'Inglese' }] }
+sandbox.stub(instance, 'listLanguages').returns(listLanguagesresponse)
 
-var listPaymentAccountsresponse: ListPaymentAccountsResponse = {"data":[{"id":21,"name":"Indesa - Carta conto","type":"standard","iban":null,"sia":null,"virtual":false},{"id":109,"name":"Indesa","type":"bank","iban":"IT17A1234563200000003498936","sia":"IN234","virtual":false}]};
-sandbox.stub(instance, "listPaymentAccounts").returns(listPaymentAccountsresponse);
+const listPaymentAccountsresponse: ListPaymentAccountsResponse = { data: [{ id: 21, name: 'Indesa - Carta conto', type: 'standard', iban: null, sia: null, virtual: false }, { id: 109, name: 'Indesa', type: 'bank', iban: 'IT17A1234563200000003498936', sia: 'IN234', virtual: false }] }
+sandbox.stub(instance, 'listPaymentAccounts').returns(listPaymentAccountsresponse)
 
-var listPaymentMethodsresponse: ListPaymentMethodsResponse = {"data":[{"id":12345,"name":"Carta di credito","is_default":false,"default_payment_account":null},{"id":12346,"name":"Bonifico bancario","is_default":true,"default_payment_account":null}]};
-sandbox.stub(instance, "listPaymentMethods").returns(listPaymentMethodsresponse);
+const listPaymentMethodsresponse: ListPaymentMethodsResponse = { data: [{ id: 12345, name: 'Carta di credito', is_default: false, default_payment_account: null }, { id: 12346, name: 'Bonifico bancario', is_default: true, default_payment_account: null }] }
+sandbox.stub(instance, 'listPaymentMethods').returns(listPaymentMethodsresponse)
 
-var listProductCategoriesresponse: ListProductCategoriesResponse = {"data":["Alimentari","Arredamento"]};
-sandbox.stub(instance, "listProductCategories").returns(listProductCategoriesresponse);
+const listProductCategoriesresponse: ListProductCategoriesResponse = { data: ['Alimentari', 'Arredamento'] }
+sandbox.stub(instance, 'listProductCategories').returns(listProductCategoriesresponse)
 
-var listReceivedDocumentCategoriesresponse: ListReceivedDocumentCategoriesResponse = {"data":["Telefono e internet","Assicurazioni e quote","Auto ed altri veicoli","Computer e accessori","Server e hosting"]};
-sandbox.stub(instance, "listReceivedDocumentCategories").returns(listReceivedDocumentCategoriesresponse);
+const listReceivedDocumentCategoriesresponse: ListReceivedDocumentCategoriesResponse = { data: ['Telefono e internet', 'Assicurazioni e quote', 'Auto ed altri veicoli', 'Computer e accessori', 'Server e hosting'] }
+sandbox.stub(instance, 'listReceivedDocumentCategories').returns(listReceivedDocumentCategoriesresponse)
 
-var listRevenueCentersresponse: ListRevenueCentersResponse = {"data":["Negozio Bergamo","Negozio Milano"]};
-sandbox.stub(instance, "listRevenueCenters").returns(listRevenueCentersresponse);
+const listRevenueCentersresponse: ListRevenueCentersResponse = { data: ['Negozio Bergamo', 'Negozio Milano'] }
+sandbox.stub(instance, 'listRevenueCenters').returns(listRevenueCentersresponse)
 
-var listTemplatesresponse: ListTemplatesResponse = {"data":[{"id":10,"name":"New Standard S1"},{"id":106,"name":"Minimalist"}]};
-sandbox.stub(instance, "listTemplates").returns(listTemplatesresponse);
+const listTemplatesresponse: ListTemplatesResponse = { data: [{ id: 10, name: 'New Standard S1' }, { id: 106, name: 'Minimalist' }] }
+sandbox.stub(instance, 'listTemplates').returns(listTemplatesresponse)
 
-var listUnitsOfMeasureresponse: ListUnitsOfMeasureResponse = {"data":["pezzi","kg","litri","ore","giorni","km","mesi"]};
-sandbox.stub(instance, "listUnitsOfMeasure").returns(listUnitsOfMeasureresponse);
+const listUnitsOfMeasureresponse: ListUnitsOfMeasureResponse = { data: ['pezzi', 'kg', 'litri', 'ore', 'giorni', 'km', 'mesi'] }
+sandbox.stub(instance, 'listUnitsOfMeasure').returns(listUnitsOfMeasureresponse)
 
-var listVatTypesresponse: ListVatTypesResponse = {"data":[{"id":0,"value":22,"description":"Non imponibile art. 123","notes":"IVA non imponibile ai sensi dell\'articolo 123, comma 2","e_invoice":true,"ei_type":"2","ei_description":"string","editable":true},{"id":1010,"value":0,"description":"NON IMPONIBILE IVA EX ART. 8 COMMA 1 LETT.A","notes":"","e_invoice":false,"ei_type":"0","ei_description":null,"is_disabled":false,"editable":true}]};
-sandbox.stub(instance, "listVatTypes").returns(listVatTypesresponse);
+const listVatTypesresponse: ListVatTypesResponse = { data: [{ id: 0, value: 22, description: 'Non imponibile art. 123', notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2", e_invoice: true, ei_type: '2', ei_description: 'string', editable: true }, { id: 1010, value: 0, description: 'NON IMPONIBILE IVA EX ART. 8 COMMA 1 LETT.A', notes: '', e_invoice: false, ei_type: '0', ei_description: null, is_disabled: false, editable: true }] }
+sandbox.stub(instance, 'listVatTypes').returns(listVatTypesresponse)
 
-beforeEach(function() {
+// beforeEach(function () {
 
-});
+// })
 
-describe('InfoApi', function() {
-  describe('listArchiveCategories', function() {
-    it('should call listArchiveCategories successfully', function(done) {
-      var response = instance.listArchiveCategories(2);
-      var expectedJson = JSON.stringify(listArchiveCategoriesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listCities', function() {
-    it('should call listCities successfully', function(done) {
-      var response = instance.listCities();
-      var expectedJson = JSON.stringify(listCitiesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listCostCenters', function() {
-    it('should call listCostCenters successfully', function(done) {
-      var response = instance.listCostCenters(2);
-      var expectedJson = JSON.stringify(listCostCentersresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listCountries', function() {
-    it('should call listCountries successfully', function(done) {
-      var response = instance.listCountries();
-      var expectedJson = JSON.stringify(listCountriesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listDetailedCountries', function() {
-    it('should call listDetailedCountries successfully', function(done) {
-      var response = instance.listDetailedCountries();
-      var expectedJson = JSON.stringify(listDetailedCountriesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listCurrencies', function() {
-    it('should call listCurrencies successfully', function(done) {
-      var response = instance.listCurrencies();
-      var expectedJson = JSON.stringify(listCurrenciesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listDeliveryNotesDefaultCausals', function() {
-    it('should call listDeliveryNotesDefaultCausals successfully', function(done) {
-      var response = instance.listDeliveryNotesDefaultCausals();
-      var expectedJson = JSON.stringify(listDeliveryNotesDefaultCausalsresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listLanguages', function() {
-    it('should call listLanguages successfully', function(done) {
-      var response = instance.listLanguages();
-      var expectedJson = JSON.stringify(listLanguagesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listPaymentAccounts', function() {
-    it('should call listPaymentAccounts successfully', function(done) {
-      var response = instance.listPaymentAccounts(2);
-      var expectedJson = JSON.stringify(listPaymentAccountsresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listPaymentMethods', function() {
-    it('should call listPaymentMethods successfully', function(done) {
-      var response = instance.listPaymentMethods(2);
-      var expectedJson = JSON.stringify(listPaymentMethodsresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listProductCategories', function() {
-    it('should call listProductCategories successfully', function(done) {
-      var response = instance.listProductCategories(2, "products");
-      var expectedJson = JSON.stringify(listProductCategoriesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listReceivedDocumentCategories', function() {
-    it('should call listReceivedDocumentCategories successfully', function(done) {
-      var response = instance.listReceivedDocumentCategories(2);
-      var expectedJson = JSON.stringify(listReceivedDocumentCategoriesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listRevenueCenters', function() {
-    it('should call listRevenueCenters successfully', function(done) {
-      var response = instance.listRevenueCenters(2);
-      var expectedJson = JSON.stringify(listRevenueCentersresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listTemplates', function() {
-    it('should call listTemplates successfully', function(done) {
-      var response = instance.listTemplates();
-      var expectedJson = JSON.stringify(listTemplatesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listUnitsOfMeasure', function() {
-    it('should call listUnitsOfMeasure successfully', function(done) {
-      var response = instance.listUnitsOfMeasure();
-      var expectedJson = JSON.stringify(listUnitsOfMeasureresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listVatTypes', function() {
-    it('should call listVatTypes successfully', function(done) {
-      var response = instance.listVatTypes(2);
-      var expectedJson = JSON.stringify(listVatTypesresponse);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-});
-
+describe('InfoApi', function () {
+  describe('listArchiveCategories', function () {
+    it('should call listArchiveCategories successfully', function (done) {
+      const response = instance.listArchiveCategories(2)
+      const expectedJson = JSON.stringify(listArchiveCategoriesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listCities', function () {
+    it('should call listCities successfully', function (done) {
+      const response = instance.listCities()
+      const expectedJson = JSON.stringify(listCitiesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listCostCenters', function () {
+    it('should call listCostCenters successfully', function (done) {
+      const response = instance.listCostCenters(2)
+      const expectedJson = JSON.stringify(listCostCentersresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listCountries', function () {
+    it('should call listCountries successfully', function (done) {
+      const response = instance.listCountries()
+      const expectedJson = JSON.stringify(listCountriesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listDetailedCountries', function () {
+    it('should call listDetailedCountries successfully', function (done) {
+      const response = instance.listDetailedCountries()
+      const expectedJson = JSON.stringify(listDetailedCountriesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listCurrencies', function () {
+    it('should call listCurrencies successfully', function (done) {
+      const response = instance.listCurrencies()
+      const expectedJson = JSON.stringify(listCurrenciesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listDeliveryNotesDefaultCausals', function () {
+    it('should call listDeliveryNotesDefaultCausals successfully', function (done) {
+      const response = instance.listDeliveryNotesDefaultCausals()
+      const expectedJson = JSON.stringify(listDeliveryNotesDefaultCausalsresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listLanguages', function () {
+    it('should call listLanguages successfully', function (done) {
+      const response = instance.listLanguages()
+      const expectedJson = JSON.stringify(listLanguagesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listPaymentAccounts', function () {
+    it('should call listPaymentAccounts successfully', function (done) {
+      const response = instance.listPaymentAccounts(2)
+      const expectedJson = JSON.stringify(listPaymentAccountsresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listPaymentMethods', function () {
+    it('should call listPaymentMethods successfully', function (done) {
+      const response = instance.listPaymentMethods(2)
+      const expectedJson = JSON.stringify(listPaymentMethodsresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listProductCategories', function () {
+    it('should call listProductCategories successfully', function (done) {
+      const response = instance.listProductCategories(2, 'products')
+      const expectedJson = JSON.stringify(listProductCategoriesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listReceivedDocumentCategories', function () {
+    it('should call listReceivedDocumentCategories successfully', function (done) {
+      const response = instance.listReceivedDocumentCategories(2)
+      const expectedJson = JSON.stringify(listReceivedDocumentCategoriesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listRevenueCenters', function () {
+    it('should call listRevenueCenters successfully', function (done) {
+      const response = instance.listRevenueCenters(2)
+      const expectedJson = JSON.stringify(listRevenueCentersresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listTemplates', function () {
+    it('should call listTemplates successfully', function (done) {
+      const response = instance.listTemplates()
+      const expectedJson = JSON.stringify(listTemplatesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listUnitsOfMeasure', function () {
+    it('should call listUnitsOfMeasure successfully', function (done) {
+      const response = instance.listUnitsOfMeasure()
+      const expectedJson = JSON.stringify(listUnitsOfMeasureresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listVatTypes', function () {
+    it('should call listVatTypes successfully', function (done) {
+      const response = instance.listVatTypes(2)
+      const expectedJson = JSON.stringify(listVatTypesresponse)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+})

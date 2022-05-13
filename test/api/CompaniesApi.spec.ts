@@ -10,28 +10,28 @@
  *
  */
 
-import { expect } from 'chai';
-import { CompaniesApi } from '../../src/api/companies-api';
-import { GetCompanyInfoResponse } from '../../src/models';
+import { expect } from 'chai'
+import { CompaniesApi } from '../../src/api/companies-api'
+import { GetCompanyInfoResponse } from '../../src/models'
 
-var sandbox = require("sinon").createSandbox();
+const sandbox = require('sinon').createSandbox()
 
-var instance = new CompaniesApi();
+const instance = new CompaniesApi()
 
-var getCompanyInfoResponseObj: GetCompanyInfoResponse = {"data":{"id":12345,"name":"Studio Commercialista","email":"mario.rossi@example.com","type":"accountant","access_info":{"role":"master","through_accountant":false,"permissions":{"fic_situation":"read","fic_clients":"write","fic_suppliers":"write","fic_products":"write","fic_issued_documents":"detailed","fic_issued_documents_detailed":{"quotes":"write","proformas":"write","invoices":"write","receipts":"write","delivery_notes":"write","credit_notes":"write","orders":"write","work_reports":"write","supplier_orders":"write","self_invoices":"write"},"fic_received_documents":"write","fic_receipts":"write","fic_calendar":"write","fic_archive":"write","fic_taxes":"write","fic_stock":"write","fic_cashbook":"write","fic_settings":"write","fic_emails":"read","dic_employees":"none","dic_timesheet":"none","dic_settings":"none","fic_export":"write","fic_import_clients_suppliers":"write","fic_import_products":"write","fic_import_issued_documents":"none","fic_import_bankstatements":"none","fic_recurring":"write","fic_riba":"write"}},"plan_info":{"limits":{"clients":5000,"suppliers":5000,"products":5000,"documents":3000},"functions":{"document_attachments":true,"archive":true,"payment_notifications":true,"paypal":true,"receipts":true,"e_invoice":true,"genius":true,"stock":true,"smtp":true,"mail_tracking":true,"subaccounts":true,"tessera_sanitaria":true,"recurring":true,"sofort":false,"cerved":true,"ts_digital":true,"ts_pay":true,"ts_invoice_trading":true},"functions_status":{"ts_digital":{"active":true},"ts_pay":{"active":true}}},"is_accountant":true,"accountant_id":12345}};
-sandbox.stub(instance, "getCompanyInfo").returns(getCompanyInfoResponseObj);
+const getCompanyInfoResponseObj: GetCompanyInfoResponse = { data: { id: 12345, name: 'Studio Commercialista', email: 'mario.rossi@example.com', type: 'accountant', access_info: { role: 'master', through_accountant: false, permissions: { fic_situation: 'read', fic_clients: 'write', fic_suppliers: 'write', fic_products: 'write', fic_issued_documents: 'detailed', fic_issued_documents_detailed: { quotes: 'write', proformas: 'write', invoices: 'write', receipts: 'write', delivery_notes: 'write', credit_notes: 'write', orders: 'write', work_reports: 'write', supplier_orders: 'write', self_invoices: 'write' }, fic_received_documents: 'write', fic_receipts: 'write', fic_calendar: 'write', fic_archive: 'write', fic_taxes: 'write', fic_stock: 'write', fic_cashbook: 'write', fic_settings: 'write', fic_emails: 'read', dic_employees: 'none', dic_timesheet: 'none', dic_settings: 'none', fic_export: 'write', fic_import_clients_suppliers: 'write', fic_import_products: 'write', fic_import_issued_documents: 'none', fic_import_bankstatements: 'none', fic_recurring: 'write', fic_riba: 'write' } }, plan_info: { limits: { clients: 5000, suppliers: 5000, products: 5000, documents: 3000 }, functions: { document_attachments: true, archive: true, payment_notifications: true, paypal: true, receipts: true, e_invoice: true, genius: true, stock: true, smtp: true, mail_tracking: true, subaccounts: true, tessera_sanitaria: true, recurring: true, sofort: false, cerved: true, ts_digital: true, ts_pay: true, ts_invoice_trading: true }, functions_status: { ts_digital: { active: true }, ts_pay: { active: true } } }, is_accountant: true, accountant_id: 12345 } }
+sandbox.stub(instance, 'getCompanyInfo').returns(getCompanyInfoResponseObj)
 
-beforeEach(function() {
-});
+// beforeEach(function () {
+// })
 
-describe('CompaniesApi', function() {
-  describe('getCompanyInfo', function() {
-    it('should call getCompanyInfo successfully', function(done) {
-      var response = instance.getCompanyInfo(2);
-      var expectedJson = JSON.stringify(getCompanyInfoResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-});
+describe('CompaniesApi', function () {
+  describe('getCompanyInfo', function () {
+    it('should call getCompanyInfo successfully', function (done) {
+      const response = instance.getCompanyInfo(2)
+      const expectedJson = JSON.stringify(getCompanyInfoResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+})

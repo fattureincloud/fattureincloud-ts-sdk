@@ -10,29 +10,26 @@
  *
  */
 
-import { expect } from 'chai';
-import { ModifyArchiveDocumentRequest } from '../../src/models';
+import { expect } from 'chai'
+import { ModifyArchiveDocumentRequest } from '../../src/models'
 
-  var instance: ModifyArchiveDocumentRequest = {
-    data: {
-      date : "2021-08-20",
-      category : "Altri documenti",
-      description : "spesa 2"
-    }
-  };
+const instance: ModifyArchiveDocumentRequest = {
+  data: {
+    date: '2021-08-20',
+    category: 'Altri documenti',
+    description: 'spesa 2'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ModifyArchiveDocumentRequest', function () {
+  it('should create an instance of ModifyArchiveDocumentRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ModifyArchiveDocumentRequest', function() {
-    it('should create an instance of ModifyArchiveDocumentRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance).to.be.a('object')
+  })
+})

@@ -10,188 +10,185 @@
  *
  */
 
-import { expect } from 'chai';
-import { Entity } from '../../src/models';
+import { expect } from 'chai'
+import { Entity } from '../../src/models'
 
-  var instance: Entity = {
-    id: 16451,
-    code: "AE86",
-    name: "Avv. Maria Rossi",
-    type: "person",
-    first_name: "Maria",
-    last_name: "Rossi",
-    contact_person: "",
-    vat_number: "IT12345640962",
-    tax_code: "BLTGNI5ABCDA794E",
-    address_street: "Via Roma 1",
-    address_postal_code: "20900",
-    address_city: "Milano",
-    address_province: "MI",
-    address_extra: "",
-    country: "Italia",
-    email: "maria.rossi@example.com",
-    certified_email: "maria.rossi@pec.example.com",
-    phone: "1234567890",
-    fax: "",
-    notes: "",
-    created_at: "2021-04-29",
-    updated_at: "2021-04-29",
-    default_payment_terms: 1,
-    default_payment_terms_type: "standard",
-    bank_name: "Indesa",
-    bank_iban: "IT40P123456781000000123456",
-    bank_swift_code: "AK86PCT",
-    shipping_address: "Corso Magellano 4",
-    e_invoice: true,
-    ei_code: "111111",
-    default_vat: {
-      id : 54321,
-      value : 45,
-      description : "",
-      is_disabled : false
-    },
-    default_payment_method: {
-        id : 386092,
-        name : "Credit card"
-    }
-  };
+const instance: Entity = {
+  id: 16451,
+  code: 'AE86',
+  name: 'Avv. Maria Rossi',
+  type: 'person',
+  first_name: 'Maria',
+  last_name: 'Rossi',
+  contact_person: '',
+  vat_number: 'IT12345640962',
+  tax_code: 'BLTGNI5ABCDA794E',
+  address_street: 'Via Roma 1',
+  address_postal_code: '20900',
+  address_city: 'Milano',
+  address_province: 'MI',
+  address_extra: '',
+  country: 'Italia',
+  email: 'maria.rossi@example.com',
+  certified_email: 'maria.rossi@pec.example.com',
+  phone: '1234567890',
+  fax: '',
+  notes: '',
+  created_at: '2021-04-29',
+  updated_at: '2021-04-29',
+  default_payment_terms: 1,
+  default_payment_terms_type: 'standard',
+  bank_name: 'Indesa',
+  bank_iban: 'IT40P123456781000000123456',
+  bank_swift_code: 'AK86PCT',
+  shipping_address: 'Corso Magellano 4',
+  e_invoice: true,
+  ei_code: '111111',
+  default_vat: {
+    id: 54321,
+    value: 45,
+    description: '',
+    is_disabled: false
+  },
+  default_payment_method: {
+    id: 386092,
+    name: 'Credit card'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('Entity', function () {
+  it('should create an instance of Entity', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('Entity', function() {
-    it('should create an instance of Entity', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property code (base name: "code")', function () {
+    expect(instance.code).to.be.a('string')
+  })
 
-    it('should have the property code (base name: "code")', function() {
-      expect(instance.code).to.be.a('string');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
 
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
+  it('should have the property firstName (base name: "first_name")', function () {
+    expect(instance.first_name).to.be.a('string')
+  })
 
-    it('should have the property firstName (base name: "first_name")', function() {
-      expect(instance.first_name).to.be.a('string');
-    });
+  it('should have the property lastName (base name: "last_name")', function () {
+    expect(instance.last_name).to.be.a('string')
+  })
 
-    it('should have the property lastName (base name: "last_name")', function() {
-      expect(instance.last_name).to.be.a('string');
-    });
+  it('should have the property contactPerson (base name: "contact_person")', function () {
+    expect(instance.contact_person).to.be.a('string')
+  })
 
-    it('should have the property contactPerson (base name: "contact_person")', function() {
-      expect(instance.contact_person).to.be.a('string');
-    });
+  it('should have the property vatNumber (base name: "vat_number")', function () {
+    expect(instance.vat_number).to.be.a('string')
+  })
 
-    it('should have the property vatNumber (base name: "vat_number")', function() {
-      expect(instance.vat_number).to.be.a('string');
-    });
+  it('should have the property taxCode (base name: "tax_code")', function () {
+    expect(instance.tax_code).to.be.a('string')
+  })
 
-    it('should have the property taxCode (base name: "tax_code")', function() {
-      expect(instance.tax_code).to.be.a('string');
-    });
+  it('should have the property addressStreet (base name: "address_street")', function () {
+    expect(instance.address_street).to.be.a('string')
+  })
 
-    it('should have the property addressStreet (base name: "address_street")', function() {
-      expect(instance.address_street).to.be.a('string');
-    });
+  it('should have the property addressPostalCode (base name: "address_postal_code")', function () {
+    expect(instance.address_postal_code).to.be.a('string')
+  })
 
-    it('should have the property addressPostalCode (base name: "address_postal_code")', function() {
-      expect(instance.address_postal_code).to.be.a('string');
-    });
+  it('should have the property addressCity (base name: "address_city")', function () {
+    expect(instance.address_city).to.be.a('string')
+  })
 
-    it('should have the property addressCity (base name: "address_city")', function() {
-      expect(instance.address_city).to.be.a('string');
-    });
+  it('should have the property addressProvince (base name: "address_province")', function () {
+    expect(instance.address_province).to.be.a('string')
+  })
 
-    it('should have the property addressProvince (base name: "address_province")', function() {
-      expect(instance.address_province).to.be.a('string');
-    });
+  it('should have the property addressExtra (base name: "address_extra")', function () {
+    expect(instance.address_extra).to.be.a('string')
+  })
 
-    it('should have the property addressExtra (base name: "address_extra")', function() {
-      expect(instance.address_extra).to.be.a('string');
-    });
+  it('should have the property country (base name: "country")', function () {
+    expect(instance.country).to.be.a('string')
+  })
 
-    it('should have the property country (base name: "country")', function() {
-      expect(instance.country).to.be.a('string');
-    });
+  it('should have the property email (base name: "email")', function () {
+    expect(instance.email).to.be.a('string')
+  })
 
-    it('should have the property email (base name: "email")', function() {
-      expect(instance.email).to.be.a('string');
-    });
+  it('should have the property certifiedEmail (base name: "certified_email")', function () {
+    expect(instance.certified_email).to.be.a('string')
+  })
 
-    it('should have the property certifiedEmail (base name: "certified_email")', function() {
-      expect(instance.certified_email).to.be.a('string');
-    });
+  it('should have the property phone (base name: "phone")', function () {
+    expect(instance.phone).to.be.a('string')
+  })
 
-    it('should have the property phone (base name: "phone")', function() {
-      expect(instance.phone).to.be.a('string');
-    });
+  it('should have the property fax (base name: "fax")', function () {
+    expect(instance.fax).to.be.a('string')
+  })
 
-    it('should have the property fax (base name: "fax")', function() {
-      expect(instance.fax).to.be.a('string');
-    });
+  it('should have the property notes (base name: "notes")', function () {
+    expect(instance.notes).to.be.a('string')
+  })
 
-    it('should have the property notes (base name: "notes")', function() {
-      expect(instance.notes).to.be.a('string');
-    });
+  it('should have the property defaultVat (base name: "default_vat")', function () {
+    expect(instance.default_vat).to.be.a('object')
+  })
 
-    it('should have the property defaultVat (base name: "default_vat")', function() {
-      expect(instance.default_vat).to.be.a('object');
-    });
+  it('should have the property defaultPaymentTerms (base name: "default_payment_terms")', function () {
+    expect(instance.default_payment_terms).to.be.a('number')
+  })
 
-    it('should have the property defaultPaymentTerms (base name: "default_payment_terms")', function() {
-      expect(instance.default_payment_terms).to.be.a('number');
-    });
+  it('should have the property defaultPaymentTermsType (base name: "default_payment_terms_type")', function () {
+    expect(instance.default_payment_terms_type).to.be.a('string')
+  })
 
-    it('should have the property defaultPaymentTermsType (base name: "default_payment_terms_type")', function() {
-      expect(instance.default_payment_terms_type).to.be.a('string');
-    });
+  it('should have the property defaultPaymentMethod (base name: "default_payment_method")', function () {
+    expect(instance.default_payment_method).to.be.a('object')
+  })
 
-    it('should have the property defaultPaymentMethod (base name: "default_payment_method")', function() {
-      expect(instance.default_payment_method).to.be.a('object');
-    });
+  it('should have the property bankName (base name: "bank_name")', function () {
+    expect(instance.bank_name).to.be.a('string')
+  })
 
-    it('should have the property bankName (base name: "bank_name")', function() {
-      expect(instance.bank_name).to.be.a('string');
-    });
+  it('should have the property bankIban (base name: "bank_iban")', function () {
+    expect(instance.bank_iban).to.be.a('string')
+  })
 
-    it('should have the property bankIban (base name: "bank_iban")', function() {
-      expect(instance.bank_iban).to.be.a('string');
-    });
+  it('should have the property bankSwiftCode (base name: "bank_swift_code")', function () {
+    expect(instance.bank_swift_code).to.be.a('string')
+  })
 
-    it('should have the property bankSwiftCode (base name: "bank_swift_code")', function() {
-      expect(instance.bank_swift_code).to.be.a('string');
-    });
+  it('should have the property shippingAddress (base name: "shipping_address")', function () {
+    expect(instance.shipping_address).to.be.a('string')
+  })
 
-    it('should have the property shippingAddress (base name: "shipping_address")', function() {
-      expect(instance.shipping_address).to.be.a('string');
-    });
+  it('should have the property eInvoice (base name: "e_invoice")', function () {
+    expect(instance.e_invoice).to.be.a('boolean')
+  })
 
-    it('should have the property eInvoice (base name: "e_invoice")', function() {
-      expect(instance.e_invoice).to.be.a('boolean');
-    });
+  it('should have the property eiCode (base name: "ei_code")', function () {
+    expect(instance.ei_code).to.be.a('string')
+  })
 
-    it('should have the property eiCode (base name: "ei_code")', function() {
-      expect(instance.ei_code).to.be.a('string');
-    });
+  it('should have the property createdAt (base name: "created_at")', function () {
+    expect(instance.created_at).to.be.a('string')
+  })
 
-    it('should have the property createdAt (base name: "created_at")', function() {
-      expect(instance.created_at).to.be.a('string');
-    });
-
-    it('should have the property updatedAt (base name: "updated_at")', function() {
-      expect(instance.updated_at).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property updatedAt (base name: "updated_at")', function () {
+    expect(instance.updated_at).to.be.a('string')
+  })
+})

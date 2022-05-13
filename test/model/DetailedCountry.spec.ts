@@ -10,45 +10,42 @@
  *
  */
 
-import { expect } from 'chai';
-import { DetailedCountry } from '../../src/models';
+import { expect } from 'chai'
+import { DetailedCountry } from '../../src/models'
 
-  var instance: DetailedCountry = {
-    name: "Italia",
-    settings_name: "Italia",
-    iso: "IT",
-    fiscal_iso: "IT",
-    uic: "086"
-  };
+const instance: DetailedCountry = {
+  name: 'Italia',
+  settings_name: 'Italia',
+  iso: 'IT',
+  fiscal_iso: 'IT',
+  uic: '086'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('DetailedCountry', function () {
+  it('should create an instance of DetailedCountry', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('DetailedCountry', function() {
-    it('should create an instance of DetailedCountry', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property settingsName (base name: "settings_name")', function () {
+    expect(instance.settings_name).to.be.a('string')
+  })
 
-    it('should have the property settingsName (base name: "settings_name")', function() {
-      expect(instance.settings_name).to.be.a('string');
-    });
+  it('should have the property iso (base name: "iso")', function () {
+    expect(instance.iso).to.be.a('string')
+  })
 
-    it('should have the property iso (base name: "iso")', function() {
-      expect(instance.iso).to.be.a('string');
-    });
+  it('should have the property fiscalIso (base name: "fiscal_iso")', function () {
+    expect(instance.fiscal_iso).to.be.a('string')
+  })
 
-    it('should have the property fiscalIso (base name: "fiscal_iso")', function() {
-      expect(instance.fiscal_iso).to.be.a('string');
-    });
-
-    it('should have the property uic (base name: "uic")', function() {
-      expect(instance.uic).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property uic (base name: "uic")', function () {
+    expect(instance.uic).to.be.a('string')
+  })
+})

@@ -10,25 +10,22 @@
  *
  */
 
-import { expect } from 'chai';
-import { AttachmentData } from '../../src/models';
+import { expect } from 'chai'
+import { AttachmentData } from '../../src/models'
 
-var instance: AttachmentData = {
-  attachment_token: "YmMyNWYxYzIwMTU3N2Y4ZGE3ZjZiMzg5OWY0ODNkZDQveXl5LmRvYw"
-};
+const instance: AttachmentData = {
+  attachment_token: 'YmMyNWYxYzIwMTU3N2Y4ZGE3ZjZiMzg5OWY0ODNkZDQveXl5LmRvYw'
+}
 
-beforeEach(function() {
-});
+// beforeEach(function () {
+// })
 
+describe('AttachmentData', function () {
+  it('should create an instance of AttachmentData', function () {
+    expect(instance).to.be.a('object')
+  })
 
-describe('AttachmentData', function() {
-  it('should create an instance of AttachmentData', function() {
-    expect(instance).to.be.a('object');
-  });
-
-  it('should have the property attachmentToken (base name: "attachment_token")', function() {
-    expect(instance.attachment_token).to.be.a('string');
-  });
-
-});
-
+  it('should have the property attachmentToken (base name: "attachment_token")', function () {
+    expect(instance.attachment_token).to.be.a('string')
+  })
+})

@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { CashbookEntryDocument } from '../../src/models';
+import { expect } from 'chai'
+import { CashbookEntryDocument } from '../../src/models'
 
-var instance: CashbookEntryDocument = {
+const instance: CashbookEntryDocument = {
   id: 12345,
-  type: "issued_document",
-  path: "/doc1.pdf"
-};
+  type: 'issued_document',
+  path: '/doc1.pdf'
+}
 
-beforeEach(function() {
-});
+// beforeEach(function () {
+// })
 
+describe('CashbookEntryDocument', function () {
+  it('should create an instance of CashbookEntryDocument', function () {
+    expect(instance).to.be.a('object')
+  })
 
-describe('CashbookEntryDocument', function() {
-  it('should create an instance of CashbookEntryDocument', function() {
-    expect(instance).to.be.a('object');
-  });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-  it('should have the property id (base name: "id")', function() {
-    expect(instance.id).to.be.a('number');
-  });
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
 
-  it('should have the property type (base name: "type")', function() {
-    expect(instance.type).to.be.a('string');
-  });
-
-  it('should have the property path (base name: "path")', function() {
-    expect(instance.id).to.be.a('number');
-  });
-
-});
-
+  it('should have the property path (base name: "path")', function () {
+    expect(instance.id).to.be.a('number')
+  })
+})

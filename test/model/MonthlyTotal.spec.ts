@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { MonthlyTotal } from '../../src/models';
+import { expect } from 'chai'
+import { MonthlyTotal } from '../../src/models'
 
-  var instance: MonthlyTotal = {
-    net: 12345,
-    gross: 654,
-    count: 98
-  };
+const instance: MonthlyTotal = {
+  net: 12345,
+  gross: 654,
+  count: 98
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('MonthlyTotal', function () {
+  it('should create an instance of MonthlyTotal', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('MonthlyTotal', function() {
-    it('should create an instance of MonthlyTotal', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property net (base name: "net")', function () {
+    expect(instance.net).to.be.a('number')
+  })
 
-    it('should have the property net (base name: "net")', function() {
-      expect(instance.net).to.be.a('number');
-    });
+  it('should have the property gross (base name: "gross")', function () {
+    expect(instance.gross).to.be.a('number')
+  })
 
-    it('should have the property gross (base name: "gross")', function() {
-      expect(instance.gross).to.be.a('number');
-    });
-
-    it('should have the property count (base name: "count")', function() {
-      expect(instance.count).to.be.a('number');
-    });
-
-  });
-
+  it('should have the property count (base name: "count")', function () {
+    expect(instance.count).to.be.a('number')
+  })
+})

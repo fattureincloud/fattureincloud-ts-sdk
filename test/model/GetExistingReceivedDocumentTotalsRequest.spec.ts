@@ -10,27 +10,24 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetExistingIssuedDocumentTotalsRequest } from '../../src/models';
+import { expect } from 'chai'
+import { GetExistingIssuedDocumentTotalsRequest } from '../../src/models'
 
-  var instance: GetExistingIssuedDocumentTotalsRequest = {
-    data: {
-      amount_vat: 10
-    }
-  };
+const instance: GetExistingIssuedDocumentTotalsRequest = {
+  data: {
+    amount_vat: 10
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetExistingReceivedDocumentTotalsRequest', function () {
+  it('should create an instance of GetExistingReceivedDocumentTotalsRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetExistingReceivedDocumentTotalsRequest', function() {
-    it('should create an instance of GetExistingReceivedDocumentTotalsRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

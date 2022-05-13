@@ -10,55 +10,52 @@
  *
  */
 
-import { expect } from 'chai';
-import { PaymentMethod } from '../../src/models';
+import { expect } from 'chai'
+import { PaymentMethod } from '../../src/models'
 
-  var instance: PaymentMethod = {
-    id: 12346,
-    name: "Bonifico bancario",
-    type: "standard",
-    is_default: true,
-    details: [{
-      title: "t1"
-    }],
-    default_payment_account: {
-      id : 21,
-      name : "n1"
-    }    
-  };
+const instance: PaymentMethod = {
+  id: 12346,
+  name: 'Bonifico bancario',
+  type: 'standard',
+  is_default: true,
+  details: [{
+    title: 't1'
+  }],
+  default_payment_account: {
+    id: 21,
+    name: 'n1'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('PaymentMethod', function () {
+  it('should create an instance of PaymentMethod', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('PaymentMethod', function() {
-    it('should create an instance of PaymentMethod', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
 
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
+  it('should have the property isDefault (base name: "is_default")', function () {
+    expect(instance.is_default).to.be.a('boolean')
+  })
 
-    it('should have the property isDefault (base name: "is_default")', function() {
-      expect(instance.is_default).to.be.a('boolean');
-    });
+  it('should have the property defaultPaymentAccount (base name: "default_payment_account")', function () {
+    expect(instance.default_payment_account).to.be.a('object')
+  })
 
-    it('should have the property defaultPaymentAccount (base name: "default_payment_account")', function() {
-      expect(instance.default_payment_account).to.be.a('object');
-    });
-
-    it('should have the property details (base name: "details")', function() {
-      expect(instance.details).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property details (base name: "details")', function () {
+    expect(instance.details).to.be.a('array')
+  })
+})

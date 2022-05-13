@@ -10,33 +10,30 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListArchiveCategoriesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListArchiveCategoriesResponse } from '../../src/models'
 
-  var instance: ListArchiveCategoriesResponse = {
-    data: [
-      "Altri documenti",
-      "Conferme d\'ordine",
-      "Contratti",
-      "Dichiarazioni dei redditi",
-      "Documenti per detrazioni",
-      "Estratti conto bancari",
-      "Estratti conto carte di credito"
-    ]
-  };
+const instance: ListArchiveCategoriesResponse = {
+  data: [
+    'Altri documenti',
+    "Conferme d'ordine",
+    'Contratti',
+    'Dichiarazioni dei redditi',
+    'Documenti per detrazioni',
+    'Estratti conto bancari',
+    'Estratti conto carte di credito'
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListArchiveCategoriesResponse', function () {
+  it('should create an instance of ListArchiveCategoriesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListArchiveCategoriesResponse', function() {
-    it('should create an instance of ListArchiveCategoriesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

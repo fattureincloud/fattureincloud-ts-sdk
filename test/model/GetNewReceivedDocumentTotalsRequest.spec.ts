@@ -10,69 +10,66 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetNewReceivedDocumentTotalsRequest } from '../../src/models';
+import { expect } from 'chai'
+import { GetNewReceivedDocumentTotalsRequest } from '../../src/models'
 
-  var instance: GetNewReceivedDocumentTotalsRequest = {
-    data: {
-      id : 12345,
-      type : "expense",
-      description : "Soggiorno di lavoro",
-      category : "cat",
-      amortization : 1,
-      rc_center : "rcc",
-      invoice_number : "inv12345",
-      is_marked : false,
-      is_detailed : false,
-      e_invoice : false,
-      entity : {
-          id : 111,
-          name : "Hotel Rubino Palace"
+const instance: GetNewReceivedDocumentTotalsRequest = {
+  data: {
+    id: 12345,
+    type: 'expense',
+    description: 'Soggiorno di lavoro',
+    category: 'cat',
+    amortization: 1,
+    rc_center: 'rcc',
+    invoice_number: 'inv12345',
+    is_marked: false,
+    is_detailed: false,
+    e_invoice: false,
+    entity: {
+      id: 111,
+      name: 'Hotel Rubino Palace'
+    },
+    date: '2021-08-15',
+    next_due_date: '2021-08-15',
+    currency: {
+      id: 'EUR',
+      exchange_rate: '1.00000',
+      symbol: '€'
+    },
+    amount_net: 592,
+    amount_vat: 0,
+    amount_gross: 592,
+    amount_withholding_tax: 0,
+    amount_other_withholding_tax: 0,
+    tax_deductibility: 50,
+    vat_deductibility: 100,
+    attachment_url: 'spesa_ger5i783t45hu6ti.pdf',
+    attachment_preview_url: '/preview.pdf',
+    payments_list: [
+      {
+        amount: 592,
+        due_date: '2021-08-15',
+        paid_date: '2021-08-15',
+        id: 777,
+        payment_terms: {
+          days: 0,
+          type: 'standard'
         },
-        date : "2021-08-15",
-        next_due_date : "2021-08-15",
-        currency : {
-          id : "EUR",
-          exchange_rate : "1.00000",
-          symbol : "€"
-        },
-      amount_net : 592,
-      amount_vat : 0,
-      amount_gross : 592,
-      amount_withholding_tax : 0,
-      amount_other_withholding_tax : 0,
-      tax_deductibility : 50,
-      vat_deductibility : 100,
-      attachment_url : "spesa_ger5i783t45hu6ti.pdf",
-      attachment_preview_url : "/preview.pdf",
-      payments_list : [
-          {
-            amount : 592,
-            due_date : "2021-08-15",
-            paid_date : "2021-08-15",
-            id : 777,
-            payment_terms : {
-              days : 0,
-              type : "standard"
-            },
-            status : "paid"
-          }
-      ]
-    }
-  };
+        status: 'paid'
+      }
+    ]
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetNewReceivedDocumentTotalsRequest', function () {
+  it('should create an instance of GetNewReceivedDocumentTotalsRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetNewReceivedDocumentTotalsRequest', function() {
-    it('should create an instance of GetNewReceivedDocumentTotalsRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

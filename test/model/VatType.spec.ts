@@ -10,65 +10,62 @@
  *
  */
 
-import { expect } from 'chai';
-import { VatType } from '../../src/models';
+import { expect } from 'chai'
+import { VatType } from '../../src/models'
 
-  var instance: VatType = {
-    id: 0,
-    value: 22,
-    description: "Non imponibile art. 123",
-    notes: "IVA non imponibile ai sensi dell\'articolo 123 comma 2",
-    e_invoice: true,
-    ei_type: "2",
-    ei_description: "string",
-    editable: true,
-    is_disabled: false
-  };
+const instance: VatType = {
+  id: 0,
+  value: 22,
+  description: 'Non imponibile art. 123',
+  notes: "IVA non imponibile ai sensi dell'articolo 123 comma 2",
+  e_invoice: true,
+  ei_type: '2',
+  ei_description: 'string',
+  editable: true,
+  is_disabled: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('VatType', function () {
+  it('should create an instance of VatType', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('VatType', function() {
-    it('should create an instance of VatType', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property value (base name: "value")', function () {
+    expect(instance.value).to.be.a('number')
+  })
 
-    it('should have the property value (base name: "value")', function() {
-      expect(instance.value).to.be.a('number');
-    });
+  it('should have the property description (base name: "description")', function () {
+    expect(instance.description).to.be.a('string')
+  })
 
-    it('should have the property description (base name: "description")', function() {
-      expect(instance.description).to.be.a('string');
-    });
+  it('should have the property notes (base name: "notes")', function () {
+    expect(instance.notes).to.be.a('string')
+  })
 
-    it('should have the property notes (base name: "notes")', function() {
-      expect(instance.notes).to.be.a('string');
-    });
+  it('should have the property eInvoice (base name: "e_invoice")', function () {
+    expect(instance.e_invoice).to.be.a('boolean')
+  })
 
-    it('should have the property eInvoice (base name: "e_invoice")', function() {
-      expect(instance.e_invoice).to.be.a('boolean');
-    });
+  it('should have the property eiType (base name: "ei_type")', function () {
+    expect(instance.ei_type).to.be.a('string')
+  })
 
-    it('should have the property eiType (base name: "ei_type")', function() {
-      expect(instance.ei_type).to.be.a('string');
-    });
+  it('should have the property eiDescription (base name: "ei_description")', function () {
+    expect(instance.ei_description).to.be.a('string')
+  })
 
-    it('should have the property eiDescription (base name: "ei_description")', function() {
-      expect(instance.ei_description).to.be.a('string');
-    });
+  it('should have the property editable (base name: "editable")', function () {
+    expect(instance.editable).to.be.a('boolean')
+  })
 
-    it('should have the property editable (base name: "editable")', function() {
-      expect(instance.editable).to.be.a('boolean');
-    });
-
-    it('should have the property isDisabled (base name: "is_disabled")', function() {
-      expect(instance.is_disabled).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property isDisabled (base name: "is_disabled")', function () {
+    expect(instance.is_disabled).to.be.a('boolean')
+  })
+})

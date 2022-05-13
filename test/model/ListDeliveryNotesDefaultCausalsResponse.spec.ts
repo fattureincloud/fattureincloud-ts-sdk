@@ -10,37 +10,34 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListDeliveryNotesDefaultCausalsResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListDeliveryNotesDefaultCausalsResponse } from '../../src/models'
 
-  var instance: ListDeliveryNotesDefaultCausalsResponse = {
-    data: [
-      "Vendita",
-      "Conto visione",
-      "Conto deposito",
-      "Conto vendita",
-      "Tentata vendita",
-      "Prestito d\'uso",
-      "Conto lavorazione",
-      "Omaggio",
-      "Riparazione",
-      "Reso per accredito",
-      "Reso per sostituzione"
-    ]
-  };
+const instance: ListDeliveryNotesDefaultCausalsResponse = {
+  data: [
+    'Vendita',
+    'Conto visione',
+    'Conto deposito',
+    'Conto vendita',
+    'Tentata vendita',
+    "Prestito d'uso",
+    'Conto lavorazione',
+    'Omaggio',
+    'Riparazione',
+    'Reso per accredito',
+    'Reso per sostituzione'
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListDeliveryNotesDefaultCausalsResponse', function () {
+  it('should create an instance of ListDeliveryNotesDefaultCausalsResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListDeliveryNotesDefaultCausalsResponse', function() {
-    it('should create an instance of ListDeliveryNotesDefaultCausalsResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

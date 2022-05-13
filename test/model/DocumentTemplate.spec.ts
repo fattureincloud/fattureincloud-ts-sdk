@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { DocumentTemplate } from '../../src/models';
+import { expect } from 'chai'
+import { DocumentTemplate } from '../../src/models'
 
-  var instance: DocumentTemplate = {
-    id: 10,
-    name: "New Standard S1",
-    type: ""
-  };
+const instance: DocumentTemplate = {
+  id: 10,
+  name: 'New Standard S1',
+  type: ''
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('DocumentTemplate', function () {
+  it('should create an instance of DocumentTemplate', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('DocumentTemplate', function() {
-    it('should create an instance of DocumentTemplate', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
-
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
+})

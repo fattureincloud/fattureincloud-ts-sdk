@@ -10,30 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { PaymentMethodDetails } from '../../src/models';
+import { expect } from 'chai'
+import { PaymentMethodDetails } from '../../src/models'
 
-  var instance: PaymentMethodDetails = {
-    title: "details", 
-    description: "desc"
-  };
+const instance: PaymentMethodDetails = {
+  title: 'details',
+  description: 'desc'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('PaymentMethodDetails', function () {
+  it('should create an instance of PaymentMethodDetails', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('PaymentMethodDetails', function() {
-    it('should create an instance of PaymentMethodDetails', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property title (base name: "title")', function () {
+    expect(instance.title).to.be.a('string')
+  })
 
-    it('should have the property title (base name: "title")', function() {
-      expect(instance.title).to.be.a('string');
-    });
-
-    it('should have the property description (base name: "description")', function() {
-      expect(instance.description).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property description (base name: "description")', function () {
+    expect(instance.description).to.be.a('string')
+  })
+})

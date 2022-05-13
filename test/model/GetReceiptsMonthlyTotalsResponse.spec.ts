@@ -10,86 +10,83 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetReceiptsMonthlyTotalsResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetReceiptsMonthlyTotalsResponse } from '../../src/models'
 
-  var instance: GetReceiptsMonthlyTotalsResponse = {
-    data: [
-      {
-        net : 15000,
-        gross : 18000,
-        count : 10
-      },
-      {
-        net : 18000,
-        gross : 22000,
-        count : 20
-      },
-      {
-        net : 20000,
-        gross : 24400,
-        count : 30
-      },
-      {
-        net : 19000,
-        gross : 22000,
-        count : 20
-      },
-      {
-        net : 17000,
-        gross : 20000,
-        count : 10
-      },
-      {
-        net : 18000,
-        gross : 24000,
-        count : 21
-      },
-      {
-        net : 22000,
-        gross : 25000,
-        count : 30
-      },
-      {
-        net : 17000,
-        gross : 21000,
-        count : 21
-      },
-      {
-        net : 0,
-        gross : 0,
-        count : 10
-      },
-      {
-        net : 0,
-        gross : 0,
-        count : 20
-      },
-      {
-        net : 0,
-        gross : 0,
-        count : 30
-      },
-      {
-        net : 0,
-        gross : 0,
-        count : 21
-      }
-    ]
-  };
+const instance: GetReceiptsMonthlyTotalsResponse = {
+  data: [
+    {
+      net: 15000,
+      gross: 18000,
+      count: 10
+    },
+    {
+      net: 18000,
+      gross: 22000,
+      count: 20
+    },
+    {
+      net: 20000,
+      gross: 24400,
+      count: 30
+    },
+    {
+      net: 19000,
+      gross: 22000,
+      count: 20
+    },
+    {
+      net: 17000,
+      gross: 20000,
+      count: 10
+    },
+    {
+      net: 18000,
+      gross: 24000,
+      count: 21
+    },
+    {
+      net: 22000,
+      gross: 25000,
+      count: 30
+    },
+    {
+      net: 17000,
+      gross: 21000,
+      count: 21
+    },
+    {
+      net: 0,
+      gross: 0,
+      count: 10
+    },
+    {
+      net: 0,
+      gross: 0,
+      count: 20
+    },
+    {
+      net: 0,
+      gross: 0,
+      count: 30
+    },
+    {
+      net: 0,
+      gross: 0,
+      count: 21
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetReceiptsMonthlyTotalsResponse', function () {
+  it('should create an instance of GetReceiptsMonthlyTotalsResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetReceiptsMonthlyTotalsResponse', function() {
-    it('should create an instance of GetReceiptsMonthlyTotalsResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

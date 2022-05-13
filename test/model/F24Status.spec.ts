@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { F24Status } from '../../src/models';
+import { expect } from 'chai'
+import { F24Status } from '../../src/models'
 
-  var instance: F24Status = "paid";
+const instance: F24Status = 'paid'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('F24Status', function() {
-    it('should create an instance of F24Status', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('F24Status', function () {
+  it('should create an instance of F24Status', function () {
+    expect(instance).to.be.a('string')
+  })
+})

@@ -10,38 +10,35 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListCurrenciesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListCurrenciesResponse } from '../../src/models'
 
-  var instance: ListCurrenciesResponse = {
-    data: [
-      {
-        id : "AED",
-        symbol : "AED",
-        html_symbol : "AED",
-        exchange_rate : "4.09500"
-      },
-      {
-        id : "EUR",
-        symbol : "€",
-        html_symbol : "&euro;",
-        exchange_rate : "1.00000"
-      }
-    ]
-  };
+const instance: ListCurrenciesResponse = {
+  data: [
+    {
+      id: 'AED',
+      symbol: 'AED',
+      html_symbol: 'AED',
+      exchange_rate: '4.09500'
+    },
+    {
+      id: 'EUR',
+      symbol: '€',
+      html_symbol: '&euro;',
+      exchange_rate: '1.00000'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListCurrenciesResponse', function () {
+  it('should create an instance of ListCurrenciesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListCurrenciesResponse', function() {
-    it('should create an instance of ListCurrenciesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

@@ -10,29 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceivedDocumentPaymentsListItemPaymentTerms } from '../../src/models';
+import { expect } from 'chai'
+import { ReceivedDocumentPaymentsListItemPaymentTerms } from '../../src/models'
 
-  var instance: ReceivedDocumentPaymentsListItemPaymentTerms = {
-    days: 10,
-    type: "standard"
-  };
+const instance: ReceivedDocumentPaymentsListItemPaymentTerms = {
+  days: 10,
+  type: 'standard'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ReceivedDocumentPaymentTerms', function () {
+  it('should create an instance of ReceivedDocumentPaymentsListItemPaymentTerms', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ReceivedDocumentPaymentTerms', function() {
-    it('should create an instance of ReceivedDocumentPaymentsListItemPaymentTerms', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property days (base name: "days")', function () {
+    expect(instance.days).to.be.a('number')
+  })
 
-    it('should have the property days (base name: "days")', function() {
-      expect(instance.days).to.be.a('number');
-    });
-
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
-
-  });
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
+})

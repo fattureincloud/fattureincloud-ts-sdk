@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { PaymentAccountType } from '../../src/models';
+import { expect } from 'chai'
+import { PaymentAccountType } from '../../src/models'
 
-  var instance: PaymentAccountType = "bank";
+const instance: PaymentAccountType = 'bank'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('PaymentAccountType', function() {
-    it('should create an instance of PaymentAccountType', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('PaymentAccountType', function () {
+  it('should create an instance of PaymentAccountType', function () {
+    expect(instance).to.be.a('string')
+  })
+})

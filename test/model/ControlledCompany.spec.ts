@@ -10,50 +10,47 @@
  *
  */
 
-import { expect } from 'chai';
-import { ControlledCompany } from '../../src/models';
+import { expect } from 'chai'
+import { ControlledCompany } from '../../src/models'
 
-  var instance: ControlledCompany = {
-    id: 12345,
-    name: "Studio Commercialista",
-    tax_code: "ABCSFN94T17A794K",
-    type: "accountant",
-    access_token: "4ff5f0fe5abcd1d7157fa13ca72ab62b6183db0667a576a0e19164801c18c4f7362a848fa32dbb8c3a3f94c34f3df95",
-    connection_id: 94566
-  };
+const instance: ControlledCompany = {
+  id: 12345,
+  name: 'Studio Commercialista',
+  tax_code: 'ABCSFN94T17A794K',
+  type: 'accountant',
+  access_token: '4ff5f0fe5abcd1d7157fa13ca72ab62b6183db0667a576a0e19164801c18c4f7362a848fa32dbb8c3a3f94c34f3df95',
+  connection_id: 94566
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ControlledCompany', function () {
+  it('should create an instance of ControlledCompany', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ControlledCompany', function() {
-    it('should create an instance of ControlledCompany', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
 
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
+  it('should have the property accessToken (base name: "access_token")', function () {
+    expect(instance.access_token).to.be.a('string')
+  })
 
-    it('should have the property accessToken (base name: "access_token")', function() {
-      expect(instance.access_token).to.be.a('string');
-    });
+  it('should have the property connectionId (base name: "connection_id")', function () {
+    expect(instance.connection_id).to.be.a('number')
+  })
 
-    it('should have the property connectionId (base name: "connection_id")', function() {
-      expect(instance.connection_id).to.be.a('number');
-    });
-
-    it('should have the property taxCode (base name: "tax_code")', function() {
-      expect(instance.tax_code).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property taxCode (base name: "tax_code")', function () {
+    expect(instance.tax_code).to.be.a('string')
+  })
+})

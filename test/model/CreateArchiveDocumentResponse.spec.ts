@@ -10,31 +10,28 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateArchiveDocumentResponse } from '../../src/models';
+import { expect } from 'chai'
+import { CreateArchiveDocumentResponse } from '../../src/models'
 
-  var instance: CreateArchiveDocumentResponse = {
-    data: {
-      id : 12345,
-      date : "2021-08-20",
-      category : "Altri documenti",
-      description : "spesa 1",
-      attachment_url : "spesa1.pdf"
-    }
-  };
+const instance: CreateArchiveDocumentResponse = {
+  data: {
+    id: 12345,
+    date: '2021-08-20',
+    category: 'Altri documenti',
+    description: 'spesa 1',
+    attachment_url: 'spesa1.pdf'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateArchiveDocumentResponse', function () {
+  it('should create an instance of CreateArchiveDocumentResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateArchiveDocumentResponse', function() {
-    it('should create an instance of CreateArchiveDocumentResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

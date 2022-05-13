@@ -10,105 +10,102 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentPreCreateInfoDefaultValues } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentPreCreateInfoDefaultValues } from '../../src/models'
 
-  var instance: IssuedDocumentPreCreateInfoDefaultValues = {
-    default_template: {
-      id : 111,
-      type : "standard",
-      name : "Light Smoke"
+const instance: IssuedDocumentPreCreateInfoDefaultValues = {
+  default_template: {
+    id: 111,
+    type: 'standard',
+    name: 'Light Smoke'
+  },
+  dn_template: {
+    id: 222,
+    type: 'delivery_note',
+    name: 'DDT 1'
+  },
+  ai_template: {
+    id: 333,
+    type: 'accompanying_invoice',
+    name: 'FT Accompagnatoria 1'
+  },
+  notes: '',
+  rivalsa: 0,
+  cassa: 0,
+  withholding_tax: 0,
+  withholding_tax_taxable: 100,
+  other_withholding_tax: 0,
+  use_gross_prices: false,
+  payment_method: {
+    id: 123321,
+    name: 'Bonifico bancario',
+    is_default: true,
+    details: [
+      {
+        title: 'Banca',
+        description: 'Indesa'
       },
-    dn_template: {
-          id : 222,
-          type : "delivery_note",
-          name : "DDT 1"
+      {
+        title: 'IBAN',
+        description: 'IT17QA12345600000003498936'
       },
-    ai_template: {
-          id : 333,
-          type : "accompanying_invoice",
-          name : "FT Accompagnatoria 1"
-      },
-    notes: "",
-    rivalsa: 0,
-    cassa: 0,
-    withholding_tax: 0,
-    withholding_tax_taxable: 100,
-    other_withholding_tax: 0,
-    use_gross_prices: false,
-    payment_method: {
-        id : 123321,
-        name : "Bonifico bancario",
-        is_default : true,
-        details : [
-            {
-            title : "Banca",
-            description : "Indesa"
-            },
-            {
-            title : "IBAN",
-            description : "IT17QA12345600000003498936"
-            },
-            {
-            title : "Intestatario",
-            description : "Mario Rossi"
-            }
-          ]
+      {
+        title: 'Intestatario',
+        description: 'Mario Rossi'
       }
-  };
+    ]
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentPreCreateInfoDefaultValues', function () {
+  it('should create an instance of IssuedDocumentPreCreateInfoDefaultValues', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentPreCreateInfoDefaultValues', function() {
-    it('should create an instance of IssuedDocumentPreCreateInfoDefaultValues', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property defaultTemplate (base name: "default_template")', function () {
+    expect(instance.default_template).to.be.a('object')
+  })
 
-    it('should have the property defaultTemplate (base name: "default_template")', function() {
-      expect(instance.default_template).to.be.a('object');
-    });
+  it('should have the property dnTemplate (base name: "dn_template")', function () {
+    expect(instance.dn_template).to.be.a('object')
+  })
 
-    it('should have the property dnTemplate (base name: "dn_template")', function() {
-      expect(instance.dn_template).to.be.a('object');
-    });
+  it('should have the property aiTemplate (base name: "ai_template")', function () {
+    expect(instance.ai_template).to.be.a('object')
+  })
 
-    it('should have the property aiTemplate (base name: "ai_template")', function() {
-      expect(instance.ai_template).to.be.a('object');
-    });
+  it('should have the property notes (base name: "notes")', function () {
+    expect(instance.notes).to.be.a('string')
+  })
 
-    it('should have the property notes (base name: "notes")', function() {
-      expect(instance.notes).to.be.a('string');
-    });
+  it('should have the property rivalsa (base name: "rivalsa")', function () {
+    expect(instance.rivalsa).to.be.a('number')
+  })
 
-    it('should have the property rivalsa (base name: "rivalsa")', function() {
-      expect(instance.rivalsa).to.be.a('number');
-    });
+  it('should have the property cassa (base name: "cassa")', function () {
+    expect(instance.cassa).to.be.a('number')
+  })
 
-    it('should have the property cassa (base name: "cassa")', function() {
-      expect(instance.cassa).to.be.a('number');
-    });
+  it('should have the property withholdingTax (base name: "withholding_tax")', function () {
+    expect(instance.withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property withholdingTax (base name: "withholding_tax")', function() {
-      expect(instance.withholding_tax).to.be.a('number');
-    });
+  it('should have the property withholdingTaxTaxable (base name: "withholding_tax_taxable")', function () {
+    expect(instance.withholding_tax_taxable).to.be.a('number')
+  })
 
-    it('should have the property withholdingTaxTaxable (base name: "withholding_tax_taxable")', function() {
-      expect(instance.withholding_tax_taxable).to.be.a('number');
-    });
+  it('should have the property otherWithholdingTax (base name: "other_withholding_tax")', function () {
+    expect(instance.other_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property otherWithholdingTax (base name: "other_withholding_tax")', function() {
-      expect(instance.other_withholding_tax).to.be.a('number');
-    });
+  it('should have the property useGrossPrices (base name: "use_gross_prices")', function () {
+    expect(instance.use_gross_prices).to.be.a('boolean')
+  })
 
-    it('should have the property useGrossPrices (base name: "use_gross_prices")', function() {
-      expect(instance.use_gross_prices).to.be.a('boolean');
-    });
-
-    it('should have the property paymentMethod (base name: "payment_method")', function() {
-      expect(instance.payment_method).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property paymentMethod (base name: "payment_method")', function () {
+    expect(instance.payment_method).to.be.a('object')
+  })
+})

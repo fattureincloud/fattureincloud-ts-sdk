@@ -10,31 +10,28 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListReceivedDocumentCategoriesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListReceivedDocumentCategoriesResponse } from '../../src/models'
 
-  var instance: ListReceivedDocumentCategoriesResponse = {
-    data: [
-      "Telefono e internet",
-      "Assicurazioni e quote",
-      "Auto ed altri veicoli",
-      "Computer e accessori",
-      "Server e hosting"
-    ]
-  };
+const instance: ListReceivedDocumentCategoriesResponse = {
+  data: [
+    'Telefono e internet',
+    'Assicurazioni e quote',
+    'Auto ed altri veicoli',
+    'Computer e accessori',
+    'Server e hosting'
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListReceivedDocumentCategoriesResponse', function () {
+  it('should create an instance of ListReceivedDocumentCategoriesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListReceivedDocumentCategoriesResponse', function() {
-    it('should create an instance of ListReceivedDocumentCategoriesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

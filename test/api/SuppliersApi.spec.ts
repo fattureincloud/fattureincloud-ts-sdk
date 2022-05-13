@@ -10,79 +10,78 @@
  *
  */
 
-import { expect } from 'chai';
-import { SuppliersApi } from '../../src/api/suppliers-api';
-import { CreateSupplierRequest, CreateSupplierResponse, GetSupplierResponse, ListSuppliersResponse, ModifySupplierRequest, ModifySupplierResponse } from '../../src/models';
+import { expect } from 'chai'
+import { SuppliersApi } from '../../src/api/suppliers-api'
+import { CreateSupplierRequest, CreateSupplierResponse, GetSupplierResponse, ListSuppliersResponse, ModifySupplierRequest, ModifySupplierResponse } from '../../src/models'
 
-var sandbox = require("sinon").createSandbox();
+const sandbox = require('sinon').createSandbox()
 
-var instance = new SuppliersApi();
+const instance = new SuppliersApi()
 
-var createSupplierResponseObj: CreateSupplierResponse = {"data":{"id":12345,"code":"AE86","name":"Mario Rossi S.R.L.","type":"company","first_name":"Mario","last_name":"Rossi","contact_person":"","vat_number":"111222333","tax_code":"111122233","address_street":"Corso Magellano, 46","address_postal_code":"20146","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"mario.rossi@example.com","certified_email":"mario.rossi@pec.example.com","phone":"1234567890","fax":"123456789","notes":""}};
-var createSupplierStub = sandbox.stub(instance, "createSupplier").returns(createSupplierResponseObj);
+const createSupplierResponseObj: CreateSupplierResponse = { data: { id: 12345, code: 'AE86', name: 'Mario Rossi S.R.L.', type: 'company', first_name: 'Mario', last_name: 'Rossi', contact_person: '', vat_number: '111222333', tax_code: '111122233', address_street: 'Corso Magellano, 46', address_postal_code: '20146', address_city: 'Milano', address_province: 'MI', address_extra: '', country: 'Italia', email: 'mario.rossi@example.com', certified_email: 'mario.rossi@pec.example.com', phone: '1234567890', fax: '123456789', notes: '' } }
+const createSupplierStub = sandbox.stub(instance, 'createSupplier').returns(createSupplierResponseObj)
 
-var deleteSupplierResponseObj = {};
-sandbox.stub(instance, "deleteSupplier").returns(deleteSupplierResponseObj);
+const deleteSupplierResponseObj = {}
+sandbox.stub(instance, 'deleteSupplier').returns(deleteSupplierResponseObj)
 
-var getSupplierResponseObj: GetSupplierResponse = {"data":{"id":12345,"code":"AE86","name":"Mario Rossi S.R.L.","type":"company","first_name":"Mario","last_name":"Rossi","contact_person":"","vat_number":"111222333","tax_code":"111122233","address_street":"Corso Magellano, 46","address_postal_code":"20146","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"mario.rossi@example.com","certified_email":"mario.rossi@pec.example.com","phone":"1234567890","fax":"123456789","notes":""}};
-sandbox.stub(instance, "getSupplier").returns(getSupplierResponseObj);
+const getSupplierResponseObj: GetSupplierResponse = { data: { id: 12345, code: 'AE86', name: 'Mario Rossi S.R.L.', type: 'company', first_name: 'Mario', last_name: 'Rossi', contact_person: '', vat_number: '111222333', tax_code: '111122233', address_street: 'Corso Magellano, 46', address_postal_code: '20146', address_city: 'Milano', address_province: 'MI', address_extra: '', country: 'Italia', email: 'mario.rossi@example.com', certified_email: 'mario.rossi@pec.example.com', phone: '1234567890', fax: '123456789', notes: '' } }
+sandbox.stub(instance, 'getSupplier').returns(getSupplierResponseObj)
 
-var listSuppliersResponseObj: ListSuppliersResponse = {"first_page_url":"page=1","from":1,"last_page":2,"last_page_url":"page=2","next_page_url":"page=2","path":"\/entities\/suppliers","per_page":50,"prev_page_url":null,"to":55,"total":55,"data":[{"id":12345,"code":"AE86","name":"Mario Rossi S.R.L.","type":"company","first_name":"Mario","last_name":"Rossi","contact_person":"","vat_number":"111222333","tax_code":"111122233","address_street":"Corso Magellano, 46","address_postal_code":"20146","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"mario.rossi@example.com","certified_email":"mario.rossi@pec.example.com","phone":"1234567890","fax":"123456789","notes":"","created_at":"2021-15-08","updated_at":"2021-15-08"},{"id":12346,"code":"GT86","name":"Maria Grossi S.R.L.","type":"company","first_name":"","last_name":"","contact_person":"","vat_number":"200020102020","tax_code":"200020102020","address_street":"Vicolo stretto, 32","address_postal_code":"20146","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"maria.grossi@example.com","certified_email":"maria.grossi@pec.example.com","phone":"0987654321","fax":"098765432","notes":"","created_at":"2021-15-09","updated_at":"2021-15-09"}]};
-sandbox.stub(instance, "listSuppliers").returns(listSuppliersResponseObj);
+const listSuppliersResponseObj: ListSuppliersResponse = { first_page_url: 'page=1', from: 1, last_page: 2, last_page_url: 'page=2', next_page_url: 'page=2', path: '/entities/suppliers', per_page: 50, prev_page_url: null, to: 55, total: 55, data: [{ id: 12345, code: 'AE86', name: 'Mario Rossi S.R.L.', type: 'company', first_name: 'Mario', last_name: 'Rossi', contact_person: '', vat_number: '111222333', tax_code: '111122233', address_street: 'Corso Magellano, 46', address_postal_code: '20146', address_city: 'Milano', address_province: 'MI', address_extra: '', country: 'Italia', email: 'mario.rossi@example.com', certified_email: 'mario.rossi@pec.example.com', phone: '1234567890', fax: '123456789', notes: '', created_at: '2021-15-08', updated_at: '2021-15-08' }, { id: 12346, code: 'GT86', name: 'Maria Grossi S.R.L.', type: 'company', first_name: '', last_name: '', contact_person: '', vat_number: '200020102020', tax_code: '200020102020', address_street: 'Vicolo stretto, 32', address_postal_code: '20146', address_city: 'Milano', address_province: 'MI', address_extra: '', country: 'Italia', email: 'maria.grossi@example.com', certified_email: 'maria.grossi@pec.example.com', phone: '0987654321', fax: '098765432', notes: '', created_at: '2021-15-09', updated_at: '2021-15-09' }] }
+sandbox.stub(instance, 'listSuppliers').returns(listSuppliersResponseObj)
 
-var modifySupplierResponseObj: ModifySupplierResponse = {"data":{"id":12345,"code":"AE86","name":"Mario Rossi S.R.L.","type":"company","first_name":"Mario","last_name":"Rossi","contact_person":"","vat_number":"111222333","tax_code":"111122233","address_street":"Corso Magellano, 46","address_postal_code":"20146","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"mario.rossi@example.com","certified_email":"mario.rossi@pec.example.com","phone":"1234567890","fax":"123456789","notes":""}};
-var modifySupplierStub = sandbox.stub(instance, "modifySupplier").returns(modifySupplierResponseObj);
+const modifySupplierResponseObj: ModifySupplierResponse = { data: { id: 12345, code: 'AE86', name: 'Mario Rossi S.R.L.', type: 'company', first_name: 'Mario', last_name: 'Rossi', contact_person: '', vat_number: '111222333', tax_code: '111122233', address_street: 'Corso Magellano, 46', address_postal_code: '20146', address_city: 'Milano', address_province: 'MI', address_extra: '', country: 'Italia', email: 'mario.rossi@example.com', certified_email: 'mario.rossi@pec.example.com', phone: '1234567890', fax: '123456789', notes: '' } }
+const modifySupplierStub = sandbox.stub(instance, 'modifySupplier').returns(modifySupplierResponseObj)
 
-beforeEach(function() {
+// beforeEach(function () {
 
-});
+// })
 
-describe('SuppliersApi', function() {
-  describe('createSupplier', function() {
-    it('should call createSupplier successfully', function(done) {
-      var opts: CreateSupplierRequest = {"data":{"code":"asd12345","name":"Mario Rossi S.R.L.","type":"company","first_name":"Mario","last_name":"Rossi","contact_person":"","vat_number":"111222333","tax_code":"111122233","address_street":"Corso Magellano, 46","address_postal_code":"20146","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"mario.rossi@example.com","certified_email":"mario.rossi@pec.example.com","phone":"1234567890","fax":"123456789","notes":""}};
-      var response = instance.createSupplier(2, opts);
-      var expectedJson = JSON.stringify(createSupplierResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      expect(createSupplierStub.getCall(0).args[1]).to.equal(opts);
-      done();
-    });
-  });
-  describe('deleteSupplier', function() {
-    it('should call deleteSupplier successfully', function(done) {
-      expect(1).to.equal(1);
-      done();
-    });
-  });
-  describe('getSupplier', function() {
-    it('should call getSupplier successfully', function(done) {
-      var response = instance.getSupplier(2, 12345);
-      var expectedJson = JSON.stringify(getSupplierResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listSuppliers', function() {
-    it('should call listSuppliers successfully', function(done) {
-      var response = instance.listSuppliers(2);
-      var expectedJson = JSON.stringify(listSuppliersResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('modifySupplier', function() {
-    it('should call modifySupplier successfully', function(done) {
-      var opts: ModifySupplierRequest = {"data":{"address_street":"Corso Ateneo 69"}};
-      var response = instance.modifySupplier(2, 12345, opts);
-      var expectedJson = JSON.stringify(modifySupplierResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      expect(modifySupplierStub.getCall(0).args[2]).to.equal(opts);
-      done();
-    });
-  });
-});
-
+describe('SuppliersApi', function () {
+  describe('createSupplier', function () {
+    it('should call createSupplier successfully', function (done) {
+      const opts: CreateSupplierRequest = { data: { code: 'asd12345', name: 'Mario Rossi S.R.L.', type: 'company', first_name: 'Mario', last_name: 'Rossi', contact_person: '', vat_number: '111222333', tax_code: '111122233', address_street: 'Corso Magellano, 46', address_postal_code: '20146', address_city: 'Milano', address_province: 'MI', address_extra: '', country: 'Italia', email: 'mario.rossi@example.com', certified_email: 'mario.rossi@pec.example.com', phone: '1234567890', fax: '123456789', notes: '' } }
+      const response = instance.createSupplier(2, opts)
+      const expectedJson = JSON.stringify(createSupplierResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      expect(createSupplierStub.getCall(0).args[1]).to.equal(opts)
+      done()
+    })
+  })
+  describe('deleteSupplier', function () {
+    it('should call deleteSupplier successfully', function (done) {
+      expect(1).to.equal(1)
+      done()
+    })
+  })
+  describe('getSupplier', function () {
+    it('should call getSupplier successfully', function (done) {
+      const response = instance.getSupplier(2, 12345)
+      const expectedJson = JSON.stringify(getSupplierResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listSuppliers', function () {
+    it('should call listSuppliers successfully', function (done) {
+      const response = instance.listSuppliers(2)
+      const expectedJson = JSON.stringify(listSuppliersResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('modifySupplier', function () {
+    it('should call modifySupplier successfully', function (done) {
+      const opts: ModifySupplierRequest = { data: { address_street: 'Corso Ateneo 69' } }
+      const response = instance.modifySupplier(2, 12345, opts)
+      const expectedJson = JSON.stringify(modifySupplierResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      expect(modifySupplierStub.getCall(0).args[2]).to.equal(opts)
+      done()
+    })
+  })
+})

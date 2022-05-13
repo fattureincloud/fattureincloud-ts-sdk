@@ -10,34 +10,31 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateF24Request } from '../../src/models';
+import { expect } from 'chai'
+import { CreateF24Request } from '../../src/models'
 
-  var instance: CreateF24Request = {
-    data: {
-      amount : 840.36,
-      description : "PAGAMENTO IVA 2021",
-      due_date : "2021-12-31",
-      status : "paid",
-      payment_account : {
-        id : 111
-      },
-      attachment_token : "b19c01da9b1688fb73d0d9e8ad"
-    }
-  };
+const instance: CreateF24Request = {
+  data: {
+    amount: 840.36,
+    description: 'PAGAMENTO IVA 2021',
+    due_date: '2021-12-31',
+    status: 'paid',
+    payment_account: {
+      id: 111
+    },
+    attachment_token: 'b19c01da9b1688fb73d0d9e8ad'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateF24Request', function () {
+  it('should create an instance of CreateF24Request', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateF24Request', function() {
-    it('should create an instance of CreateF24Request', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

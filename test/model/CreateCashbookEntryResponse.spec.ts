@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateCashbookEntryResponse } from '../../src/models';
+import { expect } from 'chai'
+import { CreateCashbookEntryResponse } from '../../src/models'
 
-  var instance: CreateCashbookEntryResponse = {
-    data: {
-      id : "54321",
-      date : "2021-08-24",
-      amount_in : 122,
-      amount_out : 0,
-      description : "Fattura n. 201/2021",
-      payment_account_in : {
-        id : 21,
-        name : "Indesa - Carta conto"
-      },
-      payment_account_out : {
-          id : 21,
-          name : "Indesa - Carta conto"
-      },
-      kind : "cashbook"
-    }
-  };
+const instance: CreateCashbookEntryResponse = {
+  data: {
+    id: '54321',
+    date: '2021-08-24',
+    amount_in: 122,
+    amount_out: 0,
+    description: 'Fattura n. 201/2021',
+    payment_account_in: {
+      id: 21,
+      name: 'Indesa - Carta conto'
+    },
+    payment_account_out: {
+      id: 21,
+      name: 'Indesa - Carta conto'
+    },
+    kind: 'cashbook'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateCashbookEntryResponse', function () {
+  it('should create an instance of CreateCashbookEntryResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateCashbookEntryResponse', function() {
-    it('should create an instance of CreateCashbookEntryResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

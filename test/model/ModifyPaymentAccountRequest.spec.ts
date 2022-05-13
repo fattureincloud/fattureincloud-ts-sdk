@@ -10,32 +10,29 @@
  *
  */
 
-import { expect } from 'chai';
-import { ModifyPaymentAccountRequest } from '../../src/models';
+import { expect } from 'chai'
+import { ModifyPaymentAccountRequest } from '../../src/models'
 
-  var instance: ModifyPaymentAccountRequest = {
-    data: {
-      id : 12345,
-      name : "Indesa",
-      type : "bank",
-      iban : "IT17Q0051343200000003497636",
-      sia : "T1234",
-      virtual : false
-    }
-  };
+const instance: ModifyPaymentAccountRequest = {
+  data: {
+    id: 12345,
+    name: 'Indesa',
+    type: 'bank',
+    iban: 'IT17Q0051343200000003497636',
+    sia: 'T1234',
+    virtual: false
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ModifyPaymentAccountRequest', function () {
+  it('should create an instance of ModifyPaymentAccountRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ModifyPaymentAccountRequest', function() {
-    it('should create an instance of ModifyPaymentAccountRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

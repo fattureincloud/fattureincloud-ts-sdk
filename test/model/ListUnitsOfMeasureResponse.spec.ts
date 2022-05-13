@@ -10,29 +10,26 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListUnitsOfMeasureResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListUnitsOfMeasureResponse } from '../../src/models'
 
-  var instance: ListUnitsOfMeasureResponse = {
-    data: [
-      "km",
-      "kg",
-      "lt"
-    ]
-  };
+const instance: ListUnitsOfMeasureResponse = {
+  data: [
+    'km',
+    'kg',
+    'lt'
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListUnitsOfMeasureResponse', function () {
+  it('should create an instance of ListUnitsOfMeasureResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListUnitsOfMeasureResponse', function() {
-    it('should create an instance of ListUnitsOfMeasureResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

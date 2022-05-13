@@ -10,30 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceivedDocumentEntity } from '../../src/models';
+import { expect } from 'chai'
+import { ReceivedDocumentEntity } from '../../src/models'
 
-  var instance: ReceivedDocumentEntity = {
-    id: 111,
-    name: "HOTELRUBINO"
-  };
+const instance: ReceivedDocumentEntity = {
+  id: 111,
+  name: 'HOTELRUBINO'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ReceivedDocumentEntity', function () {
+  it('should create an instance of ReceivedDocumentEntity', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ReceivedDocumentEntity', function() {
-    it('should create an instance of ReceivedDocumentEntity', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
-
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
+})

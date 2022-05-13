@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentPreCreateInfoItemsDefaultValues } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentPreCreateInfoItemsDefaultValues } from '../../src/models'
 
-  var instance: IssuedDocumentPreCreateInfoItemsDefaultValues = {
-    vat: {
-      id : 0,
-      value : 22,
-      description : "iva",
-      notes : "",
-      e_invoice : true,
-      ei_type : "0",
-      ei_description : "",
-      is_disabled : false,
-      editable : false
-    }
-  };
+const instance: IssuedDocumentPreCreateInfoItemsDefaultValues = {
+  vat: {
+    id: 0,
+    value: 22,
+    description: 'iva',
+    notes: '',
+    e_invoice: true,
+    ei_type: '0',
+    ei_description: '',
+    is_disabled: false,
+    editable: false
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentPreCreateInfoItemsDefaultValues', function () {
+  it('should create an instance of IssuedDocumentPreCreateInfoItemsDefaultValues', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentPreCreateInfoItemsDefaultValues', function() {
-    it('should create an instance of IssuedDocumentPreCreateInfoItemsDefaultValues', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property vat (base name: "vat")', function() {
-      expect(instance.vat).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property vat (base name: "vat")', function () {
+    expect(instance.vat).to.be.a('object')
+  })
+})

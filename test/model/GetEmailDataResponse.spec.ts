@@ -10,48 +10,45 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetEmailDataResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetEmailDataResponse } from '../../src/models'
 
-  var instance: GetEmailDataResponse = {
-    data: {
-      recipient_email : "mary.red@example.com",
-      default_sender_email : {
-        id : 0,
-        email : "no-reply@fattureincloud.it"
+const instance: GetEmailDataResponse = {
+  data: {
+    recipient_email: 'mary.red@example.com',
+    default_sender_email: {
+      id: 0,
+      email: 'no-reply@fattureincloud.it'
+    },
+    sender_emails_list: [
+      {
+        id: 0,
+        email: 'no-reply@fattureincloud.it'
       },
-      sender_emails_list : [
-        {
-          id : 0,
-          email : "no-reply@fattureincloud.it"
-        },
-        {
-          id : 888,
-          email : "mariorossi@fattureincloud.it"
-        }
-      ],
-      cc_email : "m.rossi@exxample.com",
-      subject : "Nostra pro forma nr. 1",
-      body : "Gentile Mario Rossi,<br>per vedere la nostra pro forma di  o per scaricarne una copia in versione PDF prema sul bottone sottoastante.<br><br>{{allegati}}<br><br>Cordiali saluti,<br><b>Mario Rossi</b>",
-      document_exists : true,
-      delivery_note_exists : false,
-      attachment_exists : false,
-      accompanying_invoice_exists : false
-    }
-  };
+      {
+        id: 888,
+        email: 'mariorossi@fattureincloud.it'
+      }
+    ],
+    cc_email: 'm.rossi@exxample.com',
+    subject: 'Nostra pro forma nr. 1',
+    body: 'Gentile Mario Rossi,<br>per vedere la nostra pro forma di  o per scaricarne una copia in versione PDF prema sul bottone sottoastante.<br><br>{{allegati}}<br><br>Cordiali saluti,<br><b>Mario Rossi</b>',
+    document_exists: true,
+    delivery_note_exists: false,
+    attachment_exists: false,
+    accompanying_invoice_exists: false
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetEmailDataResponse', function () {
+  it('should create an instance of GetEmailDataResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetEmailDataResponse', function() {
-    it('should create an instance of GetEmailDataResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

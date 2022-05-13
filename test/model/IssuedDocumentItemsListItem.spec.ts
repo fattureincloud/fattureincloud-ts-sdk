@@ -10,109 +10,106 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentItemsListItem } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentItemsListItem } from '../../src/models'
 
-  var instance: IssuedDocumentItemsListItem = {
-    product_id: 12345,
-    code: "cod3",
-    name: "prod 1",
-    description: "product number uan",
-    category: "cat5",
-    qty: 44,
-    measure: "very big",
-    net_price: 10,
-    gross_price: 12.2,
-    not_taxable: false,
-    apply_withholding_taxes: true,
-    discount: 0,
-    discount_highlight: true,
-    in_ddt: false,
-    stock: true,
-    vat: {
-      id : 21
-    },
-    ei_raw: {
-      prop : true
-    }  
-  };
+const instance: IssuedDocumentItemsListItem = {
+  product_id: 12345,
+  code: 'cod3',
+  name: 'prod 1',
+  description: 'product number uan',
+  category: 'cat5',
+  qty: 44,
+  measure: 'very big',
+  net_price: 10,
+  gross_price: 12.2,
+  not_taxable: false,
+  apply_withholding_taxes: true,
+  discount: 0,
+  discount_highlight: true,
+  in_ddt: false,
+  stock: true,
+  vat: {
+    id: 21
+  },
+  ei_raw: {
+    prop: true
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentItemsList', function () {
+  it('should create an instance of IssuedDocumentItemsListItem', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentItemsList', function() {
-    it('should create an instance of IssuedDocumentItemsListItem', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property productId (base name: "product_id")', function () {
+    expect(instance.product_id).to.be.a('number')
+  })
 
-    it('should have the property productId (base name: "product_id")', function() {
-      expect(instance.product_id).to.be.a('number');
-    });
+  it('should have the property code (base name: "code")', function () {
+    expect(instance.code).to.be.a('string')
+  })
 
-    it('should have the property code (base name: "code")', function() {
-      expect(instance.code).to.be.a('string');
-    });
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
 
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
+  it('should have the property description (base name: "description")', function () {
+    expect(instance.description).to.be.a('string')
+  })
 
-    it('should have the property description (base name: "description")', function() {
-      expect(instance.description).to.be.a('string');
-    });
+  it('should have the property category (base name: "category")', function () {
+    expect(instance.category).to.be.a('string')
+  })
 
-    it('should have the property category (base name: "category")', function() {
-      expect(instance.category).to.be.a('string');
-    });
+  it('should have the property qty (base name: "qty")', function () {
+    expect(instance.qty).to.be.a('number')
+  })
 
-    it('should have the property qty (base name: "qty")', function() {
-      expect(instance.qty).to.be.a('number');
-    });
+  it('should have the property measure (base name: "measure")', function () {
+    expect(instance.measure).to.be.a('string')
+  })
 
-    it('should have the property measure (base name: "measure")', function() {
-      expect(instance.measure).to.be.a('string');
-    });
+  it('should have the property netPrice (base name: "net_price")', function () {
+    expect(instance.net_price).to.be.a('number')
+  })
 
-    it('should have the property netPrice (base name: "net_price")', function() {
-      expect(instance.net_price).to.be.a('number');
-    });
+  it('should have the property grossPrice (base name: "gross_price")', function () {
+    expect(instance.gross_price).to.be.a('number')
+  })
 
-    it('should have the property grossPrice (base name: "gross_price")', function() {
-      expect(instance.gross_price).to.be.a('number');
-    });
+  it('should have the property vat (base name: "vat")', function () {
+    expect(instance.vat).to.be.a('object')
+  })
 
-    it('should have the property vat (base name: "vat")', function() {
-      expect(instance.vat).to.be.a('object');
-    });
+  it('should have the property notTaxable (base name: "not_taxable")', function () {
+    expect(instance.not_taxable).to.be.a('boolean')
+  })
 
-    it('should have the property notTaxable (base name: "not_taxable")', function() {
-      expect(instance.not_taxable).to.be.a('boolean');
-    });
+  it('should have the property applyWithholdingTaxes (base name: "apply_withholding_taxes")', function () {
+    expect(instance.apply_withholding_taxes).to.be.a('boolean')
+  })
 
-    it('should have the property applyWithholdingTaxes (base name: "apply_withholding_taxes")', function() {
-      expect(instance.apply_withholding_taxes).to.be.a('boolean');
-    });
+  it('should have the property discount (base name: "discount")', function () {
+    expect(instance.discount).to.be.a('number')
+  })
 
-    it('should have the property discount (base name: "discount")', function() {
-      expect(instance.discount).to.be.a('number');
-    });
+  it('should have the property discountHighlight (base name: "discount_highlight")', function () {
+    expect(instance.discount_highlight).to.be.a('boolean')
+  })
 
-    it('should have the property discountHighlight (base name: "discount_highlight")', function() {
-      expect(instance.discount_highlight).to.be.a('boolean');
-    });
+  it('should have the property inDdt (base name: "in_ddt")', function () {
+    expect(instance.in_ddt).to.be.a('boolean')
+  })
 
-    it('should have the property inDdt (base name: "in_ddt")', function() {
-      expect(instance.in_ddt).to.be.a('boolean');
-    });
+  it('should have the property stock (base name: "stock")', function () {
+    expect(instance.stock).to.be.a('boolean')
+  })
 
-    it('should have the property stock (base name: "stock")', function() {
-      expect(instance.stock).to.be.a('boolean');
-    });
-
-    it('should have the property eiRaw (base name: "ei_raw")', function() {
-      expect(instance.ei_raw).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property eiRaw (base name: "ei_raw")', function () {
+    expect(instance.ei_raw).to.be.a('object')
+  })
+})

@@ -10,101 +10,98 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListReceiptsResponsePage } from '../../src/models';
+import { expect } from 'chai'
+import { ListReceiptsResponsePage } from '../../src/models'
 
-  var instance: ListReceiptsResponsePage = {
-    data: [
-      {   
-        id : 12345,
-        date : "2021-08-20",
-        number : 5,
-        numeration : "REC005",
-        amount_net : 16.39,
-        amount_vat : 3.61,
-        amount_gross : 20,
-        use_gross_prices : true,
-        type : "sales_receipt",
-        description : "cassa 1",
-        rc_center : "",
-        created_at : "2021-08-20",
-        updated_at : "2021-08-20",
-        payment_account : {
-          id : 222,
-          name : "carta di credito"
-        },
-        items_list : [
-          {
-            id : 666,
-            amount_net : 10,
-            amount_gross : 12.2,
-            category : "altro",
-            vat : {
-              id : 0,
-              value : 22,
-              description : "iva"
-            }
-          },
-          {
-            id : 777,
-            amount_net : 100,
-            amount_gross : 104,
-            category : "altro",
-            vat : {
-              id : 0,
-              value : 22,
-              description : "iva"
-            }
-          }
-        ]
+const instance: ListReceiptsResponsePage = {
+  data: [
+    {
+      id: 12345,
+      date: '2021-08-20',
+      number: 5,
+      numeration: 'REC005',
+      amount_net: 16.39,
+      amount_vat: 3.61,
+      amount_gross: 20,
+      use_gross_prices: true,
+      type: 'sales_receipt',
+      description: 'cassa 1',
+      rc_center: '',
+      created_at: '2021-08-20',
+      updated_at: '2021-08-20',
+      payment_account: {
+        id: 222,
+        name: 'carta di credito'
       },
-      {
-        id : 12346,
-        date : "2021-08-19",
-        number : 6,
-        numeration : "REC006",
-        amount_net : 8.2,
-        amount_vat : 1.8,
-        amount_gross : 10,
-        use_gross_prices : true,
-        type : "sales_receipt",
-        description : "cassa 1",
-        rc_center : "",
-        created_at : "2021-08-19",
-        updated_at : "2021-08-19",
-        payment_account : {
-          id : 555,
-          name : "contanti"
-        },
-        items_list : [
-          {
-            id : 888,
-            amount_net : 8.2,
-            amount_gross : 10,
-            category : "altro",
-            vat : {
-              id : 0,
-              value : 22,
-              description : "iva"
-            }
+      items_list: [
+        {
+          id: 666,
+          amount_net: 10,
+          amount_gross: 12.2,
+          category: 'altro',
+          vat: {
+            id: 0,
+            value: 22,
+            description: 'iva'
           }
-        ]
-      }
-    ]
-  };
+        },
+        {
+          id: 777,
+          amount_net: 100,
+          amount_gross: 104,
+          category: 'altro',
+          vat: {
+            id: 0,
+            value: 22,
+            description: 'iva'
+          }
+        }
+      ]
+    },
+    {
+      id: 12346,
+      date: '2021-08-19',
+      number: 6,
+      numeration: 'REC006',
+      amount_net: 8.2,
+      amount_vat: 1.8,
+      amount_gross: 10,
+      use_gross_prices: true,
+      type: 'sales_receipt',
+      description: 'cassa 1',
+      rc_center: '',
+      created_at: '2021-08-19',
+      updated_at: '2021-08-19',
+      payment_account: {
+        id: 555,
+        name: 'contanti'
+      },
+      items_list: [
+        {
+          id: 888,
+          amount_net: 8.2,
+          amount_gross: 10,
+          category: 'altro',
+          vat: {
+            id: 0,
+            value: 22,
+            description: 'iva'
+          }
+        }
+      ]
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListReceiptsResponsePage', function () {
+  it('should create an instance of ListReceiptsResponsePage', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListReceiptsResponsePage', function() {
-    it('should create an instance of ListReceiptsResponsePage', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

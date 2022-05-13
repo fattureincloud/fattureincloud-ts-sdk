@@ -10,41 +10,38 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListCitiesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListCitiesResponse } from '../../src/models'
 
-  var instance: ListCitiesResponse = {
-    data: [
-      {
-        postal_code : "89867",
-        city : "Zungri",
-        province : "VV"
-      },
-      {
-        postal_code : "83020",
-        city : "Aiello del Sabato",
-        province : "AV"
-      },
-      {
-        postal_code : "83011",
-        city : "Altavilla Irpina",
-        province : "AV"
-      }
-    ]
-  };
+const instance: ListCitiesResponse = {
+  data: [
+    {
+      postal_code: '89867',
+      city: 'Zungri',
+      province: 'VV'
+    },
+    {
+      postal_code: '83020',
+      city: 'Aiello del Sabato',
+      province: 'AV'
+    },
+    {
+      postal_code: '83011',
+      city: 'Altavilla Irpina',
+      province: 'AV'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListCitiesResponse', function () {
+  it('should create an instance of ListCitiesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListCitiesResponse', function() {
-    it('should create an instance of ListCitiesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

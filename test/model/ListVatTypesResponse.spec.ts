@@ -10,47 +10,44 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListVatTypesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListVatTypesResponse } from '../../src/models'
 
-  var instance: ListVatTypesResponse = {
-    data: [
-      {
-        id : 0,
-        value : 22,
-        description : "Non imponibile art. 123",
-        notes : "IVA non imponibile ai sensi dell\'articolo 123, comma 2",
-        e_invoice : true,
-        ei_type : "2",
-        ei_description : "string",
-        editable : true
-      },
-      {
-        id : 1010,
-        value : 0,
-        description : "NON IMPONIBILE IVA EX ART. 8 COMMA 1 LETT.A",
-        notes : "",
-        e_invoice : false,
-        ei_type : "0",
-        ei_description : null,
-        is_disabled : false,
-        editable : true
-      }
-    ]
-  };
+const instance: ListVatTypesResponse = {
+  data: [
+    {
+      id: 0,
+      value: 22,
+      description: 'Non imponibile art. 123',
+      notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+      e_invoice: true,
+      ei_type: '2',
+      ei_description: 'string',
+      editable: true
+    },
+    {
+      id: 1010,
+      value: 0,
+      description: 'NON IMPONIBILE IVA EX ART. 8 COMMA 1 LETT.A',
+      notes: '',
+      e_invoice: false,
+      ei_type: '0',
+      ei_description: null,
+      is_disabled: false,
+      editable: true
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListVatTypesResponse', function () {
+  it('should create an instance of ListVatTypesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListVatTypesResponse', function() {
-    it('should create an instance of ListVatTypesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

@@ -10,55 +10,52 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceivedDocumentTotals } from '../../src/models';
+import { expect } from 'chai'
+import { ReceivedDocumentTotals } from '../../src/models'
 
-  var instance: ReceivedDocumentTotals = {
-    amount_net: 592,
-    amount_vat: 20,
-    amount_gross: 612,
-    amount_withholding_tax: 0,
-    amount_other_withholding_tax: 0,
-    amount_due: 612,
-    payments_sum: 592 
-  };
+const instance: ReceivedDocumentTotals = {
+  amount_net: 592,
+  amount_vat: 20,
+  amount_gross: 612,
+  amount_withholding_tax: 0,
+  amount_other_withholding_tax: 0,
+  amount_due: 612,
+  payments_sum: 592
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ReceivedDocumentTotals', function () {
+  it('should create an instance of ReceivedDocumentTotals', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ReceivedDocumentTotals', function() {
-    it('should create an instance of ReceivedDocumentTotals', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property amountNet (base name: "amount_net")', function () {
+    expect(instance.amount_net).to.be.a('number')
+  })
 
-    it('should have the property amountNet (base name: "amount_net")', function() {
-      expect(instance.amount_net).to.be.a('number');
-    });
+  it('should have the property amountVat (base name: "amount_vat")', function () {
+    expect(instance.amount_vat).to.be.a('number')
+  })
 
-    it('should have the property amountVat (base name: "amount_vat")', function() {
-      expect(instance.amount_vat).to.be.a('number');
-    });
+  it('should have the property amountGross (base name: "amount_gross")', function () {
+    expect(instance.amount_gross).to.be.a('number')
+  })
 
-    it('should have the property amountGross (base name: "amount_gross")', function() {
-      expect(instance.amount_gross).to.be.a('number');
-    });
+  it('should have the property amountWithholdingTax (base name: "amount_withholding_tax")', function () {
+    expect(instance.amount_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property amountWithholdingTax (base name: "amount_withholding_tax")', function() {
-      expect(instance.amount_withholding_tax).to.be.a('number');
-    });
+  it('should have the property amountOtherWithholdingTax (base name: "amount_other_withholding_tax")', function () {
+    expect(instance.amount_other_withholding_tax).to.be.a('number')
+  })
 
-    it('should have the property amountOtherWithholdingTax (base name: "amount_other_withholding_tax")', function() {
-      expect(instance.amount_other_withholding_tax).to.be.a('number');
-    });
+  it('should have the property amountDue (base name: "amount_due")', function () {
+    expect(instance.amount_due).to.be.a('number')
+  })
 
-    it('should have the property amountDue (base name: "amount_due")', function() {
-      expect(instance.amount_due).to.be.a('number');
-    });
-
-    it('should have the property paymentsSum (base name: "payments_sum")', function() {
-      expect(instance.payments_sum).to.be.a('number');
-    });
-
-  });
-
+  it('should have the property paymentsSum (base name: "payments_sum")', function () {
+    expect(instance.payments_sum).to.be.a('number')
+  })
+})

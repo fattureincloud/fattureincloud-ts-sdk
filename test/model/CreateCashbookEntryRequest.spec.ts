@@ -10,38 +10,35 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateCashbookEntryRequest } from '../../src/models';
+import { expect } from 'chai'
+import { CreateCashbookEntryRequest } from '../../src/models'
 
-  var instance: CreateCashbookEntryRequest = {
-    data: {
-      date : "2021-08-24",
-      amount_in : 122,
-      payment_account_in : {
-        id : 333
-      },
-      description : "Fattura n. 201/2021",
-      entity_name : "Rossi S.r.l.",
-      kind : "issued_document",
-      document : {
-        id : 54321
-      },
-      type : "in"
-    }
-  };
+const instance: CreateCashbookEntryRequest = {
+  data: {
+    date: '2021-08-24',
+    amount_in: 122,
+    payment_account_in: {
+      id: 333
+    },
+    description: 'Fattura n. 201/2021',
+    entity_name: 'Rossi S.r.l.',
+    kind: 'issued_document',
+    document: {
+      id: 54321
+    },
+    type: 'in'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateCashbookEntryRequest', function () {
+  it('should create an instance of CreateCashbookEntryRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateCashbookEntryRequest', function() {
-    it('should create an instance of CreateCashbookEntryRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

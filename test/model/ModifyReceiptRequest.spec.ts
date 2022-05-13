@@ -10,53 +10,50 @@
  *
  */
 
-import { expect } from 'chai';
-import { ModifyReceiptRequest } from '../../src/models';
+import { expect } from 'chai'
+import { ModifyReceiptRequest } from '../../src/models'
 
-  var instance: ModifyReceiptRequest = {
-    data: {
-      date : "2021-08-19",
-      number : 6,
-      numeration : "REC006",
-      amount_net : 8.2,
-      amount_vat : 1.8,
-      amount_gross : 10,
-      use_gross_prices : true,
-      type : "sales_receipt",
-      description : "cassa 1",
-      rc_center : "",
-      payment_account : {
-      id : 555,
-      name : "contanti"
-      },
-      items_list : [
+const instance: ModifyReceiptRequest = {
+  data: {
+    date: '2021-08-19',
+    number: 6,
+    numeration: 'REC006',
+    amount_net: 8.2,
+    amount_vat: 1.8,
+    amount_gross: 10,
+    use_gross_prices: true,
+    type: 'sales_receipt',
+    description: 'cassa 1',
+    rc_center: '',
+    payment_account: {
+      id: 555,
+      name: 'contanti'
+    },
+    items_list: [
       {
-          id : 888,
-          amount_net : 8.2,
-          amount_gross : 10,
-          category : "altro",
-          vat : {
-          id : 0,
-          value : 22,
-          description : "iva"
-          }
+        id: 888,
+        amount_net: 8.2,
+        amount_gross: 10,
+        category: 'altro',
+        vat: {
+          id: 0,
+          value: 22,
+          description: 'iva'
         }
-      ]
-    }
-  };
+      }
+    ]
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ModifyReceiptRequest', function () {
+  it('should create an instance of ModifyReceiptRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ModifyReceiptRequest', function() {
-    it('should create an instance of ModifyReceiptRequest', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

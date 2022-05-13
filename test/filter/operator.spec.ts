@@ -1,12 +1,11 @@
-import { expect } from 'chai';
-import { Operator } from '../../src/filter/operator';
+import { expect } from 'chai'
+import { Operator } from '../../src/filter/operator'
 
-beforeEach(function() {
-});
+// beforeEach(function () {
+// })
 
-describe('Operator', function() {
-
-  it('test Operator enum', function() {
+describe('Operator', function () {
+  it('test Operator enum', function () {
     expect(Operator.EQ).to.equal('=')
     expect(Operator.GT).to.equal('>')
     expect(Operator.GTE).to.equal('>=')
@@ -19,6 +18,5 @@ describe('Operator', function() {
     expect(Operator.CONTAINS).to.equal('contains')
     expect(Operator.STARTS_WITH).to.equal('starts with')
     expect(Operator.ENDS_WITH).to.equal('ends with')
-  });
-
-});
+  })
+})

@@ -10,126 +10,123 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListReceivedDocumentsResponsePage } from '../../src/models';
+import { expect } from 'chai'
+import { ListReceivedDocumentsResponsePage } from '../../src/models'
 
-  var instance: ListReceivedDocumentsResponsePage = {
-    data: [
-      {
-        id : 12345,
-        type : "expense",
-        description : "Soggiorno di lavoro",
-        amortization : 1,
-        rc_center : "",
-        invoice_number : "",
-        is_marked : false,
-        is_detailed : false,
-        e_invoice : false,
-        entity : {
-          id : 111,
-          name : "Hotel Rubino Palace"
-        },
-        date : "2021-08-15",
-        next_due_date : "2021-08-15",
-        currency : {
-          id : "EUR",
-          exchange_rate : "1.00000",
-          symbol : "€"
-        },
-        amount_net : 592,
-        amount_vat : 0,
-        amount_gross : 592,
-        amount_withholding_tax : 0,
-        amount_other_withholding_tax : 0,
-        tax_deductibility : 50,
-        vat_deductibility : 100,
-        items_list : null,
-        payments_list : [
-          {
-            amount : 592,
-            due_date : "2021-08-15",
-            paid_date : "2021-08-15",
-            id : 777,
-            payment_terms : {
-              days : 0,
-              type : "standard"
-            },
-            status : "paid",
-            payment_account : {
-              id : 222,
-              name : "Contanti",
-              virtual : false
-            }
-          }
-        ],
-        attachment_url : "spesa_ger5i783t45hu6ti.pdf",
-        attachment_preview_url : null,
+const instance: ListReceivedDocumentsResponsePage = {
+  data: [
+    {
+      id: 12345,
+      type: 'expense',
+      description: 'Soggiorno di lavoro',
+      amortization: 1,
+      rc_center: '',
+      invoice_number: '',
+      is_marked: false,
+      is_detailed: false,
+      e_invoice: false,
+      entity: {
+        id: 111,
+        name: 'Hotel Rubino Palace'
       },
-      {
-        id : 12346,
-        type : "expense",
-        description : "Assicurazione RCA",
-        amortization : 1,
-        rc_center : "",
-        invoice_number : "",
-        is_marked : false,
-        is_detailed : false,
-        e_invoice : false,
-        entity : {
-          id : 89,
-          name : "Indesa Assicurazioni S.P.A."
-        },
-        date : "2021-08-08",
-        next_due_date : "2021-08-08",
-        currency : {
-          id : "EUR",
-          exchange_rate : "1.00000",
-          symbol : "€"
-        },
-        amount_net : 645.69,
-        amount_vat : 0,
-        amount_gross : 645.69,
-        amount_withholding_tax : 0,
-        amount_other_withholding_tax : 0,
-        tax_deductibility : 50,
-        vat_deductibility : 100,
-        items_list : null,
-        payments_list : [
-          {
-            amount : 645.69,
-            due_date : "2021-08-08",
-            paid_date : "2021-08-08",
-            id : 999,
-            payment_terms : {
-              days : 0,
-              type : "standard"
-            },
-            status : "paid",
-            payment_account : {
-              id : 333,
-              name : "Carta conto",
-              virtual : false
-            }
+      date: '2021-08-15',
+      next_due_date: '2021-08-15',
+      currency: {
+        id: 'EUR',
+        exchange_rate: '1.00000',
+        symbol: '€'
+      },
+      amount_net: 592,
+      amount_vat: 0,
+      amount_gross: 592,
+      amount_withholding_tax: 0,
+      amount_other_withholding_tax: 0,
+      tax_deductibility: 50,
+      vat_deductibility: 100,
+      items_list: null,
+      payments_list: [
+        {
+          amount: 592,
+          due_date: '2021-08-15',
+          paid_date: '2021-08-15',
+          id: 777,
+          payment_terms: {
+            days: 0,
+            type: 'standard'
+          },
+          status: 'paid',
+          payment_account: {
+            id: 222,
+            name: 'Contanti',
+            virtual: false
           }
-        ],
-        attachment_url : "spesa_gjsd567e5hu6ti.pdf",
-        attachment_preview_url : null
-      }
-    ]
-  };
+        }
+      ],
+      attachment_url: 'spesa_ger5i783t45hu6ti.pdf',
+      attachment_preview_url: null
+    },
+    {
+      id: 12346,
+      type: 'expense',
+      description: 'Assicurazione RCA',
+      amortization: 1,
+      rc_center: '',
+      invoice_number: '',
+      is_marked: false,
+      is_detailed: false,
+      e_invoice: false,
+      entity: {
+        id: 89,
+        name: 'Indesa Assicurazioni S.P.A.'
+      },
+      date: '2021-08-08',
+      next_due_date: '2021-08-08',
+      currency: {
+        id: 'EUR',
+        exchange_rate: '1.00000',
+        symbol: '€'
+      },
+      amount_net: 645.69,
+      amount_vat: 0,
+      amount_gross: 645.69,
+      amount_withholding_tax: 0,
+      amount_other_withholding_tax: 0,
+      tax_deductibility: 50,
+      vat_deductibility: 100,
+      items_list: null,
+      payments_list: [
+        {
+          amount: 645.69,
+          due_date: '2021-08-08',
+          paid_date: '2021-08-08',
+          id: 999,
+          payment_terms: {
+            days: 0,
+            type: 'standard'
+          },
+          status: 'paid',
+          payment_account: {
+            id: 333,
+            name: 'Carta conto',
+            virtual: false
+          }
+        }
+      ],
+      attachment_url: 'spesa_gjsd567e5hu6ti.pdf',
+      attachment_preview_url: null
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListReceivedDocumentsResponsePage', function () {
+  it('should create an instance of ListReceivedDocumentsResponsePage', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListReceivedDocumentsResponsePage', function() {
-    it('should create an instance of ListReceivedDocumentsResponsePage', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

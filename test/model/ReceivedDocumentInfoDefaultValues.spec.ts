@@ -10,25 +10,22 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceivedDocumentInfoDefaultValues } from '../../src/models';
+import { expect } from 'chai'
+import { ReceivedDocumentInfoDefaultValues } from '../../src/models'
 
-  var instance: ReceivedDocumentInfoDefaultValues = {
-    detailed: false
-  };
+const instance: ReceivedDocumentInfoDefaultValues = {
+  detailed: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ReceivedDocumentInfoDefaultValues', function () {
+  it('should create an instance of ReceivedDocumentInfoDefaultValues', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ReceivedDocumentInfoDefaultValues', function() {
-    it('should create an instance of ReceivedDocumentInfoDefaultValues', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property detailed (base name: "detailed")', function() {
-      expect(instance.detailed).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property detailed (base name: "detailed")', function () {
+    expect(instance.detailed).to.be.a('boolean')
+  })
+})

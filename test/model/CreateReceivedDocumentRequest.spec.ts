@@ -10,77 +10,74 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateReceivedDocumentRequest } from '../../src/models';
+import { expect } from 'chai'
+import { CreateReceivedDocumentRequest } from '../../src/models'
 
-  var instance: CreateReceivedDocumentRequest = {
-    pending_id: 2,
-    data: {
-      id : 12345,
-      type : "expense",
-      description : "Soggiorno di lavoro",
-      amortization : 1,
-      rc_center : "",
-      invoice_number : "",
-      is_marked : false,
-      is_detailed : false,
-      e_invoice : false,
-      entity : {
-        id : 111,
-        name : "Hotel Rubino Palace"
-      },
-      date : "2021-08-15",
-      next_due_date : "2021-08-15",
-      currency : {
-        id : "EUR",
-        exchange_rate : "1.00000",
-        symbol : "€"
-      },
-      amount_net : 592,
-      amount_vat : 0,
-      amount_gross : 592,
-      amount_withholding_tax : 0,
-      amount_other_withholding_tax : 0,
-      tax_deductibility : 50,
-      vat_deductibility : 100,
-      payments_list : [
-        {
-          amount : 592,
-          due_date : "2021-08-15",
-          paid_date : "2021-08-15",
-          id : 777,
-          payment_terms : {
-            days : 0,
-            type : "standard"
-          },
-          status : "paid",
-          payment_account : {
-            id : 222,
-            name : "Contanti",
-            virtual : false
-          }
+const instance: CreateReceivedDocumentRequest = {
+  pending_id: 2,
+  data: {
+    id: 12345,
+    type: 'expense',
+    description: 'Soggiorno di lavoro',
+    amortization: 1,
+    rc_center: '',
+    invoice_number: '',
+    is_marked: false,
+    is_detailed: false,
+    e_invoice: false,
+    entity: {
+      id: 111,
+      name: 'Hotel Rubino Palace'
+    },
+    date: '2021-08-15',
+    next_due_date: '2021-08-15',
+    currency: {
+      id: 'EUR',
+      exchange_rate: '1.00000',
+      symbol: '€'
+    },
+    amount_net: 592,
+    amount_vat: 0,
+    amount_gross: 592,
+    amount_withholding_tax: 0,
+    amount_other_withholding_tax: 0,
+    tax_deductibility: 50,
+    vat_deductibility: 100,
+    payments_list: [
+      {
+        amount: 592,
+        due_date: '2021-08-15',
+        paid_date: '2021-08-15',
+        id: 777,
+        payment_terms: {
+          days: 0,
+          type: 'standard'
+        },
+        status: 'paid',
+        payment_account: {
+          id: 222,
+          name: 'Contanti',
+          virtual: false
         }
-      ],
-      attachment_url : "spesa_ger5i783t45hu6ti.pdf"
-    }
-  };
+      }
+    ],
+    attachment_url: 'spesa_ger5i783t45hu6ti.pdf'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateReceivedDocumentRequest', function () {
+  it('should create an instance of CreateReceivedDocumentRequest', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateReceivedDocumentRequest', function() {
-    it('should create an instance of CreateReceivedDocumentRequest', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property pendingId (base name: "pending_id")', function () {
+    expect(instance.pending_id).to.be.a('number')
+  })
 
-    it('should have the property pendingId (base name: "pending_id")', function() {
-      expect(instance.pending_id).to.be.a('number');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

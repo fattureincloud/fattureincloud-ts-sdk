@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { PaymentMethodType } from '../../src/models';
+import { expect } from 'chai'
+import { PaymentMethodType } from '../../src/models'
 
-  var instance: PaymentMethodType = "riba";
+const instance: PaymentMethodType = 'riba'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('PaymentMethodType', function() {
-    it('should create an instance of PaymentMethodType', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('PaymentMethodType', function () {
+  it('should create an instance of PaymentMethodType', function () {
+    expect(instance).to.be.a('string')
+  })
+})

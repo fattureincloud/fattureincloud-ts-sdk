@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { UserCompanyRole } from '../../src/models';
+import { expect } from 'chai'
+import { UserCompanyRole } from '../../src/models'
 
-  var instance: UserCompanyRole = "master";
+const instance: UserCompanyRole = 'master'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('UserCompanyRole', function() {
-    it('should create an instance of UserCompanyRole', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('UserCompanyRole', function () {
+  it('should create an instance of UserCompanyRole', function () {
+    expect(instance).to.be.a('string')
+  })
+})

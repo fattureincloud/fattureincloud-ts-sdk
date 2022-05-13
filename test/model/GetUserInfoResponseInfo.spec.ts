@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetUserInfoResponseInfo } from '../../src/models';
+import { expect } from 'chai'
+import { GetUserInfoResponseInfo } from '../../src/models'
 
-  var instance: GetUserInfoResponseInfo = {
-    need_marketing_consents_confirmation: false,
-    need_password_change: false,
-    need_terms_of_service_confirmation: false
-  };
+const instance: GetUserInfoResponseInfo = {
+  need_marketing_consents_confirmation: false,
+  need_password_change: false,
+  need_terms_of_service_confirmation: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetUserInfoResponseInfo', function () {
+  it('should create an instance of GetUserInfoResponseInfo', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetUserInfoResponseInfo', function() {
-    it('should create an instance of GetUserInfoResponseInfo', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property needMarketingConsentsConfirmation (base name: "need_marketing_consents_confirmation")', function () {
+    expect(instance.need_marketing_consents_confirmation).to.be.a('boolean')
+  })
 
-    it('should have the property needMarketingConsentsConfirmation (base name: "need_marketing_consents_confirmation")', function() {
-      expect(instance.need_marketing_consents_confirmation).to.be.a('boolean');
-    });
+  it('should have the property needPasswordChange (base name: "need_password_change")', function () {
+    expect(instance.need_password_change).to.be.a('boolean')
+  })
 
-    it('should have the property needPasswordChange (base name: "need_password_change")', function() {
-      expect(instance.need_password_change).to.be.a('boolean');
-    });
-
-    it('should have the property needTermsOfServiceConfirmation (base name: "need_terms_of_service_confirmation")', function() {
-      expect(instance.need_terms_of_service_confirmation).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property needTermsOfServiceConfirmation (base name: "need_terms_of_service_confirmation")', function () {
+    expect(instance.need_terms_of_service_confirmation).to.be.a('boolean')
+  })
+})

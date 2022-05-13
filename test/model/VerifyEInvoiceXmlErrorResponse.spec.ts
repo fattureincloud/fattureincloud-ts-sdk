@@ -10,39 +10,36 @@
  *
  */
 
-import { expect } from 'chai';
-import { VerifyEInvoiceXmlErrorResponse } from '../../src/models';
+import { expect } from 'chai'
+import { VerifyEInvoiceXmlErrorResponse } from '../../src/models'
 
-  var instance: VerifyEInvoiceXmlErrorResponse = {
-    error: {
-      message : "errore",
-      validation_result : {
-        success : false
-      }
-    },
-    extra: {
-      errors : [
-        "errore brutto"
-      ]
+const instance: VerifyEInvoiceXmlErrorResponse = {
+  error: {
+    message: 'errore',
+    validation_result: {
+      success: false
     }
-  };
+  },
+  extra: {
+    errors: [
+      'errore brutto'
+    ]
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('VerifyEInvoiceXmlErrorResponse', function () {
+  it('should create an instance of VerifyEInvoiceXmlErrorResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('VerifyEInvoiceXmlErrorResponse', function() {
-    it('should create an instance of VerifyEInvoiceXmlErrorResponse', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property error (base name: "error")', function () {
+    expect(instance.error).to.be.a('object')
+  })
 
-    it('should have the property error (base name: "error")', function() {
-      expect(instance.error).to.be.a('object');
-    });
-
-    it('should have the property extra (base name: "extra")', function() {
-      expect(instance.extra).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property extra (base name: "extra")', function () {
+    expect(instance.extra).to.be.a('object')
+  })
+})

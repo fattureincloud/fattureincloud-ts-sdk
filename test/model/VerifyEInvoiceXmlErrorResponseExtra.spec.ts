@@ -10,28 +10,25 @@
  *
  */
 
-import { expect } from 'chai';
-import { VerifyEInvoiceXmlErrorResponseExtra } from '../../src/models';
+import { expect } from 'chai'
+import { VerifyEInvoiceXmlErrorResponseExtra } from '../../src/models'
 
-  var instance: VerifyEInvoiceXmlErrorResponseExtra = {
-    errors: [
-      "errore brutto",
-      "errore brutto2"
-    ]
-  };
+const instance: VerifyEInvoiceXmlErrorResponseExtra = {
+  errors: [
+    'errore brutto',
+    'errore brutto2'
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('VerifyEInvoiceXmlErrorResponseExtra', function () {
+  it('should create an instance of VerifyEInvoiceXmlErrorResponseExtra', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('VerifyEInvoiceXmlErrorResponseExtra', function() {
-    it('should create an instance of VerifyEInvoiceXmlErrorResponseExtra', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property errors (base name: "errors")', function() {
-      expect(instance.errors).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property errors (base name: "errors")', function () {
+    expect(instance.errors).to.be.a('array')
+  })
+})

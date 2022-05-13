@@ -10,34 +10,31 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListTemplatesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListTemplatesResponse } from '../../src/models'
 
-  var instance: ListTemplatesResponse = {
-    data: [
-      {
-        id : 10,
-        name : "New Standard S1"
-      },
-      {
-        id : 106,
-        name : "Minimalist"
-      }
-    ]
-  };
+const instance: ListTemplatesResponse = {
+  data: [
+    {
+      id: 10,
+      name: 'New Standard S1'
+    },
+    {
+      id: 106,
+      name: 'Minimalist'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListTemplatesResponse', function () {
+  it('should create an instance of ListTemplatesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListTemplatesResponse', function() {
-    it('should create an instance of ListTemplatesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

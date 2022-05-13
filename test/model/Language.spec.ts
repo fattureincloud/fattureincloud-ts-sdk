@@ -10,30 +10,27 @@
  *
  */
 
-import { expect } from 'chai';
-import { Language } from '../../src/models';
+import { expect } from 'chai'
+import { Language } from '../../src/models'
 
-  var instance: Language = {
-    code: "it",
-    name: "Italiano"
-  };
+const instance: Language = {
+  code: 'it',
+  name: 'Italiano'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('Language', function () {
+  it('should create an instance of Language', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('Language', function() {
-    it('should create an instance of Language', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property code (base name: "code")', function () {
+    expect(instance.code).to.be.a('string')
+  })
 
-    it('should have the property code (base name: "code")', function() {
-      expect(instance.code).to.be.a('string');
-    });
-
-    it('should have the property name (base name: "name")', function() {
-      expect(instance.name).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property name (base name: "name")', function () {
+    expect(instance.name).to.be.a('string')
+  })
+})

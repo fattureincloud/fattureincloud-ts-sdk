@@ -10,80 +10,77 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentEiData } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentEiData } from '../../src/models'
 
-  var instance: IssuedDocumentEiData = {
-    vat_kind: "I",
-    od_number: "2",
-    od_date: "2020-10-10",
-    original_document_type: "ordine",
-    cig: " ",
-    cup: " ",
-    payment_method: "MP01",
-    bank_name: " ",
-    bank_iban: " ",
-    bank_beneficiary: " ",
-    invoice_number: " ",
-    invoice_date: "2020-12-12",   
-  };
+const instance: IssuedDocumentEiData = {
+  vat_kind: 'I',
+  od_number: '2',
+  od_date: '2020-10-10',
+  original_document_type: 'ordine',
+  cig: ' ',
+  cup: ' ',
+  payment_method: 'MP01',
+  bank_name: ' ',
+  bank_iban: ' ',
+  bank_beneficiary: ' ',
+  invoice_number: ' ',
+  invoice_date: '2020-12-12'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentEiData', function () {
+  it('should create an instance of IssuedDocumentEiData', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentEiData', function() {
-    it('should create an instance of IssuedDocumentEiData', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property vatKind (base name: "vat_kind")', function () {
+    expect(instance.vat_kind).to.be.a('string')
+  })
 
-    it('should have the property vatKind (base name: "vat_kind")', function() {
-      expect(instance.vat_kind).to.be.a('string');
-    });
+  it('should have the property originalDocumentType (base name: "original_document_type")', function () {
+    expect(instance.original_document_type).to.be.a('string')
+  })
 
-    it('should have the property originalDocumentType (base name: "original_document_type")', function() {
-      expect(instance.original_document_type).to.be.a('string');
-    });
+  it('should have the property odNumber (base name: "od_number")', function () {
+    expect(instance.od_number).to.be.a('string')
+  })
 
-    it('should have the property odNumber (base name: "od_number")', function() {
-      expect(instance.od_number).to.be.a('string');
-    });
+  it('should have the property odDate (base name: "od_date")', function () {
+    expect(instance.od_date).to.be.a('string')
+  })
 
-    it('should have the property odDate (base name: "od_date")', function() {
-      expect(instance.od_date).to.be.a('string');
-    });
+  it('should have the property cig (base name: "cig")', function () {
+    expect(instance.cig).to.be.a('string')
+  })
 
-    it('should have the property cig (base name: "cig")', function() {
-      expect(instance.cig).to.be.a('string');
-    });
+  it('should have the property cup (base name: "cup")', function () {
+    expect(instance.cup).to.be.a('string')
+  })
 
-    it('should have the property cup (base name: "cup")', function() {
-      expect(instance.cup).to.be.a('string');
-    });
+  it('should have the property paymentMethod (base name: "payment_method")', function () {
+    expect(instance.payment_method).to.be.a('string')
+  })
 
-    it('should have the property paymentMethod (base name: "payment_method")', function() {
-      expect(instance.payment_method).to.be.a('string');
-    });
+  it('should have the property bankName (base name: "bank_name")', function () {
+    expect(instance.bank_name).to.be.a('string')
+  })
 
-    it('should have the property bankName (base name: "bank_name")', function() {
-      expect(instance.bank_name).to.be.a('string');
-    });
+  it('should have the property bankIban (base name: "bank_iban")', function () {
+    expect(instance.bank_iban).to.be.a('string')
+  })
 
-    it('should have the property bankIban (base name: "bank_iban")', function() {
-      expect(instance.bank_iban).to.be.a('string');
-    });
+  it('should have the property bankBeneficiary (base name: "bank_beneficiary")', function () {
+    expect(instance.bank_beneficiary).to.be.a('string')
+  })
 
-    it('should have the property bankBeneficiary (base name: "bank_beneficiary")', function() {
-      expect(instance.bank_beneficiary).to.be.a('string');
-    });
+  it('should have the property invoiceNumber (base name: "invoice_number")', function () {
+    expect(instance.invoice_number).to.be.a('string')
+  })
 
-    it('should have the property invoiceNumber (base name: "invoice_number")', function() {
-      expect(instance.invoice_number).to.be.a('string');
-    });
-
-    it('should have the property invoiceDate (base name: "invoice_date")', function() {
-      expect(instance.invoice_date).to.be.a('string');
-    });
-
-  });
-
+  it('should have the property invoiceDate (base name: "invoice_date")', function () {
+    expect(instance.invoice_date).to.be.a('string')
+  })
+})

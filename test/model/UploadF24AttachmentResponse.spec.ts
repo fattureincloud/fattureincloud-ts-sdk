@@ -10,27 +10,24 @@
  *
  */
 
-import { expect } from 'chai';
-import { UploadF24AttachmentResponse } from '../../src/models';
+import { expect } from 'chai'
+import { UploadF24AttachmentResponse } from '../../src/models'
 
-  var instance: UploadF24AttachmentResponse = {
-    data: {
-      attachment_token: "bfg3847389fhUIYDihpdewbcuguygqiyrgu72"
-    }
-  };
+const instance: UploadF24AttachmentResponse = {
+  data: {
+    attachment_token: 'bfg3847389fhUIYDihpdewbcuguygqiyrgu72'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('UploadF24AttachmentResponse', function () {
+  it('should create an instance of UploadF24AttachmentResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('UploadF24AttachmentResponse', function() {
-    it('should create an instance of UploadF24AttachmentResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

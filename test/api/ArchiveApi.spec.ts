@@ -10,89 +10,89 @@
  *
  */
 
-import { expect } from 'chai';
-import { ArchiveApi } from '../../src/api/archive-api';
-import { CreateArchiveDocumentRequest, CreateArchiveDocumentResponse, GetArchiveDocumentResponse, ListArchiveDocumentsResponse, ModifyArchiveDocumentRequest, ModifyArchiveDocumentResponse, UploadArchiveAttachmentResponse } from '../../src/models';
-var sandbox = require("sinon").createSandbox();
+import { expect } from 'chai'
+import { ArchiveApi } from '../../src/api/archive-api'
+import { CreateArchiveDocumentRequest, CreateArchiveDocumentResponse, GetArchiveDocumentResponse, ListArchiveDocumentsResponse, ModifyArchiveDocumentRequest, ModifyArchiveDocumentResponse, UploadArchiveAttachmentResponse } from '../../src/models'
+const sandbox = require('sinon').createSandbox()
 
-var instance = new ArchiveApi();
+const instance = new ArchiveApi()
 
-var createArchiveDocumentResponseObj: CreateArchiveDocumentResponse = {"data":{"id":12345,"date":"2021-08-20","category":"Altri documenti","description":"spesa 2","attachment_url":"spesa2.pdf"}};
-var createArchiveDocumentStub = sandbox.stub(instance, "createArchiveDocument").returns(createArchiveDocumentResponseObj);
+const createArchiveDocumentResponseObj: CreateArchiveDocumentResponse = { data: { id: 12345, date: '2021-08-20', category: 'Altri documenti', description: 'spesa 2', attachment_url: 'spesa2.pdf' } }
+const createArchiveDocumentStub = sandbox.stub(instance, 'createArchiveDocument').returns(createArchiveDocumentResponseObj)
 
-var deleteArchiveDocumentResponseObj = {};
-sandbox.stub(instance, "deleteArchiveDocument").returns(deleteArchiveDocumentResponseObj);
+const deleteArchiveDocumentResponseObj = {}
+sandbox.stub(instance, 'deleteArchiveDocument').returns(deleteArchiveDocumentResponseObj)
 
-var getArchiveDocumentResponseObj: GetArchiveDocumentResponse = {"data":{"id":12345,"date":"2021-08-20","category":"Altri documenti","description":"spesa 2","attachment_url":"spesa2.pdf"}};
-sandbox.stub(instance, "getArchiveDocument").returns(getArchiveDocumentResponseObj);
+const getArchiveDocumentResponseObj: GetArchiveDocumentResponse = { data: { id: 12345, date: '2021-08-20', category: 'Altri documenti', description: 'spesa 2', attachment_url: 'spesa2.pdf' } }
+sandbox.stub(instance, 'getArchiveDocument').returns(getArchiveDocumentResponseObj)
 
-var listArchiveDocumentsResponseObj: ListArchiveDocumentsResponse = {"current_page":1,"data":[{"id":12345,"date":"2021-08-20","category":"Altri documenti","description":"spesa 2","attachment_url":"spesa2.pdf"},{"id":12346,"date":"2021-08-19","category":"Altri documenti","description":"spesa 1","attachment_url":"spesa1.pdf"}],"first_page_url":"page=1","from":1,"last_page":1,"last_page_url":"page=1","next_page_url":null,"path":"\/archive","per_page":50,"prev_page_url":null,"to":2,"total":2};
-sandbox.stub(instance, "listArchiveDocuments").returns(listArchiveDocumentsResponseObj);
+const listArchiveDocumentsResponseObj: ListArchiveDocumentsResponse = { current_page: 1, data: [{ id: 12345, date: '2021-08-20', category: 'Altri documenti', description: 'spesa 2', attachment_url: 'spesa2.pdf' }, { id: 12346, date: '2021-08-19', category: 'Altri documenti', description: 'spesa 1', attachment_url: 'spesa1.pdf' }], first_page_url: 'page=1', from: 1, last_page: 1, last_page_url: 'page=1', next_page_url: null, path: '/archive', per_page: 50, prev_page_url: null, to: 2, total: 2 }
+sandbox.stub(instance, 'listArchiveDocuments').returns(listArchiveDocumentsResponseObj)
 
-var modifyArchiveDocumentResponseObj: ModifyArchiveDocumentResponse = {"data":{"id":12345,"date":"2021-08-20","category":"Altri documenti","description":"spesa 2","attachment_url":"spesa2.pdf"}};
-var modifyArchiveDocumentStub = sandbox.stub(instance, "modifyArchiveDocument").returns(modifyArchiveDocumentResponseObj);
+const modifyArchiveDocumentResponseObj: ModifyArchiveDocumentResponse = { data: { id: 12345, date: '2021-08-20', category: 'Altri documenti', description: 'spesa 2', attachment_url: 'spesa2.pdf' } }
+const modifyArchiveDocumentStub = sandbox.stub(instance, 'modifyArchiveDocument').returns(modifyArchiveDocumentResponseObj)
 
-var uploadArchiveDocumentAttachmentResponseObj: UploadArchiveAttachmentResponse = {"data":{"attachment_token":"YmMyNWYxYzIwMTU3N2Y4ZGE3ZjZiMzg5OWY0ODNkZDQveXl5LmRvYw"}};
-sandbox.stub(instance, "uploadArchiveDocumentAttachment").returns(uploadArchiveDocumentAttachmentResponseObj);
+const uploadArchiveDocumentAttachmentResponseObj: UploadArchiveAttachmentResponse = { data: { attachment_token: 'YmMyNWYxYzIwMTU3N2Y4ZGE3ZjZiMzg5OWY0ODNkZDQveXl5LmRvYw' } }
+sandbox.stub(instance, 'uploadArchiveDocumentAttachment').returns(uploadArchiveDocumentAttachmentResponseObj)
 
-beforeEach(function() {
+// beforeEach(function () {
 
-});
+// })
 
-describe('ArchiveApi', function() {
-    describe('createArchiveDocument', function() {
-        it('should call createArchiveDocument successfully', function(done) {
-            let opts: CreateArchiveDocumentRequest = {"data":{"date":"2021-08-20","category":"Altri documenti","description":"spesa 1","attachment_token":"YjFrbmNlc3E0NmNuaW5ocXQ0b2p0c202NG1ncWx6ZmsvZmlsZW5hbWU"}}
-            var response = instance.createArchiveDocument(2, opts);
-            var expectedJson = JSON.stringify(createArchiveDocumentResponseObj);
-            var actualJson = JSON.stringify(response);
-            expect(actualJson).to.equal(expectedJson);
-            expect(createArchiveDocumentStub.getCall(0).args[1]).to.equal(opts);
-            done();
-        });
-    });
-    describe('deleteArchiveDocument', function() {
-        it('should call deleteArchiveDocument successfully', function(done) {
-            expect(1).to.equal(1);
-            done();
-        });
-    });
-    describe('getArchiveDocument', function() {
-        it('should call getArchiveDocument successfully', function(done) {
-            var response = instance.getArchiveDocument(2, 12345);
-            var expectedJson = JSON.stringify(getArchiveDocumentResponseObj);
-            var actualJson = JSON.stringify(response);
-            expect(actualJson).to.equal(expectedJson);
-            done();
-        });
-    });
-    describe('listArchiveDocuments', function() {
-        it('should call listArchiveDocuments successfully', function(done) {
-            var response = instance.listArchiveDocuments(2);
-            var expectedJson = JSON.stringify(listArchiveDocumentsResponseObj);
-            var actualJson = JSON.stringify(response);
-            expect(actualJson).to.equal(expectedJson);
-            done();
-        });
-    });
-    describe('modifyArchiveDocument', function() {
-        it('should call modifyArchiveDocument successfully', function(done) {
-            var opts: ModifyArchiveDocumentRequest = {"data":{"description":"spesa lululu"}};
-            var response = instance.modifyArchiveDocument(2, 12345, opts);
-            var expectedJson = JSON.stringify(modifyArchiveDocumentResponseObj);
-            var actualJson = JSON.stringify(response);
-            expect(actualJson).to.equal(expectedJson);
-            expect(modifyArchiveDocumentStub.getCall(0).args[2]).to.equal(opts);
-            done();
-        });
-    });
-    describe('uploadArchiveDocumentAttachment', function() {
-        it('should call uploadArchiveDocumentAttachment successfully', function(done) {
-            var response = instance.uploadArchiveDocumentAttachment(2);
-            var expectedJson = JSON.stringify(uploadArchiveDocumentAttachmentResponseObj);
-            var actualJson = JSON.stringify(response);
-            expect(actualJson).to.equal(expectedJson);
-            done();
-        });
-    });
-});
+describe('ArchiveApi', function () {
+  describe('createArchiveDocument', function () {
+    it('should call createArchiveDocument successfully', function (done) {
+      const opts: CreateArchiveDocumentRequest = { data: { date: '2021-08-20', category: 'Altri documenti', description: 'spesa 1', attachment_token: 'YjFrbmNlc3E0NmNuaW5ocXQ0b2p0c202NG1ncWx6ZmsvZmlsZW5hbWU' } }
+      const response = instance.createArchiveDocument(2, opts)
+      const expectedJson = JSON.stringify(createArchiveDocumentResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      expect(createArchiveDocumentStub.getCall(0).args[1]).to.equal(opts)
+      done()
+    })
+  })
+  describe('deleteArchiveDocument', function () {
+    it('should call deleteArchiveDocument successfully', function (done) {
+      expect(1).to.equal(1)
+      done()
+    })
+  })
+  describe('getArchiveDocument', function () {
+    it('should call getArchiveDocument successfully', function (done) {
+      const response = instance.getArchiveDocument(2, 12345)
+      const expectedJson = JSON.stringify(getArchiveDocumentResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listArchiveDocuments', function () {
+    it('should call listArchiveDocuments successfully', function (done) {
+      const response = instance.listArchiveDocuments(2)
+      const expectedJson = JSON.stringify(listArchiveDocumentsResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('modifyArchiveDocument', function () {
+    it('should call modifyArchiveDocument successfully', function (done) {
+      const opts: ModifyArchiveDocumentRequest = { data: { description: 'spesa lululu' } }
+      const response = instance.modifyArchiveDocument(2, 12345, opts)
+      const expectedJson = JSON.stringify(modifyArchiveDocumentResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      expect(modifyArchiveDocumentStub.getCall(0).args[2]).to.equal(opts)
+      done()
+    })
+  })
+  describe('uploadArchiveDocumentAttachment', function () {
+    it('should call uploadArchiveDocumentAttachment successfully', function (done) {
+      const response = instance.uploadArchiveDocumentAttachment(2)
+      const expectedJson = JSON.stringify(uploadArchiveDocumentAttachmentResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+})

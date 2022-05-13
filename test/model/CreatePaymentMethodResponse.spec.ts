@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreatePaymentMethodResponse } from '../../src/models';
+import { expect } from 'chai'
+import { CreatePaymentMethodResponse } from '../../src/models'
 
-  var instance: CreatePaymentMethodResponse = {
-    data: {
-      id : 386683,
-      name : "Bonifico bancario",
-      is_default : true,
-      type : "standard",
-      details : [
-        {
-          title : "Banca",
-          description : "Sao Paulo"
-        }
-      ],
-      default_payment_account : {
-        id : 12345,
-        name : "conto banca SP"
+const instance: CreatePaymentMethodResponse = {
+  data: {
+    id: 386683,
+    name: 'Bonifico bancario',
+    is_default: true,
+    type: 'standard',
+    details: [
+      {
+        title: 'Banca',
+        description: 'Sao Paulo'
       }
+    ],
+    default_payment_account: {
+      id: 12345,
+      name: 'conto banca SP'
     }
-  };
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreatePaymentMethodResponse', function () {
+  it('should create an instance of CreatePaymentMethodResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreatePaymentMethodResponse', function() {
-    it('should create an instance of CreatePaymentMethodResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

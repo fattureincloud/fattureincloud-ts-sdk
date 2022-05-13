@@ -10,468 +10,465 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocument } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocument } from '../../src/models'
 
-  var instance: IssuedDocument = {
-    id: 12345,
-    type: "receipt",
-    year: 2021,
-    numeration: "rec123",
-    subject: "",
-    visible_subject: "",
-    rc_center: "",
-    ei_cassa_type: "",
-    ei_withholding_tax_causal: "a",
-    ei_other_withholding_tax_type: "a",
-    ei_other_withholding_tax_causal: "c",
-    stamp_duty: 0,
-    use_gross_prices: false,
-    e_invoice: false,
-    delivery_note: false,
-    accompanying_invoice: false,
-    amount_net: 68.18,
-    amount_vat: 6.82,
-    amount_gross: 75,
-    amount_due_discount: 1,
-    amount_rivalsa: 0,
-    amount_cassa: 0,
-    amount_withholding_tax: 0,
-    amount_other_withholding_tax: 0,
-    h_margins: 15,
-    v_margins: 16,
-    show_payment_method: false,
-    show_payments: true,
-    show_totals: "all",
-    show_paypal_button: true,
-    show_notification_button: false,
-    is_marked: false,
-    date: "2021-08-20",
-    number: 1,
-    notes: "",
-    rivalsa: 0,
-    cassa: 0,
-    withholding_tax: 0,
-    withholding_tax_taxable: 100,
-    other_withholding_tax: 0,
-    use_split_payment: false,
-    attachment_url: "kdijrnf893hnwkfk45f50f.pdf",
-    seen_date: "2020-08-23",
-    next_due_date: "2020-08-23",
-    url: "y12h45rn9yf2mse0p43t7ec90vr.pdf",
-    show_tspay_button: false,
-    dn_number: 3,
-    dn_date: "2020-10-21",
-    dn_ai_packages_number: "4",
-    dn_ai_weight: "3",
-    dn_ai_causal: "causal",
-    dn_ai_destination: "dest",
-    dn_ai_transporter: "trasp",
-    dn_ai_notes: "notes",
-    amount_rivalsa_taxable: 3,
-    amount_global_cassa_taxable: 3,
-    amount_cassa_taxable: 3,
-    amount_cassa2: 3,
-    amount_cassa2_taxable: 3,
-    amount_withholding_tax_taxable: 3,
-    amount_enasarco_taxable: 3,
-    amount_other_withholding_tax_taxable: 3,
-    ei_cassa2_type: "3",
-    attachment_token: "asdaosdjaoisndoa",
-    entity: {
-      id : 54321,
-      name : "Mary Red S.r.L.",
-      vat_number : "IT05432181211",
-      tax_code : "IT05432181211",
-      address_street : "Corso impero, 66",
-      address_postal_code : "20900",
-      address_city : "Milano",
-      address_province : "MI",
-      address_extra : "",
-      country : "Italia",
-      certified_email : "mary@pec.red.com",
-      ei_code : "ABCXCR1"
-    },
-    currency: {
-      id : "EUR",
-      exchange_rate : "1.00000",
-      symbol : "€"
-    },
-    language: {
-      code : "it",
-      name : "Italiano"
-    },
-    payment_method: {
-      id : 4,
-      name : "Credit card"
-    },
-    items_list: [
-      {
-        product_id : 5432,
-        code : "SG3",
-        name : "Soggiorno",
-        measure : "",
-        net_price : 68.18182,
-        category : "",
-        id : 277876033,
-        gross_price : 75,
-        apply_withholding_taxes : true,
-        discount : 0,
-        discount_highlight : false,
-        qty : 1,
-        vat : {
-          id : 3,
-          value : 10,
-          description : ""
-        },
-        stock : false,
-        description : "",
-        not_taxable : false
-      }
-    ],
-    payments_list: [
-      {
-        amount : 75,
-        due_date : "2020-08-23",
-        paid_date : null,
-        id : 69078013,
-        status : "not_paid",
-        payment_account : null
-      }
-    ],
-    template: {
-      id : 2821,
-      name : "Light Smoke"
-    },
-    extra_data: {
-      ts_status : 1
-    },
-    acc_inv_template: {
-      id : 4
-    },
-    delivery_note_template: {
-      id : 54321
-    },
-    ei_raw: {
-      prop : true
-    },
-    ei_data: {
-      bank_name : "Sao Paulo"
+const instance: IssuedDocument = {
+  id: 12345,
+  type: 'receipt',
+  year: 2021,
+  numeration: 'rec123',
+  subject: '',
+  visible_subject: '',
+  rc_center: '',
+  ei_cassa_type: '',
+  ei_withholding_tax_causal: 'a',
+  ei_other_withholding_tax_type: 'a',
+  ei_other_withholding_tax_causal: 'c',
+  stamp_duty: 0,
+  use_gross_prices: false,
+  e_invoice: false,
+  delivery_note: false,
+  accompanying_invoice: false,
+  amount_net: 68.18,
+  amount_vat: 6.82,
+  amount_gross: 75,
+  amount_due_discount: 1,
+  amount_rivalsa: 0,
+  amount_cassa: 0,
+  amount_withholding_tax: 0,
+  amount_other_withholding_tax: 0,
+  h_margins: 15,
+  v_margins: 16,
+  show_payment_method: false,
+  show_payments: true,
+  show_totals: 'all',
+  show_paypal_button: true,
+  show_notification_button: false,
+  is_marked: false,
+  date: '2021-08-20',
+  number: 1,
+  notes: '',
+  rivalsa: 0,
+  cassa: 0,
+  withholding_tax: 0,
+  withholding_tax_taxable: 100,
+  other_withholding_tax: 0,
+  use_split_payment: false,
+  attachment_url: 'kdijrnf893hnwkfk45f50f.pdf',
+  seen_date: '2020-08-23',
+  next_due_date: '2020-08-23',
+  url: 'y12h45rn9yf2mse0p43t7ec90vr.pdf',
+  show_tspay_button: false,
+  dn_number: 3,
+  dn_date: '2020-10-21',
+  dn_ai_packages_number: '4',
+  dn_ai_weight: '3',
+  dn_ai_causal: 'causal',
+  dn_ai_destination: 'dest',
+  dn_ai_transporter: 'trasp',
+  dn_ai_notes: 'notes',
+  amount_rivalsa_taxable: 3,
+  amount_global_cassa_taxable: 3,
+  amount_cassa_taxable: 3,
+  amount_cassa2: 3,
+  amount_cassa2_taxable: 3,
+  amount_withholding_tax_taxable: 3,
+  amount_enasarco_taxable: 3,
+  amount_other_withholding_tax_taxable: 3,
+  ei_cassa2_type: '3',
+  attachment_token: 'asdaosdjaoisndoa',
+  entity: {
+    id: 54321,
+    name: 'Mary Red S.r.L.',
+    vat_number: 'IT05432181211',
+    tax_code: 'IT05432181211',
+    address_street: 'Corso impero, 66',
+    address_postal_code: '20900',
+    address_city: 'Milano',
+    address_province: 'MI',
+    address_extra: '',
+    country: 'Italia',
+    certified_email: 'mary@pec.red.com',
+    ei_code: 'ABCXCR1'
+  },
+  currency: {
+    id: 'EUR',
+    exchange_rate: '1.00000',
+    symbol: '€'
+  },
+  language: {
+    code: 'it',
+    name: 'Italiano'
+  },
+  payment_method: {
+    id: 4,
+    name: 'Credit card'
+  },
+  items_list: [
+    {
+      product_id: 5432,
+      code: 'SG3',
+      name: 'Soggiorno',
+      measure: '',
+      net_price: 68.18182,
+      category: '',
+      id: 277876033,
+      gross_price: 75,
+      apply_withholding_taxes: true,
+      discount: 0,
+      discount_highlight: false,
+      qty: 1,
+      vat: {
+        id: 3,
+        value: 10,
+        description: ''
+      },
+      stock: false,
+      description: '',
+      not_taxable: false
     }
-  };
-
-  beforeEach(function() {
-  });
-
-
-  describe('IssuedDocument', function() {
-    it('should create an instance of IssuedDocument', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
-
-    it('should have the property entity (base name: "entity")', function() {
-      expect(instance.entity).to.be.a('object');
-    });
-
-    it('should have the property type (base name: "type")', function() {
-      expect(instance.type).to.be.a('string');
-    });
-
-    it('should have the property number (base name: "number")', function() {
-      expect(instance.number).to.be.a('number');
-    });
-
-    it('should have the property numeration (base name: "numeration")', function() {
-      expect(instance.numeration).to.be.a('string');
-    });
-
-    it('should have the property date (base name: "date")', function() {
-      expect(instance.date).to.be.a('string');
-    });
-
-    it('should have the property currency (base name: "currency")', function() {
-      expect(instance.currency).to.be.a('object');
-    });
-
-    it('should have the property language (base name: "language")', function() {
-      expect(instance.language).to.be.a('object');
-    });
-
-    it('should have the property subject (base name: "subject")', function() {
-      expect(instance.subject).to.be.a('string');
-    });
-
-    it('should have the property visibleSubject (base name: "visible_subject")', function() {
-      expect(instance.visible_subject).to.be.a('string');
-    });
-
-    it('should have the property rcCenter (base name: "rc_center")', function() {
-      expect(instance.rc_center).to.be.a('string');
-    });
-
-    it('should have the property notes (base name: "notes")', function() {
-      expect(instance.notes).to.be.a('string');
-    });
-
-    it('should have the property rivalsa (base name: "rivalsa")', function() {
-      expect(instance.rivalsa).to.be.a('number');
-    });
-
-    it('should have the property cassa (base name: "cassa")', function() {
-      expect(instance.cassa).to.be.a('number');
-    });
-
-    it('should have the property withholdingTax (base name: "withholding_tax")', function() {
-      expect(instance.withholding_tax).to.be.a('number');
-    });
-
-    it('should have the property withholdingTaxTaxable (base name: "withholding_tax_taxable")', function() {
-      expect(instance.withholding_tax_taxable).to.be.a('number');
-    });
-
-    it('should have the property otherWithholdingTax (base name: "other_withholding_tax")', function() {
-      expect(instance.other_withholding_tax).to.be.a('number');
-    });
-
-    it('should have the property stampDuty (base name: "stamp_duty")', function() {
-      expect(instance.stamp_duty).to.be.a('number');
-    });
-
-    it('should have the property paymentMethod (base name: "payment_method")', function() {
-      expect(instance.payment_method).to.be.a('object');
-    });
-
-    it('should have the property useSplitPayment (base name: "use_split_payment")', function() {
-      expect(instance.use_split_payment).to.be.a('boolean');
-    });
-
-    it('should have the property useGrossPrices (base name: "use_gross_prices")', function() {
-      expect(instance.use_gross_prices).to.be.a('boolean');
-    });
-
-    it('should have the property eInvoice (base name: "e_invoice")', function() {
-      expect(instance.e_invoice).to.be.a('boolean');
-    });
-
-    it('should have the property eiData (base name: "ei_data")', function() {
-      expect(instance.ei_data).to.be.a('object');
-    });
-
-    it('should have the property itemsList (base name: "items_list")', function() {
-      expect(instance.items_list).to.be.a('array');
-    });
-
-    it('should have the property paymentsList (base name: "payments_list")', function() {
-      expect(instance.payments_list).to.be.a('array');
-    });
-
-    it('should have the property template (base name: "template")', function() {
-      expect(instance.template).to.be.a('object');
-    });
-
-    it('should have the property deliveryNoteTemplate (base name: "delivery_note_template")', function() {
-      expect(instance.delivery_note_template).to.be.a('object');
-    });
-
-    it('should have the property accInvTemplate (base name: "acc_inv_template")', function() {
-      expect(instance.acc_inv_template).to.be.a('object');
-    });
-
-    it('should have the property hMargins (base name: "h_margins")', function() {
-      expect(instance.h_margins).to.be.a('number');
-    });
-
-    it('should have the property showPayments (base name: "show_payments")', function() {
-      expect(instance.show_payments).to.be.a('boolean');
-    });
-
-    it('should have the property showPaymentMethod (base name: "show_payment_method")', function() {
-      expect(instance.show_payment_method).to.be.a('boolean');
-    });
-
-    it('should have the property showTotals (base name: "show_totals")', function() {
-      expect(instance.show_totals).to.be.a('string');
-    });
-
-    it('should have the property vMargins (base name: "v_margins")', function() {
-      expect(instance.v_margins).to.be.a('number');
-    });
-
-    it('should have the property showPaypalButton (base name: "show_paypal_button")', function() {
-      expect(instance.show_paypal_button).to.be.a('boolean');
-    });
-
-    it('should have the property showNotificationButton (base name: "show_notification_button")', function() {
-      expect(instance.show_notification_button).to.be.a('boolean');
-    });
-
-    it('should have the property deliveryNote (base name: "delivery_note")', function() {
-      expect(instance.delivery_note).to.be.a('boolean');
-    });
-
-    it('should have the property accompanyingInvoice (base name: "accompanying_invoice")', function() {
-      expect(instance.accompanying_invoice).to.be.a('boolean');
-    });
-
-    it('should have the property dnNumber (base name: "dn_number")', function() {
-      expect(instance.dn_number).to.be.a('number');
-    });
-
-    it('should have the property dnDate (base name: "dn_date")', function() {
-      expect(instance.dn_date).to.be.a('string');
-    });
-
-    it('should have the property dnAiPackagesNumber (base name: "dn_ai_packages_number")', function() {
-      expect(instance.dn_ai_packages_number).to.be.a('string');
-    });
-
-    it('should have the property dnAiWeight (base name: "dn_ai_weight")', function() {
-      expect(instance.dn_ai_weight).to.be.a('string');
-    });
-
-    it('should have the property dnAiCausal (base name: "dn_ai_causal")', function() {
-      expect(instance.dn_ai_causal).to.be.a('string');
-    });
-
-    it('should have the property dnAiDestination (base name: "dn_ai_destination")', function() {
-      expect(instance.dn_ai_destination).to.be.a('string');
-    });
-
-    it('should have the property dnAiTransporter (base name: "dn_ai_transporter")', function() {
-      expect(instance.dn_ai_transporter).to.be.a('string');
-    });
-
-    it('should have the property dnAiNotes (base name: "dn_ai_notes")', function() {
-      expect(instance.dn_ai_notes).to.be.a('string');
-    });
-
-    it('should have the property isMarked (base name: "is_marked")', function() {
-      expect(instance.is_marked).to.be.a('boolean');
-    });
-
-    it('should have the property amountNet (base name: "amount_net")', function() {
-      expect(instance.amount_net).to.be.a('number');
-    });
-
-    it('should have the property amountVat (base name: "amount_vat")', function() {
-      expect(instance.amount_vat).to.be.a('number');
-    });
-
-    it('should have the property amountGross (base name: "amount_gross")', function() {
-      expect(instance.amount_gross).to.be.a('number');
-    });
-
-    it('should have the property amountRivalsa (base name: "amount_rivalsa")', function() {
-      expect(instance.amount_rivalsa).to.be.a('number');
-    });
-
-    it('should have the property amountCassa (base name: "amount_cassa")', function() {
-      expect(instance.amount_cassa).to.be.a('number');
-    });
-
-    it('should have the property amountWithholdingTax (base name: "amount_withholding_tax")', function() {
-      expect(instance.amount_withholding_tax).to.be.a('number');
-    });
-
-    it('should have the property amountOtherWithholdingTax (base name: "amount_other_withholding_tax")', function() {
-      expect(instance.amount_other_withholding_tax).to.be.a('number');
-    });
-
-    it('should have the property extraData (base name: "extra_data")', function() {
-      expect(instance.extra_data).to.be.a('object');
-    });
-
-    it('should have the property seenDate (base name: "seen_date")', function() {
-      expect(instance.seen_date).to.be.a('string');
-    });
-
-    it('should have the property nextDueDate (base name: "next_due_date")', function() {
-      expect(instance.next_due_date).to.be.a('string');
-    });
-
-    it('should have the property url (base name: "url")', function() {
-      expect(instance.url).to.be.a('string');
-    });
-
-    it('should have the property attachmentUrl (base name: "attachment_url")', function() {
-      expect(instance.attachment_url).to.be.a('string');
-    });
-
-    it('should have the property attachmentToken (base name: "attachment_token")', function() {
-      expect(instance.attachment_token).to.be.a('string');
-    });
-
-    it('should have the property eiRaw (base name: "ei_raw")', function() {
-      expect(instance.ei_raw).to.be.a('object');
-    });
-
-    it('should have the property showTspayButton (base name: "show_tspay_button")', function() {
-      expect(instance.show_tspay_button).to.be.a('boolean');
-    });
-
-    it('should have the property year (base name: "year")', function() {
-      expect(instance.year).to.be.a('number');
-    });
-
-    it('should have the property amountRivalsaTaxable (base name: "amount_rivalsa_taxable")', function() {
-      expect(instance.amount_rivalsa_taxable).to.be.a('number');
-    });
-
-    it('should have the property amountGlobalCassaTaxable (base name: "amount_global_cassa_taxable")', function() {
-      expect(instance.amount_global_cassa_taxable).to.be.a('number');
-    });
-
-    it('should have the property amountCassaTaxable (base name: "amount_cassa_taxable")', function() {
-      expect(instance.amount_cassa_taxable).to.be.a('number');
-    });
-
-    it('should have the property amountCassa2 (base name: "amount_cassa2")', function() {
-      expect(instance.amount_cassa2).to.be.a('number');
-    });
-
-    it('should have the property amountCassa2Taxable (base name: "amount_cassa2_taxable")', function() {
-      expect(instance.amount_cassa2_taxable).to.be.a('number');
-    });
-
-    it('should have the property amountWithholdingTaxTaxable (base name: "amount_withholding_tax_taxable")', function() {
-      expect(instance.amount_withholding_tax_taxable).to.be.a('number');
-    });
-
-    it('should have the property amountEnasarcoTaxable (base name: "amount_enasarco_taxable")', function() {
-      expect(instance.amount_enasarco_taxable).to.be.a('number');
-    });
-
-    it('should have the property amountOtherWithholdingTaxTaxable (base name: "amount_other_withholding_tax_taxable")', function() {
-      expect(instance.amount_other_withholding_tax_taxable).to.be.a('number');
-    });
-
-    it('should have the property eiCassaType (base name: "ei_cassa_type")', function() {
-      expect(instance.ei_cassa_type).to.be.a('string');
-    });
-
-    it('should have the property eiCassa2Type (base name: "ei_cassa2_type")', function() {
-      expect(instance.ei_cassa2_type).to.be.a('string');
-    });
-
-    it('should have the property eiWithholdingTaxCausal (base name: "ei_withholding_tax_causal")', function() {
-      expect(instance.ei_withholding_tax_causal).to.be.a('string');
-    });
-
-    it('should have the property eiOtherWithholdingTaxType (base name: "ei_other_withholding_tax_type")', function() {
-      expect(instance.ei_other_withholding_tax_type).to.be.a('string');
-    });
-
-    it('should have the property eiOtherWithholdingTaxCausal (base name: "ei_other_withholding_tax_causal")', function() {
-      expect(instance.ei_other_withholding_tax_causal).to.be.a('string');
-    });
-
-    it('should have the property amountDueDiscount (base name: "amount_due_discount")', function() {
-      expect(instance.amount_due_discount).to.be.a('number');
-    });
-
-  });
-
+  ],
+  payments_list: [
+    {
+      amount: 75,
+      due_date: '2020-08-23',
+      paid_date: null,
+      id: 69078013,
+      status: 'not_paid',
+      payment_account: null
+    }
+  ],
+  template: {
+    id: 2821,
+    name: 'Light Smoke'
+  },
+  extra_data: {
+    ts_status: 1
+  },
+  acc_inv_template: {
+    id: 4
+  },
+  delivery_note_template: {
+    id: 54321
+  },
+  ei_raw: {
+    prop: true
+  },
+  ei_data: {
+    bank_name: 'Sao Paulo'
+  }
+}
+
+// beforeEach(function () {
+// })
+
+describe('IssuedDocument', function () {
+  it('should create an instance of IssuedDocument', function () {
+    expect(instance).to.be.a('object')
+  })
+
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
+
+  it('should have the property entity (base name: "entity")', function () {
+    expect(instance.entity).to.be.a('object')
+  })
+
+  it('should have the property type (base name: "type")', function () {
+    expect(instance.type).to.be.a('string')
+  })
+
+  it('should have the property number (base name: "number")', function () {
+    expect(instance.number).to.be.a('number')
+  })
+
+  it('should have the property numeration (base name: "numeration")', function () {
+    expect(instance.numeration).to.be.a('string')
+  })
+
+  it('should have the property date (base name: "date")', function () {
+    expect(instance.date).to.be.a('string')
+  })
+
+  it('should have the property currency (base name: "currency")', function () {
+    expect(instance.currency).to.be.a('object')
+  })
+
+  it('should have the property language (base name: "language")', function () {
+    expect(instance.language).to.be.a('object')
+  })
+
+  it('should have the property subject (base name: "subject")', function () {
+    expect(instance.subject).to.be.a('string')
+  })
+
+  it('should have the property visibleSubject (base name: "visible_subject")', function () {
+    expect(instance.visible_subject).to.be.a('string')
+  })
+
+  it('should have the property rcCenter (base name: "rc_center")', function () {
+    expect(instance.rc_center).to.be.a('string')
+  })
+
+  it('should have the property notes (base name: "notes")', function () {
+    expect(instance.notes).to.be.a('string')
+  })
+
+  it('should have the property rivalsa (base name: "rivalsa")', function () {
+    expect(instance.rivalsa).to.be.a('number')
+  })
+
+  it('should have the property cassa (base name: "cassa")', function () {
+    expect(instance.cassa).to.be.a('number')
+  })
+
+  it('should have the property withholdingTax (base name: "withholding_tax")', function () {
+    expect(instance.withholding_tax).to.be.a('number')
+  })
+
+  it('should have the property withholdingTaxTaxable (base name: "withholding_tax_taxable")', function () {
+    expect(instance.withholding_tax_taxable).to.be.a('number')
+  })
+
+  it('should have the property otherWithholdingTax (base name: "other_withholding_tax")', function () {
+    expect(instance.other_withholding_tax).to.be.a('number')
+  })
+
+  it('should have the property stampDuty (base name: "stamp_duty")', function () {
+    expect(instance.stamp_duty).to.be.a('number')
+  })
+
+  it('should have the property paymentMethod (base name: "payment_method")', function () {
+    expect(instance.payment_method).to.be.a('object')
+  })
+
+  it('should have the property useSplitPayment (base name: "use_split_payment")', function () {
+    expect(instance.use_split_payment).to.be.a('boolean')
+  })
+
+  it('should have the property useGrossPrices (base name: "use_gross_prices")', function () {
+    expect(instance.use_gross_prices).to.be.a('boolean')
+  })
+
+  it('should have the property eInvoice (base name: "e_invoice")', function () {
+    expect(instance.e_invoice).to.be.a('boolean')
+  })
+
+  it('should have the property eiData (base name: "ei_data")', function () {
+    expect(instance.ei_data).to.be.a('object')
+  })
+
+  it('should have the property itemsList (base name: "items_list")', function () {
+    expect(instance.items_list).to.be.a('array')
+  })
+
+  it('should have the property paymentsList (base name: "payments_list")', function () {
+    expect(instance.payments_list).to.be.a('array')
+  })
+
+  it('should have the property template (base name: "template")', function () {
+    expect(instance.template).to.be.a('object')
+  })
+
+  it('should have the property deliveryNoteTemplate (base name: "delivery_note_template")', function () {
+    expect(instance.delivery_note_template).to.be.a('object')
+  })
+
+  it('should have the property accInvTemplate (base name: "acc_inv_template")', function () {
+    expect(instance.acc_inv_template).to.be.a('object')
+  })
+
+  it('should have the property hMargins (base name: "h_margins")', function () {
+    expect(instance.h_margins).to.be.a('number')
+  })
+
+  it('should have the property showPayments (base name: "show_payments")', function () {
+    expect(instance.show_payments).to.be.a('boolean')
+  })
+
+  it('should have the property showPaymentMethod (base name: "show_payment_method")', function () {
+    expect(instance.show_payment_method).to.be.a('boolean')
+  })
+
+  it('should have the property showTotals (base name: "show_totals")', function () {
+    expect(instance.show_totals).to.be.a('string')
+  })
+
+  it('should have the property vMargins (base name: "v_margins")', function () {
+    expect(instance.v_margins).to.be.a('number')
+  })
+
+  it('should have the property showPaypalButton (base name: "show_paypal_button")', function () {
+    expect(instance.show_paypal_button).to.be.a('boolean')
+  })
+
+  it('should have the property showNotificationButton (base name: "show_notification_button")', function () {
+    expect(instance.show_notification_button).to.be.a('boolean')
+  })
+
+  it('should have the property deliveryNote (base name: "delivery_note")', function () {
+    expect(instance.delivery_note).to.be.a('boolean')
+  })
+
+  it('should have the property accompanyingInvoice (base name: "accompanying_invoice")', function () {
+    expect(instance.accompanying_invoice).to.be.a('boolean')
+  })
+
+  it('should have the property dnNumber (base name: "dn_number")', function () {
+    expect(instance.dn_number).to.be.a('number')
+  })
+
+  it('should have the property dnDate (base name: "dn_date")', function () {
+    expect(instance.dn_date).to.be.a('string')
+  })
+
+  it('should have the property dnAiPackagesNumber (base name: "dn_ai_packages_number")', function () {
+    expect(instance.dn_ai_packages_number).to.be.a('string')
+  })
+
+  it('should have the property dnAiWeight (base name: "dn_ai_weight")', function () {
+    expect(instance.dn_ai_weight).to.be.a('string')
+  })
+
+  it('should have the property dnAiCausal (base name: "dn_ai_causal")', function () {
+    expect(instance.dn_ai_causal).to.be.a('string')
+  })
+
+  it('should have the property dnAiDestination (base name: "dn_ai_destination")', function () {
+    expect(instance.dn_ai_destination).to.be.a('string')
+  })
+
+  it('should have the property dnAiTransporter (base name: "dn_ai_transporter")', function () {
+    expect(instance.dn_ai_transporter).to.be.a('string')
+  })
+
+  it('should have the property dnAiNotes (base name: "dn_ai_notes")', function () {
+    expect(instance.dn_ai_notes).to.be.a('string')
+  })
+
+  it('should have the property isMarked (base name: "is_marked")', function () {
+    expect(instance.is_marked).to.be.a('boolean')
+  })
+
+  it('should have the property amountNet (base name: "amount_net")', function () {
+    expect(instance.amount_net).to.be.a('number')
+  })
+
+  it('should have the property amountVat (base name: "amount_vat")', function () {
+    expect(instance.amount_vat).to.be.a('number')
+  })
+
+  it('should have the property amountGross (base name: "amount_gross")', function () {
+    expect(instance.amount_gross).to.be.a('number')
+  })
+
+  it('should have the property amountRivalsa (base name: "amount_rivalsa")', function () {
+    expect(instance.amount_rivalsa).to.be.a('number')
+  })
+
+  it('should have the property amountCassa (base name: "amount_cassa")', function () {
+    expect(instance.amount_cassa).to.be.a('number')
+  })
+
+  it('should have the property amountWithholdingTax (base name: "amount_withholding_tax")', function () {
+    expect(instance.amount_withholding_tax).to.be.a('number')
+  })
+
+  it('should have the property amountOtherWithholdingTax (base name: "amount_other_withholding_tax")', function () {
+    expect(instance.amount_other_withholding_tax).to.be.a('number')
+  })
+
+  it('should have the property extraData (base name: "extra_data")', function () {
+    expect(instance.extra_data).to.be.a('object')
+  })
+
+  it('should have the property seenDate (base name: "seen_date")', function () {
+    expect(instance.seen_date).to.be.a('string')
+  })
+
+  it('should have the property nextDueDate (base name: "next_due_date")', function () {
+    expect(instance.next_due_date).to.be.a('string')
+  })
+
+  it('should have the property url (base name: "url")', function () {
+    expect(instance.url).to.be.a('string')
+  })
+
+  it('should have the property attachmentUrl (base name: "attachment_url")', function () {
+    expect(instance.attachment_url).to.be.a('string')
+  })
+
+  it('should have the property attachmentToken (base name: "attachment_token")', function () {
+    expect(instance.attachment_token).to.be.a('string')
+  })
+
+  it('should have the property eiRaw (base name: "ei_raw")', function () {
+    expect(instance.ei_raw).to.be.a('object')
+  })
+
+  it('should have the property showTspayButton (base name: "show_tspay_button")', function () {
+    expect(instance.show_tspay_button).to.be.a('boolean')
+  })
+
+  it('should have the property year (base name: "year")', function () {
+    expect(instance.year).to.be.a('number')
+  })
+
+  it('should have the property amountRivalsaTaxable (base name: "amount_rivalsa_taxable")', function () {
+    expect(instance.amount_rivalsa_taxable).to.be.a('number')
+  })
+
+  it('should have the property amountGlobalCassaTaxable (base name: "amount_global_cassa_taxable")', function () {
+    expect(instance.amount_global_cassa_taxable).to.be.a('number')
+  })
+
+  it('should have the property amountCassaTaxable (base name: "amount_cassa_taxable")', function () {
+    expect(instance.amount_cassa_taxable).to.be.a('number')
+  })
+
+  it('should have the property amountCassa2 (base name: "amount_cassa2")', function () {
+    expect(instance.amount_cassa2).to.be.a('number')
+  })
+
+  it('should have the property amountCassa2Taxable (base name: "amount_cassa2_taxable")', function () {
+    expect(instance.amount_cassa2_taxable).to.be.a('number')
+  })
+
+  it('should have the property amountWithholdingTaxTaxable (base name: "amount_withholding_tax_taxable")', function () {
+    expect(instance.amount_withholding_tax_taxable).to.be.a('number')
+  })
+
+  it('should have the property amountEnasarcoTaxable (base name: "amount_enasarco_taxable")', function () {
+    expect(instance.amount_enasarco_taxable).to.be.a('number')
+  })
+
+  it('should have the property amountOtherWithholdingTaxTaxable (base name: "amount_other_withholding_tax_taxable")', function () {
+    expect(instance.amount_other_withholding_tax_taxable).to.be.a('number')
+  })
+
+  it('should have the property eiCassaType (base name: "ei_cassa_type")', function () {
+    expect(instance.ei_cassa_type).to.be.a('string')
+  })
+
+  it('should have the property eiCassa2Type (base name: "ei_cassa2_type")', function () {
+    expect(instance.ei_cassa2_type).to.be.a('string')
+  })
+
+  it('should have the property eiWithholdingTaxCausal (base name: "ei_withholding_tax_causal")', function () {
+    expect(instance.ei_withholding_tax_causal).to.be.a('string')
+  })
+
+  it('should have the property eiOtherWithholdingTaxType (base name: "ei_other_withholding_tax_type")', function () {
+    expect(instance.ei_other_withholding_tax_type).to.be.a('string')
+  })
+
+  it('should have the property eiOtherWithholdingTaxCausal (base name: "ei_other_withholding_tax_causal")', function () {
+    expect(instance.ei_other_withholding_tax_causal).to.be.a('string')
+  })
+
+  it('should have the property amountDueDiscount (base name: "amount_due_discount")', function () {
+    expect(instance.amount_due_discount).to.be.a('number')
+  })
+})

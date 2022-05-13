@@ -10,76 +10,73 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetIssuedDocumentPreCreateInfoResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetIssuedDocumentPreCreateInfoResponse } from '../../src/models'
 
-  var instance: GetIssuedDocumentPreCreateInfoResponse = {
-    data: {
-      numerations : {
-        2018 : {
-          AB123 : 2
-        },
-        2019 : {
-          123 : null
-        },
-        2020 : {
-          ABC : 2
-        },
-        2021 : {
-          rec123 : 2
-        }
+const instance: GetIssuedDocumentPreCreateInfoResponse = {
+  data: {
+    numerations: {
+      2018: {
+        AB123: 2
       },
-      dn_numerations : {
-        2017 : {
-          "" : 1000
-        },
-        2018 : {
-          "" : 112
-        },
-        2019 : {
-          "" : 526
-        },
-        2020 : {
-          "" : 11
-        },
-        2021 : {
-          "" : 110
-        }
+      2019: {
+        123: null
       },
-      default_values : {
-        dn_template : {
-          id : 222,
-          type : "delivery_note",
-          name : "DDT 1"
-        },
-        ai_template : {
-          id : 333,
-          type : "accompanying_invoice",
-          name : "FT Accompagnatoria 1"
-        },
-        notes : "",
-        rivalsa : 0,
-        cassa : 0,
-        withholding_tax : 0,
-        withholding_tax_taxable : 100,
-        other_withholding_tax : 0,
-        use_gross_prices : false
+      2020: {
+        ABC: 2
+      },
+      2021: {
+        rec123: 2
       }
+    },
+    dn_numerations: {
+      2017: {
+        '': 1000
+      },
+      2018: {
+        '': 112
+      },
+      2019: {
+        '': 526
+      },
+      2020: {
+        '': 11
+      },
+      2021: {
+        '': 110
+      }
+    },
+    default_values: {
+      dn_template: {
+        id: 222,
+        type: 'delivery_note',
+        name: 'DDT 1'
+      },
+      ai_template: {
+        id: 333,
+        type: 'accompanying_invoice',
+        name: 'FT Accompagnatoria 1'
+      },
+      notes: '',
+      rivalsa: 0,
+      cassa: 0,
+      withholding_tax: 0,
+      withholding_tax_taxable: 100,
+      other_withholding_tax: 0,
+      use_gross_prices: false
     }
-  };
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetIssuedDocumentPreCreateInfoResponse', function () {
+  it('should create an instance of GetIssuedDocumentPreCreateInfoResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetIssuedDocumentPreCreateInfoResponse', function() {
-    it('should create an instance of GetIssuedDocumentPreCreateInfoResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

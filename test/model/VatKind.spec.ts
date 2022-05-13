@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { VatKind } from '../../src/models';
+import { expect } from 'chai'
+import { VatKind } from '../../src/models'
 
-  var instance: VatKind = "D";
+const instance: VatKind = 'D'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('VatKind', function() {
-    it('should create an instance of VatKind', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('VatKind', function () {
+  it('should create an instance of VatKind', function () {
+    expect(instance).to.be.a('string')
+  })
+})

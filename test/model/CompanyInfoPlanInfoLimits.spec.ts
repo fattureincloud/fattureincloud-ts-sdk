@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { CompanyInfoPlanInfoLimits } from '../../src/models';
+import { expect } from 'chai'
+import { CompanyInfoPlanInfoLimits } from '../../src/models'
 
-  var instance: CompanyInfoPlanInfoLimits = {
-    clients: 5000,
-    suppliers: 5000,
-    products: 5000,
-    documents: 3000,
-  }
+const instance: CompanyInfoPlanInfoLimits = {
+  clients: 5000,
+  suppliers: 5000,
+  products: 5000,
+  documents: 3000
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CompanyInfoPlanInfoLimits', function () {
+  it('should create an instance of CompanyInfoPlanInfoLimits', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CompanyInfoPlanInfoLimits', function() {
-    it('should create an instance of CompanyInfoPlanInfoLimits', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property clients (base name: "clients")', function () {
+    expect(instance.clients).to.be.a('number')
+  })
 
-    it('should have the property clients (base name: "clients")', function() {
-      expect(instance.clients).to.be.a('number');
-    });
+  it('should have the property suppliers (base name: "suppliers")', function () {
+    expect(instance.suppliers).to.be.a('number')
+  })
 
-    it('should have the property suppliers (base name: "suppliers")', function() {
-      expect(instance.suppliers).to.be.a('number');
-    });
+  it('should have the property products (base name: "products")', function () {
+    expect(instance.products).to.be.a('number')
+  })
 
-    it('should have the property products (base name: "products")', function() {
-      expect(instance.products).to.be.a('number');
-    });
-
-    it('should have the property documents (base name: "documents")', function() {
-      expect(instance.documents).to.be.a('number');
-    });
-
-  });
-
+  it('should have the property documents (base name: "documents")', function () {
+    expect(instance.documents).to.be.a('number')
+  })
+})

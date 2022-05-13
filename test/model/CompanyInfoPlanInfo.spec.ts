@@ -10,66 +10,63 @@
  *
  */
 
-import { expect } from 'chai';
-import { CompanyInfoPlanInfo } from '../../src/models';
+import { expect } from 'chai'
+import { CompanyInfoPlanInfo } from '../../src/models'
 
-  var instance: CompanyInfoPlanInfo = {
-    limits: {
-      clients : 5000,
-      suppliers : 5000,
-      products : 5000,
-      documents : 3000
+const instance: CompanyInfoPlanInfo = {
+  limits: {
+    clients: 5000,
+    suppliers: 5000,
+    products: 5000,
+    documents: 3000
+  },
+  functions: {
+    document_attachments: true,
+    archive: true,
+    payment_notifications: true,
+    paypal: true,
+    receipts: true,
+    e_invoice: true,
+    genius: true,
+    stock: true,
+    smtp: true,
+    mail_tracking: true,
+    subaccounts: true,
+    tessera_sanitaria: true,
+    recurring: true,
+    sofort: false,
+    cerved: true,
+    ts_digital: true,
+    ts_pay: true,
+    ts_invoice_trading: true
+  },
+  functions_status: {
+    ts_digital: {
+      active: true
     },
-    functions: {
-      document_attachments : true,
-      archive : true,
-      payment_notifications : true,
-      paypal : true,
-      receipts : true,
-      e_invoice : true,
-      genius : true,
-      stock : true,
-      smtp : true,
-      mail_tracking : true,
-      subaccounts : true,
-      tessera_sanitaria : true,
-      recurring : true,
-      sofort : false,
-      cerved : true,
-      ts_digital : true,
-      ts_pay : true,
-      ts_invoice_trading : true
-    },
-    functions_status: {
-      ts_digital : {
-        active : true
-      },
-      ts_pay : {
-        active : true
-      }
+    ts_pay: {
+      active: true
     }
-  };
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CompanyInfoPlanInfo', function () {
+  it('should create an instance of CompanyInfoPlanInfo', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CompanyInfoPlanInfo', function() {
-    it('should create an instance of CompanyInfoPlanInfo', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property limits (base name: "limits")', function () {
+    expect(instance.limits).to.be.a('object')
+  })
 
-    it('should have the property limits (base name: "limits")', function() {
-      expect(instance.limits).to.be.a('object');
-    });
+  it('should have the property functions (base name: "functions")', function () {
+    expect(instance.functions).to.be.a('object')
+  })
 
-    it('should have the property functions (base name: "functions")', function() {
-      expect(instance.functions).to.be.a('object');
-    });
-
-    it('should have the property functionsStatus (base name: "functions_status")', function() {
-      expect(instance.functions_status).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property functionsStatus (base name: "functions_status")', function () {
+    expect(instance.functions_status).to.be.a('object')
+  })
+})

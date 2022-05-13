@@ -10,35 +10,32 @@
  *
  */
 
-import { expect } from 'chai';
-import { ModifyVatTypeResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ModifyVatTypeResponse } from '../../src/models'
 
-  var instance: ModifyVatTypeResponse = {
-    data: {
-      id: 0,
-      value: 22,
-      description: "Non imponibile art. 123",
-      notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
-      e_invoice: true,
-      ei_type: "2",
-      ei_description: "string",
-      editable: true,
-      is_disabled: true
-    }
-  };
+const instance: ModifyVatTypeResponse = {
+  data: {
+    id: 0,
+    value: 22,
+    description: 'Non imponibile art. 123',
+    notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+    e_invoice: true,
+    ei_type: '2',
+    ei_description: 'string',
+    editable: true,
+    is_disabled: true
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ModifyVatTypeResponse', function () {
+  it('should create an instance of ModifyVatTypeResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ModifyVatTypeResponse', function() {
-    it('should create an instance of ModifyVatTypeResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

@@ -10,54 +10,51 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListCashbookEntriesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListCashbookEntriesResponse } from '../../src/models'
 
-  var instance: ListCashbookEntriesResponse = {
-    data: [
-      {
-        date : "2021-08-24",
-        amount_in : 122,
-        payment_account_in : {
-          id : 333
-        },
-        description : "Fattura n. 201/2021",
-        entity_name : "Rossi S.r.l.",
-        kind : "issued_document",
-        document : {
-          id : 54321
-        },
-        type : "in"
+const instance: ListCashbookEntriesResponse = {
+  data: [
+    {
+      date: '2021-08-24',
+      amount_in: 122,
+      payment_account_in: {
+        id: 333
       },
-      {
-        date : "2021-08-29",
-        amount_out : 211,
-        payment_account_out : {
-          id : 444
-        },
-        description : "Fattura n. 202/2021",
-        entity_name : "Red S.r.l.",
-        kind : "issued_document",
-        document : {
-          id : 12345
-        },
-        type : "out"
-      }
-    ]
-  };
+      description: 'Fattura n. 201/2021',
+      entity_name: 'Rossi S.r.l.',
+      kind: 'issued_document',
+      document: {
+        id: 54321
+      },
+      type: 'in'
+    },
+    {
+      date: '2021-08-29',
+      amount_out: 211,
+      payment_account_out: {
+        id: 444
+      },
+      description: 'Fattura n. 202/2021',
+      entity_name: 'Red S.r.l.',
+      kind: 'issued_document',
+      document: {
+        id: 12345
+      },
+      type: 'out'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListCashbookEntriesResponse', function () {
+  it('should create an instance of ListCashbookEntriesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListCashbookEntriesResponse', function() {
-    it('should create an instance of ListCashbookEntriesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

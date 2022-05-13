@@ -10,36 +10,33 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetF24Response } from '../../src/models';
+import { expect } from 'chai'
+import { GetF24Response } from '../../src/models'
 
-  var instance: GetF24Response = {
-    data: {
-      id : 12345,
-      amount : 840.36,
-      description : "PAGAMENTO IVA 2021",
-      due_date : "2021-12-31",
-      status : "paid",
-      payment_account : {
-        id : 111,
-        name : "Indesa - carta conto"
-      },
-      attachment_url : "b19c01da9b1688fb73d0d9e8adae89a8.pdf"
-    }
-  };
+const instance: GetF24Response = {
+  data: {
+    id: 12345,
+    amount: 840.36,
+    description: 'PAGAMENTO IVA 2021',
+    due_date: '2021-12-31',
+    status: 'paid',
+    payment_account: {
+      id: 111,
+      name: 'Indesa - carta conto'
+    },
+    attachment_url: 'b19c01da9b1688fb73d0d9e8adae89a8.pdf'
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetF24Response', function () {
+  it('should create an instance of GetF24Response', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetF24Response', function() {
-    it('should create an instance of GetF24Response', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

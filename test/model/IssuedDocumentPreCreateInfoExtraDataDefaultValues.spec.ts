@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentPreCreateInfoExtraDataDefaultValues } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentPreCreateInfoExtraDataDefaultValues } from '../../src/models'
 
-  var instance: IssuedDocumentPreCreateInfoExtraDataDefaultValues = {
-    ts_communication: false,
-    ts_tipo_spesa: "SR",
-    ts_flag_tipo_spesa: 0,
-    ts_pagamento_tracciato: false,     
-  };
+const instance: IssuedDocumentPreCreateInfoExtraDataDefaultValues = {
+  ts_communication: false,
+  ts_tipo_spesa: 'SR',
+  ts_flag_tipo_spesa: 0,
+  ts_pagamento_tracciato: false
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('IssuedDocumentPreCreateInfoExtraDataDefaultValues', function () {
+  it('should create an instance of IssuedDocumentPreCreateInfoExtraDataDefaultValues', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('IssuedDocumentPreCreateInfoExtraDataDefaultValues', function() {
-    it('should create an instance of IssuedDocumentPreCreateInfoExtraDataDefaultValues', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property tsCommunication (base name: "ts_communication")', function () {
+    expect(instance.ts_communication).to.be.a('boolean')
+  })
 
-    it('should have the property tsCommunication (base name: "ts_communication")', function() {
-      expect(instance.ts_communication).to.be.a('boolean');
-    });
+  it('should have the property tsTipoSpesa (base name: "ts_tipo_spesa")', function () {
+    expect(instance.ts_tipo_spesa).to.be.a('string')
+  })
 
-    it('should have the property tsTipoSpesa (base name: "ts_tipo_spesa")', function() {
-      expect(instance.ts_tipo_spesa).to.be.a('string');
-    });
+  it('should have the property tsFlagTipoSpesa (base name: "ts_flag_tipo_spesa")', function () {
+    expect(instance.ts_flag_tipo_spesa).to.be.a('number')
+  })
 
-    it('should have the property tsFlagTipoSpesa (base name: "ts_flag_tipo_spesa")', function() {
-      expect(instance.ts_flag_tipo_spesa).to.be.a('number');
-    });
-
-    it('should have the property tsPagamentoTracciato (base name: "ts_pagamento_tracciato")', function() {
-      expect(instance.ts_pagamento_tracciato).to.be.a('boolean');
-    });
-
-  });
-
+  it('should have the property tsPagamentoTracciato (base name: "ts_pagamento_tracciato")', function () {
+    expect(instance.ts_pagamento_tracciato).to.be.a('boolean')
+  })
+})

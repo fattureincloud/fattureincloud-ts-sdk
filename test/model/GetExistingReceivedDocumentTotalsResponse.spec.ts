@@ -10,33 +10,30 @@
  *
  */
 
-import { expect } from 'chai';
-import { GetExistingReceivedDocumentTotalsResponse } from '../../src/models';
+import { expect } from 'chai'
+import { GetExistingReceivedDocumentTotalsResponse } from '../../src/models'
 
-  var instance: GetExistingReceivedDocumentTotalsResponse = {
-    data: {
-      amount_net : 592,
-      amount_vat : 20,
-      amount_gross : 612,
-      amount_withholding_tax : 0,
-      amount_other_withholding_tax : 0,
-      amount_due : 612,
-      payments_sum : 592
-    }
-  };
+const instance: GetExistingReceivedDocumentTotalsResponse = {
+  data: {
+    amount_net: 592,
+    amount_vat: 20,
+    amount_gross: 612,
+    amount_withholding_tax: 0,
+    amount_other_withholding_tax: 0,
+    amount_due: 612,
+    payments_sum: 592
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('GetExistingReceivedDocumentTotalsResponse', function () {
+  it('should create an instance of GetExistingReceivedDocumentTotalsResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('GetExistingReceivedDocumentTotalsResponse', function() {
-    it('should create an instance of GetExistingReceivedDocumentTotalsResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

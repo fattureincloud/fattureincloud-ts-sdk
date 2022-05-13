@@ -10,49 +10,47 @@
  *
  */
 
-import { expect } from 'chai';
-import { ArchiveDocument } from '../../src/models';
+import { expect } from 'chai'
+import { ArchiveDocument } from '../../src/models'
 
-var instance: ArchiveDocument = {
+const instance: ArchiveDocument = {
   id: 12345,
-  date: "2021-08-20",
-  category: "Altri documenti",
-  description: "spesa 2",
-  attachment_url: "spesa2.pdf",
-  attachment_token: "jwfbaiuwbfoiewfoa8weohafw7gefa9we",
-};
+  date: '2021-08-20',
+  category: 'Altri documenti',
+  description: 'spesa 2',
+  attachment_url: 'spesa2.pdf',
+  attachment_token: 'jwfbaiuwbfoiewfoa8weohafw7gefa9we'
+}
 
-beforeEach(function() {
-});
+// beforeEach(function () {
+// })
 
-describe('ArchiveDocument', function() {
-  it('should create an instance of ArchiveDocument', function() {
-    expect(instance).to.be.a('object');
-  });
+describe('ArchiveDocument', function () {
+  it('should create an instance of ArchiveDocument', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  it('should have the property id (base name: "id")', function() {
-    expect(instance.id).to.be.a('number');
-  });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-  it('should have the property date (base name: "date")', function() {
-    expect(instance.date).to.be.a('string');
-  });
+  it('should have the property date (base name: "date")', function () {
+    expect(instance.date).to.be.a('string')
+  })
 
-  it('should have the property description (base name: "description")', function() {
-    expect(instance.description).to.be.a('string');
-  });
+  it('should have the property description (base name: "description")', function () {
+    expect(instance.description).to.be.a('string')
+  })
 
-  it('should have the property attachmentUrl (base name: "attachment_url")', function() {
-    expect(instance.attachment_url).to.be.a('string');
-  });
+  it('should have the property attachmentUrl (base name: "attachment_url")', function () {
+    expect(instance.attachment_url).to.be.a('string')
+  })
 
-  it('should have the property category (base name: "category")', function() {
-    expect(instance.category).to.be.a('string');
-  });
+  it('should have the property category (base name: "category")', function () {
+    expect(instance.category).to.be.a('string')
+  })
 
-  it('should have the property attachmentToken (base name: "attachment_token")', function() {
-    expect(instance.attachment_token).to.be.a('string');
-  });
-
-});
-
+  it('should have the property attachmentToken (base name: "attachment_token")', function () {
+    expect(instance.attachment_token).to.be.a('string')
+  })
+})

@@ -10,77 +10,76 @@
  *
  */
 
-import { expect } from 'chai';
-import { CashbookApi } from '../../src/api/cashbook-api';
-import { CreateCashbookEntryRequest, CreateCashbookEntryResponse, GetCashbookEntryResponse, ListCashbookEntriesResponse, ModifyCashbookEntryResponse } from '../../src/models';
+import { expect } from 'chai'
+import { CashbookApi } from '../../src/api/cashbook-api'
+import { CreateCashbookEntryRequest, CreateCashbookEntryResponse, GetCashbookEntryResponse, ListCashbookEntriesResponse, ModifyCashbookEntryResponse } from '../../src/models'
 
-var sandbox = require("sinon").createSandbox();
+const sandbox = require('sinon').createSandbox()
 
-var instance = new CashbookApi();
+const instance = new CashbookApi()
 
-var createCashbookEntryResponseObj: CreateCashbookEntryResponse = {"data":{"date":"2021-08-24","amount_out":122,"payment_account_out":{"id":333},"description":"Fattura n. 201\/2021","entity_name":"Rossi S.r.l.","kind":"issued_document","document":{"id":54321},"type":"out"}};
-var createCashbookEntryStub = sandbox.stub(instance, "createCashbookEntry").returns(createCashbookEntryResponseObj);
+const createCashbookEntryResponseObj: CreateCashbookEntryResponse = { data: { date: '2021-08-24', amount_out: 122, payment_account_out: { id: 333 }, description: 'Fattura n. 201/2021', entity_name: 'Rossi S.r.l.', kind: 'issued_document', document: { id: 54321 }, type: 'out' } }
+const createCashbookEntryStub = sandbox.stub(instance, 'createCashbookEntry').returns(createCashbookEntryResponseObj)
 
-var deleteCashbookEntryResponseObj = {};
-sandbox.stub(instance, "deleteCashbookEntry").returns(deleteCashbookEntryResponseObj);
+const deleteCashbookEntryResponseObj = {}
+sandbox.stub(instance, 'deleteCashbookEntry').returns(deleteCashbookEntryResponseObj)
 
-var getCashbookEntryResponseObj: GetCashbookEntryResponse = {"data":{"date":"2021-08-24","amount_out":122,"payment_account_out":{"id":333},"description":"Fattura n. 201\/2021","entity_name":"Rossi S.r.l.","kind":"issued_document","document":{"id":54321},"type":"out"}};
-sandbox.stub(instance, "getCashbookEntry").returns(getCashbookEntryResponseObj);
+const getCashbookEntryResponseObj: GetCashbookEntryResponse = { data: { date: '2021-08-24', amount_out: 122, payment_account_out: { id: 333 }, description: 'Fattura n. 201/2021', entity_name: 'Rossi S.r.l.', kind: 'issued_document', document: { id: 54321 }, type: 'out' } }
+sandbox.stub(instance, 'getCashbookEntry').returns(getCashbookEntryResponseObj)
 
-var modifyCashbookEntryResponseObj: ModifyCashbookEntryResponse = {"data":{"date":"2021-08-24","amount_out":122,"payment_account_out":{"id":333},"description":"Fattura n. 201\/2021","entity_name":"Rossi S.r.l.","kind":"issued_document","document":{"id":54321},"type":"out"}};
-sandbox.stub(instance, "modifyCashbookEntry").returns(modifyCashbookEntryResponseObj);
+const modifyCashbookEntryResponseObj: ModifyCashbookEntryResponse = { data: { date: '2021-08-24', amount_out: 122, payment_account_out: { id: 333 }, description: 'Fattura n. 201/2021', entity_name: 'Rossi S.r.l.', kind: 'issued_document', document: { id: 54321 }, type: 'out' } }
+sandbox.stub(instance, 'modifyCashbookEntry').returns(modifyCashbookEntryResponseObj)
 
-var listCashbookEntriesResponseObj: ListCashbookEntriesResponse = {"data":[{"date":"2021-08-24","amount_in":122,"payment_account_in":{"id":333},"description":"Fattura n. 201\/2021","entity_name":"Rossi S.r.l.","kind":"issued_document","document":{"id":54321},"type":"in"},{"date":"2021-08-29","amount_out":211,"payment_account_out":{"id":444},"description":"Fattura n. 202\/2021","entity_name":"Red S.r.l.","kind":"issued_document","document":{"id":12345},"type":"out"}]};
-sandbox.stub(instance, "listCashbookEntries").returns(listCashbookEntriesResponseObj);
+const listCashbookEntriesResponseObj: ListCashbookEntriesResponse = { data: [{ date: '2021-08-24', amount_in: 122, payment_account_in: { id: 333 }, description: 'Fattura n. 201/2021', entity_name: 'Rossi S.r.l.', kind: 'issued_document', document: { id: 54321 }, type: 'in' }, { date: '2021-08-29', amount_out: 211, payment_account_out: { id: 444 }, description: 'Fattura n. 202/2021', entity_name: 'Red S.r.l.', kind: 'issued_document', document: { id: 12345 }, type: 'out' }] }
+sandbox.stub(instance, 'listCashbookEntries').returns(listCashbookEntriesResponseObj)
 
-beforeEach(function() {
-  
-});
+// beforeEach(function () {
 
-describe('CashbookApi', function() {
-  describe('createCashbookEntry', function() {
-    it('should call createCashbookEntry successfully', function(done) {
-      var opts: CreateCashbookEntryRequest = {"data":{"date":"2021-08-24","amount_in":122,"payment_account_in":{"id":21},"description":"Fattura n. 201\/2021","entity_name":"Rossi S.r.l.","kind":"issued_document","document":{"id":54321},"type":"in"}}
-      var response = instance.createCashbookEntry(2, opts);
-      var expectedJson = JSON.stringify(createCashbookEntryResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      expect(createCashbookEntryStub.getCall(0).args[1]).to.equal(opts);
-      done();
-    });
-  });
-  describe('deleteCashbookEntry', function() {
-    it('should call deleteCashbookEntry successfully', function(done) {
-      expect(1).to.equal(1);
-      done();
-    });
-  });
-  describe('getCashbookEntry', function() {
-    it('should call getCashbookEntry successfully', function(done) {
-      var response = instance.getCashbookEntry(2, 12345);
-      var expectedJson = JSON.stringify(getCashbookEntryResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('listCashbookEntries', function() {
-    it('should call listCashbookEntries successfully', function(done) {
-      var response = instance.listCashbookEntries(2, "2021-10-10", "2022-10-10");
-      var expectedJson = JSON.stringify(listCashbookEntriesResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-  describe('modifyCashbookEntry', function() {
-    it('should call modifyCashbookEntry successfully', function(done) {
-      var response = instance.modifyCashbookEntry(2, 12345);
-      var expectedJson = JSON.stringify(modifyCashbookEntryResponseObj);
-      var actualJson = JSON.stringify(response);
-      expect(actualJson).to.equal(expectedJson);
-      done();
-    });
-  });
-});
+// })
 
+describe('CashbookApi', function () {
+  describe('createCashbookEntry', function () {
+    it('should call createCashbookEntry successfully', function (done) {
+      const opts: CreateCashbookEntryRequest = { data: { date: '2021-08-24', amount_in: 122, payment_account_in: { id: 21 }, description: 'Fattura n. 201/2021', entity_name: 'Rossi S.r.l.', kind: 'issued_document', document: { id: 54321 }, type: 'in' } }
+      const response = instance.createCashbookEntry(2, opts)
+      const expectedJson = JSON.stringify(createCashbookEntryResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      expect(createCashbookEntryStub.getCall(0).args[1]).to.equal(opts)
+      done()
+    })
+  })
+  describe('deleteCashbookEntry', function () {
+    it('should call deleteCashbookEntry successfully', function (done) {
+      expect(1).to.equal(1)
+      done()
+    })
+  })
+  describe('getCashbookEntry', function () {
+    it('should call getCashbookEntry successfully', function (done) {
+      const response = instance.getCashbookEntry(2, 12345)
+      const expectedJson = JSON.stringify(getCashbookEntryResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('listCashbookEntries', function () {
+    it('should call listCashbookEntries successfully', function (done) {
+      const response = instance.listCashbookEntries(2, '2021-10-10', '2022-10-10')
+      const expectedJson = JSON.stringify(listCashbookEntriesResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+  describe('modifyCashbookEntry', function () {
+    it('should call modifyCashbookEntry successfully', function (done) {
+      const response = instance.modifyCashbookEntry(2, 12345)
+      const expectedJson = JSON.stringify(modifyCashbookEntryResponseObj)
+      const actualJson = JSON.stringify(response)
+      expect(actualJson).to.equal(expectedJson)
+      done()
+    })
+  })
+})

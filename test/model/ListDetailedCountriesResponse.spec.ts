@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListDetailedCountriesResponse } from '../../src/models';
+import { expect } from 'chai'
+import { ListDetailedCountriesResponse } from '../../src/models'
 
-  var instance: ListDetailedCountriesResponse = {
-    data: [
-      {
-        name: "Italia",
-        settings_name: "Italia",
-        iso: "IT",
-        fiscal_iso: "IT",
-        uic: "086"
-      },
-      {
-        name: "Albania",
-        settings_name: "Albania",
-        iso: "AL",
-        fiscal_iso: "AL",
-        uic: "087"
-      }
-    ]
-  };
+const instance: ListDetailedCountriesResponse = {
+  data: [
+    {
+      name: 'Italia',
+      settings_name: 'Italia',
+      iso: 'IT',
+      fiscal_iso: 'IT',
+      uic: '086'
+    },
+    {
+      name: 'Albania',
+      settings_name: 'Albania',
+      iso: 'AL',
+      fiscal_iso: 'AL',
+      uic: '087'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListDetailedCountriesResponse', function () {
+  it('should create an instance of ListDetailedCountriesResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListDetailedCountriesResponse', function() {
-    it('should create an instance of ListDetailedCountriesResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

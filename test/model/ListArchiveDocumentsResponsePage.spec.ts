@@ -10,40 +10,37 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListArchiveDocumentsResponsePage } from '../../src/models';
+import { expect } from 'chai'
+import { ListArchiveDocumentsResponsePage } from '../../src/models'
 
-  var instance: ListArchiveDocumentsResponsePage = {
-    data: [
-      {
-        id : 12345,
-        date : "2021-08-20",
-        category : "Altri documenti",
-        description : "spesa 2",
-        attachment_url : "spesa2.pdf"
-      },
-      {
-        id : 12346,
-        date : "2021-08-19",
-        category : "Altri documenti",
-        description : "spesa 1",
-        attachment_url : "spesa1.pdf"
-      }
-    ]
-  };
+const instance: ListArchiveDocumentsResponsePage = {
+  data: [
+    {
+      id: 12345,
+      date: '2021-08-20',
+      category: 'Altri documenti',
+      description: 'spesa 2',
+      attachment_url: 'spesa2.pdf'
+    },
+    {
+      id: 12346,
+      date: '2021-08-19',
+      category: 'Altri documenti',
+      description: 'spesa 1',
+      attachment_url: 'spesa1.pdf'
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListArchiveDocumentsResponsePage', function () {
+  it('should create an instance of ListArchiveDocumentsResponsePage', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListArchiveDocumentsResponsePage', function() {
-    it('should create an instance of ListArchiveDocumentsResponsePage', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

@@ -10,34 +10,31 @@
  *
  */
 
-import { expect } from 'chai';
-import { CompanyInfoPlanInfoFunctionsStatus } from '../../src/models';
+import { expect } from 'chai'
+import { CompanyInfoPlanInfoFunctionsStatus } from '../../src/models'
 
-  var instance: CompanyInfoPlanInfoFunctionsStatus = {
-    ts_digital: {
-      active : true
-    },
-    ts_pay: {
-      active : true
-    }
-  };
+const instance: CompanyInfoPlanInfoFunctionsStatus = {
+  ts_digital: {
+    active: true
+  },
+  ts_pay: {
+    active: true
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CompanyInfoPlanInfoFunctionsStatus', function () {
+  it('should create an instance of CompanyInfoPlanInfoFunctionsStatus', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CompanyInfoPlanInfoFunctionsStatus', function() {
-    it('should create an instance of CompanyInfoPlanInfoFunctionsStatus', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property tsDigital (base name: "ts_digital")', function () {
+    expect(instance.ts_digital).to.be.a('object')
+  })
 
-    it('should have the property tsDigital (base name: "ts_digital")', function() {
-      expect(instance.ts_digital).to.be.a('object');
-    });
-
-    it('should have the property tsPay (base name: "ts_pay")', function() {
-      expect(instance.ts_pay).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property tsPay (base name: "ts_pay")', function () {
+    expect(instance.ts_pay).to.be.a('object')
+  })
+})

@@ -10,44 +10,41 @@
  *
  */
 
-import { expect } from 'chai';
-import { CreateProductResponse } from '../../src/models';
+import { expect } from 'chai'
+import { CreateProductResponse } from '../../src/models'
 
-  var instance: CreateProductResponse = {
-    data: {
-      id : 12345,
-      name : "Tavolo di marmo",
-      code : "TAVOLO003",
-      net_price : 240,
-      gross_price : 280,
-      use_gross_price : false,
-      net_cost : 0,
-      measure : "",
-      description : "Tavolo in marmo pregiato",
-      category : "arredamento",
-      in_stock : true,
-      default_vat : {
-        id : 3,
-        value : 22,
-        description : "Non imponibile art. 123",
-        notes : "IVA non imponibile ai sensi dell\'articolo 123, comma 2",
-        is_disabled : false
-      }
+const instance: CreateProductResponse = {
+  data: {
+    id: 12345,
+    name: 'Tavolo di marmo',
+    code: 'TAVOLO003',
+    net_price: 240,
+    gross_price: 280,
+    use_gross_price: false,
+    net_cost: 0,
+    measure: '',
+    description: 'Tavolo in marmo pregiato',
+    category: 'arredamento',
+    in_stock: true,
+    default_vat: {
+      id: 3,
+      value: 22,
+      description: 'Non imponibile art. 123',
+      notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+      is_disabled: false
     }
-  };
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('CreateProductResponse', function () {
+  it('should create an instance of CreateProductResponse', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('CreateProductResponse', function() {
-    it('should create an instance of CreateProductResponse', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('object')
+  })
+})

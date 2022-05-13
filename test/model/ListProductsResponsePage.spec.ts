@@ -10,66 +10,63 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListProductsResponsePage } from '../../src/models';
+import { expect } from 'chai'
+import { ListProductsResponsePage } from '../../src/models'
 
-  var instance: ListProductsResponsePage = {
-    data: [
-      {
-        id : 12345,
-        name : "Tavolo di marmo",
-        code : "TAVOLO003",
-        net_price : 240,
-        gross_price : 280,
-        use_gross_price : false,
-        net_cost : 0,
-        measure : "",
-        description : "Tavolo in marmo pregiato",
-        category : "arredamento",
-        in_stock : true,
-        default_vat : {
-          id : 3,
-          value : 22,
-          description : "Non imponibile art. 123",
-          notes : "IVA non imponibile ai sensi dell\'articolo 123, comma 2",
-          is_disabled : false
-        }
-      },
-      {
-        id : 12346,
-        name : "Tavolo di legno",
-        code : "TAVOLO001",
-        net_price : 120,
-        gross_price : 160,
-        use_gross_price : false,
-        net_cost : 0,
-        measure : "",
-        description : "Tavolo in legno pregiato",
-        category : "arredamento",
-        in_stock : true,
-        default_vat : {
-          id : 3,
-          value : 22,
-          description : "Non imponibile art. 123",
-          notes : "IVA non imponibile ai sensi dell\'articolo 123, comma 2",
-          is_disabled : false
-        }
+const instance: ListProductsResponsePage = {
+  data: [
+    {
+      id: 12345,
+      name: 'Tavolo di marmo',
+      code: 'TAVOLO003',
+      net_price: 240,
+      gross_price: 280,
+      use_gross_price: false,
+      net_cost: 0,
+      measure: '',
+      description: 'Tavolo in marmo pregiato',
+      category: 'arredamento',
+      in_stock: true,
+      default_vat: {
+        id: 3,
+        value: 22,
+        description: 'Non imponibile art. 123',
+        notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+        is_disabled: false
       }
-    ]
-  };
+    },
+    {
+      id: 12346,
+      name: 'Tavolo di legno',
+      code: 'TAVOLO001',
+      net_price: 120,
+      gross_price: 160,
+      use_gross_price: false,
+      net_cost: 0,
+      measure: '',
+      description: 'Tavolo in legno pregiato',
+      category: 'arredamento',
+      in_stock: true,
+      default_vat: {
+        id: 3,
+        value: 22,
+        description: 'Non imponibile art. 123',
+        notes: "IVA non imponibile ai sensi dell'articolo 123, comma 2",
+        is_disabled: false
+      }
+    }
+  ]
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListProductsResponsePage', function () {
+  it('should create an instance of ListProductsResponsePage', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListProductsResponsePage', function() {
-    it('should create an instance of ListProductsResponsePage', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      expect(instance.data).to.be.a('array');
-    });
-
-  });
-
+  it('should have the property data (base name: "data")', function () {
+    expect(instance.data).to.be.a('array')
+  })
+})

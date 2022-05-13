@@ -10,47 +10,44 @@
  *
  */
 
-import { expect } from 'chai';
-import { ReceiptItemsListItem } from '../../src/models';
+import { expect } from 'chai'
+import { ReceiptItemsListItem } from '../../src/models'
 
-  var instance: ReceiptItemsListItem = {
-    id: 888,
-    amount_net: 8.2,
-    amount_gross: 10,
-    category: "altro",
-    vat: {
-      id : 21
-    }
-  };
+const instance: ReceiptItemsListItem = {
+  id: 888,
+  amount_net: 8.2,
+  amount_gross: 10,
+  category: 'altro',
+  vat: {
+    id: 21
+  }
+}
 
-  beforeEach(function() {
-});
+// beforeEach(function () {
+// })
 
+describe('ReceiptItemsListItem', function () {
+  it('should create an instance of ReceiptItemsListItem', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ReceiptItemsListItem', function() {
-    it('should create an instance of ReceiptItemsListItem', function() {
-      expect(instance).to.be.a('object');
-    });
+  it('should have the property id (base name: "id")', function () {
+    expect(instance.id).to.be.a('number')
+  })
 
-    it('should have the property id (base name: "id")', function() {
-      expect(instance.id).to.be.a('number');
-    });
+  it('should have the property amountNet (base name: "amount_net")', function () {
+    expect(instance.amount_net).to.be.a('number')
+  })
 
-    it('should have the property amountNet (base name: "amount_net")', function() {
-      expect(instance.amount_net).to.be.a('number');
-    });
+  it('should have the property amountGross (base name: "amount_gross")', function () {
+    expect(instance.amount_gross).to.be.a('number')
+  })
 
-    it('should have the property amountGross (base name: "amount_gross")', function() {
-      expect(instance.amount_gross).to.be.a('number');
-    });
+  it('should have the property category (base name: "category")', function () {
+    expect(instance.category).to.be.a('string')
+  })
 
-    it('should have the property category (base name: "category")', function() {
-      expect(instance.category).to.be.a('string');
-    });
-
-    it('should have the property vat (base name: "vat")', function() {
-      expect(instance.vat).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property vat (base name: "vat")', function () {
+    expect(instance.vat).to.be.a('object')
+  })
+})

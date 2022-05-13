@@ -10,27 +10,24 @@
  *
  */
 
-import { expect } from 'chai';
-import { ListF24ResponseAggregation } from '../../src/models';
+import { expect } from 'chai'
+import { ListF24ResponseAggregation } from '../../src/models'
 
-  var instance: ListF24ResponseAggregation = {
-    aggregated_data: {
-      amount: 5
-    }
-  };
+const instance: ListF24ResponseAggregation = {
+  aggregated_data: {
+    amount: 5
+  }
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
+describe('ListF24ResponseAggregation', function () {
+  it('should create an instance of ListF24ResponseAggregation', function () {
+    expect(instance).to.be.a('object')
+  })
 
-  describe('ListF24ResponseAggregation', function() {
-    it('should create an instance of ListF24ResponseAggregation', function() {
-      expect(instance).to.be.a('object');
-    });
-
-    it('should have the property aggregatedData (base name: "aggregated_data")', function() {
-      expect(instance.aggregated_data).to.be.a('object');
-    });
-
-  });
-
+  it('should have the property aggregatedData (base name: "aggregated_data")', function () {
+    expect(instance.aggregated_data).to.be.a('object')
+  })
+})

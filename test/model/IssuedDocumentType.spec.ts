@@ -10,19 +10,16 @@
  *
  */
 
-import { expect } from 'chai';
-import { IssuedDocumentType } from '../../src/models';
+import { expect } from 'chai'
+import { IssuedDocumentType } from '../../src/models'
 
-  var instance: IssuedDocumentType = "invoice";
+const instance: IssuedDocumentType = 'invoice'
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('IssuedDocumentType', function() {
-    it('should create an instance of IssuedDocumentType', function() {
-      expect(instance).to.be.a('string');
-    });
-
-  });
-
+describe('IssuedDocumentType', function () {
+  it('should create an instance of IssuedDocumentType', function () {
+    expect(instance).to.be.a('string')
+  })
+})

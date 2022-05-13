@@ -10,21 +10,18 @@
  *
  */
 
-import { expect } from 'chai';
-import { Client } from '../../src/models';
+import { expect } from 'chai'
+import { Client } from '../../src/models'
 
-  var instance: Client = {
-    default_payment_terms_type: "standard"
-  };
+const instance: Client = {
+  default_payment_terms_type: 'standard'
+}
 
-  beforeEach(function() {
-  });
+// beforeEach(function () {
+// })
 
-
-  describe('DefaultPaymentTermsType', function() {
-    it('should create an instance of DefaultPaymentTermsType', function() {
-      expect(instance.default_payment_terms_type).to.be.a('string');
-    });
-
-  });
-
+describe('DefaultPaymentTermsType', function () {
+  it('should create an instance of DefaultPaymentTermsType', function () {
+    expect(instance.default_payment_terms_type).to.be.a('string')
+  })
+})
