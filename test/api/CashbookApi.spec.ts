@@ -57,7 +57,7 @@ describe('CashbookApi', function () {
   })
   describe('getCashbookEntry', function () {
     it('should call getCashbookEntry successfully', function (done) {
-      const response = instance.getCashbookEntry(2, "12345")
+      const response = instance.getCashbookEntry(2, '12345')
       const expectedJson = JSON.stringify(getCashbookEntryResponseObj)
       const actualJson = JSON.stringify(response)
       expect(actualJson).to.equal(expectedJson)
@@ -75,7 +75,7 @@ describe('CashbookApi', function () {
   })
   describe('modifyCashbookEntry', function () {
     it('should call modifyCashbookEntry successfully', function (done) {
-      const response = instance.modifyCashbookEntry(2, "12345")
+      const response = instance.modifyCashbookEntry(2, '12345')
       const expectedJson = JSON.stringify(modifyCashbookEntryResponseObj)
       const actualJson = JSON.stringify(response)
       expect(actualJson).to.equal(expectedJson)

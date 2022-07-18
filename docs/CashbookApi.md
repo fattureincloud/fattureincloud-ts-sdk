@@ -85,7 +85,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new CashbookApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let documentId = 56; // Number | The ID of the document.
+let documentId = "documentId_example"; // String | The ID of the document.
 apiInstance.deleteCashbookEntry(companyId, documentId).then(() => {
   console.log('API called successfully.');
 }, (error) => {
@@ -100,7 +100,7 @@ apiInstance.deleteCashbookEntry(companyId, documentId).then(() => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **companyId** | **Number**| The ID of the company. | 
- **documentId** | **Number**| The ID of the document. | 
+ **documentId** | **String**| The ID of the document. | 
 
 ### Return type
 
@@ -136,7 +136,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new CashbookApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let documentId = 56; // Number | The ID of the document.
+let documentId = "documentId_example"; // String | The ID of the document.
 
 let fields = "fields_example", // String | List of comma-separated fields.
 let fieldset = "fieldset_example" // String | Name of the fieldset.
@@ -155,7 +155,7 @@ apiInstance.getCashbookEntry(companyId, documentId, fieldset).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **companyId** | **Number**| The ID of the company. | 
- **documentId** | **Number**| The ID of the document. | 
+ **documentId** | **String**| The ID of the document. | 
  **fields** | **String**| List of comma-separated fields. | [optional] 
  **fieldset** | **String**| Name of the fieldset. | [optional] 
 
@@ -254,7 +254,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new CashbookApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let documentId = 56; // Number | The ID of the document.
+let documentId = "documentId_example"; // String | The ID of the document.
 
 let modifyCashbookEntryRequest: ModifyCashbookEntryRequest = {"data":{"date":"2021-08-24","amount_in":122,"payment_account_in":{"id":333},"description":"Fattura n. 201/2021","entity_name":"Rossi S.r.l."}} // ModifyCashbookEntryRequest | Cashbook Entry
 
@@ -272,7 +272,7 @@ apiInstance.modifyCashbookEntry(companyId, documentId, modifyCashbookEntryReques
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **companyId** | **Number**| The ID of the company. | 
- **documentId** | **Number**| The ID of the document. | 
+ **documentId** | **String**| The ID of the document. | 
  **modifyCashbookEntryRequest** | [**ModifyCashbookEntryRequest**](ModifyCashbookEntryRequest.md)| Cashbook Entry | [optional] 
 
 ### Return type

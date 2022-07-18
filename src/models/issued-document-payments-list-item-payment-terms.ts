@@ -17,20 +17,28 @@
 /**
  * 
  * @export
- * @interface ReceivedDocumentPaymentsListItemPaymentTerms
+ * @interface IssuedDocumentPaymentsListItemPaymentTerms
  */
-export interface ReceivedDocumentPaymentsListItemPaymentTerms {
+export interface IssuedDocumentPaymentsListItemPaymentTerms {
     /**
-     * Number of days.
+     * The number of days by which the payment must be made.
      * @type {number}
-     * @memberof ReceivedDocumentPaymentsListItemPaymentTerms
+     * @memberof IssuedDocumentPaymentsListItemPaymentTerms
      */
     'days'?: number | null;
     /**
-     * 
+     * Payment terms type.
      * @type {string}
-     * @memberof ReceivedDocumentPaymentsListItemPaymentTerms
+     * @memberof IssuedDocumentPaymentsListItemPaymentTerms
      */
-    'type'?: string | null;
+    'type'?: IssuedDocumentPaymentsListItemPaymentTermsTypeEnum;
 }
+
+export const IssuedDocumentPaymentsListItemPaymentTermsTypeEnum = {
+    Standard: 'standard',
+    EndOfMonth: 'end_of_month'
+} as const;
+
+export type IssuedDocumentPaymentsListItemPaymentTermsTypeEnum = typeof IssuedDocumentPaymentsListItemPaymentTermsTypeEnum[keyof typeof IssuedDocumentPaymentsListItemPaymentTermsTypeEnum];
+
 
