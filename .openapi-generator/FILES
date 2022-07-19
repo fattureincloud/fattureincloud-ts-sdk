@@ -111,6 +111,7 @@ src/models/issued-document-ei-data.ts
 src/models/issued-document-extra-data.ts
 src/models/issued-document-items-list-item.ts
 src/models/issued-document-options.ts
+src/models/issued-document-payments-list-item-payment-terms.ts
 src/models/issued-document-payments-list-item.ts
 src/models/issued-document-pre-create-info-default-values.ts
 src/models/issued-document-pre-create-info-extra-data-default-values.ts
