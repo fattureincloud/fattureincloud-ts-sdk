@@ -102,10 +102,10 @@ export class OAuth2AuthorizationCodeManager {
     return this.tokenRequest(tokenUri, data)
   }
 
-  tokenRequest (uri: string, data: object) {
-    return axios.post<OAuth2AuthorizationCodeTokenResponse>(uri, data)
-      .then((d) => d.data)
-      .catch(e => { throw new Error(e.response.data) })
+  tokenRequest (uri: string, data: object) { 
+    return axios.post<{token_type: string, access_token: string, refresh_token: string, expires_in: number}>(uri, data)
+      .then(({data}) => new OAuth2AuthorizationCodeTokenResponse(data.token_type, data.access_token, data.refresh_token, data.expires_in))
+      .catch(e => { throw new Error(`${e.response.data.error}: ${e.response.data.error_description}`) })
   }
 
   static getScopeString (scopes: Array<Scope>) {
