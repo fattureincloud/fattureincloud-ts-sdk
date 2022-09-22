@@ -63,7 +63,6 @@ src/models/create-supplier-response.ts
 src/models/create-vat-type-request.ts
 src/models/create-vat-type-response.ts
 src/models/currency.ts
-src/models/default-payment-terms-type.ts
 src/models/detailed-country.ts
 src/models/document-template.ts
 src/models/einvoice-rejection-reason.ts
@@ -191,6 +190,7 @@ src/models/payment-account.ts
 src/models/payment-method-details.ts
 src/models/payment-method-type.ts
 src/models/payment-method.ts
+src/models/payment-terms-type.ts
 src/models/permission-level.ts
 src/models/permissions-fic-issued-documents-detailed.ts
 src/models/permissions.ts

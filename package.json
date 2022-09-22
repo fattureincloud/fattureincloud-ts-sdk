@@ -1,6 +1,6 @@
 {
   "name": "@fattureincloud/fattureincloud-ts-sdk",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "TypeScript SDK for the Fatture in Cloud API",
   "author": "Fatture in Cloud API Team",
   "keywords": [
