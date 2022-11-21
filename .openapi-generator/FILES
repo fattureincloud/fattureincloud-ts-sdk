@@ -10,6 +10,7 @@ src/api/archive-api.ts
 src/api/cashbook-api.ts
 src/api/clients-api.ts
 src/api/companies-api.ts
+src/api/emails-api.ts
 src/api/info-api.ts
 src/api/issued-documents-api.ts
 src/api/issued-einvoices-api.ts
@@ -66,10 +67,14 @@ src/models/currency.ts
 src/models/detailed-country.ts
 src/models/document-template.ts
 src/models/einvoice-rejection-reason.ts
+src/models/email-attachment.ts
 src/models/email-data-default-sender-email.ts
 src/models/email-data.ts
+src/models/email-recipient-status.ts
 src/models/email-schedule-include.ts
 src/models/email-schedule.ts
+src/models/email-status.ts
+src/models/email.ts
 src/models/entity-type.ts
 src/models/entity.ts
 src/models/f24-status.ts
@@ -120,6 +125,7 @@ src/models/issued-document-status.ts
 src/models/issued-document-totals.ts
 src/models/issued-document-type.ts
 src/models/issued-document.ts
+src/models/join-issued-documents-response.ts
 src/models/language.ts
 src/models/list-archive-categories-response.ts
 src/models/list-archive-documents-response-page.ts
@@ -133,6 +139,8 @@ src/models/list-countries-response.ts
 src/models/list-currencies-response.ts
 src/models/list-delivery-notes-default-causals-response.ts
 src/models/list-detailed-countries-response.ts
+src/models/list-emails-response-page.ts
+src/models/list-emails-response.ts
 src/models/list-f24-response-aggregated-data.ts
 src/models/list-f24-response-aggregation.ts
 src/models/list-f24-response-page.ts
@@ -218,6 +226,7 @@ src/models/sender-email.ts
 src/models/show-totals-mode.ts
 src/models/supplier-type.ts
 src/models/supplier.ts
+src/models/transform-issued-document-response.ts
 src/models/upload-archive-attachment-response.ts
 src/models/upload-f24-attachment-response.ts
 src/models/upload-issued-document-attachment-response.ts
@@ -227,6 +236,7 @@ src/models/user.ts
 src/models/vat-item.ts
 src/models/vat-kind.ts
 src/models/vat-type.ts
+src/models/verify-einvoice-xml-error-response-error-validation-result.ts
 src/models/verify-einvoice-xml-error-response-error.ts
 src/models/verify-einvoice-xml-error-response-extra.ts
 src/models/verify-einvoice-xml-error-response.ts
