@@ -658,7 +658,7 @@ export const IssuedDocumentsApiAxiosParamCreator = function (configuration?: Con
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        transformIssuedDocument: async (companyId: number, originalDocumentId: string, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        transformIssuedDocument: async (companyId: number, originalDocumentId: number, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'companyId' is not null or undefined
             assertParamExists('transformIssuedDocument', 'companyId', companyId)
             // verify required parameter 'originalDocumentId' is not null or undefined
@@ -939,7 +939,7 @@ export const IssuedDocumentsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async transformIssuedDocument(companyId: number, originalDocumentId: string, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TransformIssuedDocumentResponse>> {
+        async transformIssuedDocument(companyId: number, originalDocumentId: number, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TransformIssuedDocumentResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.transformIssuedDocument(companyId, originalDocumentId, newType, eInvoice, transformKeepCopy, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -1122,7 +1122,7 @@ export const IssuedDocumentsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        transformIssuedDocument(companyId: number, originalDocumentId: string, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: any): AxiosPromise<TransformIssuedDocumentResponse> {
+        transformIssuedDocument(companyId: number, originalDocumentId: number, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: any): AxiosPromise<TransformIssuedDocumentResponse> {
             return localVarFp.transformIssuedDocument(companyId, originalDocumentId, newType, eInvoice, transformKeepCopy, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1303,7 +1303,7 @@ export interface IssuedDocumentsApiInterface {
      * @throws {RequiredError}
      * @memberof IssuedDocumentsApiInterface
      */
-    transformIssuedDocument(companyId: number, originalDocumentId: string, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: AxiosRequestConfig): AxiosPromise<TransformIssuedDocumentResponse>;
+    transformIssuedDocument(companyId: number, originalDocumentId: number, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: AxiosRequestConfig): AxiosPromise<TransformIssuedDocumentResponse>;
 
     /**
      * Uploads an attachment destined to an issued document. The actual association between the document and the attachment must be implemented separately, using the returned token.
@@ -1499,7 +1499,7 @@ export class IssuedDocumentsApi extends BaseAPI implements IssuedDocumentsApiInt
      * Transforms the document.
      * @summary Transform issued document
      * @param {number} companyId The ID of the company.
-     * @param {string} originalDocumentId Original document id.
+     * @param {number} originalDocumentId Original document id.
      * @param {string} newType New document type.
      * @param {0 | 1} [eInvoice] New document e_invoice.
      * @param {0 | 1} [transformKeepCopy] Keep the old document.
@@ -1507,7 +1507,7 @@ export class IssuedDocumentsApi extends BaseAPI implements IssuedDocumentsApiInt
      * @throws {RequiredError}
      * @memberof IssuedDocumentsApi
      */
-    public transformIssuedDocument(companyId: number, originalDocumentId: string, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: AxiosRequestConfig) {
+    public transformIssuedDocument(companyId: number, originalDocumentId: number, newType: string, eInvoice?: 0 | 1, transformKeepCopy?: 0 | 1, options?: AxiosRequestConfig) {
         return IssuedDocumentsApiFp(this.configuration).transformIssuedDocument(companyId, originalDocumentId, newType, eInvoice, transformKeepCopy, options).then((request) => request(this.axios, this.basePath));
     }
 

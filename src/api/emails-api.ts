@@ -39,7 +39,7 @@ export const EmailsApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listEmails: async (companyId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        listEmails: async (companyId: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'companyId' is not null or undefined
             assertParamExists('listEmails', 'companyId', companyId)
             const localVarPath = `/c/{company_id}/emails`
@@ -83,11 +83,11 @@ export const EmailsApiFp = function(configuration?: Configuration) {
         /**
          * List Emails.
          * @summary List emails
-         * @param {string} companyId 
+         * @param {number} companyId 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async listEmails(companyId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ListEmailsResponse>> {
+        async listEmails(companyId: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ListEmailsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listEmails(companyId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -108,7 +108,7 @@ export const EmailsApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listEmails(companyId: string, options?: any): AxiosPromise<ListEmailsResponse> {
+        listEmails(companyId: number, options?: any): AxiosPromise<ListEmailsResponse> {
             return localVarFp.listEmails(companyId, options).then((request) => request(axios, basePath));
         },
     };
@@ -128,7 +128,7 @@ export interface EmailsApiInterface {
      * @throws {RequiredError}
      * @memberof EmailsApiInterface
      */
-    listEmails(companyId: string, options?: AxiosRequestConfig): AxiosPromise<ListEmailsResponse>;
+    listEmails(companyId: number, options?: AxiosRequestConfig): AxiosPromise<ListEmailsResponse>;
 
 }
 
@@ -142,12 +142,12 @@ export class EmailsApi extends BaseAPI implements EmailsApiInterface {
     /**
      * List Emails.
      * @summary List emails
-     * @param {string} companyId 
+     * @param {number} companyId 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof EmailsApi
      */
-    public listEmails(companyId: string, options?: AxiosRequestConfig) {
+    public listEmails(companyId: number, options?: AxiosRequestConfig) {
         return EmailsApiFp(this.configuration).listEmails(companyId, options).then((request) => request(this.axios, this.basePath));
     }
 }

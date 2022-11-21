@@ -16,7 +16,7 @@ import { VerifyEInvoiceXmlErrorResponseError } from '../../src/models'
 const instance: VerifyEInvoiceXmlErrorResponseError = {
   message: 'something went wrong',
   validation_result: {
-    prop: true
+    xml_errors: ["err", "or"]
   }
 }
 
