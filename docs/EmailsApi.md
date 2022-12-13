@@ -27,7 +27,7 @@ const apiConfig = new Configuration({
 });
 
 let apiInstance = new EmailsApi(apiConfig);
-let companyId = 12345;
+let companyId = 12345; // Number | The ID of the company.
 apiInstance.listEmails(companyId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -41,7 +41,7 @@ apiInstance.listEmails(companyId).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **companyId** | **Number**|  | 
+ **companyId** | **Number**| The ID of the company. | 
 
 ### Return type
 
