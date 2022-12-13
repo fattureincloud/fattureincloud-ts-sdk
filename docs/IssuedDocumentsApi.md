@@ -695,7 +695,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new IssuedDocumentsApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let originalDocumentId = 54321; // Number | Original document id.
+let originalDocumentId = 3.4; // Number | Original document id.
 let newType = "newType_example"; // String | New document type.
 
 let eInvoice = 56, // Number | New document e_invoice.
