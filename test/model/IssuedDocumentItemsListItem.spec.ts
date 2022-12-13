@@ -27,7 +27,7 @@ const instance: IssuedDocumentItemsListItem = {
   apply_withholding_taxes: true,
   discount: 0,
   discount_highlight: true,
-  in_ddt: false,
+  in_dn: false,
   stock: true,
   vat: {
     id: 21
@@ -101,8 +101,8 @@ describe('IssuedDocumentItemsList', function () {
     expect(instance.discount_highlight).to.be.a('boolean')
   })
 
-  it('should have the property inDdt (base name: "in_ddt")', function () {
-    expect(instance.in_ddt).to.be.a('boolean')
+  it('should have the property inDdt (base name: "in_dn")', function () {
+    expect(instance.in_dn).to.be.a('boolean')
   })
 
   it('should have the property stock (base name: "stock")', function () {
