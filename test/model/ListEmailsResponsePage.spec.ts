@@ -10,44 +10,44 @@
  *
  */
 
-import { expect } from "chai"
-import { Email, ListEmailsResponsePage } from "../../src/models"
+import { expect } from 'chai'
+import { Email, ListEmailsResponsePage } from '../../src/models'
 
-let instance: ListEmailsResponsePage = {}
+const instance: ListEmailsResponsePage = {}
 
-let e1: Email = {}
+const e1: Email = {}
 e1.id = 1
-e1.status = "sent"
+e1.status = 'sent'
 e1.sent_date = new Date(2022, 7, 17, 13, 53, 12).toString()
 e1.errors_count = 0
-e1.error_log = ""
-e1.from_email = "test@mail.it"
-e1.from_name = "Test mail"
-e1.to_email = "mail@test.it"
-e1.to_name = "Mario"
-e1.subject = "Test"
-e1.content = "Test send email"
-e1.copy_to = ""
-e1.recipient_status = "unknown"
+e1.error_log = ''
+e1.from_email = 'test@mail.it'
+e1.from_name = 'Test mail'
+e1.to_email = 'mail@test.it'
+e1.to_name = 'Mario'
+e1.subject = 'Test'
+e1.content = 'Test send email'
+e1.copy_to = ''
+e1.recipient_status = 'unknown'
 e1.recipient_date = new Date(2022, 7, 17, 13, 53, 12).toString()
-e1.kind = "Fatture"
+e1.kind = 'Fatture'
 e1.attachments = []
-let e2: Email = {}
+const e2: Email = {}
 e2.id = 1
-e2.status = "sent"
+e2.status = 'sent'
 e2.sent_date = new Date(2022, 7, 17, 13, 53, 12).toString()
 e2.errors_count = 0
-e2.error_log = ""
-e2.from_email = "test@mail.it"
-e2.from_name = "Test mail"
-e2.to_email = "mail@test.it"
-e2.to_name = "Mario"
-e2.subject = "Test"
-e2.content = "Test send email"
-e2.copy_to = ""
-e2.recipient_status = "unknown"
+e2.error_log = ''
+e2.from_email = 'test@mail.it'
+e2.from_name = 'Test mail'
+e2.to_email = 'mail@test.it'
+e2.to_name = 'Mario'
+e2.subject = 'Test'
+e2.content = 'Test send email'
+e2.copy_to = ''
+e2.recipient_status = 'unknown'
 e2.recipient_date = new Date(2022, 7, 17, 13, 53, 12).toString()
-e2.kind = "Fatture"
+e2.kind = 'Fatture'
 e2.attachments = []
 instance.data = [
   e1,
@@ -59,10 +59,10 @@ instance.data = [
 
 describe('ListEmailsResponsePage', function () {
   it('should create an instance of ListEmailsResponsePage', function () {
-    expect(instance).to.be.a('object');
+    expect(instance).to.be.a('object')
   })
 
   it('should have the property data (base name: "data")', function () {
-    expect(instance.data).to.be.a('array');
+    expect(instance.data).to.be.a('array')
   })
 })

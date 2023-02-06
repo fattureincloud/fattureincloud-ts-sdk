@@ -15,18 +15,16 @@
 
 
 /**
- * Totals mode.
+ * 
  * @export
- * @enum {string}
+ * @interface SendEInvoiceRequestOptions
  */
-
-export const ShowTotalsMode = {
-    None: 'none',
-    Nets: 'nets',
-    All: 'all'
-} as const;
-
-export type ShowTotalsMode = typeof ShowTotalsMode[keyof typeof ShowTotalsMode];
-
-
+export interface SendEInvoiceRequestOptions {
+    /**
+     * If set to true the e-invoice will not be sent to the SDI.
+     * @type {boolean}
+     * @memberof SendEInvoiceRequestOptions
+     */
+    'dry_run'?: boolean | null;
+}
 

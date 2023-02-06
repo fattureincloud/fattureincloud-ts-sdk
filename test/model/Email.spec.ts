@@ -11,25 +11,25 @@
  *
  */
 
-import { expect } from "chai"
-import { Email } from "../../src/models"
+import { expect } from 'chai'
+import { Email } from '../../src/models'
 
-let instance: Email = {}
+const instance: Email = {}
 instance.id = 1
-instance.status = "sent"
+instance.status = 'sent'
 instance.sent_date = new Date(2022, 7, 17, 13, 53, 12).toString()
 instance.errors_count = 0
-instance.error_log = ""
-instance.from_email = "test@mail.it"
-instance.from_name = "Test mail"
-instance.to_email = "mail@test.it"
-instance.to_name = "Mario"
-instance.subject = "Test"
-instance.content = "Test send email"
-instance.copy_to = ""
-instance.recipient_status = "unknown"
+instance.error_log = ''
+instance.from_email = 'test@mail.it'
+instance.from_name = 'Test mail'
+instance.to_email = 'mail@test.it'
+instance.to_name = 'Mario'
+instance.subject = 'Test'
+instance.content = 'Test send email'
+instance.copy_to = ''
+instance.recipient_status = 'unknown'
 instance.recipient_date = new Date(2022, 7, 17, 13, 53, 12).toString()
-instance.kind = "Fatture"
+instance.kind = 'Fatture'
 instance.attachments = []
 
 // beforeEach(function () {
@@ -37,70 +37,70 @@ instance.attachments = []
 
 describe('Email', function () {
   it('should create an instance of Email', function () {
-    expect(instance).to.be.a('object');
+    expect(instance).to.be.a('object')
   })
 
   it('should have the property id (base name: "id")', function () {
-    expect(instance.id).to.be.a('number');
+    expect(instance.id).to.be.a('number')
   })
 
   it('should have the property status (base name: "status")', function () {
-    expect(instance.status).to.be.a('string');
+    expect(instance.status).to.be.a('string')
   })
 
   it('should have the property sentDate (base name: "sent_date")', function () {
-    expect(instance.sent_date).to.be.a('string');
+    expect(instance.sent_date).to.be.a('string')
   })
 
   it('should have the property errorsCount (base name: "errors_count")', function () {
-    expect(instance.errors_count).to.be.a('number');
+    expect(instance.errors_count).to.be.a('number')
   })
 
   it('should have the property errorLog (base name: "error_log")', function () {
-    expect(instance.error_log).to.be.a('string');
+    expect(instance.error_log).to.be.a('string')
   })
 
   it('should have the property fromEmail (base name: "from_email")', function () {
-    expect(instance.from_email).to.be.a('string');
+    expect(instance.from_email).to.be.a('string')
   })
 
   it('should have the property fromName (base name: "from_name")', function () {
-    expect(instance.from_name).to.be.a('string');
+    expect(instance.from_name).to.be.a('string')
   })
 
   it('should have the property toEmail (base name: "to_email")', function () {
-    expect(instance.to_email).to.be.a('string');
+    expect(instance.to_email).to.be.a('string')
   })
 
   it('should have the property toName (base name: "to_name")', function () {
-    expect(instance.to_name).to.be.a('string');
+    expect(instance.to_name).to.be.a('string')
   })
 
   it('should have the property subject (base name: "subject")', function () {
-    expect(instance.subject).to.be.a('string');
+    expect(instance.subject).to.be.a('string')
   })
 
   it('should have the property content (base name: "content")', function () {
-    expect(instance.content).to.be.a('string');
+    expect(instance.content).to.be.a('string')
   })
 
   it('should have the property copyTo (base name: "copy_to")', function () {
-    expect(instance.copy_to).to.be.a('string');
+    expect(instance.copy_to).to.be.a('string')
   })
 
   it('should have the property recipientStatus (base name: "recipient_status")', function () {
-    expect(instance.recipient_status).to.be.a('string');
+    expect(instance.recipient_status).to.be.a('string')
   })
 
   it('should have the property recipientDate (base name: "recipient_date")', function () {
-    expect(instance.recipient_date).to.be.a('string');
+    expect(instance.recipient_date).to.be.a('string')
   })
 
   it('should have the property kind (base name: "kind")', function () {
-    expect(instance.kind).to.be.a('string');
+    expect(instance.kind).to.be.a('string')
   })
 
   it('should have the property attachments (base name: "attachments")', function () {
-    expect(instance.attachments).to.be.a('array');
+    expect(instance.attachments).to.be.a('array')
   })
 })

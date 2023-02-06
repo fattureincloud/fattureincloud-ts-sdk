@@ -10,26 +10,26 @@
  *
  */
 
-import { expect } from "chai"
-import { EmailAttachment } from "../../src/models"
+import { expect } from 'chai'
+import { EmailAttachment } from '../../src/models'
 
-let instance: EmailAttachment = {}
-instance.filename = "say my name"
-instance.url = "www.jjj.com"
+const instance: EmailAttachment = {}
+instance.filename = 'say my name'
+instance.url = 'www.jjj.com'
 
 // beforeEach(function () {
 // })
 
 describe('EmailAttachment', function () {
   it('should create an instance of EmailAttachment', function () {
-    expect(instance).to.be.a('object');
+    expect(instance).to.be.a('object')
   })
 
   it('should have the property filename (base name: "filename")', function () {
-    expect(instance.filename).to.be.a('string');
+    expect(instance.filename).to.be.a('string')
   })
 
   it('should have the property url (base name: "url")', function () {
-    expect(instance.url).to.be.a('string');
+    expect(instance.url).to.be.a('string')
   })
 })
