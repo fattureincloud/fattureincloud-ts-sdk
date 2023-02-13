@@ -219,6 +219,7 @@ src/models/received-document-type.ts
 src/models/received-document.ts
 src/models/schedule-email-request.ts
 src/models/send-einvoice-request-data.ts
+src/models/send-einvoice-request-options.ts
 src/models/send-einvoice-request.ts
 src/models/send-einvoice-response-data.ts
 src/models/send-einvoice-response.ts

@@ -11,15 +11,15 @@
  *
  */
 
-import { expect } from "chai"
-import { EmailsApi } from "../../api"
-import { ListEmailsResponse } from "../../src/models"
+import { expect } from 'chai'
+import { EmailsApi } from '../../api'
+import { ListEmailsResponse } from '../../src/models'
 
 const sandbox = require('sinon').createSandbox()
 
 const instance = new EmailsApi()
 
-const listEmailsResponseObj: ListEmailsResponse = {"current_page":1,"data":[{"id":1,"status":"sent","sent_date":"2022-07-17 13:53:12","errors_count":0,"error_log":"","from_email":"test@mail.it","from_name":"Test mail","to_email":"mail@test.it","to_name":"Mario","subject":"Test","content":"Test send email","copy_to":"","recipient_status":"unknown","recipient_date":null,"kind":"Fatture","attachments":[]},{"id":2,"status":"sent","sent_date":"2022-07-18 13:53:12","errors_count":0,"error_log":"","from_email":"test@mail.it","from_name":"Test mail","to_email":"mail@test.it","to_name":"Maria","subject":"Test","content":"Test send email","copy_to":"","recipient_status":"unknown","recipient_date":null,"kind":"Fatture","attachments":[]}],"first_page_url":"emails?page=1","next_page_url":"emails?page=1","from":1,"last_page":1,"last_page_url":"emails?page=1","path":"emails","per_page":50,"prev_page_url":"emails?page=1","to":2,"total":2}
+const listEmailsResponseObj: ListEmailsResponse = { current_page: 1, data: [{ id: 1, status: 'sent', sent_date: '2022-07-17 13:53:12', errors_count: 0, error_log: '', from_email: 'test@mail.it', from_name: 'Test mail', to_email: 'mail@test.it', to_name: 'Mario', subject: 'Test', content: 'Test send email', copy_to: '', recipient_status: 'unknown', recipient_date: null, kind: 'Fatture', attachments: [] }, { id: 2, status: 'sent', sent_date: '2022-07-18 13:53:12', errors_count: 0, error_log: '', from_email: 'test@mail.it', from_name: 'Test mail', to_email: 'mail@test.it', to_name: 'Maria', subject: 'Test', content: 'Test send email', copy_to: '', recipient_status: 'unknown', recipient_date: null, kind: 'Fatture', attachments: [] }], first_page_url: 'emails?page=1', next_page_url: 'emails?page=1', from: 1, last_page: 1, last_page_url: 'emails?page=1', path: 'emails', per_page: 50, prev_page_url: 'emails?page=1', to: 2, total: 2 }
 sandbox.stub(instance, 'listEmails').returns(listEmailsResponseObj)
 
 // beforeEach(function () {

@@ -11,8 +11,8 @@
  *
  */
 
-import { expect } from "chai"
-import { EmailRecipientStatus } from "../../src/models"
+import { expect } from 'chai'
+import { EmailRecipientStatus } from '../../src/models'
 
 // beforeEach(function () {
 // })
