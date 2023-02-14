@@ -10,15 +10,15 @@
  *
  */
 
-import { expect } from "chai";
-import { IssuedDocumentType, JoinIssuedDocumentsResponse } from "../../src/models";
+import { expect } from 'chai'
+import { IssuedDocumentType, JoinIssuedDocumentsResponse } from '../../src/models'
 
- const instance: JoinIssuedDocumentsResponse = {
+const instance: JoinIssuedDocumentsResponse = {
   data: {
     type: IssuedDocumentType.Invoice
   },
   options: {
-    create_from: ["12345", "54321"]
+    create_from: ['12345', '54321']
   }
 }
 
@@ -27,14 +27,14 @@ beforeEach(function () {
 
 describe('JoinIssuedDocumentsResponse', function () {
   it('should create an instance of JoinIssuedDocumentsResponse', function () {
-    expect(instance).to.be.a('object');
+    expect(instance).to.be.a('object')
   })
 
   it('should have the property data (base name: "data")', function () {
-    expect(instance.data).to.be.a('object');
+    expect(instance.data).to.be.a('object')
   })
 
   it('should have the property options (base name: "options")', function () {
-    expect(instance.options).to.be.a('object');
+    expect(instance.options).to.be.a('object')
   })
 })

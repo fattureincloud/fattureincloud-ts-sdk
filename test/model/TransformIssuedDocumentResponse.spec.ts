@@ -10,29 +10,29 @@
  *
  */
 
- import { expect } from 'chai'
- import { IssuedDocumentType, TransformIssuedDocumentResponse } from '../../src/models'
- 
+import { expect } from 'chai'
+import { IssuedDocumentType, TransformIssuedDocumentResponse } from '../../src/models'
+
 const instance: TransformIssuedDocumentResponse = {
   data: {
     type: IssuedDocumentType.Invoice
   },
   options: {
-    create_from: ["12345"],
+    create_from: ['12345'],
     transform: true
   }
 }
 
 describe('TransformIssuedDocumentResponse', function () {
   it('should create an instance of TransformIssuedDocumentResponse', function () {
-    expect(instance).to.be.a('object');
+    expect(instance).to.be.a('object')
   })
 
   it('should have the property data (base name: "data")', function () {
-    expect(instance.data).to.be.a('object');
+    expect(instance.data).to.be.a('object')
   })
 
   it('should have the property options (base name: "options")', function () {
-    expect(instance.options).to.be.a('object');
+    expect(instance.options).to.be.a('object')
   })
 })
