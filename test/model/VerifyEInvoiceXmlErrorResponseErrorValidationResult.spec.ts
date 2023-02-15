@@ -10,23 +10,22 @@
  *
  */
 
-import { expect } from "chai"
-import { VerifyEInvoiceXmlErrorResponseErrorValidationResult } from "../../src/models"
+import { expect } from 'chai'
+import { VerifyEInvoiceXmlErrorResponseErrorValidationResult } from '../../src/models'
 
+const instance: VerifyEInvoiceXmlErrorResponseErrorValidationResult = {
+  xml_errors: ['err', 'or']
+}
 
-  const instance: VerifyEInvoiceXmlErrorResponseErrorValidationResult = {
-    xml_errors: ["err", "or"]
-  }
+// beforeEach(function () {
+// })
 
-  // beforeEach(function () {
-  // })
-
-  describe('VerifyEInvoiceXmlErrorResponseErrorValidationResult', function () {
-    it('should create an instance of VerifyEInvoiceXmlErrorResponseErrorValidationResult', function () {
-      expect(instance).to.be.a('object');
-    })
-
-    it('should have the property xmlErrors (base name: "xml_errors")', function () {
-      expect(instance.xml_errors).to.be.a('array');
-    })
+describe('VerifyEInvoiceXmlErrorResponseErrorValidationResult', function () {
+  it('should create an instance of VerifyEInvoiceXmlErrorResponseErrorValidationResult', function () {
+    expect(instance).to.be.a('object')
   })
+
+  it('should have the property xmlErrors (base name: "xml_errors")', function () {
+    expect(instance.xml_errors).to.be.a('array')
+  })
+})

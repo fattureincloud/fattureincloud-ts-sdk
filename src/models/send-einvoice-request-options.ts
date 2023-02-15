@@ -17,32 +17,14 @@
 /**
  * 
  * @export
- * @interface Currency
+ * @interface SendEInvoiceRequestOptions
  */
-export interface Currency {
+export interface SendEInvoiceRequestOptions {
     /**
-     * Currency code.
-     * @type {string}
-     * @memberof Currency
+     * If set to true the e-invoice will not be sent to the SDI.
+     * @type {boolean}
+     * @memberof SendEInvoiceRequestOptions
      */
-    'id'?: string | null;
-    /**
-     * Currency symbol.
-     * @type {string}
-     * @memberof Currency
-     */
-    'symbol'?: string | null;
-    /**
-     * Currency exchange rate (EUR to this).
-     * @type {string}
-     * @memberof Currency
-     */
-    'exchange_rate'?: string | null;
-    /**
-     * Currency html code.
-     * @type {string}
-     * @memberof Currency
-     */
-    'html_symbol'?: string | null;
+    'dry_run'?: boolean | null;
 }
 

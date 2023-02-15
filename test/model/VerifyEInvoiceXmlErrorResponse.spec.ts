@@ -17,7 +17,7 @@ const instance: VerifyEInvoiceXmlErrorResponse = {
   error: {
     message: 'errore',
     validation_result: {
-      xml_errors: ["err", "or"]
+      xml_errors: ['err', 'or']
     }
   },
   extra: {
