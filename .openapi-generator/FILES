@@ -21,6 +21,7 @@ src/api/settings-api.ts
 src/api/suppliers-api.ts
 src/api/taxes-api.ts
 src/api/user-api.ts
+src/api/webhooks-api.ts
 src/models/archive-document.ts
 src/models/attachment-data.ts
 src/models/cashbook-entry-document.ts
@@ -63,6 +64,8 @@ src/models/create-supplier-request.ts
 src/models/create-supplier-response.ts
 src/models/create-vat-type-request.ts
 src/models/create-vat-type-response.ts
+src/models/create-webhooks-subscription-request.ts
+src/models/create-webhooks-subscription-response.ts
 src/models/currency.ts
 src/models/detailed-country.ts
 src/models/document-template.ts
@@ -77,6 +80,7 @@ src/models/email-status.ts
 src/models/email.ts
 src/models/entity-type.ts
 src/models/entity.ts
+src/models/event-type.ts
 src/models/f24-status.ts
 src/models/f24.ts
 src/models/function-status.ts
@@ -110,6 +114,7 @@ src/models/get-user-info-response-email-confirmation-state.ts
 src/models/get-user-info-response-info.ts
 src/models/get-user-info-response.ts
 src/models/get-vat-type-response.ts
+src/models/get-webhooks-subscription-response.ts
 src/models/index.ts
 src/models/issued-document-ei-data.ts
 src/models/issued-document-extra-data.ts
@@ -166,6 +171,7 @@ src/models/list-units-of-measure-response.ts
 src/models/list-user-companies-response-data.ts
 src/models/list-user-companies-response.ts
 src/models/list-vat-types-response.ts
+src/models/list-webhooks-subscriptions-response.ts
 src/models/modify-archive-document-request.ts
 src/models/modify-archive-document-response.ts
 src/models/modify-cashbook-entry-request.ts
@@ -190,6 +196,8 @@ src/models/modify-supplier-request.ts
 src/models/modify-supplier-response.ts
 src/models/modify-vat-type-request.ts
 src/models/modify-vat-type-response.ts
+src/models/modify-webhooks-subscription-request.ts
+src/models/modify-webhooks-subscription-response.ts
 src/models/monthly-total.ts
 src/models/original-document-type.ts
 src/models/pagination.ts
@@ -207,7 +215,6 @@ src/models/receipt-items-list-item.ts
 src/models/receipt-pre-create-info.ts
 src/models/receipt-type.ts
 src/models/receipt.ts
-src/models/received-document-entity.ts
 src/models/received-document-info-default-values.ts
 src/models/received-document-info-items-default-values.ts
 src/models/received-document-info.ts
@@ -243,5 +250,6 @@ src/models/verify-einvoice-xml-error-response-extra.ts
 src/models/verify-einvoice-xml-error-response.ts
 src/models/verify-einvoice-xml-response-data.ts
 src/models/verify-einvoice-xml-response.ts
+src/models/webhooks-subscription.ts
 tsconfig.esm.json
 tsconfig.json
