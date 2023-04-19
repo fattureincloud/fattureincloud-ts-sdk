@@ -29,7 +29,7 @@ export const EventType = {
     IssuedDocumentsQuotesDelete: 'it.fattureincloud.issued_documents.quotes.delete',
     IssuedDocumentsProformasCreate: 'it.fattureincloud.issued_documents.proformas.create',
     IssuedDocumentsProformasUpdate: 'it.fattureincloud.issued_documents.proformas.update',
-    IssuedDocumentsProformasCreate: 'it.fattureincloud.issued_documents.proformas.create',
+    IssuedDocumentsProformasDelete: 'it.fattureincloud.issued_documents.proformas.delete',
     IssuedDocumentsReceiptsCreate: 'it.fattureincloud.issued_documents.receipts.create',
     IssuedDocumentsReceiptsUpdate: 'it.fattureincloud.issued_documents.receipts.update',
     IssuedDocumentsReceiptsDelete: 'it.fattureincloud.issued_documents.receipts.delete',
