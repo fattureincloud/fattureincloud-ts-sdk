@@ -19,7 +19,7 @@ const instance: ModifyWebhooksSubscriptionResponse = {
     id: 'SUB123',
     sink: 'https://endpoint.test',
     verified: true,
-    types: ['it.fattureincloud.cashbook.create']
+    types: ['it.fattureincloud.webhooks.cashbook.create']
   },
   warnings: ['error']
 }
