@@ -20,13 +20,13 @@ const instance: ListWebhooksSubscriptionsResponse = {
       id: 'SUB123',
       sink: 'https://endpoint.test',
       verified: true,
-      types: ['it.fattureincloud.cashbook.create']
+      types: ['it.fattureincloud.webhooks.cashbook.create']
     },
     {
       id: 'SUB1234',
       sink: 'https://endpoint.test',
       verified: true,
-      types: ['it.fattureincloud.cashbook.update']
+      types: ['it.fattureincloud.webhooks.cashbook.update']
     }
   ]
 }

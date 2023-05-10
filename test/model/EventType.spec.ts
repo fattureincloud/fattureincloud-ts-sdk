@@ -14,7 +14,7 @@
 import { expect } from 'chai'
 import { EventType } from '../../src/models'
 
-const instance: EventType = 'it.fattureincloud.cashbook.create'
+const instance: EventType = 'it.fattureincloud.webhooks.cashbook.create'
 
 // beforeEach(function () {
 // })
