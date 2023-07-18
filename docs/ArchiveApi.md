@@ -313,8 +313,8 @@ const apiConfig = new Configuration({
 let apiInstance = new ArchiveApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
 
-let filename = "filename_example", // String | Name of the file.
-let attachment = "/path/to/file" // File | Valid format: .png, .jpg, .gif, .pdf, .zip, .xls, .xlsx, .doc, .docx
+let filename = "filename_example", // String | Attachment file name
+let attachment = "/path/to/file" // File | Attachment file [.png, .jpg, .gif, .pdf, .zip, .xls, .xlsx, .doc, .docx]
 
 apiInstance.uploadArchiveDocumentAttachment(companyId, attachment).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -330,8 +330,8 @@ apiInstance.uploadArchiveDocumentAttachment(companyId, attachment).then((data) =
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **companyId** | **Number**| The ID of the company. | 
- **filename** | **String**| Name of the file. | [optional] 
- **attachment** | **File**| Valid format: .png, .jpg, .gif, .pdf, .zip, .xls, .xlsx, .doc, .docx | [optional] 
+ **filename** | **String**| Attachment file name | [optional] 
+ **attachment** | **File**| Attachment file [.png, .jpg, .gif, .pdf, .zip, .xls, .xlsx, .doc, .docx] | [optional] 
 
 ### Return type
 

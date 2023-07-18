@@ -25,8 +25,7 @@ const instance: IssuedDocumentExtraData = {
   ts_file_id: 'file.png',
   ts_sent_date: '2020-10-10',
   ts_full_amount: true,
-  imported_by: 'jss',
-  ts_single_sending: false
+  imported_by: 'jss'
 }
 
 // beforeEach(function () {
@@ -83,9 +82,5 @@ describe('IssuedDocumentExtraData', function () {
 
   it('should have the property importedBy (base name: "imported_by")', function () {
     expect(instance.imported_by).to.be.a('string')
-  })
-
-  it('should have the property tsSingleSending (base name: "ts_single_sending")', function () {
-    expect(instance.ts_single_sending).to.be.a('boolean')
   })
 })
