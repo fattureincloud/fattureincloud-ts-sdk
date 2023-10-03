@@ -533,7 +533,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new InfoApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let context = "context_example"; // String | 
+let context = "context_example"; // String | Categories resource type.
 apiInstance.listProductCategories(companyId, context).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -548,7 +548,7 @@ apiInstance.listProductCategories(companyId, context).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **companyId** | **Number**| The ID of the company. | 
- **context** | **String**|  | 
+ **context** | **String**| Categories resource type. | 
 
 ### Return type
 

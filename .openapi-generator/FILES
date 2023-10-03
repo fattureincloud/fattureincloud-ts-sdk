@@ -250,6 +250,8 @@ src/models/verify-einvoice-xml-error-response-extra.ts
 src/models/verify-einvoice-xml-error-response.ts
 src/models/verify-einvoice-xml-response-data.ts
 src/models/verify-einvoice-xml-response.ts
+src/models/webhooks-subscription-config.ts
+src/models/webhooks-subscription-mapping.ts
 src/models/webhooks-subscription.ts
 tsconfig.esm.json
 tsconfig.json
