@@ -17,7 +17,10 @@ const instance: WebhooksSubscription = {
   id: 'SUB123',
   sink: 'https://endpoint.test',
   verified: true,
-  types: ['it.fattureincloud.webhooks.cashbook.create']
+  types: ['it.fattureincloud.webhooks.cashbook.create'],
+  config: {
+    mapping: 'binary'
+  }
 }
 
 // beforeEach(function () {
@@ -42,5 +45,9 @@ describe('WebhooksSubscription', function () {
 
   it('should have the property types (base name: "types")', function () {
     expect(instance.types).to.be.a('array')
+  })
+
+  it('should have the property types (base name: "config")', function () {
+    expect(instance.config).to.be.a('object')
   })
 })
