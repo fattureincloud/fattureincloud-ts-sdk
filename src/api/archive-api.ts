@@ -76,6 +76,7 @@ export const ArchiveApiAxiosParamCreator = function (configuration?: Configurati
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.0.12/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -284,6 +285,7 @@ export const ArchiveApiAxiosParamCreator = function (configuration?: Configurati
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.0.12/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
