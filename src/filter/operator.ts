@@ -54,7 +54,7 @@ export const Operator = {
 
   /**
      * Like operator.
-     * @member {String} GTE
+     * @member {String} LIKE
      */
   LIKE: 'like',
 
@@ -63,6 +63,18 @@ export const Operator = {
      * @member {String} CONTAINS
      */
   CONTAINS: 'contains',
+
+  /**
+     * Not Like operator.
+     * @member {String} NOT_LIKE
+     */
+   NOT_LIKE: 'not like',
+
+   /**
+      * Not Contains operator.
+      * @member {String} NOT_CONTAINS
+      */
+   NOT_CONTAINS: 'not contains',
 
   /**
      * Starts With operator.

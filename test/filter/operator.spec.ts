@@ -16,6 +16,8 @@ describe('Operator', function () {
     expect(Operator.IS_NOT).to.equal('is not')
     expect(Operator.LIKE).to.equal('like')
     expect(Operator.CONTAINS).to.equal('contains')
+    expect(Operator.NOT_LIKE).to.equal('not like')
+    expect(Operator.NOT_CONTAINS).to.equal('not contains')
     expect(Operator.STARTS_WITH).to.equal('starts with')
     expect(Operator.ENDS_WITH).to.equal('ends with')
   })
