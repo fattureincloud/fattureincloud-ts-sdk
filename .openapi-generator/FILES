@@ -37,6 +37,7 @@ src/models/company-info-plan-info-functions.ts
 src/models/company-info-plan-info-limits.ts
 src/models/company-info-plan-info.ts
 src/models/company-info.ts
+src/models/company-plan-usage.ts
 src/models/company-type.ts
 src/models/company.ts
 src/models/controlled-company.ts
@@ -83,11 +84,13 @@ src/models/entity.ts
 src/models/event-type.ts
 src/models/f24-status.ts
 src/models/f24.ts
+src/models/fatture-in-cloud-plan-type.ts
 src/models/function-status.ts
 src/models/get-archive-document-response.ts
 src/models/get-cashbook-entry-response.ts
 src/models/get-client-response.ts
 src/models/get-company-info-response.ts
+src/models/get-company-plan-usage-response.ts
 src/models/get-einvoice-rejection-reason-response.ts
 src/models/get-email-data-response.ts
 src/models/get-existing-issued-document-totals-request.ts
