@@ -20,6 +20,8 @@ const instance: Company = {
   type: 'accountant',
   access_token: '4ff5f0fe5abcd1d7157fa13ca72ab62b6183db0667a576a0e19164801c18c4f7362a848fa32dbb8c3a3f94c34f3df95',
   connection_id: 94566,
+  fic_license_expire: '2024-10-10',
+  fic_plan: 'standard',
   controlled_companies: [
     {
       id: 12246,
@@ -69,6 +71,14 @@ describe('Company', function () {
   })
 
   it('should have the property taxCode (base name: "tax_code")', function () {
+    expect(instance.tax_code).to.be.a('string')
+  })
+
+  it('should have the property ficLicenseExpire (base name: "fic_license_expire")', function () {
+    expect(instance.tax_code).to.be.a('string')
+  })
+
+  it('should have the property ficLicenseExpire (base name: "fic_plan")', function () {
     expect(instance.tax_code).to.be.a('string')
   })
 })
