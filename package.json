@@ -1,6 +1,6 @@
 {
   "name": "@fattureincloud/fattureincloud-ts-sdk",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "TypeScript SDK for the Fatture in Cloud API",
   "author": "Fatture in Cloud API Team",
   "keywords": [
@@ -21,7 +21,7 @@
     "test": "mocha -r ts-node/register 'test/**/*.ts'"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.6.1",
     "form-data": "^4.0.0"
   },
   "devDependencies": {
