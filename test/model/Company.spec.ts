@@ -17,6 +17,7 @@ const instance: Company = {
   id: 12345,
   name: 'Studio Commercialista',
   tax_code: 'ABCSFN94T17A794K',
+  vat_number: 'IT1234564774563A',
   type: 'accountant',
   access_token: '4ff5f0fe5abcd1d7157fa13ca72ab62b6183db0667a576a0e19164801c18c4f7362a848fa32dbb8c3a3f94c34f3df95',
   connection_id: 94566,
@@ -74,11 +75,15 @@ describe('Company', function () {
     expect(instance.tax_code).to.be.a('string')
   })
 
-  it('should have the property ficLicenseExpire (base name: "fic_license_expire")', function () {
-    expect(instance.tax_code).to.be.a('string')
+  it('should have the property vatNumber (base name: "vat_number")', function () {
+    expect(instance.vat_number).to.be.a('string')
   })
 
-  it('should have the property ficLicenseExpire (base name: "fic_plan")', function () {
-    expect(instance.tax_code).to.be.a('string')
+  it('should have the property ficLicenseExpire (base name: "fic_license_expire")', function () {
+    expect(instance.fic_license_expire).to.be.a('string')
+  })
+
+  it('should have the property ficPlan (base name: "fic_plan")', function () {
+    expect(instance.fic_plan).to.be.a('string')
   })
 })
