@@ -85,7 +85,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new WebhooksApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let subscriptionId = SUB123; // String | The ID of the subscription.
+let subscriptionId = "SUB123"; // String | The ID of the subscription.
 apiInstance.deleteWebhooksSubscription(companyId, subscriptionId).then(() => {
   console.log('API called successfully.');
 }, (error) => {
@@ -136,7 +136,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new WebhooksApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let subscriptionId = SUB123; // String | The ID of the subscription.
+let subscriptionId = "SUB123"; // String | The ID of the subscription.
 apiInstance.getWebhooksSubscription(companyId, subscriptionId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -236,7 +236,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new WebhooksApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let subscriptionId = SUB123; // String | The ID of the subscription.
+let subscriptionId = "SUB123"; // String | The ID of the subscription.
 
 let modifyWebhooksSubscriptionRequest: ModifyWebhooksSubscriptionRequest = new FattureInCloudApiV2ApiReference.ModifyWebhooksSubscriptionRequest() // ModifyWebhooksSubscriptionRequest | 
 
