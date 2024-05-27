@@ -74,12 +74,6 @@ export interface ControlledCompany {
      * @memberof ControlledCompany
      */
     'tax_code'?: string | null;
-    /**
-     * Controlled company vat number
-     * @type {string}
-     * @memberof ControlledCompany
-     */
-    'vat_number'?: string | null;
 }
 
 
