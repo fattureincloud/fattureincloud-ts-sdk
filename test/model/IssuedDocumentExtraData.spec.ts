@@ -14,7 +14,6 @@ import { expect } from 'chai'
 import { IssuedDocumentExtraData } from '../../src/models'
 
 const instance: IssuedDocumentExtraData = {
-  show_sofort_button: true,
   multifatture_sent: 3,
   ts_communication: true,
   ts_flag_tipo_spesa: 1,
@@ -34,10 +33,6 @@ const instance: IssuedDocumentExtraData = {
 describe('IssuedDocumentExtraData', function () {
   it('should create an instance of IssuedDocumentExtraData', function () {
     expect(instance).to.be.a('object')
-  })
-
-  it('should have the property showSofortButton (base name: "show_sofort_button")', function () {
-    expect(instance.show_sofort_button).to.be.a('boolean')
   })
 
   it('should have the property multifattureSent (base name: "multifatture_sent")', function () {

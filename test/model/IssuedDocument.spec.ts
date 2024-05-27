@@ -43,7 +43,6 @@ const instance: IssuedDocument = {
   show_payment_method: false,
   show_payments: true,
   show_totals: 'all',
-  show_paypal_button: true,
   show_notification_button: false,
   is_marked: false,
   date: '2021-08-20',
@@ -298,10 +297,6 @@ describe('IssuedDocument', function () {
 
   it('should have the property vMargins (base name: "v_margins")', function () {
     expect(instance.v_margins).to.be.a('number')
-  })
-
-  it('should have the property showPaypalButton (base name: "show_paypal_button")', function () {
-    expect(instance.show_paypal_button).to.be.a('boolean')
   })
 
   it('should have the property showNotificationButton (base name: "show_notification_button")', function () {

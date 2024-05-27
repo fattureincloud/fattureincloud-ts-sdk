@@ -21,7 +21,7 @@ import type { CompanyType } from './company-type';
 import type { FattureInCloudPlanType } from './fatture-in-cloud-plan-type';
 
 /**
- * 
+ *
  * @export
  * @interface ControlledCompany
  */
@@ -39,7 +39,7 @@ export interface ControlledCompany {
      */
     'name'?: string | null;
     /**
-     * 
+     *
      * @type {CompanyType}
      * @memberof ControlledCompany
      */
@@ -51,13 +51,13 @@ export interface ControlledCompany {
      */
     'access_token'?: string | null;
     /**
-     * 
+     *
      * @type {string}
      * @memberof ControlledCompany
      */
     'fic_license_expire'?: string | null;
     /**
-     * 
+     *
      * @type {FattureInCloudPlanType}
      * @memberof ControlledCompany
      */
