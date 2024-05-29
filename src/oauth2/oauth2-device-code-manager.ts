@@ -26,8 +26,8 @@ export class OAuth2DeviceCodeManager extends OAuth2Manager {
       scope: scopeStr
     }
 
-    return this.executePost<{device_code: string, user_code: string, scope: Map<string, string>, verification_uri: string, interval: number, expires_in: number}>(tokenUri, data)
-      .then((data) => new OAuth2DeviceCodeResponse(data.device_code, data.user_code, data.scope, data.verification_uri, data.interval, data.expires_in))
+    return this.executePost<{data:{device_code: string, user_code:string, scope: Map<string, string>, verification_uri: string, interval: number, expires_in: number}}>(tokenUri, data)
+      .then((data) => new OAuth2DeviceCodeResponse(data.data.device_code, data.data.user_code, data.data.scope, data.data.verification_uri, data.data.interval, data.data.expires_in))
       .catch(e => { throw new Error(`${e.response.data.error}: ${e.response.data.error_description}`) })
   }
 
