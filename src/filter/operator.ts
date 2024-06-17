@@ -68,13 +68,13 @@ export const Operator = {
      * Not Like operator.
      * @member {String} NOT_LIKE
      */
-   NOT_LIKE: 'not like',
+  NOT_LIKE: 'not like',
 
-   /**
+  /**
       * Not Contains operator.
       * @member {String} NOT_CONTAINS
       */
-   NOT_CONTAINS: 'not contains',
+  NOT_CONTAINS: 'not contains',
 
   /**
      * Starts With operator.
