@@ -113,6 +113,7 @@ src/models/get-receipts-monthly-totals-response.ts
 src/models/get-received-document-pre-create-info-response.ts
 src/models/get-received-document-response.ts
 src/models/get-supplier-response.ts
+src/models/get-tax-profile-response.ts
 src/models/get-user-info-response-email-confirmation-state.ts
 src/models/get-user-info-response-info.ts
 src/models/get-user-info-response.ts
@@ -237,6 +238,7 @@ src/models/sender-email.ts
 src/models/show-totals-mode.ts
 src/models/supplier-type.ts
 src/models/supplier.ts
+src/models/tax-profile.ts
 src/models/transform-issued-document-response.ts
 src/models/upload-archive-attachment-response.ts
 src/models/upload-f24-attachment-response.ts
