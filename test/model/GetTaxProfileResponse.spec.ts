@@ -15,16 +15,16 @@ import { GetTaxProfileResponse } from '../../src/models'
 
 const instance: GetTaxProfileResponse = {
   data: {
-    company_type: "individual",
-    company_subtype: "artigiani",
+    company_type: 'individual',
+    company_subtype: 'artigiani',
     profession: null,
-    regime: "forfettario_5",
-    rivalsa_name: "",
+    regime: 'forfettario_5',
+    rivalsa_name: '',
     default_rivalsa: 0,
-    cassa_name: "",
+    cassa_name: '',
     default_cassa: 0,
     default_cassa_taxable: 100,
-    cassa2_name: "",
+    cassa2_name: '',
     default_cassa2: 0,
     default_cassa2_taxable: 0,
     default_withholding_tax: 0,
@@ -37,16 +37,16 @@ const instance: GetTaxProfileResponse = {
     default_vat: {
       id: 66,
       value: 0,
-      description: "Contribuenti forfettari",
+      description: 'Contribuenti forfettari',
       notes: "Operazione non soggetta a IVA ai sensi dell'art. 1, commi 54-89, Legge n. 190\/2014 e succ. modifiche\/integrazioni",
       e_invoice: true,
-      ei_type: "2.2",
-      ei_description: "Non soggetta art. 1\/54-89 L. 190\/2014 e succ. modifiche\/integrazioni",
+      ei_type: '2.2',
+      ei_description: 'Non soggetta art. 1\/54-89 L. 190\/2014 e succ. modifiche\/integrazioni',
       editable: false,
       is_disabled: false,
       default: true
     }
-}
+  }
 }
 
 // beforeEach(function () {

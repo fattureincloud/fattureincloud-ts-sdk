@@ -14,6 +14,7 @@ src/api/emails-api.ts
 src/api/info-api.ts
 src/api/issued-documents-api.ts
 src/api/issued-einvoices-api.ts
+src/api/price-lists-api.ts
 src/api/products-api.ts
 src/api/receipts-api.ts
 src/api/received-documents-api.ts
@@ -79,6 +80,7 @@ src/models/email-schedule-include.ts
 src/models/email-schedule.ts
 src/models/email-status.ts
 src/models/email.ts
+src/models/entity-client-pre-create-info.ts
 src/models/entity-type.ts
 src/models/entity.ts
 src/models/event-type.ts
@@ -87,12 +89,15 @@ src/models/f24.ts
 src/models/fatture-in-cloud-plan-type.ts
 src/models/function-status.ts
 src/models/get-archive-document-response.ts
+src/models/get-bin-issued-document-response.ts
+src/models/get-bin-received-document-response.ts
 src/models/get-cashbook-entry-response.ts
 src/models/get-client-response.ts
 src/models/get-company-info-response.ts
 src/models/get-company-plan-usage-response.ts
 src/models/get-einvoice-rejection-reason-response.ts
 src/models/get-email-data-response.ts
+src/models/get-entity-client-pre-create-info-response.ts
 src/models/get-existing-issued-document-totals-request.ts
 src/models/get-existing-issued-document-totals-response.ts
 src/models/get-existing-received-document-totals-request.ts
@@ -106,6 +111,7 @@ src/models/get-new-received-document-totals-request.ts
 src/models/get-new-received-document-totals-response.ts
 src/models/get-payment-account-response.ts
 src/models/get-payment-method-response.ts
+src/models/get-price-list-items-response.ts
 src/models/get-product-response.ts
 src/models/get-receipt-pre-create-info-response.ts
 src/models/get-receipt-response.ts
@@ -139,6 +145,8 @@ src/models/language.ts
 src/models/list-archive-categories-response.ts
 src/models/list-archive-documents-response-page.ts
 src/models/list-archive-documents-response.ts
+src/models/list-bin-issued-documents.ts
+src/models/list-bin-received-documents.ts
 src/models/list-cashbook-entries-response.ts
 src/models/list-cities-response.ts
 src/models/list-clients-response-page.ts
@@ -159,6 +167,7 @@ src/models/list-issued-documents-response.ts
 src/models/list-languages-response.ts
 src/models/list-payment-accounts-response.ts
 src/models/list-payment-methods-response.ts
+src/models/list-price-lists-response.ts
 src/models/list-product-categories-response.ts
 src/models/list-products-response-page.ts
 src/models/list-products-response.ts
@@ -214,6 +223,10 @@ src/models/payment-terms-type.ts
 src/models/permission-level.ts
 src/models/permissions-fic-issued-documents-detailed.ts
 src/models/permissions.ts
+src/models/price-list-item.ts
+src/models/price-list-prices-type.ts
+src/models/price-list-type.ts
+src/models/price-list.ts
 src/models/product.ts
 src/models/receipt-items-list-item.ts
 src/models/receipt-pre-create-info.ts
@@ -255,8 +268,11 @@ src/models/verify-einvoice-xml-error-response-extra.ts
 src/models/verify-einvoice-xml-error-response.ts
 src/models/verify-einvoice-xml-response-data.ts
 src/models/verify-einvoice-xml-response.ts
+src/models/verify-webhooks-subscription-request.ts
+src/models/verify-webhooks-subscription.ts
 src/models/webhooks-subscription-config.ts
 src/models/webhooks-subscription-mapping.ts
+src/models/webhooks-subscription-verification-method.ts
 src/models/webhooks-subscription.ts
 tsconfig.esm.json
 tsconfig.json

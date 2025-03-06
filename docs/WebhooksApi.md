@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getWebhooksSubscription**](WebhooksApi.md#getWebhooksSubscription) | **GET** /c/{company_id}/subscriptions/{subscription_id} | Get Webhooks Subscription
 [**listWebhooksSubscriptions**](WebhooksApi.md#listWebhooksSubscriptions) | **GET** /c/{company_id}/subscriptions | List Webhooks Subscriptions
 [**modifyWebhooksSubscription**](WebhooksApi.md#modifyWebhooksSubscription) | **PUT** /c/{company_id}/subscriptions/{subscription_id} | Modify Webhooks Subscription
+[**verifyWebhooksSubscription**](WebhooksApi.md#verifyWebhooksSubscription) | **POST** /c/{company_id}/subscriptions/{subscription_id}/verify | Verify Webhooks Subscription
 
 
 
@@ -33,7 +34,7 @@ const apiConfig = new Configuration({
 let apiInstance = new WebhooksApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
 
-let createWebhooksSubscriptionRequest: CreateWebhooksSubscriptionRequest = {"data":{"sink":"http://www.test.com","types":["it.fattureincloud.webhooks.entities.create","it.fattureincloud.webhooks.issued_documents.create"]}} // CreateWebhooksSubscriptionRequest | 
+let createWebhooksSubscriptionRequest: CreateWebhooksSubscriptionRequest = {"data":{"sink":"http://www.test.com","types":["it.fattureincloud.webhooks.entities.create","it.fattureincloud.webhooks.issued_documents.create"],"verification_method":"header"}} // CreateWebhooksSubscriptionRequest | 
 
 apiInstance.createWebhooksSubscription(companyId, createWebhooksSubscriptionRequest).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -269,4 +270,59 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: application/json
 - **Accept**: application/json
+
+
+## verifyWebhooksSubscription
+
+> verifyWebhooksSubscription(companyId, subscriptionId, opts)
+
+Verify Webhooks Subscription
+
+Verify a webhook subscription.
+
+### Example
+
+```javascript
+import { Configuration, WebhooksApi , VerifyWebhooksSubscriptionRequest } from '@fattureincloud/fattureincloud-ts-sdk';
+
+// Configure OAuth2 access token for authorization: 
+const apiConfig = new Configuration({
+  accessToken: "YOUR ACCESS TOKEN"
+});
+
+let apiInstance = new WebhooksApi(apiConfig);
+let companyId = 12345; // Number | The ID of the company.
+let subscriptionId = "SUB123"; // String | The ID of the subscription.
+
+let verifyWebhooksSubscriptionRequest: VerifyWebhooksSubscriptionRequest = new FattureInCloudApiV2ApiReference.VerifyWebhooksSubscriptionRequest() // VerifyWebhooksSubscriptionRequest | 
+
+apiInstance.verifyWebhooksSubscription(companyId, subscriptionId, verifyWebhooksSubscriptionRequest).then(() => {
+  console.log('API called successfully.');
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **companyId** | **Number**| The ID of the company. | 
+ **subscriptionId** | **String**| The ID of the subscription. | 
+ **verifyWebhooksSubscriptionRequest** | [**VerifyWebhooksSubscriptionRequest**](VerifyWebhooksSubscriptionRequest.md)|  | [optional] 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[OAuth2AuthenticationCodeFlow](../README.md#OAuth2AuthenticationCodeFlow)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
 

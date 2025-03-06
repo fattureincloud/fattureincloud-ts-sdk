@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**createClient**](ClientsApi.md#createClient) | **POST** /c/{company_id}/entities/clients | Create Client
 [**deleteClient**](ClientsApi.md#deleteClient) | **DELETE** /c/{company_id}/entities/clients/{client_id} | Delete Client
 [**getClient**](ClientsApi.md#getClient) | **GET** /c/{company_id}/entities/clients/{client_id} | Get Client
+[**getClientInfo**](ClientsApi.md#getClientInfo) | **GET** /c/{company_id}/entities/clients/info | Get Client info
 [**listClients**](ClientsApi.md#listClients) | **GET** /c/{company_id}/entities/clients | List Clients
 [**modifyClient**](ClientsApi.md#modifyClient) | **PUT** /c/{company_id}/entities/clients/{client_id} | Modify Client
 
@@ -33,7 +34,7 @@ const apiConfig = new Configuration({
 let apiInstance = new ClientsApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
 
-let createClientRequest: CreateClientRequest = {"data":{"code":"AE86","name":"Avv. Maria Rossi","type":"person","first_name":"Maria","last_name":"Rossi","contact_person":"","vat_number":"IT12345640962","tax_code":"BLTGNI5ABCDA794E","address_street":"Via Roma, 1","address_postal_code":"20900","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"maria.rossi@example.com","certified_email":"maria.rossi@pec.example.com","phone":"1234567890","fax":"","notes":"","default_payment_terms":1,"default_payment_terms_type":"standard","bank_name":"Indesa","bank_iban":"IT40P123456781000000123456","bank_swift_code":"AK86PCT","shipping_address":"Corso Magellano 4","e_invoice":true,"ei_code":"111111","default_vat":{"id":54321,"value":45,"description":"","is_disabled":false}}} // CreateClientRequest | The client to create
+let createClientRequest: CreateClientRequest = {"data":{"code":"AE86","name":"Avv. Maria Rossi","type":"person","first_name":"Maria","last_name":"Rossi","contact_person":"","vat_number":"IT12345640962","tax_code":"BLTGNI5ABCDA794E","address_street":"Via Roma, 1","address_postal_code":"20900","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"maria.rossi@example.com","certified_email":"maria.rossi@pec.example.com","phone":"1234567890","fax":"","notes":"","default_payment_terms":1,"default_payment_terms_type":"standard","bank_name":"Indesa","bank_iban":"IT40P123456781000000123456","bank_swift_code":"AK86PCT","shipping_address":"Corso Magellano 4","e_invoice":true,"ei_code":"111111","default_vat":{"id":54321,"value":45,"description":"","is_disabled":false},"price_list_id":"10"}} // CreateClientRequest | The client to create
 
 apiInstance.createClient(companyId, createClientRequest).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -173,6 +174,55 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## getClientInfo
+
+> GetEntityClientPreCreateInfoResponse getClientInfo(companyId)
+
+Get Client info
+
+Retrieves the information useful while creating a new Client.
+
+### Example
+
+```javascript
+import { Configuration, ClientsApi  } from '@fattureincloud/fattureincloud-ts-sdk';
+
+// Configure OAuth2 access token for authorization: 
+const apiConfig = new Configuration({
+  accessToken: "YOUR ACCESS TOKEN"
+});
+
+let apiInstance = new ClientsApi(apiConfig);
+let companyId = 12345; // Number | The ID of the company.
+apiInstance.getClientInfo(companyId).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **companyId** | **Number**| The ID of the company. | 
+
+### Return type
+
+[**GetEntityClientPreCreateInfoResponse**](GetEntityClientPreCreateInfoResponse.md)
+
+### Authorization
+
+[OAuth2AuthenticationCodeFlow](../README.md#OAuth2AuthenticationCodeFlow)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## listClients
 
 > ListClientsResponse listClients(companyId, opts)
@@ -258,7 +308,7 @@ let apiInstance = new ClientsApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
 let clientId = 56; // Number | The ID of the client.
 
-let modifyClientRequest: ModifyClientRequest = {"data":{"code":"AE86","name":"Avv. Maria Rossi","type":"person","first_name":"Maria","last_name":"Rossi","contact_person":"","vat_number":"IT12345640962","tax_code":"BLTGNI5ABCDA794E","address_street":"Via Roma, 1","address_postal_code":"20900","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"maria.rossi@example.com","certified_email":"maria.rossi@pec.example.com","phone":"1234567890","fax":"","notes":"","default_payment_terms":1,"default_payment_terms_type":"standard","bank_name":"Indesa","bank_iban":"IT40P123456781000000123456","bank_swift_code":"AK86PCT","shipping_address":"Corso Magellano 4","e_invoice":true,"ei_code":"111111","default_vat":{"id":54321,"value":45,"description":"","is_disabled":false}}} // ModifyClientRequest | The modified Client. First level parameters are managed in delta mode.
+let modifyClientRequest: ModifyClientRequest = {"data":{"code":"AE86","name":"Avv. Maria Rossi","type":"person","first_name":"Maria","last_name":"Rossi","contact_person":"","vat_number":"IT12345640962","tax_code":"BLTGNI5ABCDA794E","address_street":"Via Roma, 1","address_postal_code":"20900","address_city":"Milano","address_province":"MI","address_extra":"","country":"Italia","email":"maria.rossi@example.com","certified_email":"maria.rossi@pec.example.com","phone":"1234567890","fax":"","notes":"","default_payment_terms":1,"default_payment_terms_type":"standard","bank_name":"Indesa","bank_iban":"IT40P123456781000000123456","bank_swift_code":"AK86PCT","shipping_address":"Corso Magellano 4","e_invoice":true,"ei_code":"111111","default_vat":{"id":54321,"value":45,"description":"","is_disabled":false},"price_list_id":"10"}} // ModifyClientRequest | The modified Client. First level parameters are managed in delta mode.
 
 apiInstance.modifyClient(companyId, clientId, modifyClientRequest).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
