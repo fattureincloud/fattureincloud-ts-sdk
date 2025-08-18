@@ -12,7 +12,7 @@
 
 import { expect } from 'chai'
 import { SettingsApi } from '../../src/api/settings-api'
-import { CreatePaymentAccountRequest, CreatePaymentAccountResponse, CreatePaymentMethodRequest, CreatePaymentMethodResponse, GetPaymentAccountResponse, GetPaymentMethodResponse, GetTaxProfileResponse, GetVatTypeResponse, ModifyPaymentAccountRequest, ModifyPaymentAccountResponse, ModifyPaymentMethodRequest, ModifyPaymentMethodResponse } from '../../src/models'
+import { CreatePaymentAccountRequest, CreatePaymentAccountResponse, CreatePaymentMethodRequest, CreatePaymentMethodResponse, GetPaymentAccountResponse, GetPaymentMethodResponse, GetTaxProfileResponse, ModifyPaymentAccountRequest, ModifyPaymentAccountResponse, ModifyPaymentMethodRequest, ModifyPaymentMethodResponse } from '../../src/models'
 
 const sandbox = require('sinon').createSandbox()
 
@@ -42,9 +42,8 @@ const modifyPaymentAccountStub = sandbox.stub(instance, 'modifyPaymentAccount').
 const modifyPaymentMethodResponse: ModifyPaymentMethodResponse = { data: { id: 386683, name: 'Bonifico bancario', is_default: true, type: 'standard', details: [{ title: 'Banca', description: 'Sao Paulo' }], default_payment_account: { id: 12345, name: 'conto banca SP' } } }
 const modifyPaymentMethodStub = sandbox.stub(instance, 'modifyPaymentMethod').returns(modifyPaymentMethodResponse)
 
-const GetTaxProfileResponse: GetTaxProfileResponse = { data: {company_type: "individual",company_subtype: "artigiani",profession: "test",regime: "forfettario_5",rivalsa_name: "",default_rivalsa: 0,cassa_name: "",default_cassa: 0,default_cassa_taxable: 100,cassa2_name: "",default_cassa2: 0,default_cassa2_taxable: 0,default_withholding_tax: 0,default_withholding_tax_taxable: 100, default_other_withholding_tax: 0,enasarco: false,enasarco_type: "test", contributions_percentage: 0,med: false,default_vat: {id: 66,value: 0,description: "Contribuenti forfettari",notes: "Operazione non soggetta a IVA ai sensi dell'art. 1, commi 54-89, Legge n. 190\/2014 e succ. modifiche\/integrazioni",e_invoice: true,ei_type: "2.2",ei_description: "Non soggetta art. 1\/54-89 L. 190\/2014 e succ. modifiche\/integrazioni",editable: false,is_disabled: false,default: true}} }
+const GetTaxProfileResponse: GetTaxProfileResponse = { data: { company_type: 'individual', company_subtype: 'artigiani', profession: 'test', regime: 'forfettario_5', rivalsa_name: '', default_rivalsa: 0, cassa_name: '', default_cassa: 0, default_cassa_taxable: 100, cassa2_name: '', default_cassa2: 0, default_cassa2_taxable: 0, default_withholding_tax: 0, default_withholding_tax_taxable: 100, default_other_withholding_tax: 0, enasarco: false, enasarco_type: 'test', contributions_percentage: 0, med: false, default_vat: { id: 66, value: 0, description: 'Contribuenti forfettari', notes: "Operazione non soggetta a IVA ai sensi dell'art. 1, commi 54-89, Legge n. 190\/2014 e succ. modifiche\/integrazioni", e_invoice: true, ei_type: '2.2', ei_description: 'Non soggetta art. 1\/54-89 L. 190\/2014 e succ. modifiche\/integrazioni', editable: false, is_disabled: false, default: true } } }
 sandbox.stub(instance, 'getTaxProfile').returns(GetTaxProfileResponse)
-
 
 // beforeEach(function () {
 
