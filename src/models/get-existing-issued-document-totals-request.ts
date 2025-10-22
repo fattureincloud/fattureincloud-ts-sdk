@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { IssuedDocument } from './issued-document';
 
-/**
- * 
- * @export
- * @interface GetExistingIssuedDocumentTotalsRequest
- */
 export interface GetExistingIssuedDocumentTotalsRequest {
-    /**
-     * 
-     * @type {IssuedDocument}
-     * @memberof GetExistingIssuedDocumentTotalsRequest
-     */
     'data'?: IssuedDocument;
 }
 

@@ -20,53 +20,28 @@ import type { PriceListPricesType } from './price-list-prices-type';
 // @ts-ignore
 import type { PriceListType } from './price-list-type';
 
-/**
- * 
- * @export
- * @interface PriceList
- */
 export interface PriceList {
     /**
      * Price list id
-     * @type {string}
-     * @memberof PriceList
      */
     'id'?: string | null;
     /**
      * Price list name
-     * @type {string}
-     * @memberof PriceList
      */
     'name'?: string | null;
-    /**
-     * 
-     * @type {PriceListPricesType}
-     * @memberof PriceList
-     */
     'prices_type'?: PriceListPricesType;
     /**
      * This entity is default
-     * @type {boolean}
-     * @memberof PriceList
      */
     'is_default'?: boolean | null;
     /**
      * Price list validity start date
-     * @type {string}
-     * @memberof PriceList
      */
     'valid_from'?: string | null;
     /**
      * Price list validity end date
-     * @type {string}
-     * @memberof PriceList
      */
     'valid_to'?: string | null;
-    /**
-     * 
-     * @type {PriceListType}
-     * @memberof PriceList
-     */
     'type'?: PriceListType;
 }
 

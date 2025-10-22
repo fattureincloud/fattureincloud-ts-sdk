@@ -16,8 +16,6 @@
 
 /**
  * Permission level
- * @export
- * @enum {string}
  */
 
 export const PermissionLevel = {

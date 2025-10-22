@@ -19,15 +19,8 @@ import type { CompanyInfo } from './company-info';
 
 /**
  * 
- * @export
- * @interface GetCompanyInfoResponse
  */
 export interface GetCompanyInfoResponse {
-    /**
-     * 
-     * @type {CompanyInfo}
-     * @memberof GetCompanyInfoResponse
-     */
     'data'?: CompanyInfo;
 }
 

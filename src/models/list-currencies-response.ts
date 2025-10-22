@@ -19,15 +19,8 @@ import type { Currency } from './currency';
 
 /**
  * 
- * @export
- * @interface ListCurrenciesResponse
  */
 export interface ListCurrenciesResponse {
-    /**
-     * 
-     * @type {Array<Currency>}
-     * @memberof ListCurrenciesResponse
-     */
     'data'?: Array<Currency> | null;
 }
 

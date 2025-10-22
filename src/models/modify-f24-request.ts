@@ -19,15 +19,8 @@ import type { F24 } from './f24';
 
 /**
  * 
- * @export
- * @interface ModifyF24Request
  */
 export interface ModifyF24Request {
-    /**
-     * 
-     * @type {F24}
-     * @memberof ModifyF24Request
-     */
     'data'?: F24;
 }
 

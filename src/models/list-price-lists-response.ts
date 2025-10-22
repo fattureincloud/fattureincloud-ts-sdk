@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { PriceList } from './price-list';
 
-/**
- * 
- * @export
- * @interface ListPriceListsResponse
- */
 export interface ListPriceListsResponse {
-    /**
-     * 
-     * @type {Array<PriceList>}
-     * @memberof ListPriceListsResponse
-     */
     'data'?: Array<PriceList>;
 }
 

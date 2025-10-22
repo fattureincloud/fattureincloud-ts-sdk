@@ -19,15 +19,8 @@ import type { F24 } from './f24';
 
 /**
  * 
- * @export
- * @interface CreateF24Request
  */
 export interface CreateF24Request {
-    /**
-     * 
-     * @type {F24}
-     * @memberof CreateF24Request
-     */
     'data'?: F24;
 }
 

@@ -25,68 +25,40 @@ import type { PaymentMethodType } from './payment-method-type';
 
 /**
  * 
- * @export
- * @interface PaymentMethod
  */
 export interface PaymentMethod {
     /**
      * Payment method id
-     * @type {number}
-     * @memberof PaymentMethod
      */
     'id'?: number | null;
     /**
      * Payment method name
-     * @type {string}
-     * @memberof PaymentMethod
      */
     'name'?: string | null;
-    /**
-     * 
-     * @type {PaymentMethodType}
-     * @memberof PaymentMethod
-     */
     'type'?: PaymentMethodType;
     /**
      * Payment method is default
-     * @type {boolean}
-     * @memberof PaymentMethod
      */
     'is_default'?: boolean | null;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof PaymentMethod
-     */
     'default_payment_account'?: PaymentAccount | null;
     /**
      * Payment method details
-     * @type {Array<PaymentMethodDetails>}
-     * @memberof PaymentMethod
      */
     'details'?: Array<PaymentMethodDetails> | null;
     /**
      * Payment method bank iban
-     * @type {string}
-     * @memberof PaymentMethod
      */
     'bank_iban'?: string | null;
     /**
      * Payment method bank name
-     * @type {string}
-     * @memberof PaymentMethod
      */
     'bank_name'?: string | null;
     /**
      * Payment method bank beneficiary
-     * @type {string}
-     * @memberof PaymentMethod
      */
     'bank_beneficiary'?: string | null;
     /**
      * E-invoice payment method
-     * @type {string}
-     * @memberof PaymentMethod
      */
     'ei_payment_method'?: string | null;
 }

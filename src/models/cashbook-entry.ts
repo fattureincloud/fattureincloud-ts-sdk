@@ -26,77 +26,35 @@ import type { CashbookEntryType } from './cashbook-entry-type';
 // @ts-ignore
 import type { PaymentAccount } from './payment-account';
 
-/**
- * 
- * @export
- * @interface CashbookEntry
- */
 export interface CashbookEntry {
     /**
      * Cashbook id
-     * @type {string}
-     * @memberof CashbookEntry
      */
     'id'?: string | null;
     /**
      * Cashbook date
-     * @type {string}
-     * @memberof CashbookEntry
      */
     'date'?: string | null;
     /**
      * Cashbook description
-     * @type {string}
-     * @memberof CashbookEntry
      */
     'description'?: string | null;
-    /**
-     * 
-     * @type {CashbookEntryKind}
-     * @memberof CashbookEntry
-     */
     'kind'?: CashbookEntryKind;
-    /**
-     * 
-     * @type {CashbookEntryType}
-     * @memberof CashbookEntry
-     */
     'type'?: CashbookEntryType | null;
     /**
      * Cashbook entity name
-     * @type {string}
-     * @memberof CashbookEntry
      */
     'entity_name'?: string | null;
-    /**
-     * 
-     * @type {CashbookEntryDocument}
-     * @memberof CashbookEntry
-     */
     'document'?: CashbookEntryDocument | null;
     /**
      * [Only for cashbook entry in] Cashbook total amount in
-     * @type {number}
-     * @memberof CashbookEntry
      */
     'amount_in'?: number | null;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof CashbookEntry
-     */
     'payment_account_in'?: PaymentAccount | null;
     /**
      * [Only for cashbook entry out] Cashbook total amount out
-     * @type {number}
-     * @memberof CashbookEntry
      */
     'amount_out'?: number | null;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof CashbookEntry
-     */
     'payment_account_out'?: PaymentAccount | null;
 }
 

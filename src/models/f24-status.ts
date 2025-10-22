@@ -16,8 +16,6 @@
 
 /**
  * F24 status
- * @export
- * @enum {string}
  */
 
 export const F24Status = {

@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -90,7 +89,7 @@ export const ReceivedDocumentsApiAxiosParamCreator = function (configuration?: C
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -104,7 +103,7 @@ export const ReceivedDocumentsApiAxiosParamCreator = function (configuration?: C
         },
         /**
          * Delete Bin Received Document
-         * @summary 
+         * @summary Delete Bin Received Document
          * @param {number} companyId The ID of the company.
          * @param {number} documentId The ID of the document.
          * @param {*} [options] Override http request option.
@@ -305,7 +304,7 @@ export const ReceivedDocumentsApiAxiosParamCreator = function (configuration?: C
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -348,7 +347,7 @@ export const ReceivedDocumentsApiAxiosParamCreator = function (configuration?: C
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -605,7 +604,7 @@ export const ReceivedDocumentsApiAxiosParamCreator = function (configuration?: C
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -619,7 +618,7 @@ export const ReceivedDocumentsApiAxiosParamCreator = function (configuration?: C
         },
         /**
          * Recover Received Document From The Bin
-         * @summary 
+         * @summary Recover Received Document From The Bin
          * @param {number} companyId The ID of the company.
          * @param {number} documentId The ID of the document.
          * @param {*} [options] Override http request option.
@@ -737,7 +736,7 @@ export const ReceivedDocumentsApiFp = function(configuration?: Configuration) {
         },
         /**
          * Delete Bin Received Document
-         * @summary 
+         * @summary Delete Bin Received Document
          * @param {number} companyId The ID of the company.
          * @param {number} documentId The ID of the document.
          * @param {*} [options] Override http request option.
@@ -900,7 +899,7 @@ export const ReceivedDocumentsApiFp = function(configuration?: Configuration) {
         },
         /**
          * Recover Received Document From The Bin
-         * @summary 
+         * @summary Recover Received Document From The Bin
          * @param {number} companyId The ID of the company.
          * @param {number} documentId The ID of the document.
          * @param {*} [options] Override http request option.
@@ -950,7 +949,7 @@ export const ReceivedDocumentsApiFactory = function (configuration?: Configurati
         },
         /**
          * Delete Bin Received Document
-         * @summary 
+         * @summary Delete Bin Received Document
          * @param {number} companyId The ID of the company.
          * @param {number} documentId The ID of the document.
          * @param {*} [options] Override http request option.
@@ -1080,7 +1079,7 @@ export const ReceivedDocumentsApiFactory = function (configuration?: Configurati
         },
         /**
          * Recover Received Document From The Bin
-         * @summary 
+         * @summary Recover Received Document From The Bin
          * @param {number} companyId The ID of the company.
          * @param {number} documentId The ID of the document.
          * @param {*} [options] Override http request option.
@@ -1120,9 +1119,10 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     createReceivedDocument(companyId: number, createReceivedDocumentRequest?: CreateReceivedDocumentRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateReceivedDocumentResponse>;
+
     /**
      * Delete Bin Received Document
-     * @summary 
+     * @summary Delete Bin Received Document
      * @param {number} companyId The ID of the company.
      * @param {number} documentId The ID of the document.
      * @param {*} [options] Override http request option.
@@ -1130,6 +1130,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     deleteBinReceivedDocument(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Deletes the specified document.
      * @summary Delete Received Document
@@ -1140,6 +1141,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     deleteReceivedDocument(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Removes the attachment of the specified document.
      * @summary Delete Received Document Attachment
@@ -1150,6 +1152,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     deleteReceivedDocumentAttachment(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Get bin issued documents detail
      * @summary Get Bin Received Documents List
@@ -1160,6 +1163,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     getBinReceivedDocument(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<GetBinIssuedDocumentResponse>;
+
     /**
      * Returns the totals for the specified document.
      * @summary Get Existing Received Document Totals
@@ -1171,6 +1175,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     getExistingReceivedDocumentTotals(companyId: number, documentId: number, getExistingReceivedDocumentTotalsRequest?: GetExistingReceivedDocumentTotalsRequest, options?: RawAxiosRequestConfig): AxiosPromise<GetExistingReceivedDocumentTotalsResponse>;
+
     /**
      * Returns the totals for a new document.
      * @summary Get New Received Document Totals
@@ -1181,6 +1186,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     getNewReceivedDocumentTotals(companyId: number, getNewReceivedDocumentTotalsRequest?: GetNewReceivedDocumentTotalsRequest, options?: RawAxiosRequestConfig): AxiosPromise<GetNewReceivedDocumentTotalsResponse>;
+
     /**
      * Gets the specified document.
      * @summary Get Received Document
@@ -1193,6 +1199,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     getReceivedDocument(companyId: number, documentId: number, fields?: string, fieldset?: GetReceivedDocumentFieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetReceivedDocumentResponse>;
+
     /**
      * Retrieves the information useful while creating a new document.
      * @summary Get Received Document Pre-Create Info
@@ -1203,6 +1210,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     getReceivedDocumentPreCreateInfo(companyId: number, type: GetReceivedDocumentPreCreateInfoTypeEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetReceivedDocumentPreCreateInfoResponse>;
+
     /**
      * Get bin Received documents list
      * @summary Get Bin Received Documents List
@@ -1212,6 +1220,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     listBinReceivedDocuments(companyId: number, options?: RawAxiosRequestConfig): AxiosPromise<ListBinReceivedDocuments>;
+
     /**
      * Lists the received documents.
      * @summary List Received Documents
@@ -1228,6 +1237,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     listReceivedDocuments(companyId: number, type: ListReceivedDocumentsTypeEnum, fields?: string, fieldset?: ListReceivedDocumentsFieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListReceivedDocumentsResponse>;
+
     /**
      * Modifies the specified document.
      * @summary Modify Received Document
@@ -1239,9 +1249,10 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     modifyReceivedDocument(companyId: number, documentId: number, modifyReceivedDocumentRequest?: ModifyReceivedDocumentRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifyReceivedDocumentResponse>;
+
     /**
      * Recover Received Document From The Bin
-     * @summary 
+     * @summary Recover Received Document From The Bin
      * @param {number} companyId The ID of the company.
      * @param {number} documentId The ID of the document.
      * @param {*} [options] Override http request option.
@@ -1249,6 +1260,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     recoverBinReceivedDocument(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Uploads an attachment destined to a received document. The actual association between the document and the attachment must be implemented separately, using the returned token.
      * @summary Upload Received Document Attachment
@@ -1260,6 +1272,7 @@ export interface ReceivedDocumentsApiInterface {
      * @memberof ReceivedDocumentsApiInterface
      */
     uploadReceivedDocumentAttachment(companyId: number, filename?: string | null, attachment?: File, options?: RawAxiosRequestConfig): AxiosPromise<UploadReceivedDocumentAttachmentResponse>;
+
 }
 
 /**
@@ -1284,7 +1297,7 @@ export class ReceivedDocumentsApi extends BaseAPI implements ReceivedDocumentsAp
 
     /**
      * Delete Bin Received Document
-     * @summary 
+     * @summary Delete Bin Received Document
      * @param {number} companyId The ID of the company.
      * @param {number} documentId The ID of the document.
      * @param {*} [options] Override http request option.
@@ -1436,7 +1449,7 @@ export class ReceivedDocumentsApi extends BaseAPI implements ReceivedDocumentsAp
 
     /**
      * Recover Received Document From The Bin
-     * @summary 
+     * @summary Recover Received Document From The Bin
      * @param {number} companyId The ID of the company.
      * @param {number} documentId The ID of the document.
      * @param {*} [options] Override http request option.

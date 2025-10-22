@@ -14,17 +14,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface ListArchiveCategoriesResponse
- */
 export interface ListArchiveCategoriesResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListArchiveCategoriesResponse
-     */
     'data'?: Array<string> | null;
 }
 

@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Company } from './company';
 
-/**
- * 
- * @export
- * @interface ListUserCompaniesResponseData
- */
 export interface ListUserCompaniesResponseData {
-    /**
-     * 
-     * @type {Array<Company>}
-     * @memberof ListUserCompaniesResponseData
-     */
     'companies'?: Array<Company> | null;
 }
 

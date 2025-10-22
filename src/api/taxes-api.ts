@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -76,7 +75,7 @@ export const TaxesApiAxiosParamCreator = function (configuration?: Configuration
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -327,7 +326,7 @@ export const TaxesApiAxiosParamCreator = function (configuration?: Configuration
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -623,6 +622,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     createF24(companyId: number, createF24Request?: CreateF24Request, options?: RawAxiosRequestConfig): AxiosPromise<CreateF24Response>;
+
     /**
      * Removes the specified F24.
      * @summary Delete F24
@@ -633,6 +633,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     deleteF24(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Removes the attachment of the specified F24.
      * @summary Delete F24 Attachment
@@ -643,6 +644,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     deleteF24Attachment(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Gets the specified F24.
      * @summary Get F24
@@ -655,6 +657,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     getF24(companyId: number, documentId: number, fields?: string, fieldset?: GetF24FieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetF24Response>;
+
     /**
      * Lists the F24s.
      * @summary List F24
@@ -670,6 +673,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     listF24(companyId: number, fields?: string, fieldset?: ListF24FieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListF24Response>;
+
     /**
      * Modifies the specified F24.
      * @summary Modify F24
@@ -681,6 +685,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     modifyF24(companyId: number, documentId: number, modifyF24Request?: ModifyF24Request, options?: RawAxiosRequestConfig): AxiosPromise<ModifyF24Response>;
+
     /**
      * Uploads an attachment destined to a F24. The actual association between the document and the attachment must be implemented separately, using the returned token.
      * @summary Upload F24 Attachment
@@ -692,6 +697,7 @@ export interface TaxesApiInterface {
      * @memberof TaxesApiInterface
      */
     uploadF24Attachment(companyId: number, filename?: string | null, attachment?: File, options?: RawAxiosRequestConfig): AxiosPromise<UploadF24AttachmentResponse>;
+
 }
 
 /**

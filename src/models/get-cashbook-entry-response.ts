@@ -19,15 +19,8 @@ import type { CashbookEntry } from './cashbook-entry';
 
 /**
  * 
- * @export
- * @interface GetCashbookEntryResponse
  */
 export interface GetCashbookEntryResponse {
-    /**
-     * 
-     * @type {CashbookEntry}
-     * @memberof GetCashbookEntryResponse
-     */
     'data'?: CashbookEntry;
 }
 

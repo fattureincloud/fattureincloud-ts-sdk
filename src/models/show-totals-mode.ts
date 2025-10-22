@@ -16,8 +16,6 @@
 
 /**
  * Show totals mode
- * @export
- * @enum {string}
  */
 
 export const ShowTotalsMode = {

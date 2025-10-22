@@ -22,21 +22,9 @@ import type { IssuedDocumentOptions } from './issued-document-options';
 
 /**
  * 
- * @export
- * @interface ModifyIssuedDocumentRequest
  */
 export interface ModifyIssuedDocumentRequest {
-    /**
-     * 
-     * @type {IssuedDocument}
-     * @memberof ModifyIssuedDocumentRequest
-     */
     'data'?: IssuedDocument;
-    /**
-     * 
-     * @type {IssuedDocumentOptions}
-     * @memberof ModifyIssuedDocumentRequest
-     */
     'options'?: IssuedDocumentOptions;
 }
 

@@ -25,7 +25,6 @@ import type { Product } from './product';
 
 /**
  * @type ListProductsResponse
- * @export
  */
 export type ListProductsResponse = ListProductsResponsePage & Pagination;
 

@@ -16,8 +16,6 @@
 
 /**
  * Fatture in Cloud account plan type.
- * @export
- * @enum {string}
  */
 
 export const FattureInCloudPlanType = {

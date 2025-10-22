@@ -26,52 +26,33 @@ import type { PriceList } from './price-list';
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface EntityClientPreCreateInfo
- */
 export interface EntityClientPreCreateInfo {
     /**
      * Countries list
-     * @type {Array<string>}
-     * @memberof EntityClientPreCreateInfo
      */
     'countries_list'?: Array<string> | null;
     /**
      * Entity payment methods list
-     * @type {Array<PaymentMethod>}
-     * @memberof EntityClientPreCreateInfo
      */
     'payment_methods_list'?: Array<PaymentMethod> | null;
     /**
      * Entity payment accounts list
-     * @type {Array<PaymentAccount>}
-     * @memberof EntityClientPreCreateInfo
      */
     'payment_accounts_list'?: Array<PaymentAccount> | null;
     /**
      * Vat types list
-     * @type {Array<VatType>}
-     * @memberof EntityClientPreCreateInfo
      */
     'vat_types_list'?: Array<VatType> | null;
     /**
      * Entity price lists
-     * @type {Array<PriceList>}
-     * @memberof EntityClientPreCreateInfo
      */
     'price_lists'?: Array<PriceList> | null;
     /**
      * Entity limit
-     * @type {number}
-     * @memberof EntityClientPreCreateInfo
      */
     'limit'?: number | null;
     /**
      * Entity usage
-     * @type {number}
-     * @memberof EntityClientPreCreateInfo
      */
     'usage'?: number | null;
 }

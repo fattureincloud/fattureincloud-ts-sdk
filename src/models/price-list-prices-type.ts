@@ -16,8 +16,6 @@
 
 /**
  * Price list prices type
- * @export
- * @enum {string}
  */
 
 export const PriceListPricesType = {

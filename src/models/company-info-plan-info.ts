@@ -25,27 +25,10 @@ import type { CompanyInfoPlanInfoLimits } from './company-info-plan-info-limits'
 
 /**
  * Company plan info
- * @export
- * @interface CompanyInfoPlanInfo
  */
 export interface CompanyInfoPlanInfo {
-    /**
-     * 
-     * @type {CompanyInfoPlanInfoLimits}
-     * @memberof CompanyInfoPlanInfo
-     */
     'limits'?: CompanyInfoPlanInfoLimits | null;
-    /**
-     * 
-     * @type {CompanyInfoPlanInfoFunctions}
-     * @memberof CompanyInfoPlanInfo
-     */
     'functions'?: CompanyInfoPlanInfoFunctions | null;
-    /**
-     * 
-     * @type {CompanyInfoPlanInfoFunctionsStatus}
-     * @memberof CompanyInfoPlanInfo
-     */
     'functions_status'?: CompanyInfoPlanInfoFunctionsStatus | null;
 }
 

@@ -16,15 +16,8 @@
 
 /**
  * 
- * @export
- * @interface ListCountriesResponse
  */
 export interface ListCountriesResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListCountriesResponse
-     */
     'data'?: Array<string> | null;
 }
 

@@ -29,52 +29,27 @@ import type { ReceivedDocumentInfoItemsDefaultValues } from './received-document
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface ReceivedDocumentInfo
- */
 export interface ReceivedDocumentInfo {
-    /**
-     * 
-     * @type {ReceivedDocumentInfoDefaultValues}
-     * @memberof ReceivedDocumentInfo
-     */
     'default_values'?: ReceivedDocumentInfoDefaultValues | null;
-    /**
-     * 
-     * @type {ReceivedDocumentInfoItemsDefaultValues}
-     * @memberof ReceivedDocumentInfo
-     */
     'items_default_values'?: ReceivedDocumentInfoItemsDefaultValues | null;
     /**
      * Countries list
-     * @type {Array<string>}
-     * @memberof ReceivedDocumentInfo
      */
     'countries_list'?: Array<string> | null;
     /**
      * Currencies list
-     * @type {Array<Currency>}
-     * @memberof ReceivedDocumentInfo
      */
     'currencies_list'?: Array<Currency> | null;
     /**
      * Categories list
-     * @type {Array<string>}
-     * @memberof ReceivedDocumentInfo
      */
     'categories_list'?: Array<string> | null;
     /**
      * Payments accounts list
-     * @type {Array<PaymentAccount>}
-     * @memberof ReceivedDocumentInfo
      */
     'payment_accounts_list'?: Array<PaymentAccount> | null;
     /**
      * Vat types list
-     * @type {Array<VatType>}
-     * @memberof ReceivedDocumentInfo
      */
     'vat_types_list'?: Array<VatType> | null;
 }

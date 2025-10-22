@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -204,6 +203,7 @@ export interface CompaniesApiInterface {
      * @memberof CompaniesApiInterface
      */
     getCompanyInfo(companyId: number, options?: RawAxiosRequestConfig): AxiosPromise<GetCompanyInfoResponse>;
+
     /**
      * Gets the company limits usage.
      * @summary Get Company Plan Usage
@@ -214,6 +214,7 @@ export interface CompaniesApiInterface {
      * @memberof CompaniesApiInterface
      */
     getCompanyPlanUsage(companyId: number, category: GetCompanyPlanUsageCategoryEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetCompanyPlanUsageResponse>;
+
 }
 
 /**

@@ -25,27 +25,10 @@ import type { User } from './user';
 
 /**
  * 
- * @export
- * @interface GetUserInfoResponse
  */
 export interface GetUserInfoResponse {
-    /**
-     * 
-     * @type {User}
-     * @memberof GetUserInfoResponse
-     */
     'data'?: User;
-    /**
-     * 
-     * @type {GetUserInfoResponseInfo}
-     * @memberof GetUserInfoResponse
-     */
     'info'?: GetUserInfoResponseInfo | null;
-    /**
-     * 
-     * @type {GetUserInfoResponseEmailConfirmationState}
-     * @memberof GetUserInfoResponse
-     */
     'email_confirmation_state'?: GetUserInfoResponseEmailConfirmationState | null;
 }
 

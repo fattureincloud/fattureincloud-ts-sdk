@@ -14,28 +14,17 @@
 
 
 
-/**
- * 
- * @export
- * @interface CashbookEntryDocument
- */
 export interface CashbookEntryDocument {
     /**
      * Cashbook related document id
-     * @type {number}
-     * @memberof CashbookEntryDocument
      */
     'id'?: number | null;
     /**
      * Cashbook related document type
-     * @type {string}
-     * @memberof CashbookEntryDocument
      */
     'type'?: string | null;
     /**
      * Cashbook related document path
-     * @type {string}
-     * @memberof CashbookEntryDocument
      */
     'path'?: string | null;
 }

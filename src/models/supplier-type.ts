@@ -16,8 +16,6 @@
 
 /**
  * Supplier type
- * @export
- * @enum {string}
  */
 
 export const SupplierType = {

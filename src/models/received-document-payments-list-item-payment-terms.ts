@@ -17,23 +17,11 @@
 // @ts-ignore
 import type { PaymentTermsType } from './payment-terms-type';
 
-/**
- * 
- * @export
- * @interface ReceivedDocumentPaymentsListItemPaymentTerms
- */
 export interface ReceivedDocumentPaymentsListItemPaymentTerms {
     /**
      * Received document payment number of days by which the payment must be made
-     * @type {number}
-     * @memberof ReceivedDocumentPaymentsListItemPaymentTerms
      */
     'days'?: number | null;
-    /**
-     * 
-     * @type {PaymentTermsType}
-     * @memberof ReceivedDocumentPaymentsListItemPaymentTerms
-     */
     'type'?: PaymentTermsType;
 }
 

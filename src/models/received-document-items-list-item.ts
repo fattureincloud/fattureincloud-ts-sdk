@@ -17,70 +17,42 @@
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface ReceivedDocumentItemsListItem
- */
 export interface ReceivedDocumentItemsListItem {
     /**
      * Received document item id
-     * @type {number}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'id'?: number | null;
     /**
      * Received document product id
-     * @type {number}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'product_id'?: number | null;
     /**
      * Received document item product code
-     * @type {string}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'code'?: string | null;
     /**
      * Received document item product name
-     * @type {string}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'name'?: string | null;
     /**
      * Received document item measure
-     * @type {string}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'measure'?: string | null;
     /**
      * Received document item product net price
-     * @type {number}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'net_price'?: number | null;
     /**
      * Received document item product category
-     * @type {string}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'category'?: string | null;
     /**
      * Received document item quantity
-     * @type {number}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'qty'?: number | null;
-    /**
-     * 
-     * @type {VatType}
-     * @memberof ReceivedDocumentItemsListItem
-     */
     'vat'?: VatType | null;
     /**
      * Received document item product number of items in stock
-     * @type {number}
-     * @memberof ReceivedDocumentItemsListItem
      */
     'stock'?: number | null;
 }

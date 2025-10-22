@@ -16,15 +16,8 @@
 
 /**
  * 
- * @export
- * @interface ListDeliveryNotesDefaultCausalsResponse
  */
 export interface ListDeliveryNotesDefaultCausalsResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListDeliveryNotesDefaultCausalsResponse
-     */
     'data'?: Array<string> | null;
 }
 

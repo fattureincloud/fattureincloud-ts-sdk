@@ -19,20 +19,11 @@ import type { Receipt } from './receipt';
 
 /**
  * 
- * @export
- * @interface CreateReceiptRequest
  */
 export interface CreateReceiptRequest {
-    /**
-     * 
-     * @type {Receipt}
-     * @memberof CreateReceiptRequest
-     */
     'data'?: Receipt;
     /**
      * If true, the number is autocompleted progressively.
-     * @type {boolean}
-     * @memberof CreateReceiptRequest
      */
     'autocomplete_number'?: boolean | null;
 }

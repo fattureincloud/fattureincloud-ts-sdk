@@ -16,15 +16,8 @@
 
 /**
  * 
- * @export
- * @interface ListProductCategoriesResponse
  */
 export interface ListProductCategoriesResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListProductCategoriesResponse
-     */
     'data'?: Array<string> | null;
 }
 

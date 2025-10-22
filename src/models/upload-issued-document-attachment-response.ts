@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { AttachmentData } from './attachment-data';
 
-/**
- * 
- * @export
- * @interface UploadIssuedDocumentAttachmentResponse
- */
 export interface UploadIssuedDocumentAttachmentResponse {
-    /**
-     * 
-     * @type {AttachmentData}
-     * @memberof UploadIssuedDocumentAttachmentResponse
-     */
     'data'?: AttachmentData;
 }
 

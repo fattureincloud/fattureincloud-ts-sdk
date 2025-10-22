@@ -16,15 +16,8 @@
 
 /**
  * 
- * @export
- * @interface ListUnitsOfMeasureResponse
  */
 export interface ListUnitsOfMeasureResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListUnitsOfMeasureResponse
-     */
     'data'?: Array<string> | null;
 }
 

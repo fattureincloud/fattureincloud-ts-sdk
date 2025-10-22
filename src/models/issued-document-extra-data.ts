@@ -16,74 +16,47 @@
 
 /**
  * Issued document extra data [TS fields follow the technical specifications provided by \"Sistema Tessera Sanitaria\"]
- * @export
- * @interface IssuedDocumentExtraData
  */
 export interface IssuedDocumentExtraData {
-    /**
-     * 
-     * @type {number}
-     * @memberof IssuedDocumentExtraData
-     */
     'multifatture_sent'?: number | null;
     /**
      * Send issued document to \"Sistema Tessera Sanitaria\"
-     * @type {boolean}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_communication'?: boolean | null;
     /**
      * Issued document ts \"tipo spesa\" [TK, FC, FV, SV,SP, AD, AS, ECG, SR]
-     * @type {number}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_flag_tipo_spesa'?: number | null;
     /**
      * Issued document ts traced payment
-     * @type {boolean}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_pagamento_tracciato'?: boolean | null;
     /**
      * Can be [ \'TK\', \'FC\', \'FV\', \'SV\', \'SP\', \'AD\', \'AS\', \'SR\', \'CT\', \'PI\', \'IC\', \'AA\' ]. Refer to the technical specifications to learn more.
-     * @type {string}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_tipo_spesa'?: string | null;
     /**
      * Issued document ts \"opposizione\"
-     * @type {boolean}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_opposizione'?: boolean | null;
     /**
      * Issued document ts status
-     * @type {number}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_status'?: number | null;
     /**
      * Issued document ts file id
-     * @type {string}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_file_id'?: string | null;
     /**
      * Issued document ts sent date
-     * @type {string}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_sent_date'?: string | null;
     /**
      * Issued document ts total amount
-     * @type {boolean}
-     * @memberof IssuedDocumentExtraData
      */
     'ts_full_amount'?: boolean | null;
     /**
      * Issued document imported by software
-     * @type {string}
-     * @memberof IssuedDocumentExtraData
      */
     'imported_by'?: string | null;
 }

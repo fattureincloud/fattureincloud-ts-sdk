@@ -16,15 +16,8 @@
 
 /**
  * 
- * @export
- * @interface ListReceivedDocumentCategoriesResponse
  */
 export interface ListReceivedDocumentCategoriesResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListReceivedDocumentCategoriesResponse
-     */
     'data'?: Array<string> | null;
 }
 

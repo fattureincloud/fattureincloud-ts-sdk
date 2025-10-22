@@ -22,80 +22,48 @@ import type { VatKind } from './vat-kind';
 
 /**
  * Issued document e-invoice data [Only if e_invoice=true]
- * @export
- * @interface IssuedDocumentEiData
  */
 export interface IssuedDocumentEiData {
-    /**
-     * 
-     * @type {VatKind}
-     * @memberof IssuedDocumentEiData
-     */
     'vat_kind'?: VatKind | null;
-    /**
-     * 
-     * @type {OriginalDocumentType}
-     * @memberof IssuedDocumentEiData
-     */
     'original_document_type'?: OriginalDocumentType | null;
     /**
      * E-invoice original document number
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'od_number'?: string | null;
     /**
      * E-invoice original document date
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'od_date'?: string | null;
     /**
      * E-invoice CIG
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'cig'?: string | null;
     /**
      * E-invoice CUP
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'cup'?: string | null;
     /**
      * E-invoice payment method [required for e-invoices] (see [here](https://www.fatturapa.gov.it/export/documenti/fatturapa/v1.2.2/Rappresentazione_Tabellare_FattOrdinaria_V1.2.2.pdf) for the accepted values of ModalitaPagamento)
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'payment_method'?: string | null;
     /**
      * E-invoice bank name
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'bank_name'?: string | null;
     /**
      * E-invoice bank IBAN
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'bank_iban'?: string | null;
     /**
      * E-invoice bank beneficiary
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'bank_beneficiary'?: string | null;
     /**
      * E-invoice invoice number
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'invoice_number'?: string | null;
     /**
      * E-invoice invoice date
-     * @type {string}
-     * @memberof IssuedDocumentEiData
      */
     'invoice_date'?: string | null;
 }

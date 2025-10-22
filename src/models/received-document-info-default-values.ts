@@ -16,15 +16,8 @@
 
 /**
  * Received document default values
- * @export
- * @interface ReceivedDocumentInfoDefaultValues
  */
 export interface ReceivedDocumentInfoDefaultValues {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof ReceivedDocumentInfoDefaultValues
-     */
     'detailed'?: boolean | null;
 }
 

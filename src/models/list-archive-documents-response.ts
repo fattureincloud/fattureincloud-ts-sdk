@@ -26,7 +26,6 @@ import type { Pagination } from './pagination';
 /**
  * @type ListArchiveDocumentsResponse
  * 
- * @export
  */
 export type ListArchiveDocumentsResponse = ListArchiveDocumentsResponsePage & Pagination;
 

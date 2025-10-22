@@ -19,15 +19,8 @@ import type { ReceivedDocumentInfo } from './received-document-info';
 
 /**
  * 
- * @export
- * @interface GetReceivedDocumentPreCreateInfoResponse
  */
 export interface GetReceivedDocumentPreCreateInfoResponse {
-    /**
-     * 
-     * @type {ReceivedDocumentInfo}
-     * @memberof GetReceivedDocumentPreCreateInfoResponse
-     */
     'data'?: ReceivedDocumentInfo;
 }
 

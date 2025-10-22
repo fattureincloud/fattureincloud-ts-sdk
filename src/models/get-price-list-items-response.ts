@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { PriceListItem } from './price-list-item';
 
-/**
- * 
- * @export
- * @interface GetPriceListItemsResponse
- */
 export interface GetPriceListItemsResponse {
-    /**
-     * 
-     * @type {{ [key: string]: PriceListItem; }}
-     * @memberof GetPriceListItemsResponse
-     */
     'data'?: { [key: string]: PriceListItem; };
 }
 

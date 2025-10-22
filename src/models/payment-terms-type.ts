@@ -16,8 +16,6 @@
 
 /**
  * Payment terms type
- * @export
- * @enum {string}
  */
 
 export const PaymentTermsType = {

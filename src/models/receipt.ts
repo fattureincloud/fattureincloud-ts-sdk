@@ -23,101 +23,57 @@ import type { ReceiptItemsListItem } from './receipt-items-list-item';
 // @ts-ignore
 import type { ReceiptType } from './receipt-type';
 
-/**
- * 
- * @export
- * @interface Receipt
- */
 export interface Receipt {
     /**
      * Receipt id
-     * @type {number}
-     * @memberof Receipt
      */
     'id'?: number | null;
     /**
      * Receipt date
-     * @type {string}
-     * @memberof Receipt
      */
     'date'?: string | null;
     /**
      * Receipt number
-     * @type {number}
-     * @memberof Receipt
      */
     'number'?: number | null;
     /**
      * Receipt numeration
-     * @type {string}
-     * @memberof Receipt
      */
     'numeration'?: string | null;
     /**
      * Receipt total net amount
-     * @type {number}
-     * @memberof Receipt
      */
     'amount_net'?: number | null;
     /**
      * Receipt total vat amount
-     * @type {number}
-     * @memberof Receipt
      */
     'amount_vat'?: number | null;
     /**
      * Receipt total gross amount
-     * @type {number}
-     * @memberof Receipt
      */
     'amount_gross'?: number | null;
     /**
      * Receipt uses gross prices
-     * @type {boolean}
-     * @memberof Receipt
      */
     'use_gross_prices'?: boolean | null;
-    /**
-     * 
-     * @type {ReceiptType}
-     * @memberof Receipt
-     */
     'type'?: ReceiptType;
     /**
      * Receipt description
-     * @type {string}
-     * @memberof Receipt
      */
     'description'?: string | null;
     /**
      * Receipt revenue center
-     * @type {string}
-     * @memberof Receipt
      */
     'rc_center'?: string | null;
     /**
      * Receipt creation date
-     * @type {string}
-     * @memberof Receipt
      */
     'created_at'?: string | null;
     /**
      * Receipt last update date
-     * @type {string}
-     * @memberof Receipt
      */
     'updated_at'?: string | null;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof Receipt
-     */
     'payment_account'?: PaymentAccount | null;
-    /**
-     * 
-     * @type {Array<ReceiptItemsListItem>}
-     * @memberof Receipt
-     */
     'items_list'?: Array<ReceiptItemsListItem> | null;
 }
 

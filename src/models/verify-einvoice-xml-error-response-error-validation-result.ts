@@ -14,17 +14,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface VerifyEInvoiceXmlErrorResponseErrorValidationResult
- */
 export interface VerifyEInvoiceXmlErrorResponseErrorValidationResult {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof VerifyEInvoiceXmlErrorResponseErrorValidationResult
-     */
     'xml_errors'?: Array<string> | null;
 }
 

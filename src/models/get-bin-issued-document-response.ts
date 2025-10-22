@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { IssuedDocument } from './issued-document';
 
-/**
- * 
- * @export
- * @interface GetBinIssuedDocumentResponse
- */
 export interface GetBinIssuedDocumentResponse {
-    /**
-     * 
-     * @type {IssuedDocument}
-     * @memberof GetBinIssuedDocumentResponse
-     */
     'data'?: IssuedDocument;
 }
 

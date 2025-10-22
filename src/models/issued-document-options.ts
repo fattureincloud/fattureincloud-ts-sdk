@@ -14,40 +14,25 @@
 
 
 
-/**
- * 
- * @export
- * @interface IssuedDocumentOptions
- */
 export interface IssuedDocumentOptions {
     /**
      * Fixes your last payment amount to match your document total
-     * @type {boolean}
-     * @memberof IssuedDocumentOptions
      */
     'fix_payments'?: boolean | null;
     /**
      * Original documents ids [only for join/transform]
-     * @type {Array<string>}
-     * @memberof IssuedDocumentOptions
      */
     'create_from'?: Array<string> | null;
     /**
      * Tranform a document [only for transform]
-     * @type {boolean}
-     * @memberof IssuedDocumentOptions
      */
     'transform'?: boolean | null;
     /**
      * Keep original document [only for transform]
-     * @type {boolean}
-     * @memberof IssuedDocumentOptions
      */
     'keep_copy'?: boolean | null;
     /**
      * Join type [only for join]
-     * @type {string}
-     * @memberof IssuedDocumentOptions
      */
     'join_type'?: string | null;
 }

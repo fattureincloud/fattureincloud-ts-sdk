@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Supplier } from './supplier';
 
-/**
- * 
- * @export
- * @interface ModifySupplierRequest
- */
 export interface ModifySupplierRequest {
-    /**
-     * 
-     * @type {Supplier}
-     * @memberof ModifySupplierRequest
-     */
     'data'?: Supplier;
 }
 

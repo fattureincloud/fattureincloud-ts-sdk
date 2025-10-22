@@ -14,17 +14,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface ListCostCentersResponse
- */
 export interface ListCostCentersResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListCostCentersResponse
-     */
     'data'?: Array<string> | null;
 }
 

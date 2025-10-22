@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface SendEInvoiceRequestData
- */
 export interface SendEInvoiceRequestData {
     /**
      * Value of TipoCassa used (optional, override the company default value).
-     * @type {string}
-     * @memberof SendEInvoiceRequestData
      */
     'cassa_type'?: string | null;
     /**
      * Value of CausalePagamento used (optional, override the company default value).
-     * @type {string}
-     * @memberof SendEInvoiceRequestData
      */
     'withholding_tax_causal'?: string | null;
 }

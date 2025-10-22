@@ -17,71 +17,16 @@
 // @ts-ignore
 import type { PermissionLevel } from './permission-level';
 
-/**
- * 
- * @export
- * @interface PermissionsFicIssuedDocumentsDetailed
- */
 export interface PermissionsFicIssuedDocumentsDetailed {
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'quotes'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'proformas'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'invoices'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'receipts'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'delivery_notes'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'credit_notes'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'orders'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'work_reports'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'supplier_orders'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof PermissionsFicIssuedDocumentsDetailed
-     */
     'self_invoices'?: PermissionLevel;
 }
 

@@ -19,15 +19,8 @@ import type { VatType } from './vat-type';
 
 /**
  * 
- * @export
- * @interface ListVatTypesResponse
  */
 export interface ListVatTypesResponse {
-    /**
-     * 
-     * @type {Array<VatType>}
-     * @memberof ListVatTypesResponse
-     */
     'data'?: Array<VatType> | null;
 }
 

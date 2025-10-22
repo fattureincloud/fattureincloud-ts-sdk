@@ -19,15 +19,8 @@ import type { EmailSchedule } from './email-schedule';
 
 /**
  * 
- * @export
- * @interface ScheduleEmailRequest
  */
 export interface ScheduleEmailRequest {
-    /**
-     * 
-     * @type {EmailSchedule}
-     * @memberof ScheduleEmailRequest
-     */
     'data'?: EmailSchedule;
 }
 

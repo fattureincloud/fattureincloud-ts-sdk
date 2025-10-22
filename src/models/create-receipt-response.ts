@@ -19,15 +19,8 @@ import type { Receipt } from './receipt';
 
 /**
  * 
- * @export
- * @interface CreateReceiptResponse
  */
 export interface CreateReceiptResponse {
-    /**
-     * 
-     * @type {Receipt}
-     * @memberof CreateReceiptResponse
-     */
     'data'?: Receipt;
 }
 

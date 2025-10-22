@@ -19,15 +19,8 @@ import type { PaymentMethod } from './payment-method';
 
 /**
  * 
- * @export
- * @interface ListPaymentMethodsResponse
  */
 export interface ListPaymentMethodsResponse {
-    /**
-     * 
-     * @type {Array<PaymentMethod>}
-     * @memberof ListPaymentMethodsResponse
-     */
     'data'?: Array<PaymentMethod> | null;
 }
 

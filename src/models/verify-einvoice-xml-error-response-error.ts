@@ -17,23 +17,8 @@
 // @ts-ignore
 import type { VerifyEInvoiceXmlErrorResponseErrorValidationResult } from './verify-einvoice-xml-error-response-error-validation-result';
 
-/**
- * 
- * @export
- * @interface VerifyEInvoiceXmlErrorResponseError
- */
 export interface VerifyEInvoiceXmlErrorResponseError {
-    /**
-     * 
-     * @type {string}
-     * @memberof VerifyEInvoiceXmlErrorResponseError
-     */
     'message'?: string | null;
-    /**
-     * 
-     * @type {VerifyEInvoiceXmlErrorResponseErrorValidationResult}
-     * @memberof VerifyEInvoiceXmlErrorResponseError
-     */
     'validation_result'?: VerifyEInvoiceXmlErrorResponseErrorValidationResult | null;
 }
 

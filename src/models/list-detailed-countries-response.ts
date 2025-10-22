@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { DetailedCountry } from './detailed-country';
 
-/**
- * 
- * @export
- * @interface ListDetailedCountriesResponse
- */
 export interface ListDetailedCountriesResponse {
-    /**
-     * 
-     * @type {Array<DetailedCountry>}
-     * @memberof ListDetailedCountriesResponse
-     */
     'data'?: Array<DetailedCountry>;
 }
 

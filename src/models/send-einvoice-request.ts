@@ -20,23 +20,8 @@ import type { SendEInvoiceRequestData } from './send-einvoice-request-data';
 // @ts-ignore
 import type { SendEInvoiceRequestOptions } from './send-einvoice-request-options';
 
-/**
- * 
- * @export
- * @interface SendEInvoiceRequest
- */
 export interface SendEInvoiceRequest {
-    /**
-     * 
-     * @type {SendEInvoiceRequestData}
-     * @memberof SendEInvoiceRequest
-     */
     'data'?: SendEInvoiceRequestData | null;
-    /**
-     * 
-     * @type {SendEInvoiceRequestOptions}
-     * @memberof SendEInvoiceRequest
-     */
     'options'?: SendEInvoiceRequestOptions | null;
 }
 

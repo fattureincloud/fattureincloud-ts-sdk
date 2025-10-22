@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Receipt } from './receipt';
 
-/**
- * 
- * @export
- * @interface ListReceiptsResponsePage
- */
 export interface ListReceiptsResponsePage {
-    /**
-     * 
-     * @type {Array<Receipt>}
-     * @memberof ListReceiptsResponsePage
-     */
     'data'?: Array<Receipt> | null;
 }
 

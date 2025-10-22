@@ -20,46 +20,26 @@ import type { PaymentAccount } from './payment-account';
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface ReceiptPreCreateInfo
- */
 export interface ReceiptPreCreateInfo {
-    /**
-     * 
-     * @type {{ [key: string]: { [key: string]: number; }; }}
-     * @memberof ReceiptPreCreateInfo
-     */
     'numerations'?: { [key: string]: { [key: string]: number; }; };
     /**
      * Receipt used numerations list
-     * @type {Array<string>}
-     * @memberof ReceiptPreCreateInfo
      */
     'numerations_list'?: Array<string> | null;
     /**
      * Receipt used revenue centers list
-     * @type {Array<string>}
-     * @memberof ReceiptPreCreateInfo
      */
     'rc_centers_list'?: Array<string> | null;
     /**
      * Payment accounts list
-     * @type {Array<PaymentAccount>}
-     * @memberof ReceiptPreCreateInfo
      */
     'payment_accounts_list'?: Array<PaymentAccount> | null;
     /**
      * Receipt categories list
-     * @type {Array<string>}
-     * @memberof ReceiptPreCreateInfo
      */
     'categories_list'?: Array<string> | null;
     /**
      * Vat types list
-     * @type {Array<VatType>}
-     * @memberof ReceiptPreCreateInfo
      */
     'vat_types_list'?: Array<VatType> | null;
 }

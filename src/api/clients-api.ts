@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -76,7 +75,7 @@ export const ClientsApiAxiosParamCreator = function (configuration?: Configurati
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -323,7 +322,7 @@ export const ClientsApiAxiosParamCreator = function (configuration?: Configurati
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -538,6 +537,7 @@ export interface ClientsApiInterface {
      * @memberof ClientsApiInterface
      */
     createClient(companyId: number, createClientRequest?: CreateClientRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateClientResponse>;
+
     /**
      * Deletes the specified client.
      * @summary Delete Client
@@ -548,6 +548,7 @@ export interface ClientsApiInterface {
      * @memberof ClientsApiInterface
      */
     deleteClient(companyId: number, clientId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Gets the specified client.
      * @summary Get Client
@@ -560,6 +561,7 @@ export interface ClientsApiInterface {
      * @memberof ClientsApiInterface
      */
     getClient(companyId: number, clientId: number, fields?: string, fieldset?: GetClientFieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetClientResponse>;
+
     /**
      * Retrieves the information useful while creating a new Client.
      * @summary Get Client info
@@ -569,6 +571,7 @@ export interface ClientsApiInterface {
      * @memberof ClientsApiInterface
      */
     getClientInfo(companyId: number, options?: RawAxiosRequestConfig): AxiosPromise<GetEntityClientPreCreateInfoResponse>;
+
     /**
      * Lists the clients.
      * @summary List Clients
@@ -584,6 +587,7 @@ export interface ClientsApiInterface {
      * @memberof ClientsApiInterface
      */
     listClients(companyId: number, fields?: string, fieldset?: ListClientsFieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListClientsResponse>;
+
     /**
      * Modifies the specified client.
      * @summary Modify Client
@@ -595,6 +599,7 @@ export interface ClientsApiInterface {
      * @memberof ClientsApiInterface
      */
     modifyClient(companyId: number, clientId: number, modifyClientRequest?: ModifyClientRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifyClientResponse>;
+
 }
 
 /**

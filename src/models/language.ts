@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface Language
- */
 export interface Language {
     /**
      * Language code
-     * @type {string}
-     * @memberof Language
      */
     'code'?: string | null;
     /**
      * Language extended name
-     * @type {string}
-     * @memberof Language
      */
     'name'?: string | null;
 }

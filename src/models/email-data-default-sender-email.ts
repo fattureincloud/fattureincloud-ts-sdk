@@ -16,20 +16,14 @@
 
 /**
  * Default sender email. (Other emails can be found in **sender_emails_list**)
- * @export
- * @interface EmailDataDefaultSenderEmail
  */
 export interface EmailDataDefaultSenderEmail {
     /**
      * Default sender email id
-     * @type {number}
-     * @memberof EmailDataDefaultSenderEmail
      */
     'id'?: number | null;
     /**
      * Default sender email address
-     * @type {string}
-     * @memberof EmailDataDefaultSenderEmail
      */
     'email'?: string | null;
 }

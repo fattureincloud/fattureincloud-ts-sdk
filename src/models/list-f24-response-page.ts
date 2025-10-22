@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { F24 } from './f24';
 
-/**
- * 
- * @export
- * @interface ListF24ResponsePage
- */
 export interface ListF24ResponsePage {
-    /**
-     * 
-     * @type {Array<F24>}
-     * @memberof ListF24ResponsePage
-     */
     'data'?: Array<F24> | null;
 }
 

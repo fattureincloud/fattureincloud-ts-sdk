@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { PaymentAccount } from './payment-account';
 
-/**
- * 
- * @export
- * @interface CreatePaymentAccountResponse
- */
 export interface CreatePaymentAccountResponse {
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof CreatePaymentAccountResponse
-     */
     'data'?: PaymentAccount | null;
 }
 

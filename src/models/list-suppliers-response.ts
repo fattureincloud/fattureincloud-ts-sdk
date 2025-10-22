@@ -25,7 +25,6 @@ import type { Supplier } from './supplier';
 
 /**
  * @type ListSuppliersResponse
- * @export
  */
 export type ListSuppliersResponse = ListSuppliersResponsePage & Pagination;
 

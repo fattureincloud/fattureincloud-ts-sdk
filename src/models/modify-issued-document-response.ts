@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { IssuedDocument } from './issued-document';
 
-/**
- * 
- * @export
- * @interface ModifyIssuedDocumentResponse
- */
 export interface ModifyIssuedDocumentResponse {
-    /**
-     * 
-     * @type {IssuedDocument}
-     * @memberof ModifyIssuedDocumentResponse
-     */
     'data'?: IssuedDocument;
 }
 

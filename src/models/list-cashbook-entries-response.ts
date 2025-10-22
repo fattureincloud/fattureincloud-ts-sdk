@@ -19,15 +19,8 @@ import type { CashbookEntry } from './cashbook-entry';
 
 /**
  * 
- * @export
- * @interface ListCashbookEntriesResponse
  */
 export interface ListCashbookEntriesResponse {
-    /**
-     * 
-     * @type {Array<CashbookEntry>}
-     * @memberof ListCashbookEntriesResponse
-     */
     'data'?: Array<CashbookEntry> | null;
 }
 

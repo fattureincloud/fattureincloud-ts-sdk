@@ -16,8 +16,6 @@
 
 /**
  * Webhooks Subscription verification method
- * @export
- * @enum {string}
  */
 
 export const WebhooksSubscriptionVerificationMethod = {

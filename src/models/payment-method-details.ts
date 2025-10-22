@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface PaymentMethodDetails
- */
 export interface PaymentMethodDetails {
     /**
      * Payment method details title
-     * @type {string}
-     * @memberof PaymentMethodDetails
      */
     'title'?: string | null;
     /**
      * Payment method details description
-     * @type {string}
-     * @memberof PaymentMethodDetails
      */
     'description'?: string | null;
 }

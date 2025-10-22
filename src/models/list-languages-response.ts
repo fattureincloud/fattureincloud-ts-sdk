@@ -19,15 +19,8 @@ import type { Language } from './language';
 
 /**
  * 
- * @export
- * @interface ListLanguagesResponse
  */
 export interface ListLanguagesResponse {
-    /**
-     * 
-     * @type {Array<Language>}
-     * @memberof ListLanguagesResponse
-     */
     'data'?: Array<Language> | null;
 }
 

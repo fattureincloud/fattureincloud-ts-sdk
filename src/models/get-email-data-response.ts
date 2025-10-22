@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { EmailData } from './email-data';
 
-/**
- * 
- * @export
- * @interface GetEmailDataResponse
- */
 export interface GetEmailDataResponse {
-    /**
-     * 
-     * @type {EmailData}
-     * @memberof GetEmailDataResponse
-     */
     'data'?: EmailData;
 }
 

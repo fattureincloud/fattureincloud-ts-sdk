@@ -19,15 +19,8 @@ import type { ArchiveDocument } from './archive-document';
 
 /**
  * 
- * @export
- * @interface ModifyArchiveDocumentRequest
  */
 export interface ModifyArchiveDocumentRequest {
-    /**
-     * 
-     * @type {ArchiveDocument}
-     * @memberof ModifyArchiveDocumentRequest
-     */
     'data'?: ArchiveDocument;
 }
 

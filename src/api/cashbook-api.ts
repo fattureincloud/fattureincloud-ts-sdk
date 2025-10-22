@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -74,7 +73,7 @@ export const CashbookApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -282,7 +281,7 @@ export const CashbookApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -472,6 +471,7 @@ export interface CashbookApiInterface {
      * @memberof CashbookApiInterface
      */
     createCashbookEntry(companyId: number, createCashbookEntryRequest?: CreateCashbookEntryRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateCashbookEntryResponse>;
+
     /**
      * Deletes the specified cashbook entry.
      * @summary Delete Cashbook Entry
@@ -482,6 +482,7 @@ export interface CashbookApiInterface {
      * @memberof CashbookApiInterface
      */
     deleteCashbookEntry(companyId: number, documentId: string, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Gets the specified cashbook entry.
      * @summary Get Cashbook Entry
@@ -494,6 +495,7 @@ export interface CashbookApiInterface {
      * @memberof CashbookApiInterface
      */
     getCashbookEntry(companyId: number, documentId: string, fields?: string, fieldset?: GetCashbookEntryFieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetCashbookEntryResponse>;
+
     /**
      * Lists the cashbook entries.
      * @summary List Cashbook Entries
@@ -508,6 +510,7 @@ export interface CashbookApiInterface {
      * @memberof CashbookApiInterface
      */
     listCashbookEntries(companyId: number, dateFrom: string, dateTo: string, year?: number, type?: ListCashbookEntriesTypeEnum, paymentAccountId?: number, options?: RawAxiosRequestConfig): AxiosPromise<ListCashbookEntriesResponse>;
+
     /**
      * Modifies the specified cashbook entry.
      * @summary Modify Cashbook Entry
@@ -519,6 +522,7 @@ export interface CashbookApiInterface {
      * @memberof CashbookApiInterface
      */
     modifyCashbookEntry(companyId: number, documentId: string, modifyCashbookEntryRequest?: ModifyCashbookEntryRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifyCashbookEntryResponse>;
+
 }
 
 /**

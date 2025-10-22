@@ -14,28 +14,17 @@
 
 
 
-/**
- * 
- * @export
- * @interface DocumentTemplate
- */
 export interface DocumentTemplate {
     /**
      * Template id
-     * @type {number}
-     * @memberof DocumentTemplate
      */
     'id'?: number | null;
     /**
      * Template name
-     * @type {string}
-     * @memberof DocumentTemplate
      */
     'name'?: string | null;
     /**
      * Template type
-     * @type {string}
-     * @memberof DocumentTemplate
      */
     'type'?: string | null;
 }

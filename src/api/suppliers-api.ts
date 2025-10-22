@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -74,7 +73,7 @@ export const SuppliersApiAxiosParamCreator = function (configuration?: Configura
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -283,7 +282,7 @@ export const SuppliersApiAxiosParamCreator = function (configuration?: Configura
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -475,6 +474,7 @@ export interface SuppliersApiInterface {
      * @memberof SuppliersApiInterface
      */
     createSupplier(companyId: number, createSupplierRequest?: CreateSupplierRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateSupplierResponse>;
+
     /**
      * Deletes the specified supplier.
      * @summary Delete Supplier
@@ -485,6 +485,7 @@ export interface SuppliersApiInterface {
      * @memberof SuppliersApiInterface
      */
     deleteSupplier(companyId: number, supplierId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Gets the specified supplier.
      * @summary Get Supplier
@@ -497,6 +498,7 @@ export interface SuppliersApiInterface {
      * @memberof SuppliersApiInterface
      */
     getSupplier(companyId: number, supplierId: number, fields?: string, fieldset?: GetSupplierFieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetSupplierResponse>;
+
     /**
      * Lists the suppliers.
      * @summary List Suppliers
@@ -512,6 +514,7 @@ export interface SuppliersApiInterface {
      * @memberof SuppliersApiInterface
      */
     listSuppliers(companyId: number, fields?: string, fieldset?: ListSuppliersFieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListSuppliersResponse>;
+
     /**
      * Modifies the specified supplier.
      * @summary Modify Supplier
@@ -523,6 +526,7 @@ export interface SuppliersApiInterface {
      * @memberof SuppliersApiInterface
      */
     modifySupplier(companyId: number, supplierId: number, modifySupplierRequest?: ModifySupplierRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifySupplierResponse>;
+
 }
 
 /**

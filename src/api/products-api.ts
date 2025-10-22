@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -74,7 +73,7 @@ export const ProductsApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -283,7 +282,7 @@ export const ProductsApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -475,6 +474,7 @@ export interface ProductsApiInterface {
      * @memberof ProductsApiInterface
      */
     createProduct(companyId: number, createProductRequest?: CreateProductRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateProductResponse>;
+
     /**
      * Deletes the specified product.
      * @summary Delete Product
@@ -485,6 +485,7 @@ export interface ProductsApiInterface {
      * @memberof ProductsApiInterface
      */
     deleteProduct(companyId: number, productId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Gets the specified product.
      * @summary Get Product
@@ -497,6 +498,7 @@ export interface ProductsApiInterface {
      * @memberof ProductsApiInterface
      */
     getProduct(companyId: number, productId: number, fields?: string, fieldset?: GetProductFieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetProductResponse>;
+
     /**
      * Lists the products.
      * @summary List Products
@@ -512,6 +514,7 @@ export interface ProductsApiInterface {
      * @memberof ProductsApiInterface
      */
     listProducts(companyId: number, fields?: string, fieldset?: ListProductsFieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListProductsResponse>;
+
     /**
      * Modifies the specified product.
      * @summary Modify Product
@@ -523,6 +526,7 @@ export interface ProductsApiInterface {
      * @memberof ProductsApiInterface
      */
     modifyProduct(companyId: number, productId: number, modifyProductRequest?: ModifyProductRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifyProductResponse>;
+
 }
 
 /**

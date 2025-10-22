@@ -16,33 +16,11 @@
 
 /**
  * Issued document extra data default values
- * @export
- * @interface IssuedDocumentPreCreateInfoExtraDataDefaultValues
  */
 export interface IssuedDocumentPreCreateInfoExtraDataDefaultValues {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof IssuedDocumentPreCreateInfoExtraDataDefaultValues
-     */
     'ts_communication'?: boolean | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof IssuedDocumentPreCreateInfoExtraDataDefaultValues
-     */
     'ts_tipo_spesa'?: string | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof IssuedDocumentPreCreateInfoExtraDataDefaultValues
-     */
     'ts_flag_tipo_spesa'?: number | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof IssuedDocumentPreCreateInfoExtraDataDefaultValues
-     */
     'ts_pagamento_tracciato'?: boolean | null;
 }
 

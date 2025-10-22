@@ -14,34 +14,21 @@
 
 
 
-/**
- * 
- * @export
- * @interface EmailScheduleInclude
- */
 export interface EmailScheduleInclude {
     /**
      * Include a button to view the document
-     * @type {boolean}
-     * @memberof EmailScheduleInclude
      */
     'document'?: boolean | null;
     /**
      * Include a button to view the delivery note
-     * @type {boolean}
-     * @memberof EmailScheduleInclude
      */
     'delivery_note'?: boolean | null;
     /**
      * Include a button to view the attachment
-     * @type {boolean}
-     * @memberof EmailScheduleInclude
      */
     'attachment'?: boolean | null;
     /**
      * Include a button to view the accompanying invoice
-     * @type {boolean}
-     * @memberof EmailScheduleInclude
      */
     'accompanying_invoice'?: boolean | null;
 }

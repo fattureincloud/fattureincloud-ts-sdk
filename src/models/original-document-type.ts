@@ -16,8 +16,6 @@
 
 /**
  * Issued document original document type
- * @export
- * @enum {string}
  */
 
 export const OriginalDocumentType = {

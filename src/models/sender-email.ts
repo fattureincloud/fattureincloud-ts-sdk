@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface SenderEmail
- */
 export interface SenderEmail {
     /**
      * Sender email id
-     * @type {number}
-     * @memberof SenderEmail
      */
     'id'?: number | null;
     /**
      * Sender email address
-     * @type {string}
-     * @memberof SenderEmail
      */
     'email'?: string | null;
 }

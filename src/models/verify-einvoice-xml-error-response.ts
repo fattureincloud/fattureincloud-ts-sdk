@@ -20,23 +20,8 @@ import type { VerifyEInvoiceXmlErrorResponseError } from './verify-einvoice-xml-
 // @ts-ignore
 import type { VerifyEInvoiceXmlErrorResponseExtra } from './verify-einvoice-xml-error-response-extra';
 
-/**
- * 
- * @export
- * @interface VerifyEInvoiceXmlErrorResponse
- */
 export interface VerifyEInvoiceXmlErrorResponse {
-    /**
-     * 
-     * @type {VerifyEInvoiceXmlErrorResponseError}
-     * @memberof VerifyEInvoiceXmlErrorResponse
-     */
     'error'?: VerifyEInvoiceXmlErrorResponseError | null;
-    /**
-     * 
-     * @type {VerifyEInvoiceXmlErrorResponseExtra}
-     * @memberof VerifyEInvoiceXmlErrorResponse
-     */
     'extra'?: VerifyEInvoiceXmlErrorResponseExtra | null;
 }
 

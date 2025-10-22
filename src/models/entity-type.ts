@@ -16,8 +16,6 @@
 
 /**
  * Entity type
- * @export
- * @enum {string}
  */
 
 export const EntityType = {

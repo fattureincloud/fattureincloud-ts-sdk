@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Product } from './product';
 
-/**
- * 
- * @export
- * @interface ListProductsResponsePage
- */
 export interface ListProductsResponsePage {
-    /**
-     * 
-     * @type {Array<Product>}
-     * @memberof ListProductsResponsePage
-     */
     'data'?: Array<Product> | null;
 }
 

@@ -19,15 +19,8 @@ import type { DocumentTemplate } from './document-template';
 
 /**
  * 
- * @export
- * @interface ListTemplatesResponse
  */
 export interface ListTemplatesResponse {
-    /**
-     * 
-     * @type {Array<DocumentTemplate>}
-     * @memberof ListTemplatesResponse
-     */
     'data'?: Array<DocumentTemplate> | null;
 }
 

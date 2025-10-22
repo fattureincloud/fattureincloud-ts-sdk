@@ -19,15 +19,8 @@ import type { CompanyPlanUsage } from './company-plan-usage';
 
 /**
  * 
- * @export
- * @interface GetCompanyPlanUsageResponse
  */
 export interface GetCompanyPlanUsageResponse {
-    /**
-     * 
-     * @type {CompanyPlanUsage}
-     * @memberof GetCompanyPlanUsageResponse
-     */
     'data'?: CompanyPlanUsage;
 }
 

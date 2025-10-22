@@ -14,52 +14,33 @@
 
 
 
-/**
- * 
- * @export
- * @interface User
- */
 export interface User {
     /**
      * User id
-     * @type {number}
-     * @memberof User
      */
     'id'?: number | null;
     /**
      * User full name
-     * @type {string}
-     * @memberof User
      */
     'name'?: string | null;
     /**
      * User first name
-     * @type {string}
-     * @memberof User
      */
     'first_name'?: string | null;
     /**
      * User last name
-     * @type {string}
-     * @memberof User
      */
     'last_name'?: string | null;
     /**
      * User email address
-     * @type {string}
-     * @memberof User
      */
     'email'?: string | null;
     /**
      * User hash
-     * @type {string}
-     * @memberof User
      */
     'hash'?: string | null;
     /**
      * User picture
-     * @type {string}
-     * @memberof User
      */
     'picture'?: string | null;
 }

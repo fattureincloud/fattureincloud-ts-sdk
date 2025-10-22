@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -165,7 +164,7 @@ export const IssuedEInvoicesApiAxiosParamCreator = function (configuration?: Con
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -362,6 +361,7 @@ export interface IssuedEInvoicesApiInterface {
      * @memberof IssuedEInvoicesApiInterface
      */
     getEInvoiceRejectionReason(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<GetEInvoiceRejectionReasonResponse>;
+
     /**
      * Downloads the e-invoice in XML format.
      * @summary Get E-Invoice XML
@@ -373,6 +373,7 @@ export interface IssuedEInvoicesApiInterface {
      * @memberof IssuedEInvoicesApiInterface
      */
     getEInvoiceXml(companyId: number, documentId: number, includeAttachment?: boolean, options?: RawAxiosRequestConfig): AxiosPromise<string>;
+
     /**
      * Sends the e-invoice to SDI.
      * @summary Send E-Invoice
@@ -384,6 +385,7 @@ export interface IssuedEInvoicesApiInterface {
      * @memberof IssuedEInvoicesApiInterface
      */
     sendEInvoice(companyId: number, documentId: number, sendEInvoiceRequest?: SendEInvoiceRequest, options?: RawAxiosRequestConfig): AxiosPromise<SendEInvoiceResponse>;
+
     /**
      * Verifies the e-invoice XML format. Checks if all of the mandatory fields are filled and compliant to the right format.
      * @summary Verify E-Invoice XML
@@ -394,6 +396,7 @@ export interface IssuedEInvoicesApiInterface {
      * @memberof IssuedEInvoicesApiInterface
      */
     verifyEInvoiceXml(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<VerifyEInvoiceXmlResponse>;
+
 }
 
 /**

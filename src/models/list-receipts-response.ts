@@ -26,7 +26,6 @@ import type { Receipt } from './receipt';
 /**
  * @type ListReceiptsResponse
  * 
- * @export
  */
 export type ListReceiptsResponse = ListReceiptsResponsePage & Pagination;
 

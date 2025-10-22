@@ -14,28 +14,17 @@
 
 
 
-/**
- * 
- * @export
- * @interface MonthlyTotal
- */
 export interface MonthlyTotal {
     /**
      * Monthly total net amount
-     * @type {number}
-     * @memberof MonthlyTotal
      */
     'net'?: number | null;
     /**
      * Monthly total gross amount
-     * @type {number}
-     * @memberof MonthlyTotal
      */
     'gross'?: number | null;
     /**
      * Monthly total receipt number
-     * @type {number}
-     * @memberof MonthlyTotal
      */
     'count'?: number | null;
 }

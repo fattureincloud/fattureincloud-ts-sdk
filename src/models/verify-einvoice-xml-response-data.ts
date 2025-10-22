@@ -14,16 +14,9 @@
 
 
 
-/**
- * 
- * @export
- * @interface VerifyEInvoiceXmlResponseData
- */
 export interface VerifyEInvoiceXmlResponseData {
     /**
      * Determine if the invoice XML is valid.
-     * @type {boolean}
-     * @memberof VerifyEInvoiceXmlResponseData
      */
     'success'?: boolean | null;
 }

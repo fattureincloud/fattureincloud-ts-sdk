@@ -20,58 +20,31 @@ import type { F24Status } from './f24-status';
 // @ts-ignore
 import type { PaymentAccount } from './payment-account';
 
-/**
- * 
- * @export
- * @interface F24
- */
 export interface F24 {
     /**
      * F24 id
-     * @type {number}
-     * @memberof F24
      */
     'id'?: number | null;
     /**
      * F24 due date
-     * @type {string}
-     * @memberof F24
      */
     'due_date'?: string | null;
-    /**
-     * 
-     * @type {F24Status}
-     * @memberof F24
-     */
     'status'?: F24Status;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof F24
-     */
     'payment_account'?: PaymentAccount | null;
     /**
      * F24 amount
-     * @type {number}
-     * @memberof F24
      */
     'amount'?: number | null;
     /**
      * [Temporary] [Read Only] F24 url of the attached file
-     * @type {string}
-     * @memberof F24
      */
     'attachment_url'?: string | null;
     /**
      * [Write Only]  F24 attachment token returned by POST /taxes/attachment
-     * @type {string}
-     * @memberof F24
      */
     'attachment_token'?: string | null;
     /**
      * F24 description
-     * @type {string}
-     * @memberof F24
      */
     'description'?: string | null;
 }

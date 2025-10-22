@@ -16,8 +16,6 @@
 
 /**
  * Receipt type
- * @export
- * @enum {string}
  */
 
 export const ReceiptType = {

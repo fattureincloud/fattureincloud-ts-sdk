@@ -23,70 +23,36 @@ import type { ControlledCompany } from './controlled-company';
 // @ts-ignore
 import type { FattureInCloudPlanType } from './fatture-in-cloud-plan-type';
 
-/**
- * 
- * @export
- * @interface Company
- */
 export interface Company {
     /**
      * Company id
-     * @type {number}
-     * @memberof Company
      */
     'id'?: number | null;
     /**
      * Company name
-     * @type {string}
-     * @memberof Company
      */
     'name'?: string | null;
-    /**
-     * 
-     * @type {CompanyType}
-     * @memberof Company
-     */
     'type'?: CompanyType;
     /**
      * Company authentication token for this company. [Only if type=company]
-     * @type {string}
-     * @memberof Company
      */
     'access_token'?: string | null;
     /**
      * Company list of controlled companies [Only if type=accountant]
-     * @type {Array<ControlledCompany>}
-     * @memberof Company
      */
     'controlled_companies'?: Array<ControlledCompany> | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof Company
-     */
     'fic_license_expire'?: string | null;
-    /**
-     * 
-     * @type {FattureInCloudPlanType}
-     * @memberof Company
-     */
     'fic_plan'?: FattureInCloudPlanType;
     /**
      * Company connection id
-     * @type {number}
-     * @memberof Company
      */
     'connection_id'?: number | null;
     /**
      * Company tax code
-     * @type {string}
-     * @memberof Company
      */
     'tax_code'?: string | null;
     /**
      * Company vat number
-     * @type {string}
-     * @memberof Company
      */
     'vat_number'?: string | null;
 }

@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { ReceivedDocument } from './received-document';
 
-/**
- * 
- * @export
- * @interface ListBinReceivedDocuments
- */
 export interface ListBinReceivedDocuments {
-    /**
-     * 
-     * @type {Array<ReceivedDocument>}
-     * @memberof ListBinReceivedDocuments
-     */
     'data'?: Array<ReceivedDocument>;
 }
 

@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { WebhooksSubscription } from './webhooks-subscription';
 
-/**
- * 
- * @export
- * @interface ListWebhooksSubscriptionsResponse
- */
 export interface ListWebhooksSubscriptionsResponse {
-    /**
-     * 
-     * @type {Array<WebhooksSubscription>}
-     * @memberof ListWebhooksSubscriptionsResponse
-     */
     'data'?: Array<WebhooksSubscription>;
 }
 

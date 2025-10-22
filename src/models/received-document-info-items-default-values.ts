@@ -16,14 +16,10 @@
 
 /**
  * Received document items default values
- * @export
- * @interface ReceivedDocumentInfoItemsDefaultValues
  */
 export interface ReceivedDocumentInfoItemsDefaultValues {
     /**
      * Vat default value
-     * @type {number}
-     * @memberof ReceivedDocumentInfoItemsDefaultValues
      */
     'vat'?: number | null;
 }

@@ -14,52 +14,33 @@
 
 
 
-/**
- * 
- * @export
- * @interface ReceivedDocumentTotals
- */
 export interface ReceivedDocumentTotals {
     /**
      * Received document total net amount
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'amount_net'?: number | null;
     /**
      * Received document total vat amount
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'amount_vat'?: number | null;
     /**
      * Received document total gross amount
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'amount_gross'?: number | null;
     /**
      * Received document withholding tax amount
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'amount_withholding_tax'?: number | null;
     /**
      * Received document other withholding tax amount
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'amount_other_withholding_tax'?: number | null;
     /**
      * Received document total amount due
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'amount_due'?: number | null;
     /**
      * Received document payments sum
-     * @type {number}
-     * @memberof ReceivedDocumentTotals
      */
     'payments_sum'?: number | null;
 }

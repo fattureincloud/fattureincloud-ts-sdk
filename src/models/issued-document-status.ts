@@ -16,8 +16,6 @@
 
 /**
  * Issued document status
- * @export
- * @enum {string}
  */
 
 export const IssuedDocumentStatus = {

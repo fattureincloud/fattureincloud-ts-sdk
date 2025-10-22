@@ -23,47 +23,24 @@ import type { WebhooksSubscriptionConfig } from './webhooks-subscription-config'
 // @ts-ignore
 import type { WebhooksSubscriptionVerificationMethod } from './webhooks-subscription-verification-method';
 
-/**
- * 
- * @export
- * @interface WebhooksSubscription
- */
 export interface WebhooksSubscription {
     /**
      * Webhooks subscription id
-     * @type {string}
-     * @memberof WebhooksSubscription
      */
     'id'?: string | null;
     /**
      * Webhooks callback uri.
-     * @type {string}
-     * @memberof WebhooksSubscription
      */
     'sink'?: string | null;
     /**
      * [Read Only] True if the webhooks subscription has been verified.
-     * @type {boolean}
-     * @memberof WebhooksSubscription
      */
     'verified'?: boolean | null;
     /**
      * Webhooks events types.
-     * @type {Array<EventType>}
-     * @memberof WebhooksSubscription
      */
     'types'?: Array<EventType> | null;
-    /**
-     * 
-     * @type {WebhooksSubscriptionConfig}
-     * @memberof WebhooksSubscription
-     */
     'config'?: WebhooksSubscriptionConfig;
-    /**
-     * 
-     * @type {WebhooksSubscriptionVerificationMethod}
-     * @memberof WebhooksSubscription
-     */
     'verification_method'?: WebhooksSubscriptionVerificationMethod;
 }
 

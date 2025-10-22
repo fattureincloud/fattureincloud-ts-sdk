@@ -20,76 +20,46 @@ import type { EmailDataDefaultSenderEmail } from './email-data-default-sender-em
 // @ts-ignore
 import type { SenderEmail } from './sender-email';
 
-/**
- * 
- * @export
- * @interface EmailData
- */
 export interface EmailData {
     /**
      * Email recipient
-     * @type {string}
-     * @memberof EmailData
      */
     'recipient_email'?: string | null;
-    /**
-     * 
-     * @type {EmailDataDefaultSenderEmail}
-     * @memberof EmailData
-     */
     'default_sender_email'?: EmailDataDefaultSenderEmail | null;
     /**
      * List of all emails from which the document can be sent
-     * @type {Array<SenderEmail>}
-     * @memberof EmailData
      */
     'sender_emails_list'?: Array<SenderEmail> | null;
     /**
      * Email cc [by default is the logged company email]
-     * @type {string}
-     * @memberof EmailData
      */
     'cc_email'?: string | null;
     /**
      * Email subject
-     * @type {string}
-     * @memberof EmailData
      */
     'subject'?: string | null;
     /**
      * Email body
-     * @type {string}
-     * @memberof EmailData
      */
     'body'?: string | null;
     /**
      * Document exists if it is not a delivery note
-     * @type {boolean}
-     * @memberof EmailData
      */
     'document_exists'?: boolean | null;
     /**
      * Document is a delivery note
-     * @type {boolean}
-     * @memberof EmailData
      */
     'delivery_note_exists'?: boolean | null;
     /**
      * Document has attachment
-     * @type {boolean}
-     * @memberof EmailData
      */
     'attachment_exists'?: boolean | null;
     /**
      * Document has accompanying invoice
-     * @type {boolean}
-     * @memberof EmailData
      */
     'accompanying_invoice_exists'?: boolean | null;
     /**
      * Attach document pdf
-     * @type {boolean}
-     * @memberof EmailData
      */
     'default_attach_pdf'?: boolean | null;
 }

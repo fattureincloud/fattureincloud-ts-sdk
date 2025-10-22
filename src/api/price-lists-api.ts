@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -39,7 +38,7 @@ export const PriceListsApiAxiosParamCreator = function (configuration?: Configur
          * Retrieves all the Items of a PriceList
          * @summary Get PriceList Items List
          * @param {number} companyId The ID of the company.
-         * @param {string} priceListId 
+         * @param {string} priceListId The ID of the price
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -129,7 +128,7 @@ export const PriceListsApiFp = function(configuration?: Configuration) {
          * Retrieves all the Items of a PriceList
          * @summary Get PriceList Items List
          * @param {number} companyId The ID of the company.
-         * @param {string} priceListId 
+         * @param {string} priceListId The ID of the price
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -166,7 +165,7 @@ export const PriceListsApiFactory = function (configuration?: Configuration, bas
          * Retrieves all the Items of a PriceList
          * @summary Get PriceList Items List
          * @param {number} companyId The ID of the company.
-         * @param {string} priceListId 
+         * @param {string} priceListId The ID of the price
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -196,12 +195,13 @@ export interface PriceListsApiInterface {
      * Retrieves all the Items of a PriceList
      * @summary Get PriceList Items List
      * @param {number} companyId The ID of the company.
-     * @param {string} priceListId 
+     * @param {string} priceListId The ID of the price
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PriceListsApiInterface
      */
     getPriceListItems(companyId: number, priceListId: string, options?: RawAxiosRequestConfig): AxiosPromise<GetPriceListItemsResponse>;
+
     /**
      * Retrieves all price lists of the company
      * @summary Get PriceLists
@@ -211,6 +211,7 @@ export interface PriceListsApiInterface {
      * @memberof PriceListsApiInterface
      */
     getPriceLists(companyId: number, options?: RawAxiosRequestConfig): AxiosPromise<ListPriceListsResponse>;
+
 }
 
 /**
@@ -224,7 +225,7 @@ export class PriceListsApi extends BaseAPI implements PriceListsApiInterface {
      * Retrieves all the Items of a PriceList
      * @summary Get PriceList Items List
      * @param {number} companyId The ID of the company.
-     * @param {string} priceListId 
+     * @param {string} priceListId The ID of the price
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PriceListsApi

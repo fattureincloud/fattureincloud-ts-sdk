@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface EmailAttachment
- */
 export interface EmailAttachment {
     /**
      * Email attachment filename
-     * @type {string}
-     * @memberof EmailAttachment
      */
     'filename'?: string;
     /**
      * Email attachment url
-     * @type {string}
-     * @memberof EmailAttachment
      */
     'url'?: string;
 }

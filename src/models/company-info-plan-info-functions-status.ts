@@ -17,23 +17,8 @@
 // @ts-ignore
 import type { FunctionStatus } from './function-status';
 
-/**
- * 
- * @export
- * @interface CompanyInfoPlanInfoFunctionsStatus
- */
 export interface CompanyInfoPlanInfoFunctionsStatus {
-    /**
-     * 
-     * @type {FunctionStatus}
-     * @memberof CompanyInfoPlanInfoFunctionsStatus
-     */
     'ts_digital'?: FunctionStatus;
-    /**
-     * 
-     * @type {FunctionStatus}
-     * @memberof CompanyInfoPlanInfoFunctionsStatus
-     */
     'ts_pay'?: FunctionStatus;
 }
 

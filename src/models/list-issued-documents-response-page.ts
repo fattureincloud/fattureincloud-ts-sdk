@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { IssuedDocument } from './issued-document';
 
-/**
- * 
- * @export
- * @interface ListIssuedDocumentsResponsePage
- */
 export interface ListIssuedDocumentsResponsePage {
-    /**
-     * 
-     * @type {Array<IssuedDocument>}
-     * @memberof ListIssuedDocumentsResponsePage
-     */
     'data'?: Array<IssuedDocument> | null;
 }
 

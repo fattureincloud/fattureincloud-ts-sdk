@@ -14,40 +14,25 @@
 
 
 
-/**
- * 
- * @export
- * @interface EInvoiceRejectionReason
- */
 export interface EInvoiceRejectionReason {
     /**
      * E-invoice rejection reason
-     * @type {string}
-     * @memberof EInvoiceRejectionReason
      */
     'reason'?: string | null;
     /**
      * E-invoice status
-     * @type {string}
-     * @memberof EInvoiceRejectionReason
      */
     'ei_status'?: string | null;
     /**
      * Error solution.
-     * @type {string}
-     * @memberof EInvoiceRejectionReason
      */
     'solution'?: string | null;
     /**
      * E-invoice rejection error code
-     * @type {string}
-     * @memberof EInvoiceRejectionReason
      */
     'code'?: string | null;
     /**
      * E-invoice rejection date
-     * @type {string}
-     * @memberof EInvoiceRejectionReason
      */
     'date'?: string | null;
 }

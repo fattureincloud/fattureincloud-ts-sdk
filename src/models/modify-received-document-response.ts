@@ -19,15 +19,8 @@ import type { ReceivedDocument } from './received-document';
 
 /**
  * 
- * @export
- * @interface ModifyReceivedDocumentResponse
  */
 export interface ModifyReceivedDocumentResponse {
-    /**
-     * 
-     * @type {ReceivedDocument}
-     * @memberof ModifyReceivedDocumentResponse
-     */
     'data'?: ReceivedDocument;
 }
 

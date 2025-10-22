@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { TaxProfile } from './tax-profile';
 
-/**
- * 
- * @export
- * @interface GetTaxProfileResponse
- */
 export interface GetTaxProfileResponse {
-    /**
-     * 
-     * @type {TaxProfile}
-     * @memberof GetTaxProfileResponse
-     */
     'data'?: TaxProfile;
 }
 

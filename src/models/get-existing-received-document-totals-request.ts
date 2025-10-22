@@ -19,15 +19,8 @@ import type { ReceivedDocument } from './received-document';
 
 /**
  * 
- * @export
- * @interface GetExistingReceivedDocumentTotalsRequest
  */
 export interface GetExistingReceivedDocumentTotalsRequest {
-    /**
-     * 
-     * @type {ReceivedDocument}
-     * @memberof GetExistingReceivedDocumentTotalsRequest
-     */
     'data'?: ReceivedDocument;
 }
 

@@ -19,15 +19,8 @@ import type { PaymentAccount } from './payment-account';
 
 /**
  * 
- * @export
- * @interface ListPaymentAccountsResponse
  */
 export interface ListPaymentAccountsResponse {
-    /**
-     * 
-     * @type {Array<PaymentAccount>}
-     * @memberof ListPaymentAccountsResponse
-     */
     'data'?: Array<PaymentAccount> | null;
 }
 

@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { ReceivedDocument } from './received-document';
 
-/**
- * 
- * @export
- * @interface GetBinReceivedDocumentResponse
- */
 export interface GetBinReceivedDocumentResponse {
-    /**
-     * 
-     * @type {ReceivedDocument}
-     * @memberof GetBinReceivedDocumentResponse
-     */
     'data'?: ReceivedDocument;
 }
 

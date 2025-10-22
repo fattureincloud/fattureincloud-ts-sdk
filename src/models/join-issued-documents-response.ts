@@ -20,23 +20,8 @@ import type { IssuedDocument } from './issued-document';
 // @ts-ignore
 import type { IssuedDocumentOptions } from './issued-document-options';
 
-/**
- * 
- * @export
- * @interface JoinIssuedDocumentsResponse
- */
 export interface JoinIssuedDocumentsResponse {
-    /**
-     * 
-     * @type {IssuedDocument}
-     * @memberof JoinIssuedDocumentsResponse
-     */
     'data'?: IssuedDocument;
-    /**
-     * 
-     * @type {IssuedDocumentOptions}
-     * @memberof JoinIssuedDocumentsResponse
-     */
     'options'?: IssuedDocumentOptions;
 }
 

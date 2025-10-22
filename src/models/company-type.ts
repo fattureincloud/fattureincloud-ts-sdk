@@ -16,8 +16,6 @@
 
 /**
  * Company type
- * @export
- * @enum {string}
  */
 
 export const CompanyType = {

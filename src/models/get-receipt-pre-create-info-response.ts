@@ -19,15 +19,8 @@ import type { ReceiptPreCreateInfo } from './receipt-pre-create-info';
 
 /**
  * 
- * @export
- * @interface GetReceiptPreCreateInfoResponse
  */
 export interface GetReceiptPreCreateInfoResponse {
-    /**
-     * 
-     * @type {ReceiptPreCreateInfo}
-     * @memberof GetReceiptPreCreateInfoResponse
-     */
     'data'?: ReceiptPreCreateInfo;
 }
 

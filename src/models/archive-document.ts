@@ -14,46 +14,29 @@
 
 
 
-/**
- * 
- * @export
- * @interface ArchiveDocument
- */
 export interface ArchiveDocument {
     /**
      * Archive document id
-     * @type {number}
-     * @memberof ArchiveDocument
      */
     'id'?: number | null;
     /**
      * Archive document date
-     * @type {string}
-     * @memberof ArchiveDocument
      */
     'date'?: string | null;
     /**
      * Archive Document description
-     * @type {string}
-     * @memberof ArchiveDocument
      */
     'description'?: string | null;
     /**
      * [Temporary] [Read Only] Archive Document url of the attached file
-     * @type {string}
-     * @memberof ArchiveDocument
      */
     'attachment_url'?: string | null;
     /**
      * Archive document category
-     * @type {string}
-     * @memberof ArchiveDocument
      */
     'category'?: string | null;
     /**
      * [Write Only]  [Required] Archive document attachment token returned by POST /archive/attachment
-     * @type {string}
-     * @memberof ArchiveDocument
      */
     'attachment_token'?: string | null;
 }

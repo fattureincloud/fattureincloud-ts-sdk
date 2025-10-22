@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -182,6 +181,7 @@ export interface UserApiInterface {
      * @memberof UserApiInterface
      */
     getUserInfo(options?: RawAxiosRequestConfig): AxiosPromise<GetUserInfoResponse>;
+
     /**
      * Lists the companies controlled by the current user.
      * @summary List User Companies
@@ -190,6 +190,7 @@ export interface UserApiInterface {
      * @memberof UserApiInterface
      */
     listUserCompanies(options?: RawAxiosRequestConfig): AxiosPromise<ListUserCompaniesResponse>;
+
 }
 
 /**

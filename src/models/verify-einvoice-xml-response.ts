@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { VerifyEInvoiceXmlResponseData } from './verify-einvoice-xml-response-data';
 
-/**
- * 
- * @export
- * @interface VerifyEInvoiceXmlResponse
- */
 export interface VerifyEInvoiceXmlResponse {
-    /**
-     * 
-     * @type {VerifyEInvoiceXmlResponseData}
-     * @memberof VerifyEInvoiceXmlResponse
-     */
     'data'?: VerifyEInvoiceXmlResponseData | null;
 }
 

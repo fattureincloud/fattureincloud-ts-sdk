@@ -19,21 +19,12 @@ import type { ReceivedDocument } from './received-document';
 
 /**
  * 
- * @export
- * @interface CreateReceivedDocumentRequest
  */
 export interface CreateReceivedDocumentRequest {
     /**
      * Pending received document id of the document from which the new document is created.
-     * @type {number}
-     * @memberof CreateReceivedDocumentRequest
      */
     'pending_id'?: number | null;
-    /**
-     * 
-     * @type {ReceivedDocument}
-     * @memberof CreateReceivedDocumentRequest
-     */
     'data'?: ReceivedDocument;
 }
 

@@ -19,15 +19,8 @@ import type { Receipt } from './receipt';
 
 /**
  * 
- * @export
- * @interface ModifyReceiptRequest
  */
 export interface ModifyReceiptRequest {
-    /**
-     * 
-     * @type {Receipt}
-     * @memberof ModifyReceiptRequest
-     */
     'data'?: Receipt;
 }
 

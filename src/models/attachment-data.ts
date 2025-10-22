@@ -14,16 +14,9 @@
 
 
 
-/**
- * 
- * @export
- * @interface AttachmentData
- */
 export interface AttachmentData {
     /**
      * Uploaded attachment token.
-     * @type {string}
-     * @memberof AttachmentData
      */
     'attachment_token'?: string | null;
 }

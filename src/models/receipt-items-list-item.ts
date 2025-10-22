@@ -17,41 +17,23 @@
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface ReceiptItemsListItem
- */
 export interface ReceiptItemsListItem {
     /**
      * Receipt item id
-     * @type {number}
-     * @memberof ReceiptItemsListItem
      */
     'id'?: number | null;
     /**
      * Receipt item total net amount
-     * @type {number}
-     * @memberof ReceiptItemsListItem
      */
     'amount_net'?: number | null;
     /**
      * Receipt item total gross amount
-     * @type {number}
-     * @memberof ReceiptItemsListItem
      */
     'amount_gross'?: number | null;
     /**
      * Receipt item category
-     * @type {string}
-     * @memberof ReceiptItemsListItem
      */
     'category'?: string | null;
-    /**
-     * 
-     * @type {VatType}
-     * @memberof ReceiptItemsListItem
-     */
     'vat'?: VatType | null;
 }
 

@@ -16,8 +16,6 @@
 
 /**
  * User company role
- * @export
- * @enum {string}
  */
 
 export const UserCompanyRole = {

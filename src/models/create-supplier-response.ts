@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Supplier } from './supplier';
 
-/**
- * 
- * @export
- * @interface CreateSupplierResponse
- */
 export interface CreateSupplierResponse {
-    /**
-     * 
-     * @type {Supplier}
-     * @memberof CreateSupplierResponse
-     */
     'data'?: Supplier;
 }
 

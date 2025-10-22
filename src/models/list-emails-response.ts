@@ -25,7 +25,6 @@ import type { Pagination } from './pagination';
 
 /**
  * @type ListEmailsResponse
- * @export
  */
 export type ListEmailsResponse = ListEmailsResponsePage & Pagination;
 

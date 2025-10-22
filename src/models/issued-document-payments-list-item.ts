@@ -23,59 +23,29 @@ import type { IssuedDocumentStatus } from './issued-document-status';
 // @ts-ignore
 import type { PaymentAccount } from './payment-account';
 
-/**
- * 
- * @export
- * @interface IssuedDocumentPaymentsListItem
- */
 export interface IssuedDocumentPaymentsListItem {
     /**
      * Issued document payment item id
-     * @type {number}
-     * @memberof IssuedDocumentPaymentsListItem
      */
     'id'?: number | null;
     /**
      * Issued document payment due date
-     * @type {string}
-     * @memberof IssuedDocumentPaymentsListItem
      */
     'due_date'?: string | null;
     /**
      * Issued document payment amount
-     * @type {number}
-     * @memberof IssuedDocumentPaymentsListItem
      */
     'amount'?: number | null;
-    /**
-     * 
-     * @type {IssuedDocumentStatus}
-     * @memberof IssuedDocumentPaymentsListItem
-     */
     'status'?: IssuedDocumentStatus;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof IssuedDocumentPaymentsListItem
-     */
     'payment_account'?: PaymentAccount | null;
     /**
      * Issued document payment date [Only if status is paid]
-     * @type {string}
-     * @memberof IssuedDocumentPaymentsListItem
      */
     'paid_date'?: string | null;
     /**
      * Issued document payment advanced raw attributes for e-invoices
-     * @type {object}
-     * @memberof IssuedDocumentPaymentsListItem
      */
     'ei_raw'?: object | null;
-    /**
-     * 
-     * @type {IssuedDocumentPaymentsListItemPaymentTerms}
-     * @memberof IssuedDocumentPaymentsListItem
-     */
     'payment_terms'?: IssuedDocumentPaymentsListItemPaymentTerms;
 }
 

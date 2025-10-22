@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface CompanyPlanUsage
- */
 export interface CompanyPlanUsage {
     /**
      * Plan limit
-     * @type {number}
-     * @memberof CompanyPlanUsage
      */
     'limit'?: number | null;
     /**
      * Plan usage
-     * @type {number}
-     * @memberof CompanyPlanUsage
      */
     'usage'?: number | null;
 }

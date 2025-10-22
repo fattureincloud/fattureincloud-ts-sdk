@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface SendEInvoiceResponseData
- */
 export interface SendEInvoiceResponseData {
     /**
      * Response message.
-     * @type {string}
-     * @memberof SendEInvoiceResponseData
      */
     'name'?: string | null;
     /**
      * E-invoice sent date.
-     * @type {string}
-     * @memberof SendEInvoiceResponseData
      */
     'date'?: string | null;
 }

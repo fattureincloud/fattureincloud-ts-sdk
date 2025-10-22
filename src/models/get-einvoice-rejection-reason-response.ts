@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { EInvoiceRejectionReason } from './einvoice-rejection-reason';
 
-/**
- * 
- * @export
- * @interface GetEInvoiceRejectionReasonResponse
- */
 export interface GetEInvoiceRejectionReasonResponse {
-    /**
-     * 
-     * @type {EInvoiceRejectionReason}
-     * @memberof GetEInvoiceRejectionReasonResponse
-     */
     'data'?: EInvoiceRejectionReason;
 }
 

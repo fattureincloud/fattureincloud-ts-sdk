@@ -14,16 +14,9 @@
 
 
 
-/**
- * 
- * @export
- * @interface ListF24ResponseAggregatedData
- */
 export interface ListF24ResponseAggregatedData {
     /**
      * Total amount.
-     * @type {number}
-     * @memberof ListF24ResponseAggregatedData
      */
     'amount'?: number | null;
 }

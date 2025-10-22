@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { ListF24ResponseAggregatedData } from './list-f24-response-aggregated-data';
 
-/**
- * 
- * @export
- * @interface ListF24ResponseAggregation
- */
 export interface ListF24ResponseAggregation {
-    /**
-     * 
-     * @type {ListF24ResponseAggregatedData}
-     * @memberof ListF24ResponseAggregation
-     */
     'aggregated_data'?: ListF24ResponseAggregatedData;
 }
 

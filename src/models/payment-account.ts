@@ -17,52 +17,30 @@
 // @ts-ignore
 import type { PaymentAccountType } from './payment-account-type';
 
-/**
- * 
- * @export
- * @interface PaymentAccount
- */
 export interface PaymentAccount {
     /**
      * Payment account id
-     * @type {number}
-     * @memberof PaymentAccount
      */
     'id'?: number | null;
     /**
      * Payment account name
-     * @type {string}
-     * @memberof PaymentAccount
      */
     'name'?: string | null;
-    /**
-     * 
-     * @type {PaymentAccountType}
-     * @memberof PaymentAccount
-     */
     'type'?: PaymentAccountType;
     /**
      * Payment account iban
-     * @type {string}
-     * @memberof PaymentAccount
      */
     'iban'?: string | null;
     /**
      * Payment account sia
-     * @type {string}
-     * @memberof PaymentAccount
      */
     'sia'?: string | null;
     /**
      * Payment account cuc
-     * @type {string}
-     * @memberof PaymentAccount
      */
     'cuc'?: string | null;
     /**
      * Payment method is virtual
-     * @type {boolean}
-     * @memberof PaymentAccount
      */
     'virtual'?: boolean | null;
 }

@@ -17,154 +17,98 @@
 // @ts-ignore
 import type { SupplierType } from './supplier-type';
 
-/**
- * 
- * @export
- * @interface Supplier
- */
 export interface Supplier {
     /**
      * Supplier id
-     * @type {number}
-     * @memberof Supplier
      */
     'id'?: number | null;
     /**
      * Supplier code
-     * @type {string}
-     * @memberof Supplier
      */
     'code'?: string | null;
     /**
      * Supplier name
-     * @type {string}
-     * @memberof Supplier
      */
     'name'?: string | null;
-    /**
-     * 
-     * @type {SupplierType}
-     * @memberof Supplier
-     */
     'type'?: SupplierType | null;
     /**
      * Supplier first name
-     * @type {string}
-     * @memberof Supplier
      */
     'first_name'?: string | null;
     /**
      * Supplier last name
-     * @type {string}
-     * @memberof Supplier
      */
     'last_name'?: string | null;
     /**
      * Supplier contact person
-     * @type {string}
-     * @memberof Supplier
      */
     'contact_person'?: string | null;
     /**
      * Supplier vat number
-     * @type {string}
-     * @memberof Supplier
      */
     'vat_number'?: string | null;
     /**
      * Supplier tax code
-     * @type {string}
-     * @memberof Supplier
      */
     'tax_code'?: string | null;
     /**
      * Supplier street address
-     * @type {string}
-     * @memberof Supplier
      */
     'address_street'?: string | null;
     /**
      * Supplier postal code
-     * @type {string}
-     * @memberof Supplier
      */
     'address_postal_code'?: string | null;
     /**
      * Supplier city
-     * @type {string}
-     * @memberof Supplier
      */
     'address_city'?: string | null;
     /**
      * Supplier province
-     * @type {string}
-     * @memberof Supplier
      */
     'address_province'?: string | null;
     /**
      * Supplier address extra info
-     * @type {string}
-     * @memberof Supplier
      */
     'address_extra'?: string | null;
     /**
      * Supplier country
-     * @type {string}
-     * @memberof Supplier
      */
     'country'?: string | null;
     /**
      * Supplier country iso code
-     * @type {string}
-     * @memberof Supplier
      */
     'country_iso'?: string | null;
     /**
      * Supplier email
-     * @type {string}
-     * @memberof Supplier
      */
     'email'?: string | null;
     /**
      * Supplier certified email
-     * @type {string}
-     * @memberof Supplier
      */
     'certified_email'?: string | null;
     /**
      * Supplier phone
-     * @type {string}
-     * @memberof Supplier
      */
     'phone'?: string | null;
     /**
      * Supplier fax
-     * @type {string}
-     * @memberof Supplier
      */
     'fax'?: string | null;
     /**
      * Supplier extra notes
-     * @type {string}
-     * @memberof Supplier
      */
     'notes'?: string | null;
     /**
      * Supplier bank IBAN
-     * @type {string}
-     * @memberof Supplier
      */
     'bank_iban'?: string | null;
     /**
      * Supplier creation date
-     * @type {string}
-     * @memberof Supplier
      */
     'created_at'?: string | null;
     /**
      * Supplier last update date
-     * @type {string}
-     * @memberof Supplier
      */
     'updated_at'?: string | null;
 }

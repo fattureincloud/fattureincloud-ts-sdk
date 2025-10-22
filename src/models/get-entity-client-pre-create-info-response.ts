@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { EntityClientPreCreateInfo } from './entity-client-pre-create-info';
 
-/**
- * 
- * @export
- * @interface GetEntityClientPreCreateInfoResponse
- */
 export interface GetEntityClientPreCreateInfoResponse {
-    /**
-     * 
-     * @type {EntityClientPreCreateInfo}
-     * @memberof GetEntityClientPreCreateInfoResponse
-     */
     'data'?: EntityClientPreCreateInfo;
 }
 

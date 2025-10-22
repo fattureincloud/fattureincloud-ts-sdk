@@ -16,74 +16,50 @@
 
 /**
  * 
- * @export
- * @interface Pagination
  */
 export interface Pagination {
     /**
      * Current page number.
-     * @type {number}
-     * @memberof Pagination
      */
     'current_page'?: number | null;
     /**
      * First page url.
-     * @type {string}
-     * @memberof Pagination
      */
     'first_page_url'?: string | null;
     /**
      * First result of the page.
-     * @type {number}
-     * @memberof Pagination
      */
     'from'?: number | null;
     /**
      * Last page number.
-     * @type {number}
-     * @memberof Pagination
      */
     'last_page'?: number | null;
     /**
      * Last page url.
-     * @type {string}
-     * @memberof Pagination
      */
     'last_page_url'?: string | null;
     /**
      * Next page url
-     * @type {string}
-     * @memberof Pagination
      */
     'next_page_url'?: string | null;
     /**
      * Request path.
-     * @type {string}
-     * @memberof Pagination
      */
     'path'?: string | null;
     /**
      * Number of result per page.
-     * @type {number}
-     * @memberof Pagination
      */
     'per_page'?: number | null;
     /**
      * Previous page url.
-     * @type {string}
-     * @memberof Pagination
      */
     'prev_page_url'?: string | null;
     /**
      * Last result of the page.
-     * @type {number}
-     * @memberof Pagination
      */
     'to'?: number | null;
     /**
      * Total number of results
-     * @type {number}
-     * @memberof Pagination
      */
     'total'?: number | null;
 }

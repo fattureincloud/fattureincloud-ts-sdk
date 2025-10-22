@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -76,7 +75,7 @@ export const ArchiveApiAxiosParamCreator = function (configuration?: Configurati
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -285,7 +284,7 @@ export const ArchiveApiAxiosParamCreator = function (configuration?: Configurati
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -556,6 +555,7 @@ export interface ArchiveApiInterface {
      * @memberof ArchiveApiInterface
      */
     createArchiveDocument(companyId: number, createArchiveDocumentRequest?: CreateArchiveDocumentRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateArchiveDocumentResponse>;
+
     /**
      * Deletes the specified archive document.
      * @summary Delete Archive Document
@@ -566,6 +566,7 @@ export interface ArchiveApiInterface {
      * @memberof ArchiveApiInterface
      */
     deleteArchiveDocument(companyId: number, documentId: number, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Gets the specified archive document.
      * @summary Get Archive Document
@@ -578,6 +579,7 @@ export interface ArchiveApiInterface {
      * @memberof ArchiveApiInterface
      */
     getArchiveDocument(companyId: number, documentId: number, fields?: string, fieldset?: GetArchiveDocumentFieldsetEnum, options?: RawAxiosRequestConfig): AxiosPromise<GetArchiveDocumentResponse>;
+
     /**
      * Lists the archive documents.
      * @summary List Archive Documents
@@ -593,6 +595,7 @@ export interface ArchiveApiInterface {
      * @memberof ArchiveApiInterface
      */
     listArchiveDocuments(companyId: number, fields?: string, fieldset?: ListArchiveDocumentsFieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListArchiveDocumentsResponse>;
+
     /**
      * Modifies the specified archive document.
      * @summary Modify Archive Document
@@ -604,6 +607,7 @@ export interface ArchiveApiInterface {
      * @memberof ArchiveApiInterface
      */
     modifyArchiveDocument(companyId: number, documentId: number, modifyArchiveDocumentRequest?: ModifyArchiveDocumentRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifyArchiveDocumentResponse>;
+
     /**
      * Uploads an attachment destined to an archive document. The actual association between the document and the attachment must be implemented separately, using the returned token.
      * @summary Upload Archive Document Attachment
@@ -615,6 +619,7 @@ export interface ArchiveApiInterface {
      * @memberof ArchiveApiInterface
      */
     uploadArchiveDocumentAttachment(companyId: number, filename?: string | null, attachment?: File, options?: RawAxiosRequestConfig): AxiosPromise<UploadArchiveAttachmentResponse>;
+
 }
 
 /**

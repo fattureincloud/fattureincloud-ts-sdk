@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Client } from './client';
 
-/**
- * 
- * @export
- * @interface ListClientsResponsePage
- */
 export interface ListClientsResponsePage {
-    /**
-     * 
-     * @type {Array<Client>}
-     * @memberof ListClientsResponsePage
-     */
     'data'?: Array<Client> | null;
 }
 

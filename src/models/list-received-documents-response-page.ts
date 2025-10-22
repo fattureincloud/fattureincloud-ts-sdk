@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { ReceivedDocument } from './received-document';
 
-/**
- * 
- * @export
- * @interface ListReceivedDocumentsResponsePage
- */
 export interface ListReceivedDocumentsResponsePage {
-    /**
-     * 
-     * @type {Array<ReceivedDocument>}
-     * @memberof ListReceivedDocumentsResponsePage
-     */
     'data'?: Array<ReceivedDocument> | null;
 }
 

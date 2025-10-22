@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { ArchiveDocument } from './archive-document';
 
-/**
- * 
- * @export
- * @interface ListArchiveDocumentsResponsePage
- */
 export interface ListArchiveDocumentsResponsePage {
-    /**
-     * 
-     * @type {Array<ArchiveDocument>}
-     * @memberof ListArchiveDocumentsResponsePage
-     */
     'data'?: Array<ArchiveDocument> | null;
 }
 

@@ -16,8 +16,6 @@
 
 /**
  * Payment account type
- * @export
- * @enum {string}
  */
 
 export const PaymentAccountType = {

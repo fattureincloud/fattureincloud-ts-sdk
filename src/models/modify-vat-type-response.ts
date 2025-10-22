@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface ModifyVatTypeResponse
- */
 export interface ModifyVatTypeResponse {
-    /**
-     * 
-     * @type {VatType}
-     * @memberof ModifyVatTypeResponse
-     */
     'data'?: VatType | null;
 }
 

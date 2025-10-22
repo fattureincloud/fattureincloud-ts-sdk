@@ -14,28 +14,17 @@
 
 
 
-/**
- * 
- * @export
- * @interface City
- */
 export interface City {
     /**
      * City postal code
-     * @type {string}
-     * @memberof City
      */
     'postal_code'?: string | null;
     /**
      * City name
-     * @type {string}
-     * @memberof City
      */
     'city'?: string | null;
     /**
      * City province
-     * @type {string}
-     * @memberof City
      */
     'province'?: string | null;
 }

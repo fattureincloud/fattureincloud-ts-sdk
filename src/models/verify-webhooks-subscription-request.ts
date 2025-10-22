@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { VerifyWebhooksSubscription } from './verify-webhooks-subscription';
 
-/**
- * 
- * @export
- * @interface VerifyWebhooksSubscriptionRequest
- */
 export interface VerifyWebhooksSubscriptionRequest {
-    /**
-     * 
-     * @type {VerifyWebhooksSubscription}
-     * @memberof VerifyWebhooksSubscriptionRequest
-     */
     'data'?: VerifyWebhooksSubscription;
 }
 

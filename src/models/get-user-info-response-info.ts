@@ -14,29 +14,9 @@
 
 
 
-/**
- * 
- * @export
- * @interface GetUserInfoResponseInfo
- */
 export interface GetUserInfoResponseInfo {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof GetUserInfoResponseInfo
-     */
     'need_marketing_consents_confirmation'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof GetUserInfoResponseInfo
-     */
     'need_password_change'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof GetUserInfoResponseInfo
-     */
     'need_terms_of_service_confirmation'?: boolean | null;
 }
 

@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -180,6 +179,7 @@ export interface EmailsApiInterface {
      * @memberof EmailsApiInterface
      */
     listEmails(companyId: number, fields?: string, fieldset?: ListEmailsFieldsetEnum, sort?: string, page?: number, perPage?: number, q?: string, options?: RawAxiosRequestConfig): AxiosPromise<ListEmailsResponse>;
+
 }
 
 /**

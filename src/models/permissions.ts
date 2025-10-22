@@ -22,159 +22,32 @@ import type { PermissionsFicIssuedDocumentsDetailed } from './permissions-fic-is
 
 /**
  * 
- * @export
- * @interface Permissions
  */
 export interface Permissions {
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_situation'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_clients'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_suppliers'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_products'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_issued_documents'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_received_documents'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_receipts'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_calendar'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_archive'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_taxes'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_stock'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_cashbook'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_settings'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_emails'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_export'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_import_bankstatements'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_import_clients_suppliers'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_import_issued_documents'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_import_products'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_recurring'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'fic_riba'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'dic_employees'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'dic_settings'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionLevel}
-     * @memberof Permissions
-     */
     'dic_timesheet'?: PermissionLevel;
-    /**
-     * 
-     * @type {PermissionsFicIssuedDocumentsDetailed}
-     * @memberof Permissions
-     */
     'fic_issued_documents_detailed'?: PermissionsFicIssuedDocumentsDetailed | null;
 }
 

@@ -17,23 +17,11 @@
 // @ts-ignore
 import type { WebhooksSubscriptionVerificationMethod } from './webhooks-subscription-verification-method';
 
-/**
- * 
- * @export
- * @interface VerifyWebhooksSubscription
- */
 export interface VerifyWebhooksSubscription {
     /**
      * Webhooks subscription id
-     * @type {string}
-     * @memberof VerifyWebhooksSubscription
      */
     'id'?: string | null;
-    /**
-     * 
-     * @type {WebhooksSubscriptionVerificationMethod}
-     * @memberof VerifyWebhooksSubscription
-     */
     'verification_method'?: WebhooksSubscriptionVerificationMethod;
 }
 

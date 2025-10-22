@@ -19,15 +19,8 @@ import type { CashbookEntry } from './cashbook-entry';
 
 /**
  * 
- * @export
- * @interface ModifyCashbookEntryRequest
  */
 export interface ModifyCashbookEntryRequest {
-    /**
-     * 
-     * @type {CashbookEntry}
-     * @memberof ModifyCashbookEntryRequest
-     */
     'data'?: CashbookEntry;
 }
 

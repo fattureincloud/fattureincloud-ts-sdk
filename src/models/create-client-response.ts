@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Client } from './client';
 
-/**
- * 
- * @export
- * @interface CreateClientResponse
- */
 export interface CreateClientResponse {
-    /**
-     * 
-     * @type {Client}
-     * @memberof CreateClientResponse
-     */
     'data'?: Client;
 }
 

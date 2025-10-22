@@ -16,15 +16,8 @@
 
 /**
  * 
- * @export
- * @interface ListRevenueCentersResponse
  */
 export interface ListRevenueCentersResponse {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ListRevenueCentersResponse
-     */
     'data'?: Array<string> | null;
 }
 

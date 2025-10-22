@@ -44,100 +44,50 @@ import type { PriceList } from './price-list';
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface IssuedDocumentPreCreateInfo
- */
 export interface IssuedDocumentPreCreateInfo {
-    /**
-     * 
-     * @type {{ [key: string]: { [key: string]: number; }; }}
-     * @memberof IssuedDocumentPreCreateInfo
-     */
     'numerations'?: { [key: string]: { [key: string]: number; }; };
-    /**
-     * 
-     * @type {{ [key: string]: { [key: string]: number; }; }}
-     * @memberof IssuedDocumentPreCreateInfo
-     */
     'dn_numerations'?: { [key: string]: { [key: string]: number; }; };
-    /**
-     * 
-     * @type {IssuedDocumentPreCreateInfoDefaultValues}
-     * @memberof IssuedDocumentPreCreateInfo
-     */
     'default_values'?: IssuedDocumentPreCreateInfoDefaultValues | null;
-    /**
-     * 
-     * @type {IssuedDocumentPreCreateInfoExtraDataDefaultValues}
-     * @memberof IssuedDocumentPreCreateInfo
-     */
     'extra_data_default_values'?: IssuedDocumentPreCreateInfoExtraDataDefaultValues | null;
-    /**
-     * 
-     * @type {IssuedDocumentPreCreateInfoItemsDefaultValues}
-     * @memberof IssuedDocumentPreCreateInfo
-     */
     'items_default_values'?: IssuedDocumentPreCreateInfoItemsDefaultValues | null;
     /**
      * Countries list
-     * @type {Array<string>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'countries_list'?: Array<string> | null;
     /**
      * Currencies list
-     * @type {Array<Currency>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'currencies_list'?: Array<Currency> | null;
     /**
      * Document templates list
-     * @type {Array<DocumentTemplate>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'templates_list'?: Array<DocumentTemplate> | null;
     /**
      * Delivery note templates list
-     * @type {Array<DocumentTemplate>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'dn_templates_list'?: Array<DocumentTemplate> | null;
     /**
      * Accompanying invoice templates list
-     * @type {Array<DocumentTemplate>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'ai_templates_list'?: Array<DocumentTemplate> | null;
     /**
      * Payment methods list
-     * @type {Array<PaymentMethod>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'payment_methods_list'?: Array<PaymentMethod> | null;
     /**
      * Payment accounts list
-     * @type {Array<PaymentAccount>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'payment_accounts_list'?: Array<PaymentAccount> | null;
     /**
      * Vat types list
-     * @type {Array<VatType>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'vat_types_list'?: Array<VatType> | null;
     /**
      * Languages list
-     * @type {Array<Language>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'languages_list'?: Array<Language> | null;
     /**
      * Price lists
-     * @type {Array<PriceList>}
-     * @memberof IssuedDocumentPreCreateInfo
      */
     'price_lists'?: Array<PriceList>;
 }

@@ -19,15 +19,8 @@ import type { Client } from './client';
 
 /**
  * 
- * @export
- * @interface ModifyClientRequest
  */
 export interface ModifyClientRequest {
-    /**
-     * 
-     * @type {Client}
-     * @memberof ModifyClientRequest
-     */
     'data'?: Client;
 }
 

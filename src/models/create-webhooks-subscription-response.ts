@@ -17,22 +17,10 @@
 // @ts-ignore
 import type { WebhooksSubscription } from './webhooks-subscription';
 
-/**
- * 
- * @export
- * @interface CreateWebhooksSubscriptionResponse
- */
 export interface CreateWebhooksSubscriptionResponse {
-    /**
-     * 
-     * @type {WebhooksSubscription}
-     * @memberof CreateWebhooksSubscriptionResponse
-     */
     'data'?: WebhooksSubscription;
     /**
      * Webhooks registration warnings
-     * @type {Array<string>}
-     * @memberof CreateWebhooksSubscriptionResponse
      */
     'warnings'?: Array<string> | null;
 }

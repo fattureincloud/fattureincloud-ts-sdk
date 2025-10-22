@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { AttachmentData } from './attachment-data';
 
-/**
- * 
- * @export
- * @interface UploadF24AttachmentResponse
- */
 export interface UploadF24AttachmentResponse {
-    /**
-     * 
-     * @type {AttachmentData}
-     * @memberof UploadF24AttachmentResponse
-     */
     'data'?: AttachmentData;
 }
 

@@ -16,8 +16,6 @@
 
 /**
  * Webhooks event type
- * @export
- * @enum {string}
  */
 
 export const EventType = {

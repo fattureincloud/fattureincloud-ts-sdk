@@ -20,28 +20,11 @@ import type { Permissions } from './permissions';
 // @ts-ignore
 import type { UserCompanyRole } from './user-company-role';
 
-/**
- * 
- * @export
- * @interface CompanyInfoAccessInfo
- */
 export interface CompanyInfoAccessInfo {
-    /**
-     * 
-     * @type {UserCompanyRole}
-     * @memberof CompanyInfoAccessInfo
-     */
     'role'?: UserCompanyRole;
-    /**
-     * 
-     * @type {Permissions}
-     * @memberof CompanyInfoAccessInfo
-     */
     'permissions'?: Permissions;
     /**
      * Company activated through accountant
-     * @type {boolean}
-     * @memberof CompanyInfoAccessInfo
      */
     'through_accountant'?: boolean | null;
 }

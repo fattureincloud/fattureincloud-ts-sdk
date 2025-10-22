@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { PaymentMethod } from './payment-method';
 
-/**
- * 
- * @export
- * @interface CreatePaymentMethodResponse
- */
 export interface CreatePaymentMethodResponse {
-    /**
-     * 
-     * @type {PaymentMethod}
-     * @memberof CreatePaymentMethodResponse
-     */
     'data'?: PaymentMethod;
 }
 

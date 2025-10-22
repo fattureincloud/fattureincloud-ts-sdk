@@ -17,118 +17,74 @@
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface IssuedDocumentItemsListItem
- */
 export interface IssuedDocumentItemsListItem {
     /**
      * Issued document item id
-     * @type {number}
-     * @memberof IssuedDocumentItemsListItem
      */
     'id'?: number | null;
     /**
      * Issued document item product id
-     * @type {number}
-     * @memberof IssuedDocumentItemsListItem
      */
     'product_id'?: number | null;
     /**
      * Issued document item product code
-     * @type {string}
-     * @memberof IssuedDocumentItemsListItem
      */
     'code'?: string | null;
     /**
      * Issued document item product name
-     * @type {string}
-     * @memberof IssuedDocumentItemsListItem
      */
     'name'?: string | null;
     /**
      * Issued document item product category
-     * @type {string}
-     * @memberof IssuedDocumentItemsListItem
      */
     'category'?: string | null;
     /**
      * Issued document product description
-     * @type {string}
-     * @memberof IssuedDocumentItemsListItem
      */
     'description'?: string | null;
     /**
      * Issued document item quantity
-     * @type {number}
-     * @memberof IssuedDocumentItemsListItem
      */
     'qty'?: number | null;
     /**
      * Issued document item measure
-     * @type {string}
-     * @memberof IssuedDocumentItemsListItem
      */
     'measure'?: string | null;
     /**
      * Issued document item net price
-     * @type {number}
-     * @memberof IssuedDocumentItemsListItem
      */
     'net_price'?: number | null;
     /**
      * Issued document item gross price
-     * @type {number}
-     * @memberof IssuedDocumentItemsListItem
      */
     'gross_price'?: number | null;
-    /**
-     * 
-     * @type {VatType}
-     * @memberof IssuedDocumentItemsListItem
-     */
     'vat'?: VatType | null;
     /**
      * Issued document item is not taxable
-     * @type {boolean}
-     * @memberof IssuedDocumentItemsListItem
      */
     'not_taxable'?: boolean | null;
     /**
      * Issued document item apply withholding taxes, rivalsa and cassa
-     * @type {boolean}
-     * @memberof IssuedDocumentItemsListItem
      */
     'apply_withholding_taxes'?: boolean | null;
     /**
      * Issued document item discount percentual value
-     * @type {number}
-     * @memberof IssuedDocumentItemsListItem
      */
     'discount'?: number | null;
     /**
      * Issued document item highlight discount
-     * @type {boolean}
-     * @memberof IssuedDocumentItemsListItem
      */
     'discount_highlight'?: boolean | null;
     /**
      * Issued document item add in delivery note
-     * @type {boolean}
-     * @memberof IssuedDocumentItemsListItem
      */
     'in_dn'?: boolean | null;
     /**
      * Issued document item move stock
-     * @type {boolean}
-     * @memberof IssuedDocumentItemsListItem
      */
     'stock'?: boolean | null;
     /**
      * Issued document advanced raw attributes for e-invoices
-     * @type {object}
-     * @memberof IssuedDocumentItemsListItem
      */
     'ei_raw'?: object | null;
 }

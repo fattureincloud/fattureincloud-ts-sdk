@@ -14,16 +14,9 @@
 
 
 
-/**
- * 
- * @export
- * @interface SendEInvoiceRequestOptions
- */
 export interface SendEInvoiceRequestOptions {
     /**
      * If set to true the e-invoice will not be sent to the SDI.
-     * @type {boolean}
-     * @memberof SendEInvoiceRequestOptions
      */
     'dry_run'?: boolean | null;
 }

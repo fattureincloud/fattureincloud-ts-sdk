@@ -14,17 +14,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface GetUserInfoResponseEmailConfirmationState
- */
 export interface GetUserInfoResponseEmailConfirmationState {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof GetUserInfoResponseEmailConfirmationState
-     */
     'need_confirmation'?: boolean | null;
 }
 

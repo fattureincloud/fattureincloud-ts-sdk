@@ -16,117 +16,24 @@
 
 /**
  * Access to functions for this company.
- * @export
- * @interface CompanyInfoPlanInfoFunctions
  */
 export interface CompanyInfoPlanInfoFunctions {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'archive'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'cerved'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'document_attachments'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'e_invoice'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'genius'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'mail_tracking'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'payment_notifications'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'paypal'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'receipts'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'recurring'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'smtp'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
-    'sofort'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'stock'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'subaccounts'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'tessera_sanitaria'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'ts_digital'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'ts_invoice_trading'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof CompanyInfoPlanInfoFunctions
-     */
     'ts_pay'?: boolean | null;
 }
 

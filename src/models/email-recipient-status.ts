@@ -16,8 +16,6 @@
 
 /**
  * Email recipient status
- * @export
- * @enum {string}
  */
 
 export const EmailRecipientStatus = {

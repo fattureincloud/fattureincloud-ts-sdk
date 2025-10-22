@@ -14,40 +14,25 @@
 
 
 
-/**
- * 
- * @export
- * @interface DetailedCountry
- */
 export interface DetailedCountry {
     /**
      * Country name
-     * @type {string}
-     * @memberof DetailedCountry
      */
     'name'?: string | null;
     /**
      * Country settings name
-     * @type {string}
-     * @memberof DetailedCountry
      */
     'settings_name'?: string | null;
     /**
      * Country iso code
-     * @type {string}
-     * @memberof DetailedCountry
      */
     'iso'?: string | null;
     /**
      * Country fiscal iso code
-     * @type {string}
-     * @memberof DetailedCountry
      */
     'fiscal_iso'?: string | null;
     /**
      * Country uic
-     * @type {string}
-     * @memberof DetailedCountry
      */
     'uic'?: string | null;
 }

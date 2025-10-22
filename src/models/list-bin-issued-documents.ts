@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { IssuedDocument } from './issued-document';
 
-/**
- * 
- * @export
- * @interface ListBinIssuedDocuments
- */
 export interface ListBinIssuedDocuments {
-    /**
-     * 
-     * @type {Array<IssuedDocument>}
-     * @memberof ListBinIssuedDocuments
-     */
     'data'?: Array<IssuedDocument>;
 }
 

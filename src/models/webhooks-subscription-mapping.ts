@@ -16,8 +16,6 @@
 
 /**
  * Webhooks Subscription mapping
- * @export
- * @enum {string}
  */
 
 export const WebhooksSubscriptionMapping = {

@@ -17,124 +17,78 @@
 // @ts-ignore
 import type { VatType } from './vat-type';
 
-/**
- * 
- * @export
- * @interface Product
- */
 export interface Product {
     /**
      * Product id
-     * @type {number}
-     * @memberof Product
      */
     'id'?: number | null;
     /**
      * Product name
-     * @type {string}
-     * @memberof Product
      */
     'name'?: string | null;
     /**
      * Product code
-     * @type {string}
-     * @memberof Product
      */
     'code'?: string | null;
     /**
      * Product net price
-     * @type {number}
-     * @memberof Product
      */
     'net_price'?: number | null;
     /**
      * Product gross price
-     * @type {number}
-     * @memberof Product
      */
     'gross_price'?: number | null;
     /**
      * Product uses gross prices
-     * @type {boolean}
-     * @memberof Product
      */
     'use_gross_price'?: boolean | null;
-    /**
-     * 
-     * @type {VatType}
-     * @memberof Product
-     */
     'default_vat'?: VatType | null;
     /**
      * Product net cost
-     * @type {number}
-     * @memberof Product
      */
     'net_cost'?: number | null;
     /**
      * Product measure
-     * @type {string}
-     * @memberof Product
      */
     'measure'?: string | null;
     /**
      * Product description
-     * @type {string}
-     * @memberof Product
      */
     'description'?: string | null;
     /**
      * Product category
-     * @type {string}
-     * @memberof Product
      */
     'category'?: string | null;
     /**
      * Product extra notes
-     * @type {string}
-     * @memberof Product
      */
     'notes'?: string | null;
     /**
      * Product has stock
-     * @type {boolean}
-     * @memberof Product
      */
     'in_stock'?: boolean | null;
     /**
      * Product initial stock
-     * @type {number}
-     * @memberof Product
      */
     'stock_initial'?: number | null;
     /**
      * [Read Only] Product current stock
-     * @type {number}
-     * @memberof Product
      */
     'stock_current'?: number | null;
     /**
      * Product average cost
-     * @type {number}
-     * @memberof Product
      */
     'average_cost'?: number | null;
     /**
      * Product average price
-     * @type {number}
-     * @memberof Product
      */
     'average_price'?: number | null;
     /**
      * Product creation date
-     * @type {string}
-     * @memberof Product
      */
     'created_at'?: string | null;
     /**
      * Product last update date
-     * @type {string}
-     * @memberof Product
      */
     'updated_at'?: string | null;
 }

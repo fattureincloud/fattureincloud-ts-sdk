@@ -16,8 +16,6 @@
 
 /**
  * Cashbook type
- * @export
- * @enum {string}
  */
 
 export const CashbookEntryType = {

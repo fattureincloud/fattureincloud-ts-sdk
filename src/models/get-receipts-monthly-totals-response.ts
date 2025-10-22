@@ -19,15 +19,8 @@ import type { MonthlyTotal } from './monthly-total';
 
 /**
  * 
- * @export
- * @interface GetReceiptsMonthlyTotalsResponse
  */
 export interface GetReceiptsMonthlyTotalsResponse {
-    /**
-     * 
-     * @type {Array<MonthlyTotal>}
-     * @memberof GetReceiptsMonthlyTotalsResponse
-     */
     'data'?: Array<MonthlyTotal> | null;
 }
 

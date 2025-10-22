@@ -19,15 +19,8 @@ import type { IssuedDocumentTotals } from './issued-document-totals';
 
 /**
  * 
- * @export
- * @interface GetExistingIssuedDocumentTotalsResponse
  */
 export interface GetExistingIssuedDocumentTotalsResponse {
-    /**
-     * 
-     * @type {IssuedDocumentTotals}
-     * @memberof GetExistingIssuedDocumentTotalsResponse
-     */
     'data'?: IssuedDocumentTotals;
 }
 

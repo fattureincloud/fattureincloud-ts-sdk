@@ -19,15 +19,8 @@ import type { City } from './city';
 
 /**
  * 
- * @export
- * @interface ListCitiesResponse
  */
 export interface ListCitiesResponse {
-    /**
-     * 
-     * @type {Array<City>}
-     * @memberof ListCitiesResponse
-     */
     'data'?: Array<City> | null;
 }
 

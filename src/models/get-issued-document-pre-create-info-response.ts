@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { IssuedDocumentPreCreateInfo } from './issued-document-pre-create-info';
 
-/**
- * 
- * @export
- * @interface GetIssuedDocumentPreCreateInfoResponse
- */
 export interface GetIssuedDocumentPreCreateInfoResponse {
-    /**
-     * 
-     * @type {IssuedDocumentPreCreateInfo}
-     * @memberof GetIssuedDocumentPreCreateInfoResponse
-     */
     'data'?: IssuedDocumentPreCreateInfo;
 }
 

@@ -12,9 +12,8 @@
  * Do not edit the class manually.
  */
 
-
+export * from "./src/filter";
+export * from "./src/oauth2";
 export * from "./api";
 export * from "./configuration";
 export * from "./src/models";
-export * from "./src/filter";
-export * from "./src/oauth2";

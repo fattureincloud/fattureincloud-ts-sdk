@@ -20,58 +20,28 @@ import type { CompanyType } from './company-type';
 // @ts-ignore
 import type { FattureInCloudPlanType } from './fatture-in-cloud-plan-type';
 
-/**
- * 
- * @export
- * @interface ControlledCompany
- */
 export interface ControlledCompany {
     /**
      * Controlled company id
-     * @type {number}
-     * @memberof ControlledCompany
      */
     'id'?: number | null;
     /**
      * Controlled company id
-     * @type {string}
-     * @memberof ControlledCompany
      */
     'name'?: string | null;
-    /**
-     * 
-     * @type {CompanyType}
-     * @memberof ControlledCompany
-     */
     'type'?: CompanyType;
     /**
      * Controlled company access token Only if type=company]
-     * @type {string}
-     * @memberof ControlledCompany
      */
     'access_token'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof ControlledCompany
-     */
     'fic_license_expire'?: string | null;
-    /**
-     * 
-     * @type {FattureInCloudPlanType}
-     * @memberof ControlledCompany
-     */
     'fic_plan'?: FattureInCloudPlanType;
     /**
      * Controlled company connection id
-     * @type {number}
-     * @memberof ControlledCompany
      */
     'connection_id'?: number | null;
     /**
      * Controlled company tax code
-     * @type {string}
-     * @memberof ControlledCompany
      */
     'tax_code'?: string | null;
 }

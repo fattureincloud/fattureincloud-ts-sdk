@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { SendEInvoiceResponseData } from './send-einvoice-response-data';
 
-/**
- * 
- * @export
- * @interface SendEInvoiceResponse
- */
 export interface SendEInvoiceResponse {
-    /**
-     * 
-     * @type {SendEInvoiceResponseData}
-     * @memberof SendEInvoiceResponse
-     */
     'data'?: SendEInvoiceResponseData | null;
 }
 

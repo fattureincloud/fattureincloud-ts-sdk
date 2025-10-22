@@ -20,23 +20,8 @@ import type { IssuedDocument } from './issued-document';
 // @ts-ignore
 import type { IssuedDocumentOptions } from './issued-document-options';
 
-/**
- * 
- * @export
- * @interface CreateIssuedDocumentRequest
- */
 export interface CreateIssuedDocumentRequest {
-    /**
-     * 
-     * @type {IssuedDocument}
-     * @memberof CreateIssuedDocumentRequest
-     */
     'data'?: IssuedDocument;
-    /**
-     * 
-     * @type {IssuedDocumentOptions}
-     * @memberof CreateIssuedDocumentRequest
-     */
     'options'?: IssuedDocumentOptions;
 }
 

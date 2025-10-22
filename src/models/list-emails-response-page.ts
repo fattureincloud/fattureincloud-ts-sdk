@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Email } from './email';
 
-/**
- * 
- * @export
- * @interface ListEmailsResponsePage
- */
 export interface ListEmailsResponsePage {
-    /**
-     * 
-     * @type {Array<Email>}
-     * @memberof ListEmailsResponsePage
-     */
     'data'?: Array<Email>;
 }
 

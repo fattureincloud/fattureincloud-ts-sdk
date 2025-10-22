@@ -16,32 +16,22 @@
 
 /**
  * Company plan limits
- * @export
- * @interface CompanyInfoPlanInfoLimits
  */
 export interface CompanyInfoPlanInfoLimits {
     /**
      * Company plan clients limits
-     * @type {number}
-     * @memberof CompanyInfoPlanInfoLimits
      */
     'clients'?: number | null;
     /**
      * Company plan suppliers limits
-     * @type {number}
-     * @memberof CompanyInfoPlanInfoLimits
      */
     'suppliers'?: number | null;
     /**
      * Company plan products limits
-     * @type {number}
-     * @memberof CompanyInfoPlanInfoLimits
      */
     'products'?: number | null;
     /**
      * Company plan documents limits
-     * @type {number}
-     * @memberof CompanyInfoPlanInfoLimits
      */
     'documents'?: number | null;
 }

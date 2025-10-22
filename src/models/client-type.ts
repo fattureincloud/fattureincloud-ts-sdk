@@ -16,8 +16,6 @@
 
 /**
  * Client type
- * @export
- * @enum {string}
  */
 
 export const ClientType = {

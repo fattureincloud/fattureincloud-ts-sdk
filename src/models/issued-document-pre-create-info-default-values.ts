@@ -22,75 +22,39 @@ import type { PaymentMethod } from './payment-method';
 
 /**
  * Issued document default values
- * @export
- * @interface IssuedDocumentPreCreateInfoDefaultValues
  */
 export interface IssuedDocumentPreCreateInfoDefaultValues {
-    /**
-     * 
-     * @type {DocumentTemplate}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
-     */
     'default_template'?: DocumentTemplate;
-    /**
-     * 
-     * @type {DocumentTemplate}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
-     */
     'dn_template'?: DocumentTemplate;
-    /**
-     * 
-     * @type {DocumentTemplate}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
-     */
     'ai_template'?: DocumentTemplate;
     /**
      * Default notes.
-     * @type {string}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'notes'?: string | null;
     /**
      * Default rivalsa percentage.
-     * @type {number}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'rivalsa'?: number | null;
     /**
      * Default cassa percentage.
-     * @type {number}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'cassa'?: number | null;
     /**
      * Default withholding tax percentage.
-     * @type {number}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'withholding_tax'?: number | null;
     /**
      * Default withholding tax taxable percentage.
-     * @type {number}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'withholding_tax_taxable'?: number | null;
     /**
      * Default other withholding tax percentage.
-     * @type {number}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'other_withholding_tax'?: number | null;
     /**
      * Use gross price by default.
-     * @type {boolean}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
      */
     'use_gross_prices'?: boolean | null;
-    /**
-     * 
-     * @type {PaymentMethod}
-     * @memberof IssuedDocumentPreCreateInfoDefaultValues
-     */
     'payment_method'?: PaymentMethod;
 }
 

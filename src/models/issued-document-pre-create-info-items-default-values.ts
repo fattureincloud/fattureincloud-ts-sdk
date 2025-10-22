@@ -19,15 +19,8 @@ import type { VatType } from './vat-type';
 
 /**
  * Issued document items default values
- * @export
- * @interface IssuedDocumentPreCreateInfoItemsDefaultValues
  */
 export interface IssuedDocumentPreCreateInfoItemsDefaultValues {
-    /**
-     * 
-     * @type {VatType}
-     * @memberof IssuedDocumentPreCreateInfoItemsDefaultValues
-     */
     'vat'?: VatType | null;
 }
 

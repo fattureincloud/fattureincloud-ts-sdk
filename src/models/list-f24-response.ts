@@ -32,7 +32,6 @@ import type { Pagination } from './pagination';
 /**
  * @type ListF24Response
  * 
- * @export
  */
 export type ListF24Response = ListF24ResponseAggregation & ListF24ResponsePage & Pagination;
 

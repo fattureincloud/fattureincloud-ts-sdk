@@ -16,8 +16,6 @@
 
 /**
  * Received document type
- * @export
- * @enum {string}
  */
 
 export const ReceivedDocumentType = {

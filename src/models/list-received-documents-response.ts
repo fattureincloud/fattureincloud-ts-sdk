@@ -26,7 +26,6 @@ import type { ReceivedDocument } from './received-document';
 /**
  * @type ListReceivedDocumentsResponse
  * 
- * @export
  */
 export type ListReceivedDocumentsResponse = ListReceivedDocumentsResponsePage & Pagination;
 

@@ -14,17 +14,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface FunctionStatus
- */
 export interface FunctionStatus {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof FunctionStatus
-     */
     'active'?: boolean | null;
 }
 

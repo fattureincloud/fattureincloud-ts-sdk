@@ -12,7 +12,6 @@
  * Do not edit the class manually.
  */
 
-
 import type { Configuration } from '../../configuration';
 import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
@@ -76,7 +75,7 @@ export const WebhooksApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -245,7 +244,7 @@ export const WebhooksApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -292,7 +291,7 @@ export const WebhooksApiAxiosParamCreator = function (configuration?: Configurat
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
-            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.2/TypeScript-SDK';
+            localVarHeaderParameter['User-Agent'] = 'FattureInCloud/2.1.3/TypeScript-SDK';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -495,6 +494,7 @@ export interface WebhooksApiInterface {
      * @memberof WebhooksApiInterface
      */
     createWebhooksSubscription(companyId: number, createWebhooksSubscriptionRequest?: CreateWebhooksSubscriptionRequest, options?: RawAxiosRequestConfig): AxiosPromise<CreateWebhooksSubscriptionResponse>;
+
     /**
      * Delete a webhooks subscription.
      * @summary Delete Webhooks Subscription
@@ -505,6 +505,7 @@ export interface WebhooksApiInterface {
      * @memberof WebhooksApiInterface
      */
     deleteWebhooksSubscription(companyId: number, subscriptionId: string, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
     /**
      * Get a webhooks subscription.
      * @summary Get Webhooks Subscription
@@ -515,6 +516,7 @@ export interface WebhooksApiInterface {
      * @memberof WebhooksApiInterface
      */
     getWebhooksSubscription(companyId: number, subscriptionId: string, options?: RawAxiosRequestConfig): AxiosPromise<GetWebhooksSubscriptionResponse>;
+
     /**
      * List active webhooks subscriptions.
      * @summary List Webhooks Subscriptions
@@ -524,6 +526,7 @@ export interface WebhooksApiInterface {
      * @memberof WebhooksApiInterface
      */
     listWebhooksSubscriptions(companyId: number, options?: RawAxiosRequestConfig): AxiosPromise<ListWebhooksSubscriptionsResponse>;
+
     /**
      * Edit a webhooks subscription.
      * @summary Modify Webhooks Subscription
@@ -535,6 +538,7 @@ export interface WebhooksApiInterface {
      * @memberof WebhooksApiInterface
      */
     modifyWebhooksSubscription(companyId: number, subscriptionId: string, modifyWebhooksSubscriptionRequest?: ModifyWebhooksSubscriptionRequest, options?: RawAxiosRequestConfig): AxiosPromise<ModifyWebhooksSubscriptionResponse>;
+
     /**
      * Verify a webhook subscription.
      * @summary Verify Webhooks Subscription
@@ -546,6 +550,7 @@ export interface WebhooksApiInterface {
      * @memberof WebhooksApiInterface
      */
     verifyWebhooksSubscription(companyId: number, subscriptionId: string, verifyWebhooksSubscriptionRequest?: VerifyWebhooksSubscriptionRequest, options?: RawAxiosRequestConfig): AxiosPromise<void>;
+
 }
 
 /**

@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { F24 } from './f24';
 
-/**
- * 
- * @export
- * @interface GetF24Response
- */
 export interface GetF24Response {
-    /**
-     * 
-     * @type {F24}
-     * @memberof GetF24Response
-     */
     'data'?: F24;
 }
 

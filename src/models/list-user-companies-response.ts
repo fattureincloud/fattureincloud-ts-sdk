@@ -19,15 +19,8 @@ import type { ListUserCompaniesResponseData } from './list-user-companies-respon
 
 /**
  * 
- * @export
- * @interface ListUserCompaniesResponse
  */
 export interface ListUserCompaniesResponse {
-    /**
-     * 
-     * @type {ListUserCompaniesResponseData}
-     * @memberof ListUserCompaniesResponse
-     */
     'data'?: ListUserCompaniesResponseData | null;
 }
 

@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { Supplier } from './supplier';
 
-/**
- * 
- * @export
- * @interface ListSuppliersResponsePage
- */
 export interface ListSuppliersResponsePage {
-    /**
-     * 
-     * @type {Array<Supplier>}
-     * @memberof ListSuppliersResponsePage
-     */
     'data'?: Array<Supplier> | null;
 }
 

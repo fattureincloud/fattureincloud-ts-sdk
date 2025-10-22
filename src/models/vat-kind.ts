@@ -16,8 +16,6 @@
 
 /**
  * Vat kind [esigibilità IVA]
- * @export
- * @enum {string}
  */
 
 export const VatKind = {

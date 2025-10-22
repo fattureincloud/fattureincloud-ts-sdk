@@ -14,17 +14,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface PriceListItem
- */
 export interface PriceListItem {
-    /**
-     * 
-     * @type {number}
-     * @memberof PriceListItem
-     */
     'price'?: number;
 }
 

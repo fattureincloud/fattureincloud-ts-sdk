@@ -17,17 +17,7 @@
 // @ts-ignore
 import type { WebhooksSubscriptionMapping } from './webhooks-subscription-mapping';
 
-/**
- * 
- * @export
- * @interface WebhooksSubscriptionConfig
- */
 export interface WebhooksSubscriptionConfig {
-    /**
-     * 
-     * @type {WebhooksSubscriptionMapping}
-     * @memberof WebhooksSubscriptionConfig
-     */
     'mapping'?: WebhooksSubscriptionMapping;
 }
 

@@ -20,53 +20,28 @@ import type { PaymentAccount } from './payment-account';
 // @ts-ignore
 import type { ReceivedDocumentPaymentsListItemPaymentTerms } from './received-document-payments-list-item-payment-terms';
 
-/**
- * 
- * @export
- * @interface ReceivedDocumentPaymentsListItem
- */
 export interface ReceivedDocumentPaymentsListItem {
     /**
      * Received document payment id
-     * @type {number}
-     * @memberof ReceivedDocumentPaymentsListItem
      */
     'id'?: number | null;
     /**
      * Received document payment total amount
-     * @type {number}
-     * @memberof ReceivedDocumentPaymentsListItem
      */
     'amount'?: number | null;
     /**
      * Due date
-     * @type {string}
-     * @memberof ReceivedDocumentPaymentsListItem
      */
     'due_date'?: string | null;
     /**
      * Received document payment paid date
-     * @type {string}
-     * @memberof ReceivedDocumentPaymentsListItem
      */
     'paid_date'?: string | null;
-    /**
-     * 
-     * @type {ReceivedDocumentPaymentsListItemPaymentTerms}
-     * @memberof ReceivedDocumentPaymentsListItem
-     */
     'payment_terms'?: ReceivedDocumentPaymentsListItemPaymentTerms | null;
     /**
      * Received document payment status
-     * @type {string}
-     * @memberof ReceivedDocumentPaymentsListItem
      */
     'status'?: string | null;
-    /**
-     * 
-     * @type {PaymentAccount}
-     * @memberof ReceivedDocumentPaymentsListItem
-     */
     'payment_account'?: PaymentAccount | null;
 }
 

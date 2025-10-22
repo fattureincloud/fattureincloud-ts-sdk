@@ -14,22 +14,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface VatItem
- */
 export interface VatItem {
     /**
      * Vat item net amount
-     * @type {number}
-     * @memberof VatItem
      */
     'amount_net'?: number | null;
     /**
      * Vat item vat amount
-     * @type {number}
-     * @memberof VatItem
      */
     'amount_vat'?: number | null;
 }
