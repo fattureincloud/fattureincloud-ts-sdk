@@ -29,7 +29,7 @@ const apiConfig = new Configuration({
 
 let apiInstance = new PriceListsApi(apiConfig);
 let companyId = 12345; // Number | The ID of the company.
-let priceListId = "priceListId_example"; // String | 
+let priceListId = "priceListId_example"; // String | The ID of the price
 apiInstance.getPriceListItems(companyId, priceListId).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -44,7 +44,7 @@ apiInstance.getPriceListItems(companyId, priceListId).then((data) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **companyId** | **Number**| The ID of the company. | 
- **priceListId** | **String**|  | 
+ **priceListId** | **String**| The ID of the price | 
 
 ### Return type
 
