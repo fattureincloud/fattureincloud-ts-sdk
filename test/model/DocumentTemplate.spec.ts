@@ -16,7 +16,7 @@ import { DocumentTemplate } from '../../src/models'
 const instance: DocumentTemplate = {
   id: 10,
   name: 'New Standard S1',
-  type: ''
+  type: 'standard'
 }
 
 // beforeEach(function () {

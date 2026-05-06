@@ -188,9 +188,9 @@ describe('InfoApi', function () {
       done()
     })
   })
-  describe('listTemplates', function () {
-    it('should call listTemplates successfully', function (done) {
-      const response = instance.listTemplates()
+  describe('listDefaultTemplates', function () {
+    it('should call listDefaultTemplates successfully', function (done) {
+      const response = instance.listDefaultTemplates()
       const expectedJson = JSON.stringify(listTemplatesresponse)
       const actualJson = JSON.stringify(response)
       expect(actualJson).to.equal(expectedJson)
