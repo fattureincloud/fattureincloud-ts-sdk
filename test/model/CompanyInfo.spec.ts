@@ -83,7 +83,6 @@ const instance: CompanyInfo = {
       subaccounts: true,
       tessera_sanitaria: true,
       recurring: true,
-      sofort: false,
       cerved: true,
       ts_digital: true,
       ts_pay: true,
