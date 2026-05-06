@@ -9,6 +9,6 @@
 
 * `passive_delivery_note` (value: `"passive_delivery_note"`)
 
-* `self_invoice` (value: `"self_invoice"`)
+* `self_supplier_invoice` (value: `"self_supplier_invoice"`)
 
-
+* `self_own_invoice` (value: `"self_own_invoice"`)

@@ -1761,7 +1761,8 @@ export const GetReceivedDocumentPreCreateInfoTypeEnum = {
     Expense: 'expense',
     PassiveCreditNote: 'passive_credit_note',
     PassiveDeliveryNote: 'passive_delivery_note',
-    SelfInvoice: 'self_invoice'
+    SelfSupplierInvoice: 'self_supplier_invoice',
+    SelfOwnInvoice: 'self_own_invoice'
 } as const;
 export type GetReceivedDocumentPreCreateInfoTypeEnum = typeof GetReceivedDocumentPreCreateInfoTypeEnum[keyof typeof GetReceivedDocumentPreCreateInfoTypeEnum];
 /**
@@ -1789,7 +1790,8 @@ export const ListReceivedDocumentsTypeEnum = {
     Expense: 'expense',
     PassiveCreditNote: 'passive_credit_note',
     PassiveDeliveryNote: 'passive_delivery_note',
-    SelfInvoice: 'self_invoice'
+    SelfSupplierInvoice: 'self_supplier_invoice',
+    SelfOwnInvoice: 'self_own_invoice'
 } as const;
 export type ListReceivedDocumentsTypeEnum = typeof ListReceivedDocumentsTypeEnum[keyof typeof ListReceivedDocumentsTypeEnum];
 /**

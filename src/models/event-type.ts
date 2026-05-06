@@ -46,9 +46,12 @@ export const EventType = {
     ItFattureincloudWebhooksIssuedDocumentsSupplierOrdersCreate: 'it.fattureincloud.webhooks.issued_documents.supplier_orders.create',
     ItFattureincloudWebhooksIssuedDocumentsSupplierOrdersUpdate: 'it.fattureincloud.webhooks.issued_documents.supplier_orders.update',
     ItFattureincloudWebhooksIssuedDocumentsSupplierOrdersDelete: 'it.fattureincloud.webhooks.issued_documents.supplier_orders.delete',
-    ItFattureincloudWebhooksIssuedDocumentsSelfInvoicesCreate: 'it.fattureincloud.webhooks.issued_documents.self_invoices.create',
-    ItFattureincloudWebhooksIssuedDocumentsSelfInvoicesUpdate: 'it.fattureincloud.webhooks.issued_documents.self_invoices.update',
-    ItFattureincloudWebhooksIssuedDocumentsSelfInvoicesDelete: 'it.fattureincloud.webhooks.issued_documents.self_invoices.delete',
+    ItFattureincloudWebhooksIssuedDocumentsSelfSupplierInvoicesCreate: 'it.fattureincloud.webhooks.issued_documents.self_supplier_invoices.create',
+    ItFattureincloudWebhooksIssuedDocumentsSelfSupplierInvoicesUpdate: 'it.fattureincloud.webhooks.issued_documents.self_supplier_invoices.update',
+    ItFattureincloudWebhooksIssuedDocumentsSelfSupplierInvoicesDelete: 'it.fattureincloud.webhooks.issued_documents.self_supplier_invoices.delete',
+    ItFattureincloudWebhooksIssuedDocumentsSelfOwnInvoicesCreate: 'it.fattureincloud.webhooks.issued_documents.self_own_invoices.create',
+    ItFattureincloudWebhooksIssuedDocumentsSelfOwnInvoicesUpdate: 'it.fattureincloud.webhooks.issued_documents.self_own_invoices.update',
+    ItFattureincloudWebhooksIssuedDocumentsSelfOwnInvoicesDelete: 'it.fattureincloud.webhooks.issued_documents.self_own_invoices.delete',
     ItFattureincloudWebhooksIssuedDocumentsAllCreate: 'it.fattureincloud.webhooks.issued_documents.all.create',
     ItFattureincloudWebhooksIssuedDocumentsAllUpdate: 'it.fattureincloud.webhooks.issued_documents.all.update',
     ItFattureincloudWebhooksIssuedDocumentsAllDelete: 'it.fattureincloud.webhooks.issued_documents.all.delete',
@@ -91,7 +94,8 @@ export const EventType = {
     ItFattureincloudWebhooksIssuedDocumentsOrdersEmailSent: 'it.fattureincloud.webhooks.issued_documents.orders.email_sent',
     ItFattureincloudWebhooksIssuedDocumentsWorkReportsEmailSent: 'it.fattureincloud.webhooks.issued_documents.work_reports.email_sent',
     ItFattureincloudWebhooksIssuedDocumentsSupplierOrdersEmailSent: 'it.fattureincloud.webhooks.issued_documents.supplier_orders.email_sent',
-    ItFattureincloudWebhooksIssuedDocumentsSelfInvoicesEmailSent: 'it.fattureincloud.webhooks.issued_documents.self_invoices.email_sent',
+    ItFattureincloudWebhooksIssuedDocumentsSelfSupplierInvoicesEmailSent: 'it.fattureincloud.webhooks.issued_documents.self_supplier_invoices.email_sent',
+    ItFattureincloudWebhooksIssuedDocumentsSelfOwnInvoicesEmailSent: 'it.fattureincloud.webhooks.issued_documents.self_own_invoices.email_sent',
     ItFattureincloudWebhooksIssuedDocumentsAllEmailSent: 'it.fattureincloud.webhooks.issued_documents.all.email_sent'
 } as const;
 
