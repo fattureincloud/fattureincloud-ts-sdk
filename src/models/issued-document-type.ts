@@ -28,8 +28,7 @@ export const IssuedDocumentType = {
     Order: 'order',
     WorkReport: 'work_report',
     SupplierOrder: 'supplier_order',
-    SelfOwnInvoice: 'self_own_invoice',
-    SelfSupplierInvoice: 'self_supplier_invoice'
+    SelfInvoice: 'self_invoice'
 } as const;
 
 export type IssuedDocumentType = typeof IssuedDocumentType[keyof typeof IssuedDocumentType];

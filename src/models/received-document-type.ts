@@ -22,8 +22,7 @@ export const ReceivedDocumentType = {
     Expense: 'expense',
     PassiveCreditNote: 'passive_credit_note',
     PassiveDeliveryNote: 'passive_delivery_note',
-    SelfSupplierInvoice: 'self_supplier_invoice',
-    SelfOwnInvoice: 'self_own_invoice',
+    SelfInvoice: 'self_invoice'
 } as const;
 
 export type ReceivedDocumentType = typeof ReceivedDocumentType[keyof typeof ReceivedDocumentType];

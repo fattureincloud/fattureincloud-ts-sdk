@@ -1949,8 +1949,7 @@ export const GetIssuedDocumentPreCreateInfoTypeEnum = {
     Order: 'order',
     WorkReport: 'work_report',
     SupplierOrder: 'supplier_order',
-    SelfOwnInvoice: 'self_own_invoice',
-    SelfSupplierInvoice: 'self_supplier_invoice'
+    SelfInvoice: 'self_invoice'
 } as const;
 export type GetIssuedDocumentPreCreateInfoTypeEnum = typeof GetIssuedDocumentPreCreateInfoTypeEnum[keyof typeof GetIssuedDocumentPreCreateInfoTypeEnum];
 /**
@@ -1984,8 +1983,7 @@ export const ListIssuedDocumentsTypeEnum = {
     Order: 'order',
     WorkReport: 'work_report',
     SupplierOrder: 'supplier_order',
-    SelfOwnInvoice: 'self_own_invoice',
-    SelfSupplierInvoice: 'self_supplier_invoice'
+    SelfInvoice: 'self_invoice'
 } as const;
 export type ListIssuedDocumentsTypeEnum = typeof ListIssuedDocumentsTypeEnum[keyof typeof ListIssuedDocumentsTypeEnum];
 /**
