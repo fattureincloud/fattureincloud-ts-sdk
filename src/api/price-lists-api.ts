@@ -38,7 +38,7 @@ export const PriceListsApiAxiosParamCreator = function (configuration?: Configur
          * Retrieves all the Items of a PriceList
          * @summary Get PriceList Items List
          * @param {number} companyId The ID of the company.
-         * @param {string} priceListId The ID of the price
+         * @param {string} priceListId The price list ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -128,7 +128,7 @@ export const PriceListsApiFp = function(configuration?: Configuration) {
          * Retrieves all the Items of a PriceList
          * @summary Get PriceList Items List
          * @param {number} companyId The ID of the company.
-         * @param {string} priceListId The ID of the price
+         * @param {string} priceListId The price list ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -165,7 +165,7 @@ export const PriceListsApiFactory = function (configuration?: Configuration, bas
          * Retrieves all the Items of a PriceList
          * @summary Get PriceList Items List
          * @param {number} companyId The ID of the company.
-         * @param {string} priceListId The ID of the price
+         * @param {string} priceListId The price list ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -195,7 +195,7 @@ export interface PriceListsApiInterface {
      * Retrieves all the Items of a PriceList
      * @summary Get PriceList Items List
      * @param {number} companyId The ID of the company.
-     * @param {string} priceListId The ID of the price
+     * @param {string} priceListId The price list ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PriceListsApiInterface
@@ -225,7 +225,7 @@ export class PriceListsApi extends BaseAPI implements PriceListsApiInterface {
      * Retrieves all the Items of a PriceList
      * @summary Get PriceList Items List
      * @param {number} companyId The ID of the company.
-     * @param {string} priceListId The ID of the price
+     * @param {string} priceListId The price list ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PriceListsApi
