@@ -15,6 +15,10 @@
   "typings": "./dist/index.d.ts",
   "module": "./dist/esm/index.js",
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fattureincloud/fattureincloud-ts-sdk.git"
+  },
   "scripts": {
     "build": "tsc && tsc -p tsconfig.esm.json",
     "prepare": "npm run build",
