@@ -58,7 +58,7 @@ const listRevenueCentersresponse: ListRevenueCentersResponse = { data: ['Negozio
 sandbox.stub(instance, 'listRevenueCenters').returns(listRevenueCentersresponse)
 
 const listTemplatesresponse: ListTemplatesResponse = { data: [{ id: 10, name: 'New Standard S1' }, { id: 106, name: 'Minimalist' }] }
-sandbox.stub(instance, 'listTemplates').returns(listTemplatesresponse)
+sandbox.stub(instance, 'listDefaultTemplates').returns(listTemplatesresponse)
 
 const listUnitsOfMeasureresponse: ListUnitsOfMeasureResponse = { data: ['pezzi', 'kg', 'litri', 'ore', 'giorni', 'km', 'mesi'] }
 sandbox.stub(instance, 'listUnitsOfMeasure').returns(listUnitsOfMeasureresponse)
@@ -188,9 +188,9 @@ describe('InfoApi', function () {
       done()
     })
   })
-  describe('listTemplates', function () {
-    it('should call listTemplates successfully', function (done) {
-      const response = instance.listTemplates()
+  describe('listDefaultTemplates', function () {
+    it('should call listDefaultTemplates successfully', function (done) {
+      const response = instance.listDefaultTemplates()
       const expectedJson = JSON.stringify(listTemplatesresponse)
       const actualJson = JSON.stringify(response)
       expect(actualJson).to.equal(expectedJson)

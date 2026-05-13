@@ -10,5 +10,3 @@
 * `passive_delivery_note` (value: `"passive_delivery_note"`)
 
 * `self_invoice` (value: `"self_invoice"`)
-
-

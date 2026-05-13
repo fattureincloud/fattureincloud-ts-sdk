@@ -27,7 +27,6 @@ const instance: CompanyInfoPlanInfoFunctions = {
   subaccounts: true,
   tessera_sanitaria: true,
   recurring: true,
-  sofort: false,
   cerved: true,
   ts_digital: true,
   ts_pay: true,
@@ -84,10 +83,6 @@ describe('CompanyInfoPlanInfoFunctions', function () {
 
   it('should have the property smtp (base name: "smtp")', function () {
     expect(instance.smtp).to.be.a('boolean')
-  })
-
-  it('should have the property sofort (base name: "sofort")', function () {
-    expect(instance.sofort).to.be.a('boolean')
   })
 
   it('should have the property stock (base name: "stock")', function () {
